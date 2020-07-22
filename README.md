@@ -17,7 +17,7 @@ bin/bootstrap
 ## Usage
 
 ```bash
-# Start the server 
+# Start the server on http://localhost:5000
 bin/start
 
 # Create a new post
