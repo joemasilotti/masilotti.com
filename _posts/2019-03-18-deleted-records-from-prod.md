@@ -6,7 +6,7 @@ permalink: deleted-records-from-prod/
 image: missing-records.jpg?v2
 large_image: true
 summary: "1249 records in prod. 3775 records in dev. Something's not right."
-category: ruby
+category: ruby-on-rails
 ---
 
 I woke up yesterday eager to add pretty social shares to my side project, [weTabletop](https://www.wetabletop.com). As I plugged a few URLs into the [Twitter Card Validator](https://cards-dev.twitter.com/validator) a few started to 404. Oddly, the records seemed to be fine in my development database running a production dump from late last week.

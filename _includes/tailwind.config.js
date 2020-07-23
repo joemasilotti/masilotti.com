@@ -39,8 +39,10 @@ module.exports = {
     })
   },
   variants: {
+    rotate: ["group-hover"],
     textColor: ["hover"],
-    rotate: ["group-hover"]
+    textDecoration: ["group-hover"],
+    underline: ["group-hover"]
   },
   plugins: [
     require("@tailwindcss/typography"),
