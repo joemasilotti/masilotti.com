@@ -23,9 +23,6 @@ twitter:
 logo: "path/to/image"
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
   - yarn.lock
   - package-lock.json
   - README.md
