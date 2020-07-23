@@ -18,6 +18,10 @@ module.exports = {
       default: {
         css: {
           maxWidth: null,
+          img: {
+            marginLeft: "auto",
+            marginRight: "auto"
+          },
           ".highlight": {
             borderRadius: theme("borderRadius.lg")
           },

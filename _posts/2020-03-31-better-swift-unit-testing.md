@@ -3,10 +3,9 @@ layout: post
 title:  "Better Unit Testing with Swift"
 date:   2020-03-31
 permalink: better-swift-unit-testing/
-image: IDEPEM.png
+image: twitter/IDEPEM.png
 large_image: true
 summary: Ideas and best practices for real world Swift testing, including protocols, dependency injection, and Equatable.
-categories: ios swift xctest
 category: testing-swift
 ---
 
@@ -256,7 +255,7 @@ class BoardGameParserTests: XCTestCase {
 
 ````
 
-Oh, and if you're looking for [great two player board games]() I've got you covered!
+Oh, and if you're looking for [great two player board games]({% post_url 2020-03-15-great-two-player-board-games %}) I've got you covered!
 
 ## Recap: *IDEPEM*!
 
@@ -275,4 +274,4 @@ Remember, you use the Xcode **IDE** and [generate .**PEM** files](https://docs.f
 
 An easy way to maintain quality in your test suite is to share assertions between tests. This can be accomplished by extracting helper methods to run common assertions.
 
-Learn how to [extract common test behavior into helper methods]() while keeping those pesky failure messages on the right line.
+Learn how to [extract common test behavior into helper methods]({% post_url 2015-09-21-xctest-helpers %}) while keeping those pesky failure messages on the right line.
