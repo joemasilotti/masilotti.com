@@ -3,7 +3,7 @@ layout: post
 title:  "UI Testing with Stubbed Network Data"
 date:   "2016-03-04"
 permalink: ui-testing-stub-network-data/
-summary: "Learn how to stub network data when running UI Tests with the magic of some “secret” XCTest APIs."
+description: "Learn how to stub network data when running UI Tests with the magic of some “secret” XCTest APIs."
 category: ui-testing
 series: "Testing URLSession"
 ---

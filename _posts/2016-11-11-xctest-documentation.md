@@ -3,7 +3,7 @@ layout: post
 title:  "XCTest Documentation"
 date:   2016-11-11
 permalink: xctest-documentation/
-summary: "Apple has officially sent me a cease and desist letter to take down my host of the XCTest Documentation."
+description: "Apple has officially sent me a cease and desist letter to take down my host of the XCTest Documentation."
 category: me
 ---
 

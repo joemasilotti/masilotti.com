@@ -5,7 +5,7 @@ date:   "2016-05-31"
 permalink: testing-dictionaries/
 image: twitter/testing-dictionaries.png
 large_image: true
-summary: "A type-safe approach to testing dictionaries in Swift with clean failure messages."
+description: "A type-safe approach to testing dictionaries in Swift with clean failure messages."
 category: testing-swift
 ---
 

@@ -5,7 +5,7 @@ date:   2015-07-12
 permalink: better-dependency-injection/
 image: init-is-unavailable.png
 large_image: true
-summary: "Better dependency injection on iOS with NS_UNAVAILABLE."
+description: "Better dependency injection on iOS with NS_UNAVAILABLE."
 category: testing-objective-c
 ---
 

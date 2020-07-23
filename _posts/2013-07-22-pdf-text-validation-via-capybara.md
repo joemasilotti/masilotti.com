@@ -3,7 +3,7 @@ layout: post
 title:  "How to Test PDFs with Capybara"
 date:   2013-07-22
 permalink: testing-pdfs/
-summary: "Use familiar HTML testing tools to test drive PDF generation by combining wicked_pdf with some asset pipeline knowledge."
+description: "Use familiar HTML testing tools to test drive PDF generation by combining wicked_pdf with some asset pipeline knowledge."
 category: ruby-on-rails
 ---
 

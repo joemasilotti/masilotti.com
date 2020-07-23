@@ -3,7 +3,7 @@ layout: post
 title:  "Building NSURLs with NSURLQueryItems"
 date:   2014-10-26
 permalink: nsurlqueryitems/
-summary: "Build and manipulate complex URLs with NSURLQueryItems. No more ugly string concatenation to append query items to URLs."
+description: "Build and manipulate complex URLs with NSURLQueryItems. No more ugly string concatenation to append query items to URLs."
 category: ios
 ---
 

@@ -14,12 +14,12 @@ author:
   twitter: joemasilotti
 
 # jekyll-seo-tag configuration
-url: ""
-title: ""
-description: ""
+title: Masilotti.com
+tagline: "iOS, Ruby on Rails, and testing. Maybe even a bit on board games."
+description: "A blog from Joe Masilotti, an independent developer who's passionate about clean, testable code."
 twitter:
-  username: ""
-  card: ""
+  username: "joemasilotti"
+  card: "summary"
 logo: "path/to/image"
 
 exclude:

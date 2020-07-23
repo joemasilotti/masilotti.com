@@ -5,7 +5,7 @@ date: 2019-03-18
 permalink: deleted-records-from-prod/
 image: missing-records.jpg?v2
 large_image: true
-summary: "1249 records in prod. 3775 records in dev. Something's not right."
+description: "1249 records in prod. 3775 records in dev. Something's not right."
 category: ruby-on-rails
 ---
 

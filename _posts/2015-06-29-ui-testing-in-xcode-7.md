@@ -4,7 +4,7 @@ title:  "UI Testing in Xcode 7"
 date:   2015-06-29
 permalink: ui-testing-xcode-7/
 image: xcode-testing.png
-summary: "How to navigate around an undocumented but powerful framework in iOS 9."
+description: "How to navigate around an undocumented but powerful framework in iOS 9."
 category: ui-testing
 ---
 

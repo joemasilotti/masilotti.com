@@ -3,7 +3,7 @@ layout: post
 title: "How to Test UIAlertController"
 date: 2018-08-07
 permalink: testing-uialertcontroller/
-summary: "Learn how to test UIAlertController with protocols, mocks, and dependecy injection. No swizzling required."
+description: "Learn how to test UIAlertController with protocols, mocks, and dependency injection. No swizzling required."
 category: testing-swift
 ---
 
@@ -28,7 +28,7 @@ alert.addAction(cancelAction)
 controller.present(alert, animated: true, completion: nil)
 ```
 
-In summary, you set the title and message, add some actions, then present the alert on a `UIViewController`.
+In description, you set the title and message, add some actions, then present the alert on a `UIViewController`.
 
 ## What to Test
 

@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Topics
+permalink: topics/
 ---
 
 <div class="max-w-3xl mt-12 mx-auto px-4">
@@ -37,7 +39,7 @@ layout: default
             {{ post.date | date: '%B %-d, %Y' }}
           </time>
 
-          <p class="pt-3 text-base leading-6 text-gray-700">{{ post.summary }}</p>
+          <p class="pt-3 text-base leading-6 text-gray-700">{{ post.description }}</p>
         </a>
       </div>
     {% endfor %}

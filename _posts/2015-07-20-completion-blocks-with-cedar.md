@@ -5,7 +5,7 @@ date:   2015-07-20
 permalink: completion-blocks-with-cedar/
 image: cedar-capture-blocks.png
 large_image: true
-summary: "Flatten out your asynchronous tests with and_do_block()."
+description: "Flatten out your asynchronous tests with and_do_block()."
 category: testing-objective-c
 ---
 

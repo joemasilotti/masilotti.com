@@ -5,7 +5,7 @@ date:   2016-01-11
 permalink: testing-nsurlsession-input/
 image: twitter/testing-nsurlsession.png?v3
 large_image: true
-summary: "Not owning a class doesn't mean you can't mock it! Learn how to unit test URLSession with Swift and protocol-oriented programming."
+description: "Not owning a class doesn't mean you can't mock it! Learn how to unit test URLSession with Swift and protocol-oriented programming."
 category: testing-swift
 series: "Testing URLSession"
 ---

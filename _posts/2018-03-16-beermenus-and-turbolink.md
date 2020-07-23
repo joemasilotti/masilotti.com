@@ -5,7 +5,7 @@ date: 2018-03-16
 permalink: beermenus-and-turbolinks/
 image: presentation.png
 large_image: true
-summary: "How our small team supports 600k+ monthly users on four platforms with Turbolinks."
+description: "How our small team supports 600k+ monthly users on four platforms with Turbolinks."
 category: turbolinks
 ---
 

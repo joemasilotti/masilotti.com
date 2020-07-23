@@ -3,7 +3,7 @@ layout: post
 title:  "Flattening Asynchronous Tests"
 date:   2016-02-01
 permalink: testing-nsurlsession-async/
-summary: "Shave time off your test suite by flattening asynchronous tests. Learn how to mock more of URLSession to test response data, network errors, and status codes."
+description: "Shave time off your test suite by flattening asynchronous tests. Learn how to mock more of URLSession to test response data, network errors, and status codes."
 category: testing-swift
 series: "Testing URLSession"
 ---
