@@ -6,10 +6,16 @@
     {% seo %}
     <link rel="stylesheet" href="/css/site.css">
   </head>
-  <body>
-    <section>
-      {{ content }}
-    </section>
+  <body class="flex flex-col">
+    <div class="pt-4 md:pt-8">
+      {% include header.html %}
+
+      <section>
+        {{ content }}
+      </section>
+    </div>
+
+    {% include footer.html %}
 
     {% if jekyll.environment == "production" %}
       {% include analytics.html %}

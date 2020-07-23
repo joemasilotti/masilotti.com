@@ -1,0 +1,31 @@
+- name: UI Testing
+  slug: ui-testing
+  color: indigo
+
+- name: Swift Testing
+  slug: testing-swift
+  color: indigo
+
+- name: Objective-C Testing
+  slug: testing-objective-c
+  color: indigo
+
+- name: iOS
+  slug: ios
+  color: blue
+
+- name: Ruby
+  slug: ruby
+  color: red
+
+- name: Turbolinks
+  slug: turbolinks
+  color: orange
+
+- name: Board Games
+  slug: board-games
+  color: purple
+
+- name: Me
+  slug: me
+  color: green

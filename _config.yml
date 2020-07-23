@@ -1,4 +1,5 @@
 # Build settings
+url: https://masilotti.com
 markdown: kramdown
 plugins:
   - jekyll-feed
@@ -6,8 +7,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-postcss
 
+author:
+  email: joe@masilotti.com
+  github: joemasilotti
+  linkedin: joemasilotti
+  twitter: joemasilotti
+
 # jekyll-seo-tag configuration
-author: ""
 url: ""
 title: ""
 description: ""
@@ -28,3 +34,4 @@ exclude:
   - netlify.toml
   - bin
   - .gitignore
+  - resources

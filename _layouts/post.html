@@ -2,4 +2,10 @@
 layout: default
 ---
 
-{{ content }}
+<article class="prose lg:prose-lg max-w-3xl mx-auto px-4 pb-16">
+  <h1 class="post-title p-name">
+    <a href="{{ page.url }}" class="u-url no-underline">{{ page.title }}</a>
+  </h1>
+
+  {{ content }}
+</article>
