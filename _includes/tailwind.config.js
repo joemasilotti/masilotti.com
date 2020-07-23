@@ -21,6 +21,9 @@ module.exports = {
           ".highlight": {
             borderRadius: theme("borderRadius.lg")
           },
+          'pre code': {
+            fontSize: theme("fontSize.sm")
+          },
           code: {
             backgroundColor: theme("colors.gray.200"),
             paddingTop: theme("spacing.1"),
