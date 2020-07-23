@@ -18,6 +18,9 @@ module.exports = {
       default: {
         css: {
           maxWidth: null,
+          ".highlight": {
+            borderRadius: theme("borderRadius.lg")
+          },
           code: {
             backgroundColor: theme("colors.gray.200"),
             paddingTop: theme("spacing.1"),
