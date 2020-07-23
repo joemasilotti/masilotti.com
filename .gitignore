@@ -5,6 +5,5 @@ _site
 .jekyll-cache
 node_modules
 yarn.lock
-Gemfile.lock
 _includes/tailwind.js
 yarn-error.log
