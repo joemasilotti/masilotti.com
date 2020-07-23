@@ -33,7 +33,7 @@ module.exports = {
     })
   },
   variants: {
-    textColor: ["active"],
+    textColor: ["hover"],
     rotate: ["group-hover"]
   },
   plugins: [
