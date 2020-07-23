@@ -5,7 +5,7 @@ date:   2016-01-18
 permalink: favorite-things/
 image: twitter/favorite-things.png
 large_image: true
-summary: "All the stuff I'm enjoying right now: iOS apps and games, Mac productivity apps, card games, and programming books."
+description: "All the stuff I'm enjoying right now: iOS apps and games, Mac productivity apps, card games, and programming books."
 category: me
 ---
 

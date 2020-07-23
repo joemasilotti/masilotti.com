@@ -5,7 +5,7 @@ date:   2015-09-21
 permalink: xctest-helpers/
 image: twitter/xctest-helpers.png?v3
 large_image: true
-summary: How to extract XCTest helper methods and keep sane failure messages.
+description: How to extract XCTest helper methods and keep sane failure messages.
 category: testing-swift
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "NSDate Manipulation in iOS 8"
 date:   2015-02-02
 permalink: nsdate-manipulation/
-summary: "Create and modify dates by taking advantage of iOS 8's NSCalendar APIs."
+description: "Create and modify dates by taking advantage of iOS 8's NSCalendar APIs."
 category: ios
 ---
 

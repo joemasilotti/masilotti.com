@@ -3,7 +3,7 @@ layout: post
 title: "Test Driving UITableViews with Cedar"
 external_url: https://www.packtpub.com/books/content/test-driving-uitableviews-cedar
 external_site: packtpublishing
-summary: "Two different approaches to testing tables in iOS with behavior-driven testing framework, Cedar."
+description: "Two different approaches to testing tables in iOS with behavior-driven testing framework, Cedar."
 category: testing-objective-c
 ---
 

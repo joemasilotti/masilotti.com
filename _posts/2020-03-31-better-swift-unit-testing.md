@@ -5,7 +5,7 @@ date:   2020-03-31
 permalink: better-swift-unit-testing/
 image: twitter/IDEPEM.png
 large_image: true
-summary: Ideas and best practices for real world Swift testing, including protocols, dependency injection, and Equatable.
+description: Ideas and best practices for real world Swift testing, including protocols, dependency injection, and Equatable.
 category: testing-swift
 ---
 
