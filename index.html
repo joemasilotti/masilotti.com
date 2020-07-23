@@ -17,7 +17,7 @@ layout: default
     </div>
 
     <div class="mt-12 grid gap-16 border-t-2 border-gray-100 pt-12 lg:grid-cols-3 lg:col-gap-12 lg:row-gap-16">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:5 %}
         <div>
           <div class="flex">
             <div class="flex text-sm leading-5 text-gray-700 mr-8">
@@ -44,6 +44,13 @@ layout: default
           </a>
         </div>
       {% endfor %}
+
+      <div class="flex items-center mx-auto">
+        <a href="/topics" class="text-xl inline-flex items-center px-8 py-4 border border-gray-300 text-base leading-6 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500">
+          Read more
+          <span class="ml-2">&rarr;</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>
