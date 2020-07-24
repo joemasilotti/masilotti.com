@@ -5,7 +5,7 @@ date: 2018-03-16
 permalink: beermenus-and-turbolinks/
 image: images/presentation.png
 description: "How our small team supports 600k+ monthly users on four platforms with Turbolinks."
-category: turbolinks
+category: web
 ---
 
 As my [time in Croatia wraps up]({% post_url 2017-08-22-where-is-joe %}) I was given the opportunity to speak at a local meetup in Split, [Mobile Monday Split](https://www.meetup.com/mobilemondaysplit/). My presentation covered two topics: BeerMenus and Turbolinks. I dove into the Consumer and Retailer side of the BeerMenus business and explained how we use Turbolinks to quickly release new features to our four platforms.

@@ -14,8 +14,8 @@
   slug: ruby-on-rails
   color: red
 
-- name: Turbolinks
-  slug: turbolinks
+- name: Web Dev
+  slug: web
   color: orange
 
 - name: Objective-C Testing
