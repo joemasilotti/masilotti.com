@@ -9,23 +9,22 @@
   {% endif %}
 {% endfor %}
 
-<div class="series">
-  <p>
-    This is part {{ idx }} in a {{ count }}-part series on <strong>{{ page.series }}</strong>.
-  </p>
-  <ul>
+<div class="bg-gray-100 text-gray-800 rounded-lg shadow-lg px-8 py-1 lg:py-1">
+  <p>This is part {{ idx }} in a {{ count }}-part series on <strong>{{ page.series }}</strong>.</p>
+
+  <ol>
     {% assign count = '0' %}
     {% for post in site.posts reversed %}
       {% if post.series == page.series %}
         {% capture count %}{{ count | plus: '1' }}{% endcapture %}
-        <li>Part {{ count }}:
+        <li>
           {% if page.url == post.url %}
             {{ post.title }}
           {% else %}
-            <a href="{{post.url}}">{{post.title}}</a>
+            <a href="{{ post.url }}">{{post.title}}</a>
           {% endif %}
         </li>
       {% endif %}
     {% endfor %}
-  </ul>
+  </ol>
 </div>
