@@ -13,21 +13,20 @@ author:
   linkedin: joemasilotti
   twitter: joemasilotti
 
+# jekyll-seo-tag configuration
+title: Masilotti.com
+tagline: "iOS, Ruby on Rails, and testing. Maybe even a bit on board games."
+description: "A blog from Joe Masilotti, an independent developer who's passionate about clean, testable code."
+logo: images/logo.png
+twitter:
+  username: joemasilotti
+  card: summary_large_image
 social:
   name: Joe Masilotti
   links:
     - https://twitter.com/joemasilotti
     - https://www.linkedin.com/in/joemasilotti
     - https://github.com/joemasilotti
-
-# jekyll-seo-tag configuration
-title: Masilotti.com
-tagline: "iOS, Ruby on Rails, and testing. Maybe even a bit on board games."
-description: "A blog from Joe Masilotti, an independent developer who's passionate about clean, testable code."
-twitter:
-  username: joemasilotti
-  card: summary_large_image
-logo: images/logo.png
 
 exclude:
   - yarn.lock
