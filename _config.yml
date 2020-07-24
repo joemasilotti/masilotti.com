@@ -13,6 +13,13 @@ author:
   linkedin: joemasilotti
   twitter: joemasilotti
 
+social:
+  name: Joe Masilotti
+  links:
+    - https://twitter.com/joemasilotti
+    - https://www.linkedin.com/in/joemasilotti
+    - https://github.com/joemasilotti
+
 # jekyll-seo-tag configuration
 title: Masilotti.com
 tagline: "iOS, Ruby on Rails, and testing. Maybe even a bit on board games."
