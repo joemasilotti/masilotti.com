@@ -8,7 +8,9 @@ layout: default
   </h1>
 </div>
 
-{% include intro.html %}
+{% if page.intro %}
+  {% include intro.html %}
+{% endif %}
 
 <div class="prose lg:prose-lg max-w-3xl mx-auto px-4 pb-16">
   {{ content }}
