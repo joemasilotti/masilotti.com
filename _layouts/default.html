@@ -6,6 +6,10 @@
     {% seo %}
     {% include favicon.html %}
     <link rel="stylesheet" href="/css/site.css">
+
+    {% if jekyll.environment == "production" %}
+      {% include analytics.html %}
+    {% endif %}
   </head>
   <body class="flex flex-col">
     <div class="pt-4 md:pt-8">
@@ -17,9 +21,5 @@
     </div>
 
     {% include footer.html %}
-
-    {% if jekyll.environment == "production" %}
-      {% include analytics.html %}
-    {% endif %}
   </body>
 </html>
