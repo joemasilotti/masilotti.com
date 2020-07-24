@@ -1,10 +1,8 @@
-# Jekyll Tailwind Starter
+# Masilotti.com, built with Jekyll and Tailwind CSS
 
-Welcome! Here you'll find a reasonable starter pack for using [Jekyll](https://jekyllrb.com) with [Tailwind CSS](https://tailwindcss.com), [Autoprefixer](https://github.com/postcss/autoprefixer), and [Purgecss](https://github.com/FullHuman/purgecss).
+This repo holds the code for [Masilotti.com](https://masilotti.com).
 
-## About
-
-This project uses [jekyll-postcss](https://github.com/mhanberg/jekyll-postcss) to manage compiling your Tailwind and Autoprefixer styles. You can use any [PostCSS](https://postcss.org) plugin by installing it with `yarn` or `npm` and adding it to your `postcss.config.js`.
+The site is built with Jekyll and styled with Tailwind CSS.
 
 ## Install
 
