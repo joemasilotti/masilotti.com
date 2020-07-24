@@ -20,7 +20,7 @@ description: "A blog from Joe Masilotti, an independent developer who's passiona
 twitter:
   username: joemasilotti
   card: summary_large_image
-logo: path/to/image
+logo: images/logo.png
 
 exclude:
   - yarn.lock
