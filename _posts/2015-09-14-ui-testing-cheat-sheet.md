@@ -3,8 +3,8 @@ layout: post
 title:  "UI Testing Cheat Sheet and Examples"
 date:   2015-09-14
 permalink: ui-testing-cheat-sheet/
-image: twitter/ui-testing-cheat-sheet.png
-large_image: true
+image: images/twitter/ui-testing-cheat-sheet.png
+large_image: images/true
 description: Answers to common “How do I test this with UI Testing?” questions. A quick reference for everything from tapping buttons to reordering table cells.
 category: ui-testing
 ---

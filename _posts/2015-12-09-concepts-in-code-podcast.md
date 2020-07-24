@@ -3,7 +3,7 @@ layout: post
 title:  "Concepts in Code Podcast: Testing"
 date:   2015-12-09
 permalink: concepts-in-code-podcast/
-image: twitter/concepts-in-code.jpeg
+image: images/twitter/concepts-in-code.jpeg
 description: Last week I spoke on the Concepts in Code podcast. The cohosts and I chatted about testing in Swift, TDD, and pair programming.
 category: me
 ---

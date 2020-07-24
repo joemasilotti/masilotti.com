@@ -3,7 +3,7 @@ layout: post
 title:  "SwiftCoders Podcast"
 date:   2016-09-26
 permalink: swiftcoders-podcast/
-image: twitter/swiftcoders.png
+image: images/twitter/swiftcoders.png
 description: Earlier this month week I spoke on the SwiftCoders podcast. The host and I talked about getting started in Swift, and, obviously, testing.
 category: me
 ---

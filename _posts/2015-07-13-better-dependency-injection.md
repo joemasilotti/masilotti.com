@@ -3,8 +3,8 @@ layout: post
 title:  "iOS: One Macro to Help Dependency Injection"
 date:   2015-07-12
 permalink: better-dependency-injection/
-image: init-is-unavailable.png
-large_image: true
+image: images/init-is-unavailable.png
+large_image: images/true
 description: "Better dependency injection on iOS with NS_UNAVAILABLE."
 category: testing-objective-c
 ---

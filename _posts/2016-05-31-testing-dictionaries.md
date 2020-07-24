@@ -3,8 +3,8 @@ layout: post
 title:  "Testing Dictionaries with Swift and XCTest"
 date:   "2016-05-31"
 permalink: testing-dictionaries/
-image: twitter/testing-dictionaries.png
-large_image: true
+image: images/twitter/testing-dictionaries.png
+large_image: images/true
 description: "A type-safe approach to testing dictionaries in Swift with clean failure messages."
 category: testing-swift
 ---

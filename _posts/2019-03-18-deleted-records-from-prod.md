@@ -3,8 +3,8 @@ layout: post
 title: "I Just Deleted Thousands of Records from Production 😬"
 date: 2019-03-18
 permalink: deleted-records-from-prod/
-image: missing-records.jpg?v2
-large_image: true
+image: images/missing-records.jpg?v2
+large_image: images/true
 description: "1249 records in prod. 3775 records in dev. Something's not right."
 category: ruby-on-rails
 ---
