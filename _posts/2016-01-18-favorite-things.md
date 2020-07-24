@@ -4,7 +4,6 @@ title:  "Joe's Favorite Things"
 date:   2016-01-18
 permalink: favorite-things/
 image: images/twitter/favorite-things.png
-large_image: images/true
 description: "All the stuff I'm enjoying right now: iOS apps and games, Mac productivity apps, card games, and programming books."
 category: me
 ---

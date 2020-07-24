@@ -4,7 +4,6 @@ title:  "Capture Completion Blocks with Cedar BDD"
 date:   2015-07-20
 permalink: completion-blocks-with-cedar/
 image: images/cedar-capture-blocks.png
-large_image: images/true
 description: "Flatten out your asynchronous tests with and_do_block()."
 category: testing-objective-c
 ---

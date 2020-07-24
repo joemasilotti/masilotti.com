@@ -4,7 +4,6 @@ title:  "Where Has Joe Been?"
 date:   2017-08-22
 permalink: where-is-joe/
 image: images/adrienne-and-joe.jpg
-large_image: images/true
 description: "What has Joe been up to since his last post?"
 category: me
 ---

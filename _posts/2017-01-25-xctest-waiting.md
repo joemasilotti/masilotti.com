@@ -4,7 +4,6 @@ title:  "Waiting in XCTest"
 date:   2017-01-25
 permalink: xctest-waiting/
 image: images/twitter/waiting.png
-large_image: images/true
 description: "Waiting is hard, and waiting in Xcode is no exception. Learn a new approach with classes introduced in Xcode 8.3."
 category: ui-testing
 ---

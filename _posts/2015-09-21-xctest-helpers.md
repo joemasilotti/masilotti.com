@@ -4,7 +4,6 @@ title:  "Custom Helpers in XCTest"
 date:   2015-09-21
 permalink: xctest-helpers/
 image: images/twitter/xctest-helpers.png?v3
-large_image: images/true
 description: How to extract XCTest helper methods and keep sane failure messages.
 category: testing-swift
 ---

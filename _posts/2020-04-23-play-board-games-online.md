@@ -4,7 +4,6 @@ title: "How to play board games online with your friends"
 date: 2020-04-23
 permalink: play-board-games-online/
 image: images/zoom-and-dominion.png?v2
-large_image: images/true
 description: "BGA, TTS, Steam?! This guide is for anyone who wants to play board games online with your friends but isn’t sure where to start."
 category: board-games
 ---

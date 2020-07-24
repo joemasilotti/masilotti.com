@@ -4,7 +4,6 @@ title: "BeerMenus &amp; Turbolinks"
 date: 2018-03-16
 permalink: beermenus-and-turbolinks/
 image: images/presentation.png
-large_image: images/true
 description: "How our small team supports 600k+ monthly users on four platforms with Turbolinks."
 category: turbolinks
 ---
