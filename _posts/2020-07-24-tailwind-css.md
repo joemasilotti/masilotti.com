@@ -12,7 +12,10 @@ This past weekend, I built [a landing page](https://xwing.app) and redesigned th
 
 Oh, and both the [landing page](https://github.com/joemasilotti/x-wing-ai-tailwind) and [Masilotti.com](https://github.com/joemasilotti/masilotti.com-tailwind) are now open source!
 
-![Zero to Tailwind CSS over the weekend](/images/tailwind-css.png)
+<div class="h-64 overflow-y-scroll">
+  <img src="/images/xwing.app.png" alt="Screenshot of https://xwing.app" class="align-top my-0 lg:my-0" />
+</div>
+<div class="block text-center mt-4">Screenshot of the landing page, <a href="https://xwing.app">https://xwing.app</a>.</div>
 
 ## What the h*ck is Tailwind?
 
