@@ -6,6 +6,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-postcss
+  - jekyll-purgecss
 
 author:
   email: joe@masilotti.com

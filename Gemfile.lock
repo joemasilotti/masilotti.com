@@ -32,6 +32,7 @@ GEM
     jekyll-feed (0.15.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-postcss (0.4.0)
+    jekyll-purgecss (0.3.0)
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-seo-tag (2.6.1)
@@ -71,6 +72,7 @@ DEPENDENCIES
   jekyll (~> 4.1.1)
   jekyll-feed
   jekyll-postcss
+  jekyll-purgecss
   jekyll-seo-tag
   jekyll-sitemap
 
