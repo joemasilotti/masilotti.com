@@ -36,7 +36,7 @@ If you haven't built out the code, you can checkout the GitHub repository at the
 
 As you read through the post, feel free to [follow along with the commits on GitHub](https://github.com/joemasilotti/TestingURLSession). Unfortunately XCTest is a pain to use with playgrounds so it's just an Xcode project.
 
-##Why We Shouldn't be Hitting the Network
+## Why We Shouldn't be Hitting the Network
 
 Just like our unit tests, UI Tests should be [fast, isolated, and repeatable](https://pragprog.com/magazines/2012-01/unit-tests-are-first). When hitting the network, we introduce variables that our out of our control. This leads us to slow and nondeterministic tests which make it hard to verify error scenarios.
 
@@ -115,7 +115,7 @@ Second, you run the risk of the response data diverging from the *actual* respon
 
 Finally, it's hard to test for error scenarios. What happens when you want to test a POST to `/users/new` for both 200 and 500 responses? This can easily snowball into lots of code on your server just to manage the sequencing of requests.
 
-###Is There Something Better?
+### Is There Something Better?
 
 Two out of three of these approaches work. However, in my opinion their disadvantages far outweigh the solution to the problem they are trying to solve. Instead of trying to work around UI Testing let's take a closer look at the framework. Maybe something in the [XCTest documentation](/xctest-documentation) will give us a hint.
 
