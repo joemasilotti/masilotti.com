@@ -27,10 +27,16 @@
       </a>
     </div>
 
-    <div class="text-center mt-8 sm:mt-0 sm:order-1">
-      <a href="{{ site.url }}" class="text-base leading-6 text-gray-500 hover:text-gray-600">
-        &copy; 2020 Joe Masilotti
-      </a>
+    <div class="text-center flex flex-wrap justify-center items-center sm:order-1 leading-6 text-gray-500 mt-8 sm:mt-0">
+      <div class="flex space-x-1 mr-1">
+        {% include icons/creative-commons.html size=5 %}
+        {% include icons/creative-commons-noncommercial.html size=5 %}
+        {% include icons/creative-commons-attribution.html size=5 %}
+      </div>
+
+      <a href="{{ site.url }}" class="hover:text-gray-600">Masilotti.com</a>
+      <span>is released under a</span>
+      <a href="" class="hover:text-gray-600">Creative Commons BY-NC License</a>.
     </div>
   </div>
 </footer>
