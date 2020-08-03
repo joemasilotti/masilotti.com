@@ -2,22 +2,38 @@
 layout: default
 ---
 
-<article class="prose lg:prose-lg max-w-3xl mx-auto px-4 pb-16">
-  <h1 class="mb-2 lg:mb-3 p-name">
+<article class="prose lg:prose-lg max-w-3xl mx-auto px-4 pt-8 md:pt-0 pb-16">
+  <div class="flex justify-center mb-2">
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="block text-center text-gray-600 mr-2 post-date">
+      {{ page.date | date: '%B %-d, %Y' }}
+    </time>
+
+    {% assign category = site.data.categories | where: "slug", page.category %}
+    {% assign category = category.first %}
+    <a href="/topics/#{{ category.slug }}" class="inline-block no-underline mr-4">
+      <span class="inline-flex items-center px-4 leading-8 rounded-full font-medium leading-5 bg-{{category.color}}-200 text-{{category.color}}-800 hover:bg-{{category.color}}-300 ml-4">
+        {{ category.name }}
+      </span>
+    </a>
+  </div>
+
+  <h1 class="text-center p-name max-w-2xl mx-auto mb-4 lg:mb-8">
     <a href="{{ page.url }}" class="u-url no-underline">{{ page.title }}</a>
   </h1>
 
-  <time datetime="{{ post.date | date_to_xmlschema }}" class="text-sm mr-2 post-date">
-    {{ page.date | date: '%B %-d, %Y' }}
-  </time>
+  <div class="flex justify-center space-x-8 sm:space-x-12">
+    <div class="flex items-center space-x-2">
+      <img src="/images/logo.png" alt="Joe Masilotti of Masilotti.com" class="w-10 h-10 my-0 lg:my-0">
+      <dl class="text-sm font-medium leading-5 text-gray-700 whitespace-no-wrap">
+        <dt class="sr-only">Name</dt>
+        <dd><a href="{{ site.url }}" class="no-underline text-gray-700 hover:text-primary-600" rel="author">Joe Masilotti</a></dd>
+        <dt class="sr-only">Twitter</dt>
+        <dd><a href="https://twitter.com/@{{ site.author.twitter }}" class="no-underline text-gray-700 hover:text-primary-600">@{{ site.author.twitter }}</a></dd>
+      </dl>
+    </div>
+  </div>
 
-  {% assign category = site.data.categories | where: "slug", page.category %}
-  {% assign category = category.first %}
-  <a href="/topics/#{{ category.slug }}" class="inline-block no-underline mr-4">
-    <span class="inline-flex items-center px-3 leading-6 rounded-full text-sm font-medium leading-5 bg-{{category.color}}-200 text-{{category.color}}-800 hover:bg-{{category.color}}-300">
-      {{ category.name }}
-    </span>
-  </a>
+  <hr class="h-0.5 bg-gray-100 my-8" />
 
   {{ content }}
   {% include twitter.html %}
