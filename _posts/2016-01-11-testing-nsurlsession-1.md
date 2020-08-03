@@ -1,37 +1,38 @@
 ---
 layout: post
-title:  "Mocking Classes You Don't Own"
-date:   2016-01-11
+title: Mocking classes you don't own in Swift
+date: 2016-01-11
 permalink: testing-nsurlsession-input/
 image: images/twitter/testing-nsurlsession.png?v3
 description: "Not owning a class doesn't mean you can't mock it! Learn how to unit test URLSession with Swift and protocol-oriented programming."
 category: testing-swift
-series: "Testing URLSession"
+series: Testing URLSession
+xcode: 12.0
 ---
 
 My go-to approach when unit-testing Swift is [protocol-oriented programming](https://developer.apple.com/videos/play/wwdc2015-408/). As requested by you, let's see a real-world example. What better way to show some code than with the networking stack, something every iOS developer has dealt with!
 
 {% include series.html %}
 
-## Don't Fear the Session!
+## Don't fear the session!
 
-If you are developing anything targeting iOS or tvOS 9.0 and start networking code, you will notice that the `NSURLConnection` APIs are officially deprecated. My go-to method, `sendAsyncronousRequest()`, will need to be replaced with `dataTaskWithURL()`. 
+If you are developing anything targeting iOS or tvOS 9.0 and start networking code, you will notice that the `NSURLConnection` APIs are officially deprecated. My go-to method, `sendAsyncronousRequest()`, will need to be replaced with `dataTask(with:)`. 
 
 If you haven't worked with `URLSession` yet, no worries. There are only two major components you'll need to understand to follow along.
 
-The main interface to the API, `URLSession`, can be used in a very similar manner to `NSURLConnection`. That is, with asynchronous blocks and no delegates. We will focus on `dataTaskWithURL()` from a bare bones instantiation to retrieve data from the network.
+The main interface to the API, `URLSession`, can be used in a very similar manner to `NSURLConnection`. That is, with asynchronous blocks and no delegates. We will focus on `dataTask(with:)` from a bare bones instantiation to retrieve data from the network.
 
 This method returns an instance of `URLSessionDataTask`. Think of these as in-flight network requests. Most importantly, they can be started, paused, cancelled, and resumed.
 
 Here's a naive approach to sending a request to my site and printing the response. 
 
 ``` swift
-let session = URLSession()
-let url = NSURL(string: "http://masilotti.com")!
-let task = session.dataTaskWithURL(url) { (data, _, _) -> Void in
+let session = URLSession.shared
+let url = URL(string: "http://masilotti.com")!
+let task = session.dataTask(with: url) { (data, _, _) -> Void in
     if let data = data {
-        let string = String(data: data, encoding: NSUTF8StringEncoding)
-        print(string)
+        let string = String(data: data, encoding: String.Encoding.utf8)
+        print(string ?? "(no data)")
     }
 }
 task.resume()
@@ -43,7 +44,7 @@ Not so bad, right? This method has a few limitations, but we can start with it a
 
 As you read through the post, feel free to [follow along with the commits on GitHub](https://github.com/joemasilotti/TestingURLSession). Unfortunately XCTest is a pain to use with playgrounds so it's just an Xcode project.
 
-## Possible Testing Approaches
+## Possible testing approaches
 
 Our goal is to unit test the interface to `URLSession`. To do so , we will create a new object, `HTTPClient`, that interacts with the session. The rest of the app's code will interact with `HTTPClient` directly.
 
@@ -53,7 +54,7 @@ Possible ways to test the session:
 2. Subclass `URLSession`
 3. Mock `URLSession` via a new protocol
 
-### Integration Tests That Hit the Network
+### Integration tests that hit the network
 
 Perhaps the simplest way to test the session is by letting it access the network. The request could hit a known endpoint on your server, say `/ios-test`. Then you can assure that the response is parsed into valid JSON or model objects. While easy to set up, this approach has a few downsides.
 
@@ -67,7 +68,7 @@ By subclassing you can easily add flags to check which methods are called with w
 
 This approach becomes unscalable when dealing with Apple's framework. Every iOS release you will have to go back to all of your subclasses and update them for each new method that was added. If Apple changes the functionality under the hood your tests could also fail for unexpected reasons.
 
-### Mock `URLSession` with a Protocol
+### Mock `URLSession` with a protocol
 
 Mocking the session under test relieves us of the problems that burden the other techniques. The network will never be hit, no functionality will be executed, and we won't have to update the mock when Apple adds new methods.
 
@@ -83,24 +84,25 @@ To do this, we will need to create a few extra protocols and intermediary object
 2. `URLSession` needs to conform to a protocol so we can mock it under test
 3. We need to mock `URLSessionDataTask` so we can assert `resume()` is called
 
-### Make `URLSession` Testable
+### Make `URLSession` testable
 
 Ideally, the interface to `URLSession` would be protocol based. We could create a mock object that conformed to this protocol and use the objects interchangeably under test.
 
 Unfortunately, Apple hasn't *fully* embraced protocol-oriented programming in its framework code. No worries; we’ll create our own protocol, and have `URLSession` conform to it via an extension.
 
-#### Create the Protocol
+#### Create the protocol
 
 First, let's create a protocol that Apple's `URLSession` can conform to.
 
 ``` swift
-typealias DataTaskResult = (NSData?, NSURLResponse?, NSError?) -> Void
+typealias DataTaskResult = (Data?, URLResponse?, Error?) -> Void
 
 protocol URLSessionProtocol {
-    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult)
-      -> URLSessionDataTask
+    func dataTaskWithURL(_ url: URL, completion: @escaping DataTaskResult) -> URLSessionDataTask
 }
 ```
+
+> **Note**: We purposely give the function a different name than the actual implementation. This is to avoid a infinite loop when we extend `URLSession` to conform to out protocol.
 
 Second, give the client a session via dependency injection.
 
@@ -108,7 +110,7 @@ Second, give the client a session via dependency injection.
 class HTTPClient {
     private let session: URLSessionProtocol
 
-    init(session: URLSessionProtocol = URLSession.sharedSession()) {
+    init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
 
@@ -127,29 +129,27 @@ But wait, we seem to have an error.
 Mimicking the interface to `URLSession` in our protocol isn't enough. We have to tell the compiler that it conforms to our protocol. We accomplish this with an empty protocol extension on Apple's session.
 
 ``` swift
-extension URLSession: URLSessionProtocol { }
+extension URLSession: URLSessionProtocol {}
 ```
 
 We don't actually have to implement anything in this extension because we kept the method signature the same as Apple's framework. Meaning, `URLSession` already implements our protocols required methods.
 
-#### Create a Mock for Tests
+#### Create a mock for tests
 
 Now that we can inject any concrete implementation of `URLSessionProtocol`, let's create a mock to track method calls. We can use this under test to ensure the right methods were called on the session with the right parameters.
 
 ``` swift
 class MockURLSession: URLSessionProtocol {
-    private (set) var lastURL: NSURL?
+    private (set) var lastURL: URL?
 
-    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult) 
-      -> URLSessionDataTask
-    {
+    func dataTaskWithURL(_ url: URL, completion: @escaping DataTaskResult) -> URLSessionDataTask {
         lastURL = url
-        return URLSessionDataTask()
+        return URLSession.shared.dataTask(with: url)
     }
 }
 ```
 
-When `dataTaskWithURL()` is called we take note of the URL that was passed in. We can then interrogate this later to assert the method was called with the correct parameter.
+When `dataTask(with:)` is called we take note of the URL that was passed in. We can then interrogate this later to assert the method was called with the correct parameter.
 
 > Make sure to import your Swift module in your mocks and tests with:
 > 
@@ -170,11 +170,11 @@ class HTTPClientTests: XCTestCase {
     }
 
     func test_GET_RequestsTheURL() {
-        let url = NSURL(string: "http://masilotti.com")!
+        let url = URL(string: "http://masilotti.com")!
 
-        subject.get(url) { (_, _) -> Void in }
+        subject.get(url: url) { (_, _, _) -> Void in }
 
-        XCTAssert(session.lastURL === url)
+        XCTAssertEqual(session.lastURL, url)
     }
 }
 ```
@@ -182,20 +182,18 @@ class HTTPClientTests: XCTestCase {
 We create a mock session and inject it into the subject under test. Then we call the stimulus, `get()`, with a referenced URL. Finally, we assert that the URL the session received was the same one we passed in.
 
 ``` swift
-typealias HTTPResult = (NSData?, ErrorType?) -> Void
-
 class HTTPClient {
     // ... //
 
-    func get(url: NSURL, completion: HTTPResult) {
-        session.dataTaskWithURL(url) { (_, _, _) -> Void in }
+    func get(url: URL, completion: @escaping DataTaskResult) {
+        session.dataTaskWithURL(_: url, completion: completion)
     }
 }
 ```
 
-This gets us pretty far in terms of testing `URLSession`. We can easily extend this approach to work with `requestWithRequest()` and start asserting more information on the `NSURLRequest`. However, we still haven't tested anything on the returned `URLSessionDataTask`, such as the call to `resume()`.
+This gets us pretty far in terms of testing `URLSession`. We can easily extend this approach to work with `requestWithRequest()` and start asserting more information on the `URLRequest`. However, we still haven't tested anything on the returned `URLSessionDataTask`, such as the call to `resume()`.
 
-### Make `URLSessionDataTask` Testable
+### Make `URLSessionDataTask` testable
 
 We can follow the same approach to start testing the data task.
 
@@ -227,7 +225,7 @@ Now things get a little hairy. We need our `URLSessionProtocol`'s method to retu
 
 ``` swift
 protocol URLSessionProtocol {
-    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult)
+    func dataTaskWithURL(_ url: URL, completion: @escaping DataTaskResult)
       -> URLSessionDataTaskProtocol
 }
 ```
@@ -240,35 +238,32 @@ Uh-oh, looks like we are back to the same error as before.
 
 Even though the error message is the same, the root cause is actually a little different.
 
-#### Extend `URLSession` to Handle the New Protocol
+#### Extend `URLSession` to handle the new protocol
 
 The error is occurring because `URLSession` doesn't have a `dataTaskWithURL()` method that returns our custom protocol. To fix this, we just need to extend the class a little differently.
 
 ``` swift
 extension URLSession: URLSessionProtocol {
-    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult)
+    func dataTaskWithURL(_ url: URL, completionHandler: @escaping DataTaskResult)
       -> URLSessionDataTaskProtocol 
     {
-        return (dataTaskWithURL(url, completionHandler: completionHandler)
-          as URLSessionDataTask) as URLSessionDataTaskProtocol
+        dataTask(with: url, completionHandler: completion) as URLSessionDataTaskProtocol
     }
 }
 ```
 
 Here we implement the method in the protocol manually. But instead of doing any actual work, we call back to the original implementation and cast the return value. The cast doesn't need to be implicit because our protocol already conforms to Apple's data task. Win-win!
 
-#### Update the Session Mock to Return a Data Task
+#### Update the session mock to return a data task
 
 Now that our `URLSessionProtocol` returns a custom object, we need the ability to stub it out under test. We do this by adding a publicly-writable property on the mock that is returned when the method is called.
 
 ``` swift
 class MockURLSession: URLSessionProtocol {
     var nextDataTask = MockURLSessionDataTask()
-    private (set) var lastURL: NSURL?
+    private (set) var lastURL: URL?
 
-    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult)
-      -> URLSessionDataTaskProtocol
-    {
+    func dataTaskWithURL(_ url: URL, completion: @escaping DataTaskResult) -> URLSessionDataTaskProtocol {
         lastURL = url
         return nextDataTask
     }
@@ -277,7 +272,7 @@ class MockURLSession: URLSessionProtocol {
 
 The property is defaulted to something so we don't have to worry about setting it if we don't need it in our test. "It's there when you need to set it, but gets out of the way when you don't."
 
-#### Test that `resume()` Was Called
+#### Test that `resume()` was called
 
 With everything in place we can now test that the data task was started.
 
@@ -286,13 +281,14 @@ class HTTPClientTests: XCTestCase {
   // ... //
 
   func test_GET_StartsTheRequest() {
-        let dataTask = MockURLSessionDataTask()
-        session.nextDataTask = dataTask
+      let dataTask = MockURLSessionDataTask()
+      session.nextDataTask = dataTask
 
-        subject.get(NSURL()) { (_, _) -> Void in }
+      let url = URL(string: "http://masilotti.com")!
+      subject.get(url: url) { (_, _, _) -> Void in }
 
-        XCTAssert(dataTask.resumeWasCalled)
-    }
+      XCTAssert(dataTask.resumeWasCalled)
+  }
 }
 ```
 
@@ -302,9 +298,8 @@ We create a reference to our mock data task and assign it to the session. After 
 class HTTPClient {
     // ... //
 
-    func get(url: NSURL, completion: HTTPResult) {
-        let task = session.dataTaskWithURL(url) { (_, _, _) -> Void in }
-        task.resume()
+    func get(url: URL, completion: DataTaskResult) {
+        session.dataTaskWithURL(url, completion: completion).resume()
     }
 }
 ```
@@ -325,12 +320,12 @@ We took the **IDEPEM** approach to getting `URLSession` in a test harness. First
 
 Seems like a lot of work to test, what, **two** lines of code? I agree!
 
-Think of this post as your *approach* to testing `URLSession`, not an actual framework or library. You know, "teach a man to fish" and all that.
+Think of this post as your *approach* to testing `URLSession`, not an actual framework or library. You know, "teach a person to fish" and all that.
 
 Don't believe me? Try extending this technique to test `dataTaskWithRequest()`. I bet you already know how to start and have a pretty good outline in your head. If you run into issues, feel free to leave a comment below and I'll help you through it.
 
-## What's Next?
+## What's next?
 
 Everything we've tested so far is only related to the *input* of the method. What happens when the network connection fails? Or returns JSON that we want to parse?
 
-In part two we take a look at the response, `DataTaskResult`. We go over testing response `NSData` and handling network errors. And the best part? We do all of this without any asynchronous code in our tests. Read the next post on [testing `URLSession` with Swift, flattening asynchronous tests]({% post_url 2016-02-01-testing-nsurlsession-async %}).
+In part two we take a look at the response, `DataTaskResult`. We go over testing response `Data` and handling network errors. And the best part? We do all of this without any asynchronous code in our tests. Read the next post on [testing `URLSession` with Swift, flattening asynchronous tests]({% post_url 2016-02-01-testing-nsurlsession-async %}).

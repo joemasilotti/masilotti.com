@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Flattening Asynchronous Tests"
-date:   2016-02-01
+title: Flattening Asynchronous Tests
+date: 2016-02-01
 permalink: testing-nsurlsession-async/
 description: "Shave time off your test suite by flattening asynchronous tests. Learn how to mock more of URLSession to test response data, network errors, and status codes."
 category: testing-swift
 series: "Testing URLSession"
+xcode: 12.0
 ---
 
 You've sent your fully tested HTTP request off into the wild. Now, what happens when it returns? How do you test for response data? What about network errors? Server errors? Let's take a look at how to test these network responses, and more, in this second post on testing `URLSession`.
 
 {% include series.html %}
 
-## Ramping Up
+## Ramping up
 
 This is part two of a series of posts on testing `URLSession`. If you haven't already read the [first part on mocking classes you don't own]({% post_url 2016-01-11-testing-nsurlsession-1 %}) I suggest you do that now. 
 
@@ -22,16 +23,16 @@ If you haven't built out the code from [part 1]({% post_url 2016-01-11-testing-n
 
 As you read through the post, feel free to [follow along with the commits on GitHub](https://github.com/joemasilotti/TestingURLSession). Unfortunately XCTest is a pain to use with playgrounds so it's just an Xcode project.
 
-## Waiting for Expectations
+## Waiting for expectations
 
 The quickest way to test network requests is to just run them. Yep, you heard me right, let's have our test suite actually hit the network. To start, let's make sure we can get data from this website.
 
 ``` swift
 func test_GET_ReturnsData() {
-    let url = NSURL(string: "http://masilotti.com")!
-    var data: NSData?
+    let url = URL(string: "https://masilotti.com")!
+    var data: Data?
 
-    subject.get(url) { (theData, error) -> Void in
+    URLSession.shared.get(url) { (theData, error) -> Void in
         data = theData
     }
 
@@ -49,7 +50,7 @@ By default, Xcode's test runner executes your tests in one thread, never stoppin
 
 Fortunately, we don't need to win a riddling contest with Xcode to make it do what we need. With the help from a fairly new API we can tell Xcode to wait for a certain period of time.
 
-### Enter XCTest Expectations
+### Enter XCTest expectations
 
 Something magical happened when Xcode 6 was released. Apple decided to put a little more focus on their XCTest suite and added some bells and whistles. The most important, in my opinion, was the ability to test asynchronous code.
 
@@ -67,23 +68,24 @@ Here is how we can use that technique in our existing test.
 
 ``` swift
 func test_GET_ReturnsData() {
-    let url = NSURL(string: "http://masilotti.com")!
-    let expectation = expectationWithDescription("Wait for \(url) to load.")
-    var data: NSData?
+    let subject = URLSession.shared
+    let url = URL(string: "https://masilotti.com")!
+    let expectation = self.expectation(description: "Wait for \(url) to load.")
+    var data: Data?
 
-    subject.get(url) { (theData, error) -> Void in
+    subject.dataTask(with: url) { (theData, _, _) in
         data = theData
         expectation.fulfill()
     }
 
-    waitForExpectationsWithTimeout(5, handler: nil)
+    waitForExpectations(timeout: 5, handler: nil)
     XCTAssertNotNil(data)
 }
 ```
 
 Beautiful! With just three extra lines of code we can set up an asynchronous test in Swift with some XCTest helpers. Bonus: we didn't have to tick the run loop or play with semaphores.
 
-## Async Testing FTW! Right?
+## Async testing FTW! Right?
 
 So we have a green test suite and everything seems to be in working order. But you might have noticed that this single test can take a while to run. Try changing the URL to point to a less reliable site. You will quickly notice that the time it takes to run your test suite quickly grows.
 
@@ -95,11 +97,11 @@ Well, what's so bad about a slow test suite? Take it from the experts.
 
 In my opinion the reason is even simpler. **The longer your test suite takes to run the less you will want to run it.** What's the point of putting all of this work into your tests when you only run them occasionally?
 
-### What About Stubbing the Network?
+### What about stubbing the network?
 
 The same holds true for stubbed out network requests. The `URLSession` API is inherently asynchronous. This means no matter how fast we get the "network" to return data each test still adds a nontrivial amount of time to our suite.
 
-## Flatten that Async
+## Flatten that async
 
 To keep our tests running fast let's completely flatten the code path. One thread, no asynchronous behavior, no network activity.
 
@@ -109,11 +111,10 @@ To do so we need to add two more variables to the `MockURLSession` we built when
 
 ``` swift
 class MockURLSession: URLSessionProtocol {
-    var nextData: NSData?
-    var nextError: NSError?
+    var nextData: Data?
+    var nextError: Error?
 
-    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult)
-        -> URLSessionDataTaskProtocol { /* ... */ }
+    func dataTaskWithURL(_ url: URL, completion: DataTaskResult) -> URLSessionDataTaskProtocol { /* ... */ }
 
     // ... //
 }
@@ -125,21 +126,22 @@ The completion handler would normally be called by the API when a real network r
 
 ``` swift
 class MockURLSession: URLSessionProtocol {
-    // ... //
+    private(set) var lastURL: URL?
 
-    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult)
-        -> URLSessionDataTaskProtocol
-    {
+    var nextData: Data?
+    var nextError: Error?
+
+    func dataTaskWithURL(_ url: URL, completion: @escaping DataTaskResult) -> URLSessionDataTaskProtocol {
         lastURL = url
-        completionHandler(nextData, nil, nextError)
-        return nextDataTask
+        completion(nextData, nil, nextError)
+        return URLSession.shared.dataTask(with: url)
     }
 }
 ```
 
 We now have more control of what happens when creating the data task. As soon as our tests call into this method the completion handler will be executed (on the same thread, too).
 
-### Testing Returned Data and Error
+### Testing returned data and error
 
 To continue our testing of `HTTPClient` let's assert what happens when the network returns valid data.
 
@@ -148,16 +150,27 @@ To continue our testing of `HTTPClient` let's assert what happens when the netwo
 3. Assert that the two data are the same.
 
 ``` swift
-func test_GET_WithResponseData_ReturnsTheData() {
-    let expectedData = "{}".dataUsingEncoding(NSUTF8StringEncoding)
-    session.nextData = expectedData
+class HTTPClientTests: XCTestCase {
+    var session: MockURLSession!
+    var subject: HTTPClient!
+    let url = URL(string: "https://masilotti.com")!
 
-    var actualData: NSData?
-    subject.get(NSURL()) { (data, _) -> Void in
-        actualData = data
+    override func setUpWithError() throws {
+        session = MockURLSession()
+        subject = HTTPClient(session: session)
     }
 
-    XCTAssertEqual(actualData, expectedData)
+    func test_GET_WithResponseData_ReturnsTheData() {
+        let expectedData = "{}".data(using: .utf8)
+        session.nextData = expectedData
+
+        var actualData: Data?
+        subject.get(url: url) { (data, _, _)  in
+            actualData = data
+        }
+
+        XCTAssertEqual(actualData, expectedData)
+    }
 }
 ```
 
@@ -167,9 +180,9 @@ Continuing that pattern we can easily test the scenario where we encounter a net
 func test_GET_WithANetworkError_ReturnsANetworkError() {
     session.nextError = NSError(domain: "error", code: 0, userInfo: nil)
 
-    var error: ErrorType?
-    subject.get(NSURL()) { (_, theError) -> Void in
-        error = theError
+    var error: Error?
+    subject.get(url: url) { (_, _, networkError) -> Void in
+        error = networkError
     }
 
     XCTAssertNotNil(error)
@@ -179,94 +192,28 @@ func test_GET_WithANetworkError_ReturnsANetworkError() {
 Not too bad, right? Now that we have some failing tests we can implement the bit of code to make them pass. We also need to create our own `ErrorType` to return when something goes wrong.
 
 ``` swift
-enum Error: ErrorType {
-    case NetworkError
+enum HTTPError: Error {
+    case network
 }
 
 class HTTPClient {
     // ... //
 
-    func get(url: NSURL, completion: HTTPResult) {
+    func get(url: URL, completion: @escaping HTTPResult) {
         let task = session.dataTaskWithURL(url) { (data, _, error) -> Void in
             if let _ = error {
-                completion(nil, Error.NetworkError)
+                completion(nil, HTTPError.network)
             } else {
                 completion(data, nil)
-            } 
-        }
-        task.resume()
-    }
-}
-
-```
-
-### Testing HTTP Status Codes
-
-Following the same pattern we can add tests for the `NSURLResponse` object in the completion handler. I like to use this to determine what the status code of the response contains. To keep it simple, let's assume that anything in the 200 range is valid; anything else we will return an error.
-
-``` swift
-func test_GET_WithAStatusCodeLessThan200_ReturnsAnError() {
-    session.nextResponse = NSHTTPURLResponse(URL: NSURL(), statusCode: 199,
-        HTTPVersion: nil, headerFields: nil)
-
-    var error: ErrorType?
-    subject.get(NSURL()) { (_, theError) -> Void in
-        error = theError
-    }
-
-    XCTAssertNotNil(error)
-}
-
-func test_GET_WithAStatusCodeGreaterThan299_ReturnsAnError() {
-    session.nextResponse = NSHTTPURLResponse(URL: NSURL(), statusCode: 300,
-        HTTPVersion: nil, headerFields: nil)
-
-    var error: ErrorType?
-    subject.get(NSURL()) { (_, theError) -> Void in
-        error = theError
-    }
-
-    XCTAssertNotNil(error)
-}
-```
-
-Again, our implementation is only an extra line or two of code. Oddly, `NSURLResponse` doesn't contain the HTTP status code. We need to cast it down to an `NSHTTPURLResponse` before validating that the code is valid.
-
-``` swift
-class HTTPClient {
-    // ... //
-
-    func get(url: NSURL, completion: HTTPResult) {
-        let task = session.dataTaskWithURL(url) { (data, response, error) -> Void in
-            if let _ = error {
-                completion(nil, Error.NetworkError)
-            } else if let response = response as? NSHTTPURLResponse where 200...299 ~= response.statusCode {
-                completion(data, nil)
-            } else {
-                completion(nil, Error.NetworkError)
             }
         }
         task.resume()
     }
 }
+
 ```
 
-Shout-out to [That Thing In Swift](https://twitter.com/objctoswift) for a making this a [one liner](https://thatthinginswift.com/write-your-own-api-clients-swift#your-own-api-client:9dff2813aaba86a6abcf6a856e613f57)!
-
-#### Cleaning Up Our Tests
-
-You might have noticed that creating the `NSURLHTTPResponse` under test is a little verbose. To combat this I created a small extension that takes one parameter, the status code. This has the added benefit of clearly showing intent when used in your tests.
-
-``` swift
-extension NSHTTPURLResponse {
-    convenience init?(statusCode: Int) {
-        self.init(URL: NSURL(), statusCode: statusCode,
-            HTTPVersion: nil, headerFields: nil)
-    }
-}
-```
-
-## What's Next?
+## What's next?
 
 You now have two different approaches to testing your networking layer. You can use XCTest's asynchronous extension to test a real HTTP request. Or you can stub out the network activity for a faster, synchronous test suite.
 

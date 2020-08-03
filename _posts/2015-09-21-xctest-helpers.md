@@ -1,12 +1,18 @@
 ---
 layout: post
-title:  "Custom Helpers in XCTest"
-date:   2015-09-21
+title: Custom helpers in XCTest
+date: 2015-09-21
 permalink: xctest-helpers/
 image: images/twitter/xctest-helpers.png?v3
 description: How to extract XCTest helper methods and keep sane failure messages.
 category: testing-swift
 ---
+
+<p class="text rounded-lg bg-blue-200 bg-opacity-25 text-blue-700 px-8 pt-4 pb-8 my-4">
+  Starting with Xcode 12, test failures automatically appear at the calling line!
+
+  <img src="/images/helper-failure-xcode-12.png" class="w-full rounded-lg mt-8 mb-0 lg:mb-0">
+</p>
 
 As your test suite grows it's important to keep your code DRY. Or, [Don't Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). You wouldn't implement the same method three times in your production code, so why do it in your tests?
 
@@ -17,9 +23,8 @@ For example, in UI Testing waiting for elements to appear is quite verbose. I do
 ````swift
 let element = app.buttons["Spike!"]
 let existsPredicate = NSPredicate(format: "exists == true")
-expectationForPredicate(existsPredicate,
-    evaluatedWithObject: element, handler: nil)
-waitForExpectationsWithTimeout(5, handler: nil)
+expectation(for: existsPredicate, evaluatedWith: element, handler: nil)
+waitForExpectations(timeout: 5, handler: nil)
 ````
 
 Let's tease out a method that waits for an element to appear.
@@ -27,36 +32,26 @@ Let's tease out a method that waits for an element to appear.
 ````swift
 private func waitForElementToAppear(element: XCUIElement) {
     let existsPredicate = NSPredicate(format: "exists == true")
-    expectationForPredicate(existsPredicate,
-        evaluatedWithObject: element, handler: nil)
-    waitForExpectationsWithTimeout(5, handler: nil)
+    expectation(for: existsPredicate, evaluatedWith: element, handler: nil)
+    waitForExpectations(timeout: 5, handler: nil)
 }
 ````
 
 Great! Now we can just call `waitForElementToAppear(app.cells["Joe"])` and our helper will take care of the rest. What happens when the test fails?
 
-![How A Helper Method Can Go Wrong](/images/helper-failure-incorrect.png "How A Helper Method Can Go Wrong")
+![Error message showing up in helper method, not calling line](/images/helper-failure-incorrect.png "Error message showing up in helper method, not calling line")
 
 Oh, wait, that's not good. I want the failure message to be as close to the line of code *that I wrote* as possible.
 
 Think about it as if you are writing a framework. Would you want to force your users to dig through the internal framework code just to see an error message? No, of course not. Let's move that message closer to the actual test.
 
-> This post has been updated for [Swift 2.2](https://swift.org/blog/swift-2-2-released/). For Swift 2.1 support, replace `#file` with `__FILE__` and `#line` with `__LINE__`.
-
 ````swift
 private func waitForElementToAppear(element: XCUIElement,
-    file: String = #file, line: UInt = #line) {
+                                    file: String = #file,
+                                    line: UInt = #line) {
     let existsPredicate = NSPredicate(format: "exists == true")
-    expectationForPredicate(existsPredicate,
-        evaluatedWithObject: element, handler: nil)
-
-    waitForExpectationsWithTimeout(5) { (error) -> Void in
-        if (error != nil) {
-            let message = "Failed to find \(element) after 5 seconds."
-            self.recordFailureWithDescription(message,
-                inFile: file, atLine: line, expected: true)
-        }
-    }
+    expectation(for: existsPredicate, evaluatedWith: element, handler: nil)
+    waitForExpectations(timeout: 5, handler: nil)
 }
 ````
 
@@ -71,6 +66,6 @@ The handler is called all the time and doesn't depened on whether the assertion 
 
 The `file` and `line` parameters are where the magic happens. By specifying them as optional the caller is not obligated to pass anything in. And by defaulting them to the `#file` and `#line` macros we can capture those attributes at the source; where are our methods is being *called*. The Swift blog has an awesome post peeking into [how Apple built `assert()` in Swift](https://developer.apple.com/swift/blog/?id=15).
 
-![Fixing the Failure Location of a Helper Method](/images/helper-failure-correct.png "Fixing the Failure Location of a Helper Method")
+![Error message correctly showing up on calling line](/images/helper-failure-correct.png "Error message correctly showing up on calling line")
 
 Ah, much better. Now we can add helper methods to our heart's content! We can continue passing these parameters down the chain and create a highly abstracted testing framework built on XCTest.

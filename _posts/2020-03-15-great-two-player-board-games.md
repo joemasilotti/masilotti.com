@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Great Two-Player Board Games"
+title: Great two-player board games
 date: 2020-03-15
 permalink: great-two-player-board-games/
 image: images/carcassonne-cropped.jpeg?v3

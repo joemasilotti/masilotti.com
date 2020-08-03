@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Better Unit Testing with Swift"
-date:   2020-03-31
+title: Better unit testing with Swift
+date: 2020-03-31
 permalink: better-swift-unit-testing/
 image: images/twitter/IDEPEM.png
 description: Ideas and best practices for real world Swift testing, including protocols, dependency injection, and Equatable.
 category: testing-swift
+xcode: 12.0
 ---
 
 > This article was updated on March 31, 2020. It includes feedback from a live session I hosted on testing in Swift. [Email me](mailto:joe@masilotti.com) if you want to join the next session!
@@ -34,7 +35,7 @@ The most important of these "rules" is to inject your dependencies. Without a so
 For example, let's look at a service layer object, `BoardGameService`. Its role is to retrieve data from an API and pass it along to a parser. Note that I'm assuming everything happens synchronously and cannot fail.
 
 ````swift
-class BoardGameService {
+struct BoardGameService {
     let api = BoardGameAPI()
     let parser = BoardGameParser()
 
@@ -49,14 +50,14 @@ How can we test that the correct path was passed to the API? There is no way to 
 Well, let's inject it!
 
 ````swift
-class BoardGameService {
+struct BoardGameService {
     let api: BoardGameAPI
 
     init(api: BoardGameAPI) {
         self.api = api
     }
 
-    ...
+    // ...
 }
 ````
 
@@ -88,9 +89,9 @@ protocol API {
     func json(path: String) -> JSON
 }
 
-class BoardGameAPI: API {
+struct BoardGameAPI: API {
     func json(path: String) -> JSON {
-        ...
+        // ...
     }
 }
 ````
@@ -98,21 +99,21 @@ class BoardGameAPI: API {
 Now that the dependency is straightened out, we need to make the consumer think in terms of protocols, not concrete classes.
 
 ````swift
-class BoardGameService {
+struct BoardGameService {
     let api: API
 
     init(api: API) {
         self.api = api
     }
 
-    ...
+    // ...
 }
 ````
 
 Beautiful. Now under test we create one more object to keep track of which methods get called with what. You only need to add this class to your test bundle.
 
 ````swift
-class MockAPI: API {
+struct MockAPI: API {
     var lastPath: String?
 
     func json(path: String) -> JSON {
@@ -125,7 +126,7 @@ class MockAPI: API {
 Note the instance variable, `lastPath`, which gets set upon calling `json()`. We use this property to assert that the function was called with the correct parameter.
 
 ````swift
-class BoardGameServiceTests: XCTestCase {
+struct BoardGameServiceTests: XCTestCase {
     func test_GettingABoardGame_BuildsThePath() {
         let api = MockAPI()
         let subject = BoardGameService(api: api)
@@ -146,7 +147,7 @@ One catch with this approach is that every time you create a `BoardGameService` 
 To remedy this we can use Swift's [default parameter values](https://developer.apple.com/library/watchos/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//apple_ref/doc/uid/TP40014097-CH10-ID169) for the initializer. This means that the object knows what it needs unless it's told otherwise. Set default values for all *static* dependencies, think anything other than a delegate or model object.
 
 ````swift
-class BoardGameService {
+struct BoardGameService {
     let api: API
     let parser: Parser
 
@@ -155,7 +156,7 @@ class BoardGameService {
         self.parser = parser
     }
     
-    ...
+    // ...
 }
 
 ````
@@ -171,27 +172,27 @@ When naming tests I make sure to follow one rule.
 What does that mean in practice? Well let's break down the `BoardGameService` test example.
 
 ````swift
-class BoardGameServiceTests: XCTestCase { // Test Class Name
-    func test_GettingABoardGame_BuildsThePath() { // Test Case
+struct BoardGameServiceTests: XCTestCase { // test class Name
+    func test_GettingABoardGame_BuildsThePath() { // test case
         let api = MockAPI()
-        let subject = BoardGameService(api: api) // Preconditions
+        let subject = BoardGameService(api: api) // preconditions
 
-        subject.boardGame(42) // Stimulus
+        subject.boardGame(42) // stimulus
 
-        XCTAssertEqual(api.lastPath, "/board-games/42") // Assertion
+        XCTAssertEqual(api.lastPath, "/board-games/42") // assertion
     }
 }
 ````
 
-The **Test Class Name** matches the name of the object under test. Simple.
+The **test class name** matches the name of the object under test. Simple.
 
-I like to name my **Test Case** so it is obvious to see what method is being called and what the assertion is. In this example `GettingABoardGame` correlates to calling `boardGame()` on the service. I like to name these to match the behavior, not necessarily the function name.  The last part introduces what the assertions are testing. Here, we want to make sure that the path that is sent to the API is correct, so `BuildsThePath`.
+I like to name my **test case** so it is obvious to see what method is being called and what the assertion is. In this example `GettingABoardGame` correlates to calling `boardGame()` on the service. I like to name these to match the behavior, not necessarily the function name.  The last part introduces what the assertions are testing. Here, we want to make sure that the path that is sent to the API is correct, so `BuildsThePath`.
 
-The **Preconditions** are where the test setup occurs. This can be injecting dependencies, initializing known values, or even other function calls. The idea is get the subject in a known state for the stimulus. I try to restrict my use of the `setUp()` method of XCTest for object instantiation.
+The **preconditions** are where the test setup occurs. This can be injecting dependencies, initializing known values, or even other function calls. The idea is get the subject in a known state for the stimulus. I try to restrict my use of the `setUp()` method of XCTest for object instantiation.
 
-Next, the **Stimulus** is where the actual "work" gets done. This is where you call the actual function on the object under test.
+Next, the **stimulus** is where the actual "work" gets done. This is where you call the actual function on the object under test.
 
-Finally, you list out your **Assertions**. By keeping these together and at the end it makes it easy to skim the tests and see what is being tested and where.
+Finally, you list out your **assertions**. By keeping these together and at the end it makes it easy to skim the tests and see what is being tested and where.
 
 As your application's test suite grows it can becomes harder to read and understand the tests you wrote. By constraining them to a shared format and cadence you are making it easier make changes in the future.
 
@@ -216,7 +217,7 @@ protocol Game {
     var maximumPlayers: UInt { get }
 }
 
-class BoardGame: Game {
+struct BoardGame: Game {
     let name: String
     let maximumPlayers: UInt
 
@@ -229,29 +230,24 @@ class BoardGame: Game {
 extension BoardGame: Equatable { }
 
 func ==(lhs: BoardGame, rhs: BoardGame) -> Bool {
-    return lhs.name == rhs.name &&
-        lhs.maximumPlayers == rhs.maximumPlayers
+    return lhs.name == rhs.name && lhs.maximumPlayers == rhs.maximumPlayers
 }
 ````
 
 Under test we can now use `XCTAssertEqual()` to ensure our mocks were called with the correct parameters.
 
 ````swift
-class BoardGameParserTests: XCTestCase {
+struct BoardGameParserTests: XCTestCase {
     func test_ParsingValidJSON_ReturnsABoardGame() {
         let subject = BoardGameParser()
         let json = ["name": "Carcassonne", "maximumPlayers": 5]
-        let expectedBoardGame = BoardGame(
-            name: "Carcassonne",
-            maximumPlayers: 5
-        )
+        let expectedBoardGame = BoardGame(name: "Carcassonne", maximumPlayers: 5)
 
         let actualBoardGame = subject.parse(json)
 
         XCTAssertEqual(actualBoardGame, expectedBoardGame)
     }
 }
-
 ````
 
 Oh, and if you're looking for [great two player board games]({% post_url 2020-03-15-great-two-player-board-games %}) I've got you covered!

@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Capture Completion Blocks with Cedar BDD"
-date:   2015-07-20
+title: Capture completion blocks with Cedar BDD
+date: 2015-07-20
 permalink: completion-blocks-with-cedar/
 image: images/cedar-capture-blocks.png
 description: "Flatten out your asynchronous tests with and_do_block()."
 category: testing-objective-c
+xcode: 11.6
 ---
 
 [Cedar](http://github.com/pivotal/cedar) is a [behavior-driven development](http://guide.agilealliance.org/guide/bdd.html) framework for testing Objective-C. By following [Rspec-like syntax](http://www.rubydoc.info/gems/rspec-expectations/frames#Basic_usage), you can build up a series of interactions with your object under test.
@@ -18,7 +19,7 @@ Testing asynchronous code can be difficult in Cedar. Because the test suite is i
 
 But all hope is not lost. A small gem was introduced in [Cedar 0.9.7](https://github.com/pivotal/cedar/releases/tag/v0.9.7) that can help you easily navigate the world of completion blocks. 
 
-## Asynchronous Blocks
+## Asynchronous blocks
 
 Let's say your app fetches the latest movies from [Rotten Tomatoes](http://developer.rottentomatoes.com). The `MovieController` asks your `MovieService` for the most recent showtimes. Since a network request is involved, we need this call to be asynchronous. To accomplish this we can pass in a block parameter to be called when the movies are fetched.
 
@@ -34,7 +35,7 @@ When testing the `MovieController`, how can we test the interaction with its ser
 
 > **Q: What's the difference between a *double*, *stub*, *spy*, *mock*, and *fake*?**
 >
-> A: [objc.io's article on Testing](http://www.objc.io/issues/15-testing/mocking-stubbing/#when-would-you-want-to-use-some-sort-of-mock-object) has a great overview from [Mike Lazer-Walker](http://lazerwalker.com).
+> A: [objc.io's article on testing](http://www.objc.io/issues/15-testing/mocking-stubbing/#when-would-you-want-to-use-some-sort-of-mock-object) has a great overview from [Mike Lazer-Walker](http://lazerwalker.com).
 
 To accomplish this we can use [dependency injection](http://www.objc.io/issues/15-testing/dependency-injection/) to inject a service into the controller.
 
@@ -126,7 +127,7 @@ describe(@"and_do_block() with parameters", ^{
 
 Here we capture the passed in parameter, the index, and perform some formatting logic on it. This technique can easily be expanded to capture multiple arguments of different types. Just make sure your block parameters match your method signature.
 
-## Capture the Completion Handler
+## Capture the completion handler
 
 Back to our `MovieController` test, let's use `and_do_block()` to capture our block. If we update the `beforeEach` with the following, we now have a reference to our completion block.
 
@@ -175,7 +176,7 @@ context(@"when the service returns an error", ^{
 });
 ````
 
-## Code Quality
+## Code quality
 
 This approach to testing asynchronous Objective-C keeps our test suite synchronous, [which is a good thing](http://lowlevelbits.org/getting-rid-of-asynchronous-tests/). We don't have to mess with the run loop and there's no need to build up stacks of mock HTTP responses.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I Just Deleted Thousands of Records from Production 😬"
+title: I just deleted 2500 records from production 😬
 date: 2019-03-18
 permalink: deleted-records-from-prod/
 image: images/missing-records.jpg?v2
@@ -12,7 +12,7 @@ I woke up yesterday eager to add pretty social shares to my side project, [weTab
 
 ![missing-records](/images/missing-records.jpg)
 
-## Time to Sanity Check
+## Time to sanity check
 
 Something was going on. Did I somehow delete a bunch of records from production?
 
@@ -27,7 +27,7 @@ I figured out _which_ records were missing by comparing the IDs of all records i
 
 I had somehow lost over 2500 records. 😭
 
-## Backups? What Backups?
+## Backups? What backups?
 
 Ideally, this would be fixed by merging a database backup into the current dataset in production. I could have downloaded a dump from a week ago, found all the records, and uploaded those back to prod.
 
@@ -35,7 +35,7 @@ However, to keep Heroku expenses as low as possible I don't pay for the [$50 dat
 
 Luckily, my dataset is still very small (~30k records) so I can pull production into development every now and then. And my most recent dump was from before the random deletions started occurring! While not perfect, I figured I can write a script to manually export and import the records from development to production.
 
-## Export/Import Raw JSON
+## Export/import raw JSON
 
 1. Get the IDs of missing records (from before)
 2. Write each record to a file, as JSON
@@ -91,7 +91,7 @@ end
 ```
 
 
-## Root Cause Analysis
+## Root cause analysis
 
 None of this matters if the records continue to magically delete themselves. A rigorous seach for `destroy` and `delete` through the entire codebase lead me to a single culprit: the Google Calendar event importer.
 
@@ -117,7 +117,7 @@ In their defense, [Google does document](https://developers.google.com/calendar/
 
 > **status**: Deleted events are only guaranteed to have the id field populated.
 
-## Fixes and Looking Forward
+## Fixes and looking forward
 
 The quick fix is to _not_ delete the record when the Google Calendar event is cancelled. I made this change and deployed to ensure I didn't lose any more data.
 
@@ -134,7 +134,7 @@ But this event is still, well, cancelled. It shouldn't be shown to anyone. The c
 
 > **What's the difference between `id` and `i_cal_uid`?** Every event has a unique `id` per calender and repeating events all share the same `i_cal_uid`.
 
-## How to Prevent This
+## How to prevent this
 
 Phew. In the end I restored all but 17 records; I'll have to manually re-create those myself. But still, I never want to have to do this again. Here are some ways this could have been avoided:
 

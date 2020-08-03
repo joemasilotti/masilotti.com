@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "UI Testing with Stubbed Network Data"
-date:   "2016-03-04"
+title: UI Testing with stubbed network data
+date: 2016-03-04
 permalink: ui-testing-stub-network-data/
-description: "Learn how to stub network data when running UI Tests with the magic of some “secret” XCTest APIs."
+description: Learn how to stub network data when running UI Tests with the magic of some “secret” XCTest APIs.
 category: ui-testing
 series: "Testing URLSession"
+xcode: 12.0
 ---
 
 We've all been there. We get super excited to try out UI Testing and start to use it for all the app's flows. And then one of the tests requires the user to be logged in.
@@ -22,7 +23,7 @@ A quick overview of what we will cover:
 
 {% include series.html %}
 
-## Ramping Up
+## Ramping up
 
 This is part three of a series of posts on testing `URLSession`. If you haven't already read how to [mock classes you don't own]({% post_url 2016-01-11-testing-nsurlsession-1 %}) and [flatten asynchronous tests]({% post_url 2016-02-01-testing-nsurlsession-async %}), I suggest you do that now. 
 
@@ -30,13 +31,13 @@ To recap, we learned how to use [IDEPEM]({% post_url 2020-03-31-better-swift-uni
 
 Next we discussed the problems with hitting the network under test. We injected a fake `URLSession` that immediately executes its callbacks to speed up our test suite. This enables our networking tests to occur almost instantaneously and much more reliable.
 
-### Diving Right In
+### Diving right in
 
 If you haven't built out the code, you can checkout the GitHub repository at the [`part-3` tag](https://github.com/joemasilotti/TestingURLSession/releases/tag/part-3). This includes a working HTTP client with flattened asynchronous tests.
 
 As you read through the post, feel free to [follow along with the commits on GitHub](https://github.com/joemasilotti/TestingURLSession). Unfortunately XCTest is a pain to use with playgrounds so it's just an Xcode project.
 
-## Why We Shouldn't be Hitting the Network
+## Why we shouldn't be hitting the network
 
 Just like our unit tests, UI Tests should be [fast, isolated, and repeatable](https://pragprog.com/magazines/2012-01/unit-tests-are-first). When hitting the network, we introduce variables that our out of our control. This leads us to slow and nondeterministic tests which make it hard to verify error scenarios.
 
@@ -48,7 +49,7 @@ Finally, **how can you reliably test server errors?** Or network errors? You cou
 
 Now that I've convinced you, how can we get UI Testing to help us start stubbing requests?
 
-## Possible Testing Approaches
+## Possible testing approaches
 
 ### Mocking the `HTTPClient`
 
@@ -57,11 +58,11 @@ Our first attempt will be to mock our `HTTPClient` responses just like normal un
 You will have an `HTTPClient` that acts as the main interface to all networking if you've been following along with the previous posts. If not, no worries, here's the interface.
 
 ```swift
-typealias HTTPResult = (NSData?, ErrorType?) -> Void
+typealias HTTPResult = (Data?, ErrorType?) -> Void
 
 class HTTPClient {
     init(session: URLSessionProtocol = URLSession.defaultSession())
-    func get(url: NSURL, completion: HTTPResult)
+    func get(url: URL, completion: HTTPResult)
 }
 ```
 
@@ -75,7 +76,7 @@ Great! Now we can access the production code under test. Let's try and mock out 
 
 Short answer is that we don't. Our app could create many of these instances during its lifecycle but we have no control over where or when they are instantiated.
 
-#### `HTTPClient` Singleton
+#### `HTTPClient` singleton
 
 OK, let's break a small rule and make our client a singleton. It's all in the name of testing!
 
@@ -83,7 +84,7 @@ OK, let's break a small rule and make our client a singleton. It's all in the na
 class HTTPClient {
     static let sharedInstance = HTTPClient()
 
-    // ... //
+    // ...
 }
 ```
 
@@ -103,7 +104,7 @@ Also, you are adding the *entire mocking framework* to your application code. Th
 
 Granted, the wiki notes how you can work around this. The developers recommend ["resetting" your stubs when your app launches](https://github.com/AliSoftware/OHHTTPStubs/wiki/A-tricky-case-with-Application-Tests#a-workaround-if-you-really-need-it) to ensure this exact scenario never occurs. This approach requires some magic strings for gaining access to the class name and will not be compiler time type safe. I'll let you decide if it's worth brining in to your code.
 
-### Mock Server, Running Locally
+### Mock server, running locally
 
 Let's switch gears. Instead of relying on the code in Xcode let's push the responsibility somewhere else.
 
@@ -115,7 +116,7 @@ Second, you run the risk of the response data diverging from the *actual* respon
 
 Finally, it's hard to test for error scenarios. What happens when you want to test a POST to `/users/new` for both 200 and 500 responses? This can easily snowball into lots of code on your server just to manage the sequencing of requests.
 
-### Is There Something Better?
+### Is there something better?
 
 Two out of three of these approaches work. However, in my opinion their disadvantages far outweigh the solution to the problem they are trying to solve. Instead of trying to work around UI Testing let's take a closer look at the framework. Maybe something in the [XCTest documentation](/xctest-documentation) will give us a hint.
 
@@ -127,9 +128,8 @@ From the [documentation](/xctest-documentation/Classes/XCUIApplication.html#//ap
 
 > The **environment that will be passed to the application on launch**. If not modified, this is the environment that Xcode will pass on launch. Those variables can be changed, added to, or removed. Unlike NSTask, it is legal to modify the environment after the application has been launched. These changes will not affect the current launch session, but will **take effect the next time the application is launched**.
 >
-> ```swift
-> public var launchEnvironment: [String : String]
-> ```
+> `public var launchEnvironment: [String : String]`
+>
 
 Big deal. What does this actually mean? To start, this opens up a small "back door" to our production code from our UI Tests. And while it might not sound like a lot, it's actually quite a big deal.
 
@@ -151,17 +151,17 @@ class UITests: XCTestCase {
 }
 ```
 
-This dictionary is then exposed via the `environment` property via  `NSProcessInfo`. Access the string the same as any other dictionary in your production code.
+This dictionary is then exposed via the `environment` property via  `ProcessInfo`. Access the string the same as any other dictionary in your production code.
 
 ```swift
-if let answerToLife = NSProcessInfo.processInfo().environment["AnswerToLife"] {
+if let answerToLife = ProcessInfo.processInfo.environment["AnswerToLife"] {
     print(answerToLife)
 }
 ```
 
 Alright! Now that we have a way of passing data to our application, how can we use it to stub network requests?
 
-## Implementing a Stubbed URL Session
+## Implementing a stubbed URL session
 
 To actually stub out requests we need to add a tiny bit of code to our production app. It will be three small classes which total about 40 lines of code.
 
@@ -170,13 +170,10 @@ To actually stub out requests we need to add a tiny bit of code to our productio
 The simplest way to make a network request with `URLSession` is `dataTaskWithURL(_, completionHandler:)`. For now, let's assume that every request is routing through that method.
 
 ```swift
-typealias DataCompletion = (NSData?, NSURLResponse?, NSError?) -> Void
+typealias DataCompletion = (Data?, URLResponse?, Error?) -> Void
 
 class SeededURLSession: URLSession {
-    override func dataTaskWithURL(url: NSURL,
-        completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) ->
-        URLSessionDataTask
-    {
+    override func dataTaskWithURL(url: URL, completionHandler: (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         return SeededDataTask(url: url, completion: completionHandler)
     }
 }
@@ -188,28 +185,27 @@ Next, let's implement `SeededDataTask`. This, my lovely readers, is where the ma
 
 ```swift
 class SeededDataTask: URLSessionDataTask {
-  private let url: NSURL
-  private let completion: DataCompletion
+    private let url: URL
+    private let completion: DataCompletion
 
-  init(url: NSURL, completion: DataCompletion) {
-    self.url = url
-    self.completion = completion
-  }
-
-  override func resume() {
-    if let json = NSProcessInfo.processInfo().environment[url.absoluteString] {
-      let response = NSHTTPURLResponse(URL: url, statusCode: 200,
-        HTTPVersion: nil, headerFields: nil)
-      let data = json.dataUsingEncoding(NSUTF8StringEncoding)
-        completion(data, response, nil)
+    init(url: URL, completion: @escaping DataCompletion) {
+        self.url = url
+        self.completion = completion
     }
-  }
+
+    override func resume() {
+        if let json = ProcessInfo.processInfo.environment[url.absoluteString] {
+            let response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)
+            let data = json.data(using: .utf8)
+            completion(data, response, nil)
+        }
+    }
 }
 ```
 
 Again, hopefully very straightforward! When a `URLSessionDataTask` is created we must call `resume()` on it to kick off the networking. Now the subclass will first look for some JSON shoved in the `launchEnvironment`!
 
-### Setting the JSON Response in UI Tests
+### Setting the JSON response in UI Tests
 
 We can now easily stub out requests in our UI Test setup method. Remember, set the launch environment *before* the app is launched. Oh, let's also add a flag to the launch *arguments* so our app knows when we are UI Testing.
 
@@ -221,8 +217,7 @@ class UITests: XCTestCase {
         // ... //
 
         app.launchArguments += ["UI-TESTING"]
-        app.launchEnvironment["http://masilotti.com/api/posts.json"]
-            = "{\"posts\": \(postCount)}"
+        app.launchEnvironment["http://masilotti.com/api/posts.json"] = "{\"posts\": \(postCount)}"
         app.launch()
     }
 }
@@ -230,11 +225,11 @@ class UITests: XCTestCase {
 
 For now we can write represent the JSON as a full string. If your response is more complicated you could write structured JSON then convert it to a string. Or read it from disk.
 
-#### What Happened to my Equal Signs?
+#### What happened to my equal signs?
 
-As mentioned by [Nicholas Pachulski in the comments](http://masilotti.com/ui-testing-stub-network-data/#comment-2626296970), equal signs don't translate well via the launch environment. See his [post on the subject](http://pachulski.me/2016/addendum-to-ui-testing-with-stubbed-network-data/) for a quick and easy workaround.
+As mentioned by Nicholas Pachulski, equal signs don't translate well via the launch environment. See his [post on the subject](http://pachulski.me/2016/addendum-to-ui-testing-with-stubbed-network-data/) for a quick and easy workaround.
 
-### Using the Stubbed Session Under Test
+### Using the stubbed session under test
 
 OK, now we are getting somewhere. We have a reliable way to stub our requests and can set a distinct response for each URL. But how do we tell the app to actually *use* our beautifully crafted session?
 
@@ -247,13 +242,13 @@ struct Config {
 }
 
 private func UITesting() -> Bool {
-    return NSProcessInfo.processInfo().arguments.contains("UI-TESTING")
+  ProcessInfo.processInfo.arguments.contains("UI-TESTING")
 }
 ```
 
 Like I said, simple, right! We create a static method to check if we are actually UI Testing by looking for the magic string in the launch arguments. Whenever a client asks for `Config.urlSession` they are given the seeded one under test. Otherwise they receive real one.
 
-### Injecting the Seeded Session
+### Injecting the seeded session
 
 The final step ties all the loose ends together. Now that we have a way of determining *which* session to use, we actually have to *use* it.
 
@@ -265,7 +260,7 @@ class HTTPClient {
         self.session = session
     }
 
-    // ... //
+    // ...
 }
 ```
 
@@ -282,7 +277,7 @@ It took us a little while to get here, but we now have a nice, little framework 
 
 I think that adding a tiny bit of code to your production app is a small price to pay for the added functionality.
 
-## What's Next?
+## What's next?
 
 To keep the code small and concise `SeededURLSession` is always returning a 200 response. You could extend this technique to bake in the status code to the URL when seeding the response. Then you enable your framework to test all sorts of errors.
 

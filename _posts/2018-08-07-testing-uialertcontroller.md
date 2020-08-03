@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "How to Test UIAlertController"
+title: How to Test UIAlertController
 date: 2018-08-07
 permalink: testing-uialertcontroller/
 description: "Learn how to test UIAlertController with protocols, mocks, and dependency injection. No swizzling required."
 category: testing-swift
+xcode: 12.0
 ---
 
 Introduced in iOS 9, [`UIAlertController`](https://developer.apple.com/reference/uikit/uialertcontroller) is the quickest way to present alerts and action sheets to users on iOS. Powered by a simple, straightforward API, you can get something on the screen in just a few lines of code. However, overly hiding internal architecture, namely action handlers, makes testing this class quite difficult. Let’s learn how to test `UIAlertController` with protocols, mocks, and dependency injection. No swizzling required.
@@ -14,11 +15,12 @@ Introduced in iOS 9, [`UIAlertController`](https://developer.apple.com/reference
 A brief reminder of what we are working with.
 
 ```swift
-let alert = UIAlertController(title: "Alert Title", message: "Alert message.",
+let alert = UIAlertController(title: "Alert Title",
+                              message: "Alert message.",
                               preferredStyle: .alert)
 
-let confirmAction = UIAlertAction(title: "Confirm", style: .default) { (_) in
-    self.confirm()
+let confirmAction = UIAlertAction(title: "Confirm", style: .default) { [weak self] (_) in
+    self?.confirm()
 }
 alert.addAction(confirmAction)
 
@@ -30,7 +32,7 @@ controller.present(alert, animated: true, completion: nil)
 
 In description, you set the title and message, add some actions, then present the alert on a `UIViewController`.
 
-## What to Test
+## What to test
 
 Even in this tiny example I see four things that should be tested:
 
@@ -66,9 +68,7 @@ expect(alert.actions.map({ $0.title })).to(equal(["Confirm", "Cancel"]))
 
 Ideally, `UIAlertAction` would expose the attached `handler`. Then we could execute it under test and verify the correct behvaiour. But it doesn't, so we need to get creative.
 
-### 4. The controller the alert was presented on
-
-## How to Test
+## How to test
 
 Our first step is to keep track of the added actions and handlers.
 
@@ -76,21 +76,27 @@ One approach is to swizzle the calls to `addAction()` and save the parameters vi
 
 A second take "wraps" `UIAlertController` in a new class responsible for building and presenting the alert. This abstracts the existing Apple API, enabling us to store and reference parameters for later use (hint: in the tests!).
 
-### `AlertBuilder`
+### `AlertPresenter`
 
 At a minimum, the class needs to do three things: add actions, present the alert, and retrive stored action handlers. Each can be accomplished with their own method and saving a reference to each `UIAlertAction` in a dictionary.
 
 ```swift
+typealias AlertHandler = (UIAlertAction) -> Void
+
 class AlertPresenter {
     private var actionHandlers = [UIAlertAction: AlertHandler]()
 
-    func addAction(titled title: String, style: UIAlertActionStyle, handler: AlertHandler?) {
+    func addAction(titled title: String,
+                   style: UIAlertAction.Style, 
+                   handler: AlertHandler?) {
         let action = UIAlertAction(title: title, style: style, handler: handler)
         actionHandlers[action] = handler
     }
 
-    func present(title: String, message: String, on controller: ViewControllerPresentable) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    func present(title: String, message: String, on controller: UIViewController) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
         actionHandlers.keys.forEach({ alert.addAction($0) })
         controller.present(alert, animated: false, completion: nil)
     }

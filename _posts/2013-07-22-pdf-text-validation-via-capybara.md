@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "How to Test PDFs with Capybara"
-date:   2013-07-22
+title: How to test PDFs with Capybara
+date: 2013-07-22
 permalink: testing-pdfs/
 description: "Use familiar HTML testing tools to test drive PDF generation by combining wicked_pdf with some asset pipeline knowledge."
 category: ruby-on-rails
@@ -11,7 +11,7 @@ Validating that a web app's content is rendered correctly is an integral part of
 
 But what if you aren't displaying HTML to your users? What if the output is in a different format, like a PDF? **How do you validate PDF content using the standard RSpec and Capybara stack?**
 
-### Invalid Byte Sequence in UTF-8?
+### Invalid byte sequence in UTF-8?
 
 Under one of my feature specs I attempted to call `page.should have_content('some content')` on a rendered PDF. Unfortunately, an error is thrown: `invalid byte sequence in UTF-8`. This error signals that the document contains invalid encoding. The problem could be a couple of unknown characters or that the document is missing an encoding type. Either way, Capybara needs a way to grab the actual contents in a format it can understand.
 
@@ -23,13 +23,13 @@ My first attempt to test content of a PDF used wicked_pdf's [debug](https://gith
 
 However, the PDF may not line up with the HTML 100% using this method. This discrepancy causes problems when using complex CSS to render your pages; just because the spec passes via HTML doesn't guarantee the PDF will do the same. For example problems arise when using certain combinations of the `display:` property.
 
-### Asset Pipeline
+### Asset pipeline
 
 How the accompanying CSS is referenced is another issue with this approach. Providing an absolute reference to any assets is required, since the wkhtmltopdf binary is [run outside of your Rails application](https://github.com/mileszs/wicked_pdf#usage-conditions---important). For example, a CSS file is referenced with the `wicked_pdf_stylesheet_link_tag "pdf"` helper method.
 
 As a result, the HTML-rendered views grab CSS via a relative path while the PDF grabs CSS via an absolute path. While this is not an issue for a small app, this can become difficult to maintain once there are multiple CSS modules for different output formats.
 
-## `PDF::Reader` to the Rescue
+## `PDF::Reader` to the rescue
 
 A different approach is to leverage [pdf-reader](https://github.com/yob/pdf-reader)'s text rendering. You can then set the content of the Capybara `page` directly. First, render the PDF document and save it to a temporary local file. Then tell pdf-reader to parse the text to a standard format for Capybara to use. Finally, directly set Capybara's `@body` variable to the (now valid) PDF text contents.
 
@@ -59,4 +59,3 @@ Check out the [full solution on GitHub](https://gist.github.com/joemasilotti/604
 
 - Move `convert_to_pdf` to `spec_helper.rb` to gain access to the helper method in all of your specs.
 - Automatically convert PDF to text when the rendered content is detected as a PDF.
-

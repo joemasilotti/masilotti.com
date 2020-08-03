@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Joe's Favorite Things"
-date:   2016-01-18
+title: Joe's favorite things
+date: 2016-01-18
 permalink: favorite-things/
 image: images/twitter/favorite-things.png
 description: "All the stuff I'm enjoying right now: iOS apps and games, Mac productivity apps, card games, and programming books."
@@ -10,7 +10,7 @@ category: me
 
 Every now and then I'm asked for recommendations. Whether it be for iOS apps, computer hardware, or a fun board game, people are always looking for referrals. Instead of trying to reply to everyone, I present to you "Joe's Favorite Things," a subjective list of the stuff I use every day.
 
-> If you think I'm missing something, or just plain disagree, leave a comment below or <a href="https://twitter.com/intent/tweet?in_reply_to=689247171154210816" target="_blank">send me a tweet</a>. I'm more than happy to add it to the post!
+> If you think I'm missing something, or just plain disagree <a href="https://twitter.com/intent/tweet?in_reply_to=689247171154210816" target="_blank">send me a tweet</a>. I'm more than happy to add it to the post!
 
 ## iOS Apps
 

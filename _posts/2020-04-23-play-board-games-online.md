@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to play board games online with your friends"
+title: How to play board games online with your friends
 date: 2020-04-23
 permalink: play-board-games-online/
 image: images/zoom-and-dominion.png?v2

@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Three Ways UI Testing Just Made Test-Driven Development Even Better"
+title: Three ways UI Testing just made test-driven development even better
 date: 2015-08-03
 permalink: ui-testing-tdd/
 image: images/ui-testing-tdd.png
 description: "Generic querying syntax, first-class support, and native asynchronous assertions make for a great TDD experience on iOS."
 category: ui-testing
+xcode: 12.0
 ---
 
-With every Beta, UI Testing is getting better. As of Xcode 7 Beta 5, UI Testing is quickly becoming my go-to feature testing framework on iOS. Combined with XCTest for unit testing, it's becoming easier to not have to rely on any third-party frameworks. The three big reasons UI Testing offers a huge improvement to TDD on iOS are:
+With every Xcode UI Testing is getting better. As of Xcode 12, UI Testing has become my go-to feature testing framework on iOS. Combined with XCTest for unit testing, it's becoming easier to not have to rely on any third-party frameworks. The three big reasons UI Testing offers a huge improvement to TDD on iOS are:
 
 1. Generic querying syntax
 2. First-class support from Apple
@@ -16,7 +17,7 @@ With every Beta, UI Testing is getting better. As of Xcode 7 Beta 5, UI Testing 
 
 ![Test-Driven Development with UI Testing](/images/ui-testing-tdd.png "Test-Driven Development with UI Testing")
 
-## 1. Generic Querying Syntax
+## 1. Generic querying syntax
 
 UI Testing uses `XCUIElementQuery` to query elements in the app's view hierarchy. The syntax creates a buildable set of instructions to drill down to different parts of the screen.
 
@@ -26,7 +27,7 @@ UI Testing uses `XCUIElementQuery` to query elements in the app's view hierarchy
 
 > See more [UI Testing examples and documentation]({% post_url 2015-09-14-ui-testing-cheat-sheet %}).
 
-### The View Hierarchy Doesn't Matter
+### The view hierarchy doesn't matter
 
 Let's try asserting that a label changes after tapping a button. Our first pass at a failing test could look like this.
 
@@ -39,7 +40,7 @@ While this might look trivial, that's the point! We don't care where on the scre
 
 We write our tests as if our user were a caveman. "Touch Ignite button. See On Fire!" Our user doesn't care how the *code* is written to lay the views out, so why should our tests?
 
-### Internal Views Don't Need to be Exposed
+### Internal views don't need to be exposed
 
 You no longer have to expose views to the public interface just to test them. This keeps your interface clean to consumers without having to muddy it up with "testable" outlets. 
 
@@ -57,19 +58,19 @@ Since UI Testing is built by Apple there's no need to rely on any third parties.
 
 Since we are no longer relying on open source frameworks or tools, we have a much higher probability that things won't break between OS releases. If you've ever tried updating Frank or KIF from iOS 7 to 8, you can relate. These frameworks tend to lag behind the newest releases for months. And it's not that they don't try, but by relying on private frameworks and implementations you are bound to have to re-implement every time a major change rolls through.
 
-## 3. Native Asyncronous Assertions
+## 3. Native asyncronous assertions
 
 Before native support a lot of developers, [myself included](https://github.com/joemasilotti/JAMTestHelper), were inclinded to manually tick the run loop. The general idea is run an assertion over and over again while letting time pass just the tiniest bit in the app. If the assertion is still failing after five seconds or so, fail the test.
 
 ````swift
 // Don't do this any more!
-let startTime = NSDate.timeIntervalSinceReferenceDate()
+let startTime = NSDate.timeIntervalSinceReferenceDate
 let element = app.staticTexts["Wait for me"]
 while (!element.exists) {
-  if (NSDate.timeIntervalSinceReferenceDate() - startTime > 5.0) {
+    if (NSDate.timeIntervalSinceReferenceDate - startTime > 5.0) {
     XCTFail("Timed out waiting for element to exist.")
   }
-  CFRunLoopRunInMode(kCFRunLoopDefaultMode!, 0.1, 0)
+    CFRunLoopRunInMode(CFRunLoopMode.defaultMode!, 0.1, (0 != 0))
 }
 ````
 
@@ -79,18 +80,9 @@ Let's wait for a label to appear.
 
 ````swift
 let label = app.staticTexts["Hello, world!"]
-let exists = NSPredicate(format: "exists == 1")
-
-expectationForPredicate(exists, evaluatedWithObject: label, handler: nil)
-waitForExpectationsWithTimeout(5, handler: nil)
+XCTAssert(label.waitForExistence(timeout: 5))
 ````
 
-The predicate matches when the element exists, `(exists == 1)`. If five seconds pass before the expectation is met then the test will fail. You can also attach a handler block in that gets called when the expectation fails or times out.
+If five seconds pass before the expectation is met then the test will fail. You can also attach a handler block in that gets called when the expectation fails or times out.
 
 The big benefit here is that Xcode is attached to the app's run loop. There is no need to tick it manually while running an assertion over and over again. Manually messing with the run loop has never been a good idea; a lot of bugs in third-party frameworks can be traced back to doing just that.
-
-## It's Still in Beta
-
-As of Xcode 7 Beta 5, UI Testing still has some limitations. For example, there's no way to interact with `UIPickerViews` ([Radar 21854782](http://openradar.appspot.com/21854782)) or the pull-to-refresh gesture.
-
-However, even in beta it's proven to be more reliable than any existing third-party framework. Apple has been adding new features and patching bugs between beta releases as well. If you are getting started with a new iOS 9 app I would highly suggest taking a look.
