@@ -12,7 +12,7 @@ permalink: topics/
   <div class="flex flex-wrap text-center mt-4 md:-ml-4">
     {% for category in site.data.categories %}
       <div class="inline-flex items-center text-center">
-        <a href="#{{ category.slug }}" class="text-sm md:text-base mt-3 mr-1 items-center px-3 py-1 md:mt-4 md:mr-2 items-center md:px-3 md:py-2 rounded-full font-medium leading-5 bg-{{category.color}}-100 text-{{category.color}}-800">
+        <a href="#{{ category.slug }}" class="text-sm md:text-base mt-3 mr-1 items-center px-3 py-1 md:mt-4 md:mr-2 items-center md:px-3 md:py-2 rounded-full font-medium leading-5 bg-{{category.color}}-200 text-{{category.color}}-800">
           {{ category.name }}
         </a>
       </div>
@@ -22,7 +22,7 @@ permalink: topics/
   {% for category in site.data.categories %}
     <div class="mt-16 mb-8">
       <a name="{{ category.slug }}">
-        <h2 id="#{{ category.slug }}" class="text-center md:text-left rounded-full text-3xl font-medium leading-8 bg-{{category.color}}-100 text-{{category.color}}-800 md:-mx-8 px-8 py-5">
+        <h2 id="#{{ category.slug }}" class="text-center md:text-left rounded-full text-3xl font-medium leading-8 bg-{{category.color}}-200 text-{{category.color}}-800 md:-mx-8 px-8 py-5">
           {{ category.name }}
         </h2>
       </a>

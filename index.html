@@ -15,10 +15,10 @@ title: Masilotti.com
       <p class="mt-3 sm:mt-4 text-xl leading-7 text-gray-700">{{ site.tagline }}</p>
     </div>
 
-    <div class="mt-12 grid gap-16 border-t-2 border-gray-100 pt-12 lg:grid-cols-3 lg:col-gap-12 lg:row-gap-16">
+    <div class="mt-12 grid gap-16 border-t-2 border-gray-200 pt-12 lg:grid-cols-3 lg:col-gap-12 lg:row-gap-16">
       {% for post in site.posts limit:5 %}
         <div>
-          <div class="flex">
+          <div class="flex items-baseline">
             <div class="flex text-sm leading-5 text-gray-700 mr-8">
               <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
                 {{ post.date | date: '%B %-d, %Y' }}
@@ -28,7 +28,7 @@ title: Masilotti.com
             {% assign category = site.data.categories | where: "slug", post.category %}
             {% assign category = category.first %}
             <a href="/topics/#{{ category.slug }}" class="inline-block mr-4">
-              <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-{{category.color}}-100 text-{{category.color}}-800">
+              <span class="inline-flex items-center px-3 leading-6 rounded-full text-sm font-medium leading-5 bg-{{category.color}}-200 text-{{category.color}}-800 hover:bg-{{category.color}}-300">
                 {{ category.name }}
               </span>
             </a>
