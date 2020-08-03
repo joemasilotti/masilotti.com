@@ -2,7 +2,7 @@
 layout: post
 title: How to manage multiple sheets in SwiftUI
 description: A step-by-step journey on how I refactored an app to handle any number of sheets with ObservableObject and an enum.
-image: images/lego-heads.png
+image: images/lego-heads.jpg
 date: 2020-08-02
 permalink: multiple-sheets-swiftui/
 category: ios
