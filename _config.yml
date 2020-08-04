@@ -30,6 +30,9 @@ social:
     - https://www.linkedin.com/in/joemasilotti
     - https://github.com/joemasilotti
 
+include:
+  - .htaccess
+
 exclude:
   - yarn.lock
   - package-lock.json
