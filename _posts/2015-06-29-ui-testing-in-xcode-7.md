@@ -2,6 +2,8 @@
 layout: post
 title: Getting started with UI Testing in Xcode
 date: 2015-06-29
+seo:
+  date_modified: 2020-08-03
 permalink: ui-testing-xcode-7/
 image: images/xcode-testing.png
 description: "How to navigate around an lightly documented but powerful framework in Xcode 12."

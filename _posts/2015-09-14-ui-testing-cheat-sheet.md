@@ -2,6 +2,8 @@
 layout: post
 title: UI Testing cheat sheet and examples
 date: 2015-09-14
+seo:
+  date_modified: 2020-08-03
 permalink: ui-testing-cheat-sheet/
 image: images/twitter/ui-testing-cheat-sheet.png
 description: Answers to common “How do I test this with UI Testing?” questions. A quick reference for everything from tapping buttons to reordering table cells.

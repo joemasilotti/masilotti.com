@@ -2,6 +2,8 @@
 layout: post
 title: Testing Dictionaries with Swift and XCTest
 date: 2016-05-31
+seo:
+  date_modified: 2020-08-03
 permalink: testing-dictionaries/
 image: images/twitter/testing-dictionaries.png
 description: "A type-safe approach to testing dictionaries in Swift with clean failure messages."

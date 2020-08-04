@@ -2,6 +2,8 @@
 layout: post
 title: Three ways UI Testing just made test-driven development even better
 date: 2015-08-03
+seo:
+  date_modified: 2020-08-03
 permalink: ui-testing-tdd/
 image: images/ui-testing-tdd.png
 description: "Generic querying syntax, first-class support, and native asynchronous assertions make for a great TDD experience on iOS."

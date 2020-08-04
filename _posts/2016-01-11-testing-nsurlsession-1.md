@@ -2,6 +2,8 @@
 layout: post
 title: Mocking classes you don't own in Swift
 date: 2016-01-11
+seo:
+  date_modified: 2020-08-03
 permalink: testing-nsurlsession-input/
 image: images/twitter/testing-nsurlsession.png?v3
 description: "Not owning a class doesn't mean you can't mock it! Learn how to unit test URLSession with Swift and protocol-oriented programming."

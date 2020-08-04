@@ -2,6 +2,8 @@
 layout: post
 title: Custom helpers in XCTest
 date: 2015-09-21
+seo:
+  date_modified: 2020-08-03
 permalink: xctest-helpers/
 image: images/twitter/xctest-helpers.png?v3
 description: How to extract XCTest helper methods and keep sane failure messages.

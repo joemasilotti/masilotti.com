@@ -2,6 +2,8 @@
 layout: post
 title: How to Test UIAlertController
 date: 2018-08-07
+seo:
+  date_modified: 2020-08-03
 permalink: testing-uialertcontroller/
 description: "Learn how to test UIAlertController with protocols, mocks, and dependency injection. No swizzling required."
 category: testing-swift

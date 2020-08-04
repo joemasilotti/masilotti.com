@@ -2,6 +2,8 @@
 layout: post
 title: Better unit testing with Swift
 date: 2020-03-31
+seo:
+  date_modified: 2020-08-03
 permalink: better-swift-unit-testing/
 image: images/twitter/IDEPEM.png
 description: Ideas and best practices for real world Swift testing, including protocols, dependency injection, and Equatable.
