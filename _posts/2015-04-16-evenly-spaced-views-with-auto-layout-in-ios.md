@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Evenly Spaced Views with Auto Layout in iOS"
+title: Evenly Spaced Views with Auto Layout in iOS
 date: 2015-04-16
 permalink: evenly-spaced-views-auto-layout/
-description: "Visual guide to laying out multiple views that look great on all screen sizes with Interface Builder."
+description: Visual guide to laying out multiple views that look great on all screen sizes with Interface Builder.
 category: ios
 ---
 

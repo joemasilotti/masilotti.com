@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SwiftCoders podcast"
+title: SwiftCoders podcast
 date: 2016-09-26
 permalink: swiftcoders-podcast/
 image: images/twitter/swiftcoders.png

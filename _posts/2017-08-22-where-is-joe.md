@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Where has joe been?
+title: Where has Joe been?
 date: 2017-08-22
 permalink: where-is-joe/
 image: images/adrienne-and-joe.jpg
