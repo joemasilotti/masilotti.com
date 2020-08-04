@@ -9,6 +9,7 @@ plugins:
   - jekyll-purgecss
 
 author:
+  name: Joe Masilotti
   email: joe@masilotti.com
   github: joemasilotti
   linkedin: joemasilotti
