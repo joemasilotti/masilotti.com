@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testing URLSession with Swift
-permalink: /testing-nsurlsession
+permalink: testing-nsurlsession/
 summary: "Three posts covering testing URLSession with Swift. Learn how to mock class you don't own, flatten asynchronous tests, and stub data for UI Testing."
 ---
 
