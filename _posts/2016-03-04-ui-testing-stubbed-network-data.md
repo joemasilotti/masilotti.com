@@ -148,7 +148,7 @@ class UITests: XCTestCase {
         app.launch()
     }
 
-    // ... //
+    // ...
 }
 ```
 
@@ -215,7 +215,7 @@ class UITests: XCTestCase {
     let app = XCUIApplication()
 
     override func setUp() {
-        // ... //
+        // ...
 
         app.launchArguments += ["UI-TESTING"]
         app.launchEnvironment["http://masilotti.com/api/posts.json"] = "{\"posts\": \(postCount)}"
