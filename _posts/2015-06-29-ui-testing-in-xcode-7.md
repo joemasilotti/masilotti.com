@@ -196,7 +196,7 @@ You can use these new methods to manipulate maps. For example, to zoom in on the
 app.maps.element.pinch(withScale: 1.5, velocity: 1)
 ````
 
-According to the [documentation for UI Testing](/xctest-documentation/Classes/XCUIElement.html#//api/name/pinchWithScale:velocity:), the `scale` parameter will determine a zoom out or zoom in gesture. 
+According to the [documentation for UI Testing](https://developer.apple.com/documentation/xctest/xcuielement/1618669-pinch), the `scale` parameter will determine a zoom out or zoom in gesture.
 
 > Use a scale between 0 and 1 to “pinch close” or zoom out and a scale greater than 1 to “pinch open” or zoom in.
 
@@ -219,7 +219,7 @@ XCTAssert(app.staticTexts["iPhone 3GS"].exists)
 
 Note that this only works with a single picker on the screen. If you have more than one you will have to specify the picker explicitly where I called `element`.
 
-> [Relevant documentation on interacting with pickers](/xctest-documentation/Classes/XCUIElement.html#//api/name/adjustToPickerWheelValue:) 
+> [Relevant documentation on interacting with pickers](https://developer.apple.com/documentation/xctest/xcuielement/1618672-adjust)
 
 ### Hardware buttons
 

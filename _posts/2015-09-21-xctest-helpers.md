@@ -57,7 +57,9 @@ private func waitForElementToAppear(element: XCUIElement,
 }
 ````
 
-Here we are taking advantage of the manual failure override with `recordFailureWithDescription()`. This takes in a [failure message, file reference, line number, and a boolean](http://masilotti.com/xctest-documentation/Classes/XCTestCase.html#//api/name/recordFailureWithDescription:inFile:atLine:expected:). 
+Here we are taking advantage of the manual failure override with `recordFailureWithDescription()`. This takes in a [failure message, file reference, line number, and a boolean](https://developer.apple.com/documentation/xctest/xctestcase/1496269-recordfailure).
+
+> Note that this method has been deprecated; see the message above for newer versions of Xcode.
 
 - *message*: the copy that the user will see when the test fails
 - *file*: a reference to the file where the failure was originally recorded

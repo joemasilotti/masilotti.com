@@ -56,7 +56,7 @@ Fortunately, we don't need to win a riddling contest with Xcode to make it do wh
 
 Something magical happened when Xcode 6 was released. Apple decided to put a little more focus on their XCTest suite and added some bells and whistles. The most important, in my opinion, was the ability to test asynchronous code.
 
-The [documentation on `XCTestCase`](/xctest-documentation/Classes/XCTestCase.html) comments on the new category's functionality (emphasis mine).
+The [documentation on `XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase) comments on the new category's functionality (emphasis mine).
 
 > This category introduces support for asynchronous testing in XCTestCase. The mechanism allows you to specify one or more “expectations” that will **occur asynchronously as a result of actions in the test**. Once all expectations have been set, a “wait” API is called that will **block execution of subsequent test code** until all expected conditions have been fulfilled or a timeout occurs.
 

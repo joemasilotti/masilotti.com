@@ -120,18 +120,17 @@ Finally, it's hard to test for error scenarios. What happens when you want to te
 
 ### Is there something better?
 
-Two out of three of these approaches work. However, in my opinion their disadvantages far outweigh the solution to the problem they are trying to solve. Instead of trying to work around UI Testing let's take a closer look at the framework. Maybe something in the [XCTest documentation](/xctest-documentation) will give us a hint.
+Two out of three of these approaches work. However, in my opinion their disadvantages far outweigh the solution to the problem they are trying to solve. Instead of trying to work around UI Testing let's take a closer look at the framework. Maybe something in the [XCTest documentation](https://developer.apple.com/documentation/xctest) will give us a hint.
 
-Peeking under the covers, we notice a few classes directly related to UI Testing. One that stands out in particular is [`XCUIApplication`](/xctest-documentation/Classes/XCUIApplication.html). Here we note a few familiar faces, `launch()` and `terminate()`. But also two other interesting properties, `launchArguments` and `launchEnvironment`. *What are those?*
+Peeking under the covers, we notice a few classes directly related to UI Testing. One that stands out in particular is [`XCUIApplication`](https://developer.apple.com/documentation/xctest/xcuiapplication). Here we note a few familiar faces, `launch()` and `terminate()`. But also two other interesting properties, `launchArguments` and `launchEnvironment`. *What are those?*
 
 ## Working with `launchEnvironment`
 
-From the [documentation](/xctest-documentation/Classes/XCUIApplication.html#//api/name/launchEnvironment), emphasis mine:
+From the [documentation](https://developer.apple.com/documentation/xctest/xcuiapplication/1500427-launchenvironment):
 
-> The **environment that will be passed to the application on launch**. If not modified, this is the environment that Xcode will pass on launch. Those variables can be changed, added to, or removed. Unlike NSTask, it is legal to modify the environment after the application has been launched. These changes will not affect the current launch session, but will **take effect the next time the application is launched**.
+> `var launchEnvironment: [String : String] { get set }`
 >
-> `public var launchEnvironment: [String : String]`
->
+> If not modified, these are the environment variables that Xcode will pass to the application on launch. The environment variables can be changed, added to, or removed. Unlike [Process](https://developer.apple.com/documentation/foundation/process), it is also legal to modify the environment variables after the application has been launched. Such changes will not affect the current launch session, but will take effect the next time the application is launched.
 
 Big deal. What does this actually mean? To start, this opens up a small "back door" to our production code from our UI Tests. And while it might not sound like a lot, it's actually quite a big deal.
 

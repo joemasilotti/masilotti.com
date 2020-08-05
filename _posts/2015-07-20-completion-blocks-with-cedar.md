@@ -48,7 +48,7 @@ To accomplish this we can use [dependency injection](http://www.objc.io/issues/1
 @end
 ````
 
-> If you haven't used `NS_UNAVAILABLE` it's a great way to [improve the readability and predictability of your DI](/better-dependency-injection).
+> If you haven't used `NS_UNAVAILABLE` it's a great way to [improve the readability and predictability of your DI]({% post_url 2015-07-13-better-dependency-injection %}).
 
 Now in our test let's ensure the controller fetches the movies when the view loads.
 
