@@ -4,6 +4,9 @@ module.exports = {
   important: "html", // Override typography plugin with more specific selectors.
   purge: [],
   theme: {
+    aspectRatio: {
+      "16/9": [16, 9]
+    },
     extend: {
       colors: {
         primary: colors.green
@@ -50,5 +53,7 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
+    require("tailwindcss-responsive-embed"),
+    require("tailwindcss-aspect-ratio"),
   ],
 };

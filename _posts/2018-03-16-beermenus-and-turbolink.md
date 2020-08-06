@@ -20,15 +20,15 @@ I walkd through how BeerMenus supports desktop, mobile web, Android, and iOS wit
 
 ---
 
-<p class="responsive-wrap">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/xWJHy1ElG6E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
+<div class="embed-responsive aspect-ratio-16/9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xWJHy1ElG6E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 Feel free to follow along with the slides.
 
-<p class="responsive-wrap">
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRynAGN6pexj9XgECGEDU_tp8iENwB6ZrM22q5c9njXULmfnMT6-CPFrAl29Yma6CM4Cfp_BHWiD5lr/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="425" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="overflow: hidden;"></iframe>
-</p>
+<div class="embed-responsive aspect-ratio-16/9">
+  <iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vRynAGN6pexj9XgECGEDU_tp8iENwB6ZrM22q5c9njXULmfnMT6-CPFrAl29Yma6CM4Cfp_BHWiD5lr/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="425" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="overflow: hidden;"></iframe>
+</div>
 
 ---
 
