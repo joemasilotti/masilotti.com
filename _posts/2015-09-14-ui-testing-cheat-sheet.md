@@ -214,7 +214,7 @@ joeButton.press(forDuration: 0.5, thenDragTo: brianButton)
 
 ### How to "pull to refresh"
 
-To replicate this gesture we need to drop into the [`XCUICoordinate`](http://masilotti.com/xctest-documentation/Classes/XCUICoordinate.html) API. You can use these objects to interact with specific points on the screen, not necessarily tied to any particular element. This becomes very useful when we want to drag an element to a specific *location*.
+To replicate this gesture we need to drop into the [`XCUICoordinate`](https://developer.apple.com/documentation/xctest/xcuicoordinate) API. You can use these objects to interact with specific points on the screen, not necessarily tied to any particular element. This becomes very useful when we want to drag an element to a specific *location*.
 
 First, grab a reference to the first cell in your table. Then create a coordinate with zero offset, `CGVectorMake(0, 0)`. This will normalize a point right on top of the first cell.
 
