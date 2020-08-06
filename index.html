@@ -28,7 +28,7 @@ image: images/social.png
 
             {% assign category = site.data.categories | where: "slug", post.category %}
             {% assign category = category.first %}
-            <a href="/topics/#{{ category.slug }}" class="inline-block mr-4">
+            <a href="topics/#{{ category.slug }}" class="inline-block mr-4">
               <span class="inline-flex items-center px-3 leading-6 rounded-full text-sm font-medium leading-5 bg-{{category.color}}-200 text-{{category.color}}-800 hover:bg-{{category.color}}-300">
                 {{ category.name }}
               </span>
@@ -46,7 +46,7 @@ image: images/social.png
       {% endfor %}
 
       <div class="flex items-center mx-auto">
-        <a href="/topics" class="text-xl inline-flex items-center px-8 py-4 border border-gray-300 text-base leading-6 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500">
+        <a href="topics/" class="text-xl inline-flex items-center px-8 py-4 border border-gray-300 text-base leading-6 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500">
           Read more
           <span class="ml-2">&rarr;</span>
         </a>
