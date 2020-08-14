@@ -1,31 +1,47 @@
 - name: UI Testing
   slug: ui-testing
   color: red
+  lightColor: "fed7d7"
+  darkColor: "9b2c2c"
 
 - name: Swift Testing
   slug: testing-swift
   color: orange
+  lightColor: "feebc8"
+  darkColor: "9c4221"
 
 - name: iOS
   slug: ios
   color: yellow
+  lightColor: "fefcbf"
+  darkColor: "975a16"
 
 - name: Ruby on Rails
   slug: ruby-on-rails
   color: teal
+  lightColor: "b2f5ea"
+  darkColor: "285e61"
 
 - name: Web Dev
   slug: web
   color: blue
+  lightColor: "bee3f8"
+  darkColor: "2c5282"
 
 - name: Objective-C Testing
   slug: testing-objective-c
   color: indigo
+  lightColor: "c3dafe"
+  darkColor: "434190"
 
 - name: Board Games
   slug: board-games
   color: purple
+  lightColor: "e9d8fd"
+  darkColor: "553c9a"
 
 - name: Me
   slug: me
   color: green
+  lightColor: "c6f6d5"
+  darkColor: "276749"
