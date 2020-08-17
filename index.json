@@ -4,6 +4,12 @@ sitemap_exclude: y
 ---
 
 {
+  "intro": {
+    "intro": "{{ site.data.intro.intro }}",
+    "hero-1": "{{ site.data.intro.hero-1 }}",
+    "hero-2": "{{ site.data.intro.hero-2 }}",
+    "cta": "{{ site.data.intro.cta }}"
+  },
   "categories": [
     {% for category in site.data.categories %}{
       "name": "{{ category.name }}",
