@@ -16,6 +16,12 @@
   lightColor: "fefcbf"
   darkColor: "975a16"
 
+- name: Me
+  slug: me
+  color: green
+  lightColor: "c6f6d5"
+  darkColor: "276749"
+
 - name: Ruby on Rails
   slug: ruby-on-rails
   color: teal
@@ -30,18 +36,12 @@
 
 - name: Objective-C Testing
   slug: testing-objective-c
-  color: indigo
-  lightColor: "c3dafe"
-  darkColor: "434190"
-
-- name: Board Games
-  slug: board-games
   color: purple
   lightColor: "e9d8fd"
   darkColor: "553c9a"
 
-- name: Me
-  slug: me
-  color: green
-  lightColor: "c6f6d5"
-  darkColor: "276749"
+- name: Board Games
+  slug: board-games
+  color: pink
+  lightColor: "fed7e2"
+  darkColor: "97266d"
