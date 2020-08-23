@@ -3,7 +3,7 @@ layout: post
 title: How to test deep links with UI Testing
 description: Embedding a tiny HTTP server inside our test suite opens up a world of opportunity.
 date: 2020-08-12
-image: https://www.mugshotbot.com/m?url=https://masilotti.com/test-deep-links-with-ui-testing/
+image: https://www.mugshotbot.com/m?v=2&url=https://masilotti.com/test-deep-links-with-ui-testing/
 permalink: test-deep-links-with-ui-testing/
 category: ui-testing
 xcode: 12.0
