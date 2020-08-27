@@ -3,7 +3,7 @@ layout: post
 title: Great two-player board games
 date: 2020-03-15
 permalink: great-two-player-board-games/
-image: images/carcassonne-cropped.jpeg?v3
+image: images/great-two-player-board-games.jpeg
 description: "Deck-builders, card games, tile placement, and more. Some of my favorite board games to play with only two players."
 category: board-games
 ---
