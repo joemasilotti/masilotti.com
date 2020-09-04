@@ -3,7 +3,7 @@ layout: post
 title: Great two-player board games
 date: 2020-03-15
 permalink: great-two-player-board-games/
-image: images/great-two-player-board-games.jpeg
+image: https://www.mugshotbot.com/m?url=https://masilotti/great-two-player-board-games/
 description: "Deck-builders, card games, tile placement, and more. Some of my favorite board games to play with only two players."
 category: board-games
 ---
