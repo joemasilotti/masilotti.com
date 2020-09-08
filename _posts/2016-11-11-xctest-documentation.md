@@ -4,7 +4,7 @@ title: XCTest documentation
 date: 2016-11-11
 permalink: xctest-documentation/
 description: "Apple has officially sent me a cease and desist letter to take down my host of the XCTest Documentation."
-category: me
+category: masilotti.com
 ---
 
 Well, it was bound to happen sooner or later. Apple has officially sent me a [cease and desist letter](https://github.com/github/dmca/blob/master/2016/2016-11-10-Apple.md) to take down my host of the XCTest Documentation.

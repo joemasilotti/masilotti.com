@@ -5,7 +5,7 @@ date: 2017-08-22
 permalink: where-is-joe/
 image: images/adrienne-and-joe.jpg
 description: "What has Joe been up to since his last post?"
-category: me
+category: masilotti.com
 ---
 
 Last you heard from me I was chatting about [Waiting in XCTest]({% post_url 2017-01-25-xctest-waiting %}). Since I haven't posted in a while I felt it a good idea to give a quick update on where I've been and what I've been up to.

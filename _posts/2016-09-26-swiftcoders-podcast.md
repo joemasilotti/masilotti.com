@@ -5,7 +5,7 @@ date: 2016-09-26
 permalink: swiftcoders-podcast/
 image: images/twitter/swiftcoders.png
 description: Earlier this month week I spoke on the SwiftCoders podcast. The host and I talked about getting started in Swift, and, obviously, testing.
-category: me
+category: masilotti.com
 ---
 
 Earlier this month I spoke on the [SwiftCoders podcast](http://swiftcoders.podbean.com/e/25-joe-masilotti-lead-developer-at-beermenus) with the host, [Garric Nahapetian](https://twitter.com/garricn). We talked about getting started in Swift, how I went from a job at a big bank to the being the lead developer for BeerMenus, and, obviously, testing.

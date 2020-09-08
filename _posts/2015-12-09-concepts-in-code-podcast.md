@@ -5,7 +5,7 @@ date: 2015-12-09
 permalink: concepts-in-code-podcast/
 image: images/twitter/concepts-in-code.jpeg
 description: Last week I spoke on the Concepts in Code podcast. The cohosts and I chatted about testing in Swift, TDD, and pair programming.
-category: me
+category: masilotti.com
 ---
 
 Last week I spoke on the [Concepts in Code podcast](http://podcast.conceptsincode.com). The cohosts, [Hank Turowski](https://twitter.com/HankTurowski) and [BJ Miller](https://twitter.com/bjmillerltd), were kind enough to let me ramble about testing. We also got into some ideas for pair programming.
