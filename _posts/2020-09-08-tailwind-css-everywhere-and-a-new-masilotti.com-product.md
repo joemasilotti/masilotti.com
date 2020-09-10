@@ -49,9 +49,12 @@ Here’s an example. I set this page’s  `og:image` to `https://www.mugshotbot.
 
 <img src="/images/mugshot-bot-example.jpeg" alt="Mugshot Bot example image for this post" class="rounded shadow-lg"/>
 
-I’m currently working on adding customizations, dark mode, and more templates. If you’d like a sneak peek send me a Twitter message or email!
+I don't even have to download the image as it is hosted on S3 automatically. Which means I can automate images for my entire site in like five minutes.
+
+Up next are customizations, dark mode, and premium templates.
 
 ## Coming soon…
+
 I’m planning on releasing little updates like this every couple of weeks. I’d love to hear if this was interesting and if you want to learn more. Let me know what you think by sending me a message on Twitter or an email.
 
 I’ve also saved the best for last — I officially have a newsletter! Sign up for my thoughts on testing, development, and behind-the-scene looks at what I’m building.
