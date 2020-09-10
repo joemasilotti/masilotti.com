@@ -23,7 +23,7 @@ It was awesome to see the first PR bump my Lighthouse scores up to a perfect 100
 
 ## TailwindCSS colors in SwiftUI
 
-Keeping tune with my love of Tailwind I open sourced a new micro library, [TailwindCSS-SwiftUI](https://github.com/joemasilotti/TailwindCSS-SwiftUI). Micro because it has a single purple: add all 100 hand-picked [Tailwind colors](https://tailwindcss.com/docs/customizing-colors#default-color-palette) to your SwiftUI app.
+Keeping tune with my love of Tailwind I open sourced a new micro library, [TailwindCSS-SwiftUI](https://github.com/joemasilotti/TailwindCSS-SwiftUI). Micro because it has a single purpose: add all 100 hand-picked [Tailwind colors](https://tailwindcss.com/docs/customizing-colors#default-color-palette) to your SwiftUI app.
 
 ```swift
 import TailwindCSS_SwiftUI
