@@ -2,6 +2,7 @@
 layout: page
 title: About
 description: "The \"Masilotti.com Umbrella\" contains a few different areas of focus: consulting, coaching, and products."
+image: https://www.mugshotbot.com/m?color=green&url=https://masilotti.com/about
 intro: true
 permalink: about/
 ---
