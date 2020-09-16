@@ -1,22 +1,35 @@
 ---
 layout: page
 title: About
+description: "The \"Masilotti.com Umbrella\" contains a few different areas of focus: consulting, coaching, and products."
 intro: true
 permalink: about/
 ---
 
-I'm currently working with [Zaarly](https://zaarly.com) helping them fine-tune their iOS apps. I built their iOS and Android apps a few years ago we've been working together ever since.
-
-Previously, at [BeerMenus](https://www.beermenus.com) I was responsible for building and maintaining the website and native apps. I was also responsible for evaluating and integrating all infrastructure changes, performance improvements, and automated testing.
-
-Before working at BeerMenus, I spent a few years learning how to test code with [Pivotal Labs](http://pivotallabs.com). While there I worked on some amazing products including [Cue by Humana](https://press.humana.com/press-release/current-releases/cue-humana-gives-consumers-simple-health-reminders-apple-watch), MyHealth by Humana, and [InSite](https://www.cnbc.com/video/2017/06/19/insite-app-works-to-connect-you-on-and-offline.html).
-
-You can find more on my [LinkedIn profile](https://www.linkedin.com/in/joemasilotti/).
-
 ---
 
-On the side, I'm the founder of [weTabletop](https://www.wetabletop.com/remote-events), a directory for remote board game events. If you love board games then check it out! You can also track your played games with [beautiful pictures of the board](https://www.wetabletop.com/journals").
+The "Masilotti.com Umbrella", as I like to call it, contains a few different areas of focus.
 
-I also host a live web session on testing in Swift every month. Last session we had eight developers join and learn about protocols and mocking! [Send me an email](mailto:joe@masilotti.com) if you want to join next time.
+### Consulting
 
-Feel free to follow my open source projects on [GitHub](https://github.com/{{ site.author.github }}), reach out to me on [Twitter](https://twitter.com/{{ site.author.twitter }}) or [send me an email](mailto:joe@masilotti.com).
+First is consulting, where I help teams design, build, test, and deploy their products. Primarily Ruby on Rails sites, native iOS apps, and Turbolinks-powered hybrid mobile apps.
+
+My focus is clean, testable code and integrating into a company as much as possible. Expect to see me in your Slack and weekly meetings!
+
+I also work as "full-stack" across disciplines, tackling anything from background jobs to front-end Stimulus controllers. Or building the JSON API and SwiftUI app in concert.
+
+### Coaching
+
+Pair programming is the quickest way to level up your development skills. I take this to heart and offer live, 1:1 coaching in Ruby on Rails, iOS, and general testing best practices.
+
+These sessions range from teaching SwiftUI to new iOS developers to coaching entire teams on best practices. Occasionally, I run group sessions on specific topics, like UI Testing or Swift mocks.
+
+### Products
+
+My primary focus is [Mugshot Bot](https://www.mugshotbot.com?utm_source=masilotti.com), a zero effort social image generator. Plug in a URL and it spits out a beautifully designed, perfectly sized image to share on Facebook and Twitter. You can even point your `og:image` tag directly to Mugshot Bot's servers.
+
+On iOS I run a board game companion app for X-Wing, [X-Wing AI](https://xwing.app?utm_source=masilotti.com). The app simulates a human opponent with a believable yet unpredictable AI. This has been a huge welcome for a game that usually requires at least two people to play!
+
+Continuing the board game trend, I'm the founder of [weTabletop](https://www.wetabletop.com/remote-events?utm_source=masilotti.com), a directory for remote board game events. You can also track your played games with [beautiful pictures of the board](https://www.wetabletop.com/journals?utm_source=masilotti.com").
+
+{% include newsletter.html %}
