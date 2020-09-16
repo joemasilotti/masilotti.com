@@ -16,13 +16,13 @@ First is consulting, where I help teams design, build, test, and deploy their pr
 
 My focus is clean, testable code and integrating into a company as much as possible. Expect to see me in your Slack and weekly meetings!
 
-I also work as "full-stack" across disciplines, tackling anything from background jobs to front-end Stimulus controllers. Or building the JSON API and SwiftUI app in concert.
+I also work full stack across all disciplines, tackling anything from Sidekiq background jobs to front-end Stimulus controllers. Or building the JSON API and SwiftUI app in concert.
 
 ### Coaching
 
 Pair programming is the quickest way to level up your development skills. I take this to heart and offer live, 1:1 coaching in Ruby on Rails, iOS, and general testing best practices.
 
-These sessions range from teaching SwiftUI to new iOS developers to coaching entire teams on best practices. Occasionally, I run group sessions on specific topics, like UI Testing or Swift mocks.
+These sessions range from teaching SwiftUI to new iOS developers to coaching entire teams on high-level architecture. Occasionally, I run group sessions on specific topics, like UI Testing or Swift mocks.
 
 ### Products
 
