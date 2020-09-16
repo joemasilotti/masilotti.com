@@ -11,12 +11,12 @@ permalink: about/
 
 The "Masilotti.com Umbrella", as I like to call it, contains a few different areas of focus.
 
-<h3 class="flex items-center">
+<h2 class="flex items-center">
   <div class="w-8 h-8 text-gray-800 mr-3">
     {% include desktop_computer.svg %}
   </div>
   Consulting
-</h3>
+</h2>
 
 First is consulting, where I help teams design, build, test, and deploy their products. Primarily Ruby on Rails sites, native iOS apps, and Turbolinks-powered hybrid mobile apps.
 
@@ -24,23 +24,23 @@ My focus is clean, testable code and integrating into a company as much as possi
 
 I also work full stack across all disciplines, tackling anything from Sidekiq background jobs to front-end Stimulus controllers. Or building the JSON API and SwiftUI app in concert.
 
-<h3 class="flex items-center">
+<h2 class="flex items-center">
   <div class="w-8 h-8 text-gray-800 mr-3">
     {% include academic_cap.svg %}
   </div>
   Coaching
-</h3>
+</h2>
 
 Pair programming is the quickest way to level up your development skills. I take this to heart and offer live, 1:1 coaching in Ruby on Rails, iOS, and general testing best practices.
 
 These sessions range from teaching SwiftUI to new iOS developers to coaching entire teams on high-level architecture. Occasionally, I run group sessions on specific topics, like UI Testing or Swift mocks.
 
-<h3 class="flex items-center">
+<h2 class="flex items-center">
   <div class="w-8 h-8 text-gray-800 mr-3">
     {% include sparkles.svg %}
   </div>
   Products
-</h3>
+</h2>
 
 <div class="flex">
   <a href="https://www.mugshotbot.com?utm_source=masilotti.com" class="mx-8 flex-shrink-0">
