@@ -1,10 +1,13 @@
 <div class="max-w-3xl mx-auto px-4">
-  <div class="sm:flex items-center justify-center">
-    <img src="/images/joe.jpeg" alt="Picture of Joe Masilotti" class="w-64 sm:w-40 h-64 sm:h-40 object-top object-cover rounded-lg shadow-lg mx-auto" />
+  <div class="flex flex-col sm:flex-row items-center justify-center">
     <p class="text-xl sm:text-2xl tracking-tight font-light text-gray-700 mt-8 sm:mt-0 ml-0 sm:ml-6">{{ site.data.intro.intro }}</p>
+    <div class="flex flex-shrink-0 sm:order-first mt-4 items-center mr-auto">
+      <img src="/images/joe.jpeg" alt="Picture of Joe Masilotti" class="w-20 sm:w-40 h-20 sm:h-40 object-top object-cover rounded-full sm:rounded-lg shadow-lg mx-auto" />
+      <p class="sm:hidden text-base text-center ml-4">Joe Masilotti</p>
+    </div>
   </div>
 
-  <div class="md:flex md:items-center md:justify-between mb-16">
+  <div class="md:flex md:items-center md:justify-between mt-16 mb-16">
     <h2 class="text-2xl sm:text-3xl leading-9 sm:leading-10 font-extrabold tracking-tight text-gray-900 mt-8 mb-4">
       {{ site.data.intro.hero-1 }}
       <br>
