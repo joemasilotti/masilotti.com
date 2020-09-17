@@ -8,7 +8,7 @@ description: "Deck-builders, card games, tile placement, and more. Some of my fa
 category: board-games
 ---
 
-I’ve worked remotely for the past four years. First, at BeerMenus, a remote-only company. And now, doing [Ruby on Rails and iOS contract work](about/) for a variety of companies. Three years ago my wife, [Adrienne](https://www.twitter.com/adrienneksmith), and I decided to leave NYC and become digital nomads. In that time we’ve played a lot, and I mean *a lot*, of board games together.
+I’ve worked remotely for the past four years. First, at BeerMenus, a remote-only company. And now, doing [Ruby on Rails and iOS contract work](/about/) for a variety of companies. Three years ago my wife, [Adrienne](https://www.twitter.com/adrienneksmith), and I decided to leave NYC and become digital nomads. In that time we’ve played a lot, and I mean *a lot*, of board games together.
 
 Board games that are great for two players are hard to come by. A lot of games play best with three, four, or more players and have a tough time scaling down to two.
 
