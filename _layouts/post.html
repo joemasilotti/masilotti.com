@@ -35,7 +35,10 @@ layout: default
 
   <hr />
 
-  {% include xcode.html %}
+  <div class="flex space-x-6">
+    {% include time.html %}
+    {% include xcode.html %}
+  </div>
   {{ content }}
   {% include newsletter.html %}
 </article>

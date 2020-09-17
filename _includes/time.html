@@ -1,0 +1,9 @@
+{% capture words %}
+  {{ content | number_of_words | minus: 180 }}
+{% endcapture %}
+
+{% unless words contains '-' %}
+  <p class="inline-block text-sm rounded-full bg-green-200 bg-opacity-25 text-green-800 px-4 py-2">
+    {{ words | plus: 150 | divided_by: 150 | append: ' minute read' }}
+  </p>
+{% endunless %}
