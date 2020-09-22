@@ -2,7 +2,7 @@
 layout: post
 title: Tailwind CSS everywhere and a new Masilotti.com product
 description: It’s been a busy month! I’ve gone all in on Tailwind CSS, launched a new product, and started building a newsletter. Here’s what’s been keeping me busy.
-image: https://www.mugshotbot.com/m?color=green&url=https://masilotti.com/tailwind-css-and-mugshot-bot
+image: https://www.mugshotbot.com/m?theme=two_up&image=d33ff6b7&color=green&url=https://masilotti.com/tailwind-css-and-mugshot-bot
 date: 2020-09-08
 permalink: tailwind-css-and-mugshot-bot/
 category: masilotti.com
