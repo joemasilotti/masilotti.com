@@ -3,6 +3,7 @@
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+@import "_includes/prose";
 @import "_includes/syntax";
 
 @tailwind utilities;
