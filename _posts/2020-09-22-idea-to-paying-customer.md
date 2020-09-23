@@ -3,7 +3,7 @@ layout: post
 title: Idea to paying customer in one month
 description: A month ago I ran into a problem. One week later I solved it. And three weeks after that I turned it into a (tiny) business.
 date: 2020-09-22
-image: https://www.mugshotbot.com/m?theme=two_up&image=d33ff6b7&color=green&url=https://masilotti.com/idea-to-paying-customer
+image: https://www.mugshotbot.com/m?theme=two_up&image=d33ff6b7&color=green&url=https://masilotti.com/idea-to-paying-customer/
 permalink: idea-to-paying-customer/
 category: masilotti.com
 ---
