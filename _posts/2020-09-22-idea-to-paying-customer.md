@@ -2,13 +2,13 @@
 layout: post
 title: Idea to paying customer in one month
 description: A month ago I ran into a problem. One week later I solved it. And three weeks after that I turned it into a (tiny) business.
-date: 2020-09-21
+date: 2020-09-22
 image: https://www.mugshotbot.com/m?theme=two_up&image=d33ff6b7&color=green&url=https://masilotti.com/idea-to-paying-customer
 permalink: idea-to-paying-customer/
 category: masilotti.com
 ---
 
-A month ago I ran into a problem. One week later I solved it. And three weeks after that I turned it into a (tiny) business.
+When I get something in my head I dive in. And I dive deep. For example, a month ago I ran into a problem. One week later I solved it. And three weeks after that I turned it into a (tiny) business.
 
 Here’s how I went from an idea in a notebook to my first paying customer. In 31 days.
 
@@ -16,7 +16,7 @@ Here’s how I went from an idea in a notebook to my first paying customer. In 3
 
 ## The problem
 
-It started when I was finishing up a blog post. I had everything ready: the article was proof-read, the code samples were in place, and a gist was uploaded to GitHub.
+It started when I was finishing up a [blog post]({% post_url 2020-08-12-test-deep-links-with-ui-testing %}). I had everything ready: the article was proof read, the code samples were in place, and a gist was uploaded to GitHub.
 
 But I forgot about the social share image. You know, the little preview that pops up when you tweet a link.
 
@@ -26,7 +26,7 @@ So I vowed to never waste another second generating these images.
 
 ## The idea
 
-What if I could automate all my social share images? Instead of futzing with a tool, just drop a URL on my page and have that generate a decent looking preview.
+What if I could automate all my social share images? Instead of futzing with a tool, I wanted to just drop a URL on my page and have that generate a decent looking preview.
 
 So I jotted some notes for a MVP. What’s the absolute least I could build to get market validation?
 
@@ -45,7 +45,7 @@ Ah, the most exciting part of a project, creating a new app!
 
 I spent the better part of the next few days heads down getting something working. Rails, Active Storage, and `wkhtmlto*` were all key players in being able to build something so quickly.
 
-Having a tiny scope encouraged me to work on only what mattered. There was no pressure to make things look pretty yet, just get it working.
+Having a hyper-focused scope encouraged me to work on only what mattered. There was no pressure to make things look pretty yet, just get it working.
 
 ## Launch the MVP
 
@@ -55,11 +55,11 @@ Three days later I had something working. It was ugly and there was no landing p
 
 I [tweeted](https://twitter.com/joemasilotti/status/1296089448942379008) asking for beta testers and discovered a few folks who were interested in helping. A few DMs later and the images were live on three different blogs!
 
-I also posted to Hacker News with low expectations. But I made it to the top of the second page and generated over 2000 clicks.
+I also [posted to Hacker News](https://news.ycombinator.com/item?id=24335060) with low expectations. But I made it to the top of the second page and generated over 2000 clicks.
 
 ## Gather feedback, improve, rinse and repeat
 
-The next two weeks were spent talking to as many people as possible. And asking as many questions as they would answer.
+The next two weeks were spent talking to as many people as possible to ask as many questions as they would answer.
 
 I learned a lot of valuable information, including what to call these little images. Most importantly, people were excited. Turns out I wasn’t the only one running into this problem.
 
