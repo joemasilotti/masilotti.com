@@ -57,9 +57,7 @@ Having a hyper-focused scope encouraged me to work on only what mattered. There 
 
 Three days later I had something working. It was ugly and there was no landing page, but it worked.
 
-<div class="shadow-lg">
-  <img src="/images/mugshot-bot-v1.jpeg" alt="v1 of Mugshot Bot"/>
-</div>
+<img src="/images/mugshot-bot-v1.jpeg" alt="v1 of Mugshot Bot" class="shadow-lg" />
 
 I [tweeted](https://twitter.com/joemasilotti/status/1296089448942379008) asking for beta testers and discovered a few folks who were interested in helping. A few DMs later and the images were live on three different blogs!
 
@@ -73,7 +71,7 @@ I learned a lot of valuable information, including what to call these little ima
 
 During this time I also built out a landing page to test copy. This was helpful in learning how people describe the problem.
 
-![Mugshot Bot landing page](/images/mugshot-bot-landing.jpeg)
+<img src="/images/mugshot-bot-landing.jpeg" alt="Mugshot Bot landing page v1" class="shadow-lg" />
 
 Every feature from here on out has come from (potential) customer feedback. This was an important learning because I usually build things where I'm the only customer.
 
