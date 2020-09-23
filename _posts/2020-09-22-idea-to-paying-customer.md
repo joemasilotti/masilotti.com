@@ -105,9 +105,9 @@ It's easy to read books and learn how important this step is in building a produ
 
 In no way is this journey complete. Hell, it's only the beginning.
 
-<div class="shadow-lg">
-  <img src="/images/mugshot-bot-v3.jpg" alt="v3 of Mugshot Bot"/>
-</div>
+<a href="https://www.mugshotbot.com?utm_source=masilotti.com">
+  <img src="/images/mugshot-bot-v3.jpg" alt="v3 of Mugshot Bot" class="shadow-lg rounded-lg" />
+</a>
 
 Acquiring a customer is one of the most motivating things I've done since going independent. I've never been more excited about building something.
 
