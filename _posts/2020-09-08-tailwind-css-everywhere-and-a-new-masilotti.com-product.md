@@ -58,5 +58,3 @@ Up next are customizations, dark mode, and premium templates.
 I’m planning on releasing little updates like this every couple of weeks. I’d love to hear if this was interesting and if you want to learn more. Let me know what you think by sending me a message on Twitter or an email.
 
 I’ve also saved the best for last — I officially have a newsletter! Sign up for my thoughts on testing, development, and behind-the-scene looks at what I’m building.
-
-{% include newsletter.html %}
