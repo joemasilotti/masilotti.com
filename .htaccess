@@ -6,3 +6,4 @@ Header always set Content-Security-Policy "upgrade-insecure-requests;"
 
 Redirect /atom.xml /feed.xml
 Redirect /archive/ /topics/
+Redirect /2p-board-games /great-two-player-board-games/
