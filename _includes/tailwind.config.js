@@ -55,5 +55,6 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("tailwindcss-responsive-embed"),
     require("tailwindcss-aspect-ratio"),
+    require("@tailwindcss/ui"),
   ],
 };

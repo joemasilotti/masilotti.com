@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
+    "@tailwindcss/ui": "^0.6.2",
     "tailwindcss-responsive-embed": "^1.0.0"
   }
 }
