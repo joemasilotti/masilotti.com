@@ -2,11 +2,13 @@
 layout: post
 title: Idea to paying customer in one month
 description: A month ago I ran into a problem. One week later I solved it. And three weeks after that I turned it into a (tiny) business.
-date: 2020-09-22
+date: 2020-10-22
 image: https://www.mugshotbot.com/m?theme=two_up&image=d33ff6b7&color=green&url=https://masilotti.com/idea-to-paying-customer/
 permalink: idea-to-paying-customer/
 category: masilotti.com
 ---
+
+> Update: Mugshot Bot is [live on Product Hunt](https://www.producthunt.com/posts/mugshot-bot) today.
 
 When I get something in my head I dive in. And I dive deep. For example, a month ago I ran into a problem. One week later I solved it. And three weeks after that I turned it into a (tiny) business.
 
@@ -110,3 +112,9 @@ In no way is this journey complete. Hell, it's only the beginning.
 Acquiring a customer is one of the most motivating things I've done since going independent. I've never been more excited about building something.
 
 Watch this space for updates on [Mugshot Bot](https://www.mugshotbot.com?utm_source=masilotti.com) or sign up for my newsletter. Lots more is coming soon!
+
+## Product Hunt launch
+
+Today I launched [Mugshot Bot on Product Hunt](https://www.producthunt.com/posts/mugshot-bot) and it's been a whirlwind of a day! I'll be posting a post mortem here tomorrow; sign up for the newsletter to get notified.
+
+<a href="https://www.producthunt.com/posts/mugshot-bot?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-mugshot-bot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=271792&theme=light&period=daily" alt="Mugshot Bot - Automated link preview images for your website. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
