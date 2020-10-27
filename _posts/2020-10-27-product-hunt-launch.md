@@ -37,7 +37,7 @@ Anything worth elaborating on (but not quite long enough for a blog post) I’ve
 
 I’ve also been very active in the [Weekend Club](https://www.weekendclub.co) community on Slack. Shout out to [Charlie](https://twitter.com/charlierward) for running an amazing community.
 
-> Weekend Club is a weekend co-working community and a very supportive Slack group.
+> Weekend Club is a weekend co-working community and a very supportive Slack group. Mention `WEEKENDJOE` when you sign up for a free month.
 
 All of my metrics are [publicly available](https://www.mugshotbot.com/stats/), too: total visitors, registered accounts, MRR, etc.
 
