@@ -147,4 +147,4 @@ That’s everything that I learned during my first big Product Hunt launch. I ho
 
 My tl;dr is to build an audience before your launch. Without this you’ll be fighting an uphill battle.
 
-If you used this post to help your launch I’d love to hear about it. [Reply to this tweet](https://twitter.com/joemasilotti) or [send me an email](mailto:joe@masilotti.com) and we can talk shop.
+If you used this post to help your launch I’d love to hear about it. [Reply to this tweet](https://twitter.com/joemasilotti/status/1321129876938649600) or [send me an email](mailto:joe@masilotti.com) and we can talk shop.
