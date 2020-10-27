@@ -5,7 +5,7 @@ date: 2020-10-27
 description: "Yesterday I was the #5 product of the day on Product Hunt. Here's what I learned."
 image: https://www.mugshotbot.com/m?theme=two_up&mode=light&color=orange&pattern=diagonal_lines&image=9328d9e0&url=https://masilotti.com/product-hunt-what-worked
 layout: post
-permalink: /product-hunt-what-worked
+permalink: product-hunt-what-worked/
 title: "My Product Hunt launch: what worked and what didn't"
 ---
 
