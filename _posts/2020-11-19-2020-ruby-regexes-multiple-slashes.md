@@ -6,7 +6,7 @@ description: "A tiny tip to make regexes with multiple slashes a bit more readab
 image: https://www.mugshotbot.com/m?theme=two_up&mode=light&color=orange&pattern=diagonal_lines&image=9328d9e0&url=https://masilotti.com/ruby-regexes-multiple-slashes/
 layout: post
 permalink: ruby-regexes-multiple-slashes/
-title: Regexes containing multiple slashes in Ruby
+title: Regexes with multiple slashes in Ruby
 
 ---
 
