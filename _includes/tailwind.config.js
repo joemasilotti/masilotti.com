@@ -9,7 +9,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: colors.green
+        primary: colors.green,
       }
     },
     rotate: {
