@@ -3,7 +3,7 @@ bit: true
 category: ruby-on-rails
 date: 2020-11-19
 description: "A tiny tip to make regexes with multiple slashes a bit more readable in Ruby."
-image: https://www.mugshotbot.com/m?theme=two_up&mode=light&color=orange&pattern=diagonal_lines&image=9328d9e0&url=https://masilotti.com/ruby-regexes-multiple-slashes/
+image: https://www.mugshotbot.com/m?theme=two_up&mode=light&color=green&pattern=diagonal_lines&image=d33ff6b7&url=https://masilotti.com/ruby-regexes-multiple-slashes/
 layout: post
 permalink: ruby-regexes-multiple-slashes/
 title: Regexes with multiple slashes in Ruby
