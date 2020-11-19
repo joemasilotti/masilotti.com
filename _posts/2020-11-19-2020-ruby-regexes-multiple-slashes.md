@@ -38,6 +38,6 @@ The regex becomes something much more readable:
 
 GitHub's RuboCop styleguide has a recommendation on when to use this syntax.
 
-> Use `%r` only for regular expressions matching *more than* one ‘/‘ character. - [RubuCop Ruby Style Guide](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md#regular-expressions)
+> Use `%r` only for regular expressions matching *more than* one `/` character. - [RubuCop Ruby Style Guide](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md#regular-expressions)
 
 P.S. I could have probably just used two `#starts_with?` calls but where’s the fun in that?
