@@ -13,9 +13,11 @@ module.exports = {
       }
     },
     rotate: {
+      "-90": "-90deg",
       "-10": "-10deg",
       "0": "0",
-      "10": "10deg"
+      "10": "10deg",
+      "90": "90deg",
     },
     typography: theme => ({
       default: {
@@ -28,7 +30,11 @@ module.exports = {
           ".highlight": {
             borderRadius: theme("borderRadius.lg")
           },
-          'pre code': {
+          ".tldr code": {
+            backgroundColor: theme("colors.blue.200"),
+            color: theme("colors.blue.900"),
+          },
+          "pre code": {
             fontSize: theme("fontSize.sm")
           },
           code: {
