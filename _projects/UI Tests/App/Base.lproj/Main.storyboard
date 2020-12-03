@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="UI_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="vV2-NH-XBP"/>
                     <connections>
+                        <outlet property="presentModalButton" destination="4r1-LA-rqg" id="qdd-Vg-jZ5"/>
+                        <outlet property="pushDetailButton" destination="5Qf-qU-JZ3" id="zPv-ap-kgp"/>
                         <outlet property="textLabel" destination="a7N-mL-zN9" id="qVJ-l5-Tuf"/>
+                        <outlet property="toggleTextButton" destination="YPu-bC-JXp" id="pls-7p-IwV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -72,7 +75,7 @@
         <!--Detail View Controller-->
         <scene sceneID="TzY-v9-YHn">
             <objects>
-                <viewController id="96p-7W-J0X" customClass="DetailViewController" customModule="UI_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="96p-7W-J0X" customClass="DetailViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="coa-WZ-OUJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +121,7 @@
         <!--Modal View Controller-->
         <scene sceneID="8As-vD-PVw">
             <objects>
-                <viewController id="bws-9x-Sf9" customClass="ModalViewController" customModule="UI_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bws-9x-Sf9" customClass="ModalViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NiM-dL-nKS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
