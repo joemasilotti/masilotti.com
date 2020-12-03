@@ -3,50 +3,52 @@ import XCTest
 
 class Tests: XCTestCase {
     func testTappingAButton() throws {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard
-            .instantiateViewController(identifier: "Home")
-            as! HomeViewController
-        controller.loadViewIfNeeded()
-
-        controller.toggleTextButton.sendActions(for: .touchUpInside)
-
+        let controller = loadInitialViewController() as! HomeViewController
+        controller.toggleTextButton.tap()
         XCTAssertFalse(controller.textLabel.isHidden)
     }
 
     func testPushingAViewController() throws {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let navigationController = storyboard
-            .instantiateInitialViewController() as? UINavigationController
-        let homeViewController = navigationController?
-            .topViewController as! HomeViewController
-        homeViewController.loadViewIfNeeded()
+        let controller = loadInitialViewController() as! HomeViewController
 
-        homeViewController.pushDetailButton
-            .sendActions(for: .touchUpInside)
-        RunLoop.current.run(until: Date())
+        controller.pushDetailButton.tap()
 
-        XCTAssertEqual(navigationController?.viewControllers.count, 2)
-        XCTAssert(navigationController?.topViewController is DetailViewController)
+        XCTAssertEqual(controller.navigationController?.viewControllers.count, 2)
+        XCTAssert(controller.navigationController?.topViewController is DetailViewController)
     }
 
     func testPresentingAModalViewController() throws {
+        let window = UIWindow()
+        let controller = loadInitialViewController(in: window)
+            as! HomeViewController
+
+        controller.presentModalButton.tap()
+
+        XCTAssertNotNil(controller.navigationController?.presentedViewController)
+        XCTAssert(controller.navigationController?.presentedViewController is ModalViewController)
+    }
+}
+
+extension XCTestCase {
+    func loadInitialViewController(in window: UIWindow? = nil) -> UIViewController? {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let navigationController = storyboard
             .instantiateInitialViewController() as? UINavigationController
-        let homeViewController = navigationController?
-            .topViewController as! HomeViewController
+        let topViewController = navigationController?.topViewController
 
-        let window = UIWindow()
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
-        homeViewController.loadViewIfNeeded()
+        if let window = window {
+            window.rootViewController = navigationController
+            window.makeKeyAndVisible()
+        }
 
-        homeViewController.presentModalButton
-            .sendActions(for: .touchUpInside)
+        topViewController?.loadViewIfNeeded()
+        return topViewController
+    }
+}
+
+extension UIButton {
+    func tap() {
+        sendActions(for: .touchUpInside)
         RunLoop.current.run(until: Date())
-
-        XCTAssertNotNil(navigationController?.presentedViewController)
-        XCTAssert(navigationController?.presentedViewController is ModalViewController)
     }
 }
