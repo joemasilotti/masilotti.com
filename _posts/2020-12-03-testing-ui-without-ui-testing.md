@@ -306,4 +306,5 @@ I challenge you the next time you reach for XCUITest to take a step back. Ask yo
 This is the approach I’ve started to take more often recently and I’ve really been enjoying it. I still have some UI Tests but they are starting to dwindle. And my test suite has never been faster or more reliable.
 
 ## How are you testing your UI? 
-Have you had a better experience with UI Testing? Or adopted something similar to this? I’d love to hear what you think! Feel free to [reach out on Twitter](https://twitter.com/joemasilotti) or [message me](mailto:joe@masilotti.com).
+
+Have you had a better experience with UI Testing? Or adopted something similar to this? I’d love to hear what you think! Feel free to [discuss on GitHub](https://github.com/joemasilotti/masilotti.com/discussions/4) or [reach out on Twitter](https://twitter.com/joemasilotti).com).
