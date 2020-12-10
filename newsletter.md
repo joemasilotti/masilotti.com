@@ -9,12 +9,13 @@ title: Masilotti.com newsletter, edition I
 
 ---
 
-Hello and welcome to the first edition of my newsletter!
+Hello and welcome to the first edition of my newsletter! I'm planning on using this monthly communication to round up my latest posts and share exclusive content.
 
 This month I’m announcing a new open source Swift library, reviewing what I’m excited about with the recent Rails 6.1 release, and giving a sneak peek on some upcoming Mugshot Bot features.
 
 ## Swift and iOS
-Last week I published an article that’s been making its rounds on Twitter. In [Testing the UI without UI Testing](https://masilotti.com/testing-ui-without-ui-testing/) I explore a technique for writing feature-level tests in XCTest. With no dependency on UI Testing these are faster and more reliable.
+
+Last week I published an article about [Testing the UI without UI Testing](https://masilotti.com/testing-ui-without-ui-testing/). In the article, I explore a technique for writing feature-level tests in XCTest. With no dependency on UI Testing these are faster and more reliable.
 
 This inspired a small open source library, [Ruka](https://github.com/joemasilotti/ruka), which takes the ideas from the article another step. Here’s a small snippet to show how it works.
 
@@ -28,13 +29,15 @@ button?.tap()
 XCTAssertNotNil(try app.label(text: "You clicked the button."))
 ```
 
+The article has been making its rounds on Twitter. Have you tried this technique? [I'd love for you to weigh in](https://twitter.com/joemasilotti/status/1334532080240390145)!
+
 ## Ruby on Rails
 
-Yesterday [Rails 6.1 was released](https://weblog.rubyonrails.org/2020/12/9/Rails-6-1-0-release/) and there’s a ton of new features to explore. I’m most excited about Error Objects.
+Yesterday [Rails 6.1 was released](https://weblog.rubyonrails.org/2020/12/9/Rails-6-1-0-release/) and there are a ton of new features to explore. I’m most excited about Error Objects.
 
 > Active Model’s errors are now objects with an interface that allows your application to more easily handle and interact with errors thrown by models.
 
-There’s a new way to query for specific error messages and checking which errors have been added is more flexible. There’s a ton of information and code snippets in the [merged pull request](https://github.com/rails/rails/pull/32313).
+The release provides a new way to query for specific error messages and checking which errors have been added is more flexible. There’s a ton of information and code snippets in the [merged pull request](https://github.com/rails/rails/pull/32313).
 
 ### TIL
 
@@ -45,7 +48,7 @@ Two of my posts this months were quick snippets, “Today I learned” style.
 
 ## Indie hacking
 
-Over the last month my micro-saas, [Mugshot Bot](https://mugshotbot.com), has seen a lot of love.
+Over the last month my micro-SaaS, [Mugshot Bot](https://mugshotbot.com), has seen a lot of love.
 
 > [Mugshot Bot](https://mugshotbot.com) levels up your blog posts on social media by automating the annoying part: social share images.
 
@@ -57,8 +60,8 @@ There are [three new image templates just for GitHub repositories](https://mugsh
 
 Baby’s first WordPress plugin! Last weekend I spent the majority of Saturday working on a WordPress plugin for Mugshot Bot. I had *almost* forgot how different PHP is than Rails.
 
-Let me know if you’d like to give it a try - it definitely still has some rough edges!
+Reply here if you’d like to give it a try — it definitely still has some rough edges!
 
 ## Thanks for reading
 
-That’s all for this month. If you enjoyed this edition I’d love it if you could [share it with just one friend](https://twitter.com/intent/tweet?url=https%3A%2F%2Fmasilotti.com%2Fnewsletter&via=joemasilotti). Thank you!
+That’s all for this month. If you enjoyed this edition I’d love it if you could [share it on Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Fmasilotti.com%2Fnewsletter&via=joemasilotti). Thank you!
