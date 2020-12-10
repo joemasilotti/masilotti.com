@@ -8,7 +8,8 @@ permalink: ui-testing-stub-network-data/
 description: Learn how to stub network data when running UI Tests with the magic of some “secret” XCTest APIs.
 category: ui-testing
 series: "Testing URLSession"
-xcode: 12.0
+xcode: 12
+
 ---
 
 We've all been there. We get super excited to try out UI Testing and start to use it for all the app's flows. And then one of the tests requires the user to be logged in.

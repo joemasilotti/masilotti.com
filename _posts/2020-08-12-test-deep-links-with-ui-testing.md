@@ -6,7 +6,8 @@ date: 2020-08-12
 image: https://www.mugshotbot.com/m?theme=two_up&image=d33ff6b7&color=green&url=https://masilotti.com/test-deep-links-with-ui-testing/
 permalink: test-deep-links-with-ui-testing/
 category: ui-testing
-xcode: 12.0
+xcode: 12
+
 ---
 
 Deep linking, and even universal links, are an important part of the app ecosystem. They seamlessly link content inside your app to the external world. Often these flows have complex behaviors with lots of branching logic. All the more reason they need to be covered by automated testing.

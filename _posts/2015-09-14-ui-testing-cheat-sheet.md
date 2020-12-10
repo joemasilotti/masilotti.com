@@ -8,7 +8,8 @@ permalink: ui-testing-cheat-sheet/
 image: images/twitter/ui-testing-cheat-sheet.png
 description: Answers to common “How do I test this with UI Testing?” questions. A quick reference for everything from tapping buttons to reordering table cells.
 category: ui-testing
-xcode: 12.0
+xcode: 12
+
 ---
 
 Shortly after Apple's "Hey Siri" event the Xcode 7 GM was released to developers. Let's put the betas behind us and take a look at some real world UI Testing examples.

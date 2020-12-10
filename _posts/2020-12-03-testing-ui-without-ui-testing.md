@@ -6,7 +6,7 @@ image: https://www.mugshotbot.com/m?theme=two_up&mode=light&color=green&pattern=
 layout: post
 permalink: testing-ui-without-ui-testing/
 title: Testing the UI without UI Testing in Swift
-xcode: 12.0
+xcode: 12
 
 ---
 

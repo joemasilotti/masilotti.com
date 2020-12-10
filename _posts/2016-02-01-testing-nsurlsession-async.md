@@ -8,7 +8,8 @@ permalink: testing-nsurlsession-async/
 description: "Shave time off your test suite by flattening asynchronous tests. Learn how to mock more of URLSession to test response data, network errors, and status codes."
 category: testing-swift
 series: "Testing URLSession"
-xcode: 12.0
+xcode: 12
+
 ---
 
 You've sent your fully tested HTTP request off into the wild. Now, what happens when it returns? How do you test for response data? What about network errors? Server errors? Let's take a look at how to test these network responses, and more, in this second post on testing `URLSession`.

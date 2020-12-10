@@ -8,7 +8,8 @@ permalink: better-swift-unit-testing/
 image: images/twitter/IDEPEM.png
 description: Ideas and best practices for real world Swift testing, including protocols, dependency injection, and Equatable.
 category: testing-swift
-xcode: 12.0
+xcode: 12
+
 ---
 
 > This article was updated on March 31, 2020. It includes feedback from a live session I hosted on testing in Swift. [Email me](mailto:joe@masilotti.com) if you want to join the next session!

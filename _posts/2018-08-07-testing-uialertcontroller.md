@@ -7,7 +7,8 @@ seo:
 permalink: testing-uialertcontroller/
 description: "Learn how to test UIAlertController with protocols, mocks, and dependency injection. No swizzling required."
 category: testing-swift
-xcode: 12.0
+xcode: 12
+
 ---
 
 Introduced in iOS 9, [`UIAlertController`](https://developer.apple.com/reference/uikit/uialertcontroller) is the quickest way to present alerts and action sheets to users on iOS. Powered by a simple, straightforward API, you can get something on the screen in just a few lines of code. However, overly hiding internal architecture, namely action handlers, makes testing this class quite difficult. Let’s learn how to test `UIAlertController` with protocols, mocks, and dependency injection. No swizzling required.

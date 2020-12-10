@@ -8,7 +8,8 @@ permalink: xctest-waiting/
 image: images/twitter/waiting.png
 description: Waiting is hard, and waiting in Xcode is no exception. Learn a new approach with classes introduced in Xcode.
 category: ui-testing
-xcode: 12.0
+xcode: 12
+
 ---
 
 <p class="text rounded-lg bg-blue-200 bg-opacity-25 text-blue-700 px-8 py-4 my-4">

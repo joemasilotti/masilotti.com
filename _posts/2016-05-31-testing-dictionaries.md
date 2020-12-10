@@ -8,7 +8,8 @@ permalink: testing-dictionaries/
 image: images/twitter/testing-dictionaries.png
 description: "A type-safe approach to testing dictionaries in Swift with clean failure messages."
 category: testing-swift
-xcode: 12.0
+xcode: 12
+
 ---
 
 Dictionaries are the ultimate data courier. They can encapsulate different types of information to pass around your codebase. However, their very nature of dynamism makes them tricky to test in Swift. With a few rules, you can easily create robust, complete, and statically typed XCTest test cases for dictionaries.

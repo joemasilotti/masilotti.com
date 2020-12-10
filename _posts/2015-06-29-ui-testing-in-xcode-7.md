@@ -8,7 +8,8 @@ permalink: ui-testing-xcode-7/
 image: images/xcode-testing.png
 description: "How to navigate around an lightly documented but powerful framework in Xcode 12."
 category: ui-testing
-xcode: 12.0
+xcode: 12
+
 ---
 
 Apple finally decided to double down on user interface testing at WWDC 2015. Let's take a deep dive into the current API and see what we find.

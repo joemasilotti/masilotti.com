@@ -10,6 +10,7 @@ description: "Not owning a class doesn't mean you can't mock it! Learn how to un
 category: testing-swift
 series: Testing URLSession
 xcode: 12.0
+
 ---
 
 My go-to approach when unit-testing Swift is [protocol-oriented programming](https://developer.apple.com/videos/play/wwdc2015-408/). As requested by you, let's see a real-world example. What better way to show some code than with the networking stack, something every iOS developer has dealt with!
