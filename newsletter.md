@@ -1,0 +1,64 @@
+---
+date: 2020-12-10
+description: "Announcing a new open source Swift library, Error Objects in Rails 6.1 release, and a Mugshot Bot sneak peek."
+edition: I
+image: https://www.mugshotbot.com/m?theme=two_up&mode=light&color=green&pattern=diagonal_lines&image=d33ff6b7&url=https://masilotti.com/newsletter/
+layout: newsletter
+permalink: newsletter/
+title: Masilotti.com newsletter, edition I
+
+---
+
+Hello and welcome to the first edition of my newsletter!
+
+This month I’m announcing a new open source Swift library, reviewing what I’m excited about with the recent Rails 6.1 release, and giving a sneak peek on some upcoming Mugshot Bot features.
+
+## Swift and iOS
+Last week I published an article that’s been making its rounds on Twitter. In [Testing the UI without UI Testing](https://masilotti.com/testing-ui-without-ui-testing/) I explore a technique for writing feature-level tests in XCTest. With no dependency on UI Testing these are faster and more reliable.
+
+This inspired a small open source library, [Ruka](https://github.com/joemasilotti/ruka), which takes the ideas from the article another step. Here’s a small snippet to show how it works.
+
+```swift
+import XCTest
+import Ruka
+
+let app = App(controler: HomeViewController())
+let button = try app.button(title: "Click me!")
+button?.tap()
+XCTAssertNotNil(try app.label(text: "You clicked the button."))
+```
+
+## Ruby on Rails
+
+Yesterday [Rails 6.1 was released](https://weblog.rubyonrails.org/2020/12/9/Rails-6-1-0-release/) and there’s a ton of new features to explore. I’m most excited about Error Objects.
+
+> Active Model’s errors are now objects with an interface that allows your application to more easily handle and interact with errors thrown by models.
+
+There’s a new way to query for specific error messages and checking which errors have been added is more flexible. There’s a ton of information and code snippets in the [merged pull request](https://github.com/rails/rails/pull/32313).
+
+### TIL
+
+Two of my posts this months were quick snippets, “Today I learned” style.
+
+1. [Regexes with multiple slashes in Ruby](https://masilotti.com/ruby-regexes-multiple-slashes/)  walks through a (new to me!) syntax for regexes that makes reading them a bit easier on the eyes.
+2. [Redirect www traffic to a naked domain in Rails](https://masilotti.com/rails-redirect-www/) covers my experience trying to get `www.mugshotbot.com` to redirect to `mugshotbot.com`. There are a few gotchas but once everything is laid out it’s not much work.
+
+## Indie hacking
+
+Over the last month my micro-saas, [Mugshot Bot](https://mugshotbot.com), has seen a lot of love.
+
+> [Mugshot Bot](https://mugshotbot.com) levels up your blog posts on social media by automating the annoying part: social share images.
+
+I’ve added URL-specific images, custom meta tags to change content on the fly, and an option to change the title/description of the image manually.
+
+There are [three new image templates just for GitHub repositories](https://mugshotbot.com/github). Upload this image to GitHub and when you share on Twitter it will automatically show up in your post.
+
+### WordPress plugin
+
+Baby’s first WordPress plugin! Last weekend I spent the majority of Saturday working on a WordPress plugin for Mugshot Bot. I had *almost* forgot how different PHP is than Rails.
+
+Let me know if you’d like to give it a try - it definitely still has some rough edges!
+
+## Thanks for reading
+
+That’s all for this month. If you enjoyed this edition I’d love it if you could [share it with just one friend](https://twitter.com/intent/tweet?url=https%3A%2F%2Fmasilotti.com%2Fnewsletter&via=joemasilotti). Thank you!

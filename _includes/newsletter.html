@@ -1,4 +1,4 @@
-<div class="sm:pt-4 pb-8">
+<div class="sm:pt-4">
   <h2 class="text-3xl lg:text-3xl leading-9 font-extrabold tracking-tight text-gray-900">
     Testing, development, and product sneak peeks.
     <br class="hidden sm:inline">
@@ -10,9 +10,17 @@
     <input type="hidden" name="ml-submit" value="1">
 
     <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-      <button class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-400 focus:outline-none focus:bg-green-400 transition duration-150 ease-in-out">
+      <button class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:bg-green-400 transition duration-150 ease-in-out">
         Sign up
       </button>
     </div>
+
+    {% if include.hide_latest != true %}
+      <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+        <a href="/newsletter/" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-white hover:bg-gray-50 no-underline">
+          Read the latest
+        </a>
+      </div>
+    {% endif %}
   </form>
 </div>
