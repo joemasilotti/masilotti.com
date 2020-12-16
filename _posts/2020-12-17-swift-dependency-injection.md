@@ -70,7 +70,7 @@ struct Controller {
 }
 ```
 
-However, we lost our code seam to inject fakes or mocks when under test.
+But we lost our code seam to inject fakes or mocks when under test.
 
 ## Abstract to a protocol
 
@@ -110,14 +110,14 @@ let controller = Controller(injector: injector)
 // ...
 ```
 
- `FakeInjector` has the added benefit of only requiring instantiating fakes we care about. Said another way, we can let the fake coordinator do its job (nothing) when worrying about interaction with the router.
+ `FakeInjector` has the added benefit of only requiring instantiating fakes we care about. We let the fake coordinator do its job (nothing) and only care about interaction with the router.
 
 ```swift
 controller.tapButton("Read blog")
 XCTAssert(injector.router.lastPath, "/blog")
 ```
 
-But we still have one issue. Each instance is being instantiated every single time the injector is created. If `Router` is at all expensive it to create it could have a huge impact on performance.
+But we still have one issue. Each instance is being instantiated every single time we create the injector. If `Router` is at all expensive it to create it could have a huge impact on performance.
 
 ## Make all variables lazy
 
@@ -131,12 +131,12 @@ class Injector: Injectable {
 }
 ```
 
-The same approach could be applied to the `FakeInjector` but it’s not necessary. Your fakes/mocks should be tiny and easy to spin up. No other code changes are needed.
+We could apply the same approach to the `FakeInjector` but it’s not necessary. Your fakes/mocks should be tiny and easy to spin up. No need to make any other code changes.
 
 ## Taking it further
 
-I’ve been using some version of this approach on all of my projects since I discovered it. It’s concise, has a very small surface area, and doesn’t require additional third-party code.
+I’ve been using some version of this approach on all my projects since I discovered it. It’s concise, has a very small surface area, and all without third-party code.
 
-The big downside is the `Injectable` protocol and associated classes tend to grow pretty quickly. I’ve been liberal with the `MARK:`s in keeping things organized.
+The big downside is the `Injectable` protocol and associated classes tend to grow fast. I'm keeping things organized with liberal use of `MARK:`s.
 
 How do you do dependency injection in Swift? Do you use a particular library or are you more inclined to roll your own? [I'd love to know what you think on Twitter!](https://twitter.com/joemasilotti)
