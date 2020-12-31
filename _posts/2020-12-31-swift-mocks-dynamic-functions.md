@@ -2,9 +2,9 @@
 category: testing-swift
 date: 2020-12-31
 description: "How to verify which messages a Swift mock receives with less boilerplate and no third-party code."
-image: https://www.mugshotbot.com/m?theme=two_up&mode=light&color=green&pattern=diagonal_lines&image=d33ff6b7&url=https://masilotti.com/dynamically-verified-swift-mocks
+image: https://www.mugshotbot.com/m?theme=two_up&mode=light&color=green&pattern=diagonal_lines&image=d33ff6b7&url=https://masilotti.com/dynamically-verified-swift-mocks/
 layout: post
-permalink: dynamically-verified-swift-mocks
+permalink: dynamically-verified-swift-mocks/
 title: Dynamically verified Swift mocks
 xcode: 12
 
