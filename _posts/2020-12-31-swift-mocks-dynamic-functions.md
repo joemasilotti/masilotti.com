@@ -12,7 +12,7 @@ xcode: 12
 
 December has been a month of discovery for me. I’ve been exploring alternative approaches to different testing techniques in Swift.
 
-Everything kicked off with a little experiment on [how to test the UI without UI Testing]({% post_url 2020-12-03-testing-ui-without-ui-testing %}). This got me thinking, what if we continue to bring more code “in house?” Less dependencies and more bespoke solutions.
+Everything kicked off with a little experiment on [how to test the UI without UI Testing]({% post_url 2020-12-03-testing-ui-without-ui-testing %}). This got me thinking, what if we continue to bring more code “in house?” Fewer dependencies and more bespoke solutions.
 
 That lead to [rolling your own dependency injection in Swift]({% post_url 2020-12-17-swift-dependency-injection %}). This explores a technique I’ve been using for a while but hadn’t yet talked much about.
 
