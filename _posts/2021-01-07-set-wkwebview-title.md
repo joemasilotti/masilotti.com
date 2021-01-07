@@ -131,4 +131,22 @@ private class NavigationDelegate: NSObject, WKNavigationDelegate {
 }
 ```
 
+## Alternatively, with KVO
+
+`WKWebView`'s title is KVO-compliant, which means we can use `XCTKVOExpectation` to reduce some of our boilerplate.
+
+```swift
+class Tests: XCTestCase {
+    func test_settingTheWebViewTitle() throws {
+        let webView = WKWebView()
+        let html = "<html><head><title>Our title</title></head></html>"
+        webView.loadHTMLString(html, baseURL: nil)
+        let expectation = keyValueObservingExpectation(for: webView, keyPath: "title") { (_, change) -> Bool in
+            change["new"] as? String == "Our title"
+        }
+        wait(for: [expectation], timeout: 1)
+    }
+}
+```
+
 What about you, how would you test this? I’d love to [hear what you think on Twitter](https://twitter.com/joemasilotti)!
