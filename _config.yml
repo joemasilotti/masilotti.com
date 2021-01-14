@@ -1,5 +1,22 @@
-# Build settings
-url: https://masilotti.com
+author:
+  name: Joe Masilotti
+  email: joe@masilotti.com
+  github: joemasilotti
+  linkedin: joemasilotti
+  twitter: joemasilotti
+exclude:
+  - yarn.lock
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - purgecss.config.js
+  - netlify.toml
+  - bin
+  - .gitignore
+  - resources
+include:
+  - .htaccess
+  - _newsletters
 markdown: kramdown
 plugins:
   - jekyll-feed
@@ -7,13 +24,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-postcss
   - jekyll-purgecss
-
-author:
-  name: Joe Masilotti
-  email: joe@masilotti.com
-  github: joemasilotti
-  linkedin: joemasilotti
-  twitter: joemasilotti
+url: https://masilotti.com
 
 # jekyll-seo-tag configuration
 title: Masilotti.com
@@ -29,17 +40,3 @@ social:
     - https://twitter.com/joemasilotti
     - https://www.linkedin.com/in/joemasilotti
     - https://github.com/joemasilotti
-
-include:
-  - .htaccess
-
-exclude:
-  - yarn.lock
-  - package-lock.json
-  - README.md
-  - postcss.config.js
-  - purgecss.config.js
-  - netlify.toml
-  - bin
-  - .gitignore
-  - resources
