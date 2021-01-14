@@ -4,6 +4,15 @@ author:
   github: joemasilotti
   linkedin: joemasilotti
   twitter: joemasilotti
+collections:
+  newsletters:
+    output: true
+defaults:
+  -
+    scope:
+      path: "_newsletters/**"
+    values:
+      sitemap: false
 exclude:
   - yarn.lock
   - package-lock.json
