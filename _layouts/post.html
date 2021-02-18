@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="prose lg:prose-xl max-w-3xl mx-auto px-4 pt-8 md:pt-0 pb-16">
+<article class="prose lg:prose-lg max-w-3xl mx-auto px-4 pt-8 md:pt-0 pb-16">
   <div class="flex justify-center mb-2">
     <time datetime="{{ post.date | date_to_xmlschema }}" class="block text-center text-gray-600 mr-2 post-date">
       {{ page.date | date: '%B %-d, %Y' }}
@@ -17,7 +17,7 @@ layout: default
     </a>
   </div>
 
-  <h1 class="text-center p-name max-w-2xl mx-auto mb-4 lg:mb-8">
+  <h1 class="text-center p-name mx-auto mb-4 lg:mb-8">
     <a href="{{ page.url }}" class="u-url no-underline">{{ page.title }}</a>
   </h1>
 
