@@ -18,7 +18,7 @@ The "Masilotti.com Umbrella", as I like to call it, contains a few different are
   Consulting
 </h2>
 
-First is consulting, where I help teams design, build, test, and deploy their products. Primarily Ruby on Rails sites, native iOS apps, and Turbolinks-powered hybrid mobile apps.
+First is consulting, where I help teams design, build, test, and deploy their products. Primarily Ruby on Rails sites, native iOS apps, and Turbo-powered (Turbolinks) hybrid mobile apps.
 
 My focus is clean, testable code and integrating into a company as much as possible. Expect to see me in your Slack and weekly meetings!
 
