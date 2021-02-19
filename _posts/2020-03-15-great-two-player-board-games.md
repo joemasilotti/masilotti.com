@@ -5,7 +5,7 @@ date: 2020-03-15
 permalink: great-two-player-board-games/
 image: https://www.mugshotbot.com/m?color=green&url=https://masilotti.com/great-two-player-board-games/
 description: "Deck-builders, card games, tile placement, and more. Some of my favorite board games to play with only two players."
-category: board-games
+category: other
 ---
 
 I’ve worked remotely for the past four years. First, at BeerMenus, a remote-only company. And now, doing [Ruby on Rails and iOS contract work](/about/) for a variety of companies. Three years ago my wife, [Adrienne](https://www.twitter.com/adrienneksmith), and I decided to leave NYC and become digital nomads. In that time we’ve played a lot, and I mean *a lot*, of board games together.

@@ -28,8 +28,8 @@
   lightColor: "b2f5ea"
   darkColor: "285e61"
 
-- name: Web Dev
-  slug: web
+- name: Turbo (Turbolinks)
+  slug: turbo
   color: blue
   lightColor: "bee3f8"
   darkColor: "2c5282"
@@ -40,8 +40,8 @@
   lightColor: "e9d8fd"
   darkColor: "553c9a"
 
-- name: Board Games
-  slug: board-games
+- name: Other
+  slug: other
   color: pink
   lightColor: "fed7e2"
   darkColor: "97266d"

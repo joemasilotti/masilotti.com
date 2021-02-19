@@ -5,7 +5,7 @@ date: 2020-04-23
 permalink: play-board-games-online/
 image: images/zoom-and-dominion.png?v2
 description: "BGA, TTS, Steam?! This guide is for anyone who wants to play board games online with your friends but isn’t sure where to start."
-category: board-games
+category: other
 ---
 
 If you’re anything like me, you’ve been craving a good (in-person) board game night with your friends. To scratch my itch, I’ve moved all my board game sessions online. I’ve been playing with a few different groups through a variety of websites and apps. Here’s a roundup of which board game platforms are the best and how to get started.

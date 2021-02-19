@@ -5,7 +5,7 @@ description: How I built a landing page and redesigned my blog in Tailwind CSS o
 image: images/tailwind-css.png
 date: 2020-07-24
 permalink: tailwind-css/
-category: web
+category: other
 ---
 
 This past weekend, I built [a landing page](https://xwing.app) and redesigned this blog with Tailwind CSS. Getting going was tough. But I don't think I'll ever go back.
