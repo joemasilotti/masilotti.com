@@ -74,7 +74,10 @@ The first TestFlight build I uploaded for Main Street didn't look too different 
 
 First, add the Turbo Swift package pointed to `https://github.com/hotwired/turbo-ios`. File -> Swift Packages -> Add Package Dependency... Since the package is technically still in beta, I’m pointing directly to the `main` branch. Feel free to leave the default and fetch up to the latest major release.
 
-> (screenshot of Xcode adding package)
+<div class="max-w-xl mx-auto">
+  <img src="/images/add-turbo-swift-package.png" alt="Add the Turbo Swift packge" class="rounded-lg shadow-lg mb-0 lg:mb-0"/>
+  <p class="text-center text-sm text-gray-500">Add the Turbo Swift package</p>
+</div>
 
 ### 2. Create the core navigation
 
@@ -148,7 +151,10 @@ class SceneDelegate {
 
 Build and run the app and you should see the rendered page!
 
-> (screenshot of Simulator showing web page)
+<div class="max-w-xs mx-auto">
+  <img src="/images/turbo-native-demo.png" alt="Turbo Native Demo running in the simulator" class="rounded-lg mb-0 lg:mb-0"/>
+  <p class="text-center text-sm text-gray-500">Turbo Native Demo running in the simulator</p>
+</div>
 
 However, nothing else seems to work. Try clicking a link. Notice that nothing happens? Let’s revisit our `SessionDelegate` and implement those methods.
 
