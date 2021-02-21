@@ -23,6 +23,7 @@ exclude:
   - bin
   - .gitignore
   - resources
+google_analytics: UA-7503501-5
 include:
   - .htaccess
   - _newsletters
