@@ -11,7 +11,10 @@ xcode: 12.0
 
 ---
 
-[Last week]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}) we touched on the basics of the Turbo framework and why hybrid can be a great choice. We went through the [official Quick Start guide](https://github.com/hotwired/turbo-ios/blob/main/Docs/QuickStartGuide.md) line by line and ended up with a working Turbo Native demo.
+This is part 2 of a [6-part series on Hybrid iOS apps with Turbo](/turbo-ios/). In [part 1]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}) we touched on the basics of the Turbo framework and why hybrid can be a great choice. We went through the [official Quick Start guide](https://github.com/hotwired/turbo-ios/blob/main/Docs/QuickStartGuide.md) line by line and ended up with a working Turbo Native demo.
+
+<!-- TODO: Uncomment this when the second post is published. -->
+<!-- {% include series.html %} -->
 
 But a few links were broken and we shoved a bunch of code in the `SceneDelegate`. This week focuses on the different types of routing available in Turbo and how we implement each flavor. It also covers a couple of gotchas that are easy to miss but hard to fix.
 
@@ -23,7 +26,7 @@ Let’s dive in!
 
 ## URL routing with Turbo
 
-Here’s the different types of routing we will cover from the Turbo framework. Each lines up nicely with a broken link (or two) in the demo.
+Here are the different types of routing we will cover from the Turbo framework in this piece. Each lines up nicely with a broken link (or two) in the demo.
 
 1. Visit actions
 2. Path configuration
@@ -80,13 +83,13 @@ Advance is the most commonly used action and also the most straightforward. When
 
 ### `replace` visit action
 
-Instead of pushing a view controller onto the stack, `replace` instead, well, replaces it. This gives the impression of the content reloading, or updating to reflect a change.
+Instead of pushing a view controller onto the stack, `replace` instead...well... replaces it. This gives the impression of the content reloading or updating to reflect a change.
 
-One major benefit of this action is dealing with form submissions. We can submit a form then replace the form contents with the “show” CRUD action to give the impression of modifying content natively.
+A major benefit is that we can submit a form then replace the form contents with the “show” CRUD action to give the impression of modifying content natively.
 
 ### `restore` visit action
 
-We won’t generate `restore` links directly but will need to handle them in the app. These are reserved for revisiting content that should already be cached. For example, navigating back to a previous page.
+We won’t generate `restore` links directly but will need to handle them in the app. These are reserved for revisiting content that should already be cached - for example, navigating back to a previous page.
 
 Moving forward, we will handle `restore` actions the same way as `replace` ones.
 
@@ -102,7 +105,7 @@ func session(_ session: Session, didProposeVisit proposal: VisitProposal) {
 }
 ```
 
-Next, update  `visit(url:)` to accept the new parameter. When we get a non-advance visit we want to replace the last controller with our new one. As a convenience, we can also default the `action:` parameter to `advance`.
+Next, update  `visit(url:)` to accept the new parameter. When we get a non-advance visit, we want to replace the last controller with our new one. As a convenience, we can also default the `action:` parameter to `advance`.
 
 ```swift
 private func visit(url: URL, action: VisitAction = .advance) {
@@ -116,7 +119,7 @@ private func visit(url: URL, action: VisitAction = .advance) {
 }
 ```
 
-By setting the navigation controller’s `viewControllers` property directly we don’t trigger any animations. It all happens at the same time we get a seamless transition into replacing the screen.
+By setting the navigation controller’s `viewControllers` property directly, we don’t trigger any animations. It all happens at the same time we get a seamless transition into replacing the screen.
 
 ## 2. Path configuration
 
@@ -124,7 +127,7 @@ Tap on that “Load a page modally” link. See how it slides up from the bottom
 
 Routing, in the context of Turbo, is the translation of links to view controllers and presentation styles. It enables you to render native view controllers, present screens modally, and do all sorts of custom logic.
 
-At its core, routing is based on the URL, allowing specific “type” of URLs to behave differently. For example, you could present all URLs ending in `/new` to be presented modally. Or show a native view controller when the path is `/settings`.
+At its core, routing is based on the URL, allowing specific “type” of URLs to behave differently. For example, you could present all URLs ending in `/new` to be presented modally. Or, you could show a native view controller when the path is `/settings`.
 
 ### `PathConfiguration.json`
 
@@ -207,7 +210,7 @@ func session(_ session: Session, didProposeVisit proposal: VisitProposal) {
 
 Now we need to update our `visit` signature to handle the new parameter. Like last time, give it a sane default for when we don’t know or care about the properties.
 
-Also, before pushing or replacing our view controller let’s check for the presentation property. If it’s `model` then present instead of pushing.
+Also, before pushing or replacing our view controller let’s check for the presentation property. If its equal to `modal`, then we present the view controller instead of pushing it on the navigation stack.
 
 ```swift
 private func visit(url: URL, action: VisitAction = .advance, properties: PathProperties = [:]) {
@@ -227,7 +230,7 @@ Now the modal link should work as expected. Do note that we haven’t handled th
 
 ### Dismissing the modal breaks the app!
 
-Uh-oh, looks like we introduced a bug. If you dismiss the modal you can no longer tap on any links.
+Uh-oh, looks like we introduced a bug. If you dismiss the modal, you can no longer tap on any links.
 
 This is caused by the way Turbo works under the hood. There’s a lot of [magic](https://github.com/hotwired/turbo-ios/blob/ca008e8215c66c2a276862375709b5c819b8b8b8/Source/Visitable/Visitable.swift#L43) going on to make sure each link visit transition occurs smoothly, all out of the scope of this series.
 
@@ -330,7 +333,7 @@ This method is getting a little ugly, and we are checking the presence of a magi
 
 ## Error handling with Turbo
 
-The next broken link is “Hit an HTTP 404 error” - clicking that shows a spinner, then a blank page. (Or, maybe this is the perfect example of a 404! 😆)
+The next broken link is “Hit an HTTP 404 error.” Clicking that shows a spinner, then a blank page. (Or, maybe this is the perfect example of a 404! 😆)
 
 To fix this we need to address the other `SessionDelegate` callback, `session(_:didFailRequestForVisitable:error:)`. Currently, we are doing nothing more than logging the error.
 
@@ -375,7 +378,7 @@ func session(_ session: Session, didFailRequestForVisitable visitable: Visitable
 }
 ```
 
-You could also add a button to this view that tries to reload the page. Since we have a reference to the `Session` all we need to do is ask it to refresh via `session.reload()`. This will clear the Turbo cache and re-visit the current page.
+You could also add a button to this view that tries to reload the page. Since we have a reference to the `Session` all we need to do is ask it to refresh via `session.reload()`. This will clear the Turbo cache and revisit the current page.
 
 ## External links
 Up next is “Follow an external link.” Tapping this opens the framework’s GitHub repository in Safari. While not technically broken, we can improve this UX by instead by opening an in-app browser.
