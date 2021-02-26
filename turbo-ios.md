@@ -13,18 +13,22 @@ What if that wasn’t the case? What if every time you built a new workflow in y
 
 This is possible with [Turbo](https://github.com/hotwired/turbo-ios/), a small framework from the geniuses at Basecamp. Follow this series of posts to learn how to build a hybrid iOS app from scratch. All you need is a mobile website powered by Ruby on Rails.
 
+Follow along as we build a hybrid iOS from scratch alongside the supporting Rails code.
+
 ## [1. The Turbo framework]({% post_url turbo-ios/2021-02-18-the-turbo-framework %})
 
 This introduction covers the benefits of hybrid apps and how Turbo helps bridge the gap between web and native. It also breaks down the code in the Quick Start guide from the Turbo wiki line by line. A perfect place to start for those new to Turbo or hybrid in general.
 
-## Coming soon...
+## [2. URL routing]({% post_url turbo-ios/2021-02-26-url-routing %})
 
-### 2. User agent, routing, and forms
+The second article covers everything related to routing URLs. This includes visit actions (advance vs. replace), path configuration, error handling, and native view controllers. It also touches on how forms work in Turbo iOS and why you might be running into issues with your Rails app.
 
-### 3. Basic authentication
+### Coming soon...
 
-### 4. The JavaScript bridge
+#### 3. Forms and basic authentication
 
-### 5. Native screens
+#### 4. The JavaScript bridge
 
-### 6. Architecture and coordinators
+#### 5. Native screens
+
+#### 6. Architecture and coordinators

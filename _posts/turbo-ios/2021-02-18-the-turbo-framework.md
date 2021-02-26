@@ -25,11 +25,10 @@ This is the first post in a series on how to build high-fidelity, hybrid iOS app
 The [rest of the series](/turbo-ios/) will touch on the following:
 
 * URL routing
-* Basic authentication
-* Passing data between the app and web
-* Dealing with forms
+* Forms and basic authentication
+* The JavaScript bridge
 * Native screens
-* And more
+* Architecture and coordinators
 
 ## The power of hybrid...
 
@@ -151,10 +150,7 @@ class SceneDelegate {
 
 Build and run the app and you should see the rendered page!
 
-<div class="max-w-xs mx-auto">
-  <img src="/images/turbo-native-demo.png" alt="Turbo Native Demo running in the simulator" class="rounded-lg mb-0 lg:mb-0"/>
-  <p class="text-center text-sm text-gray-500">Turbo Native Demo running in the simulator</p>
-</div>
+{% include simulator.html image="turbo-ios/turbo-native-demo.png" text="Turbo Native Demo running in the simulator" %}
 
 However, nothing else seems to work. Try clicking a link. Notice that nothing happens? Let’s revisit our `SessionDelegate` and implement those methods.
 
@@ -190,6 +186,6 @@ We've also built a JavaScript API to dynamically add navigation buttons to any s
 
 ## Tune in next week for...
 
-Next week’s article is going to cover slightly more advanced Turbo topics and fix those broken links in the demo. We will touch on making sure your Rails app is ready, customizing mobile content via a custom user agent, basic routing via Path Configuration, and why forms don’t work.
+Next week’s article is going to cover slightly more advanced Turbo topics and fix those broken links in the demo. We will also touch on routing via path configuration, bridging the gap with native controllers, and why forms don’t work.
 
 Have you given hybrid a fair shot? What’s holding you back from porting your Ruby on Rails app to iOS? I’d love to know! Feel free to [send me an email](mailto:joe@masilotti.com) or [reach out on Twitter](https://twitter.com/joemasilotti).
