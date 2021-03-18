@@ -9,6 +9,10 @@
   {% endif %}
 {% endfor %}
 
+{% if page.series == "Turbo iOS" %}
+  {% assign count = '6' %}
+{% endif %}
+
 <div class="bg-gray-100 text-gray-800 rounded-lg shadow-lg px-8 py-1 lg:py-1">
   <p>This is part {{ idx }} in a {{ count }}-part series on <strong>{{ page.series }}</strong>.</p>
 
@@ -26,5 +30,12 @@
         </li>
       {% endif %}
     {% endfor %}
+
+    {% if page.series == "Turbo iOS" %}
+      <h4>Coming soon...</h4>
+      <li>The JavaScript bridge</li>
+      <li>Native screens</li>
+      <li>Architecture and coordinators</li>
+    {% endif %}
   </ol>
 </div>

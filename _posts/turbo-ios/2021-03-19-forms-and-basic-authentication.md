@@ -12,8 +12,7 @@ series: Turbo iOS
 
 This is part 3 of a [6-part series on Hybrid iOS apps with Turbo]({% link turbo-ios.md %}). We kicked off with an [introduction to the Turbo framework]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}) and touched on why hybrid can be a great choice. Part 2 dove into [URL routing with Turbo]({% post_url turbo-ios/2021-02-26-url-routing %}) and how to get your path configuration set up.
 
-<!-- TODO: Uncomment this when the second post is published. -->
-<!-- {% include series.html %} -->
+{% include series.html %}
 
 This article focuses on two major components of hybrid app development: forms and authentication. We will also migrate from Basecamp’s example app to a real Rails app. Let’s dive in!
 

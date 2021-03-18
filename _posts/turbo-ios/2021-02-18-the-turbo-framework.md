@@ -18,8 +18,7 @@ This is possible with [Turbo](https://github.com/hotwired/turbo-ios/), a small f
 
 This is the first post in a series on how to build high-fidelity, hybrid iOS apps with Turbo and Ruby on Rails. It covers the benefits of Turbo-powered hybrid apps and how to get up and running.
 
-<!-- TODO: Uncomment this when the second post is published. -->
-<!-- {% include series.html %} -->
+{% include series.html %}
 
 The [rest of the series](/turbo-ios/) will touch on the following:
 

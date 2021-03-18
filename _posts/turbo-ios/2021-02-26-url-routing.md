@@ -12,8 +12,7 @@ series: Turbo iOS
 
 This is part 2 of a [6-part series on Hybrid iOS apps with Turbo]({% link turbo-ios.md %}). In [part 1]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}) we touched on the basics of the Turbo framework and why hybrid can be a great choice. We went through the [official Quick Start guide](https://github.com/hotwired/turbo-ios/blob/main/Docs/QuickStartGuide.md) line by line and ended up with a working Turbo Native demo.
 
-<!-- TODO: Uncomment this when the second post is published. -->
-<!-- {% include series.html %} -->
+{% include series.html %}
 
 But a few links were broken and we shoved a bunch of code in the `SceneDelegate`. This week focuses on the different types of routing available in Turbo and how we implement each flavor. It also covers a couple of gotchas that are easy to miss but hard to fix.
 
