@@ -7,7 +7,6 @@ description: "Part 2 covers visit actions, path configuration, error handling, n
 image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/url-routing/
 category: turbo
 series: Turbo iOS
-xcode: 12.0
 
 ---
 

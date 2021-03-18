@@ -7,7 +7,6 @@ description: "Hybrid mobile apps powered by Turbo: Basecamp's not-so-secret form
 image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/hybrid-apps-with-turbo/
 category: turbo
 series: Turbo iOS
-xcode: 12.0
 
 ---
 
