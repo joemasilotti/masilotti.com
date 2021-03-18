@@ -14,11 +14,11 @@ This is part 3 of a [6-part series on Hybrid iOS apps with Turbo]({% link turbo-
 
 {% include series.html %}
 
-This article focuses on two major components of hybrid app development: forms and authentication. We will also migrate from Basecamp’s example app to a real Rails app. Let’s dive in!
+This article focuses on two major components of hybrid app development: forms and authentication. We will also migrate from Basecamp’s example app to a real Rails app as examples to illustrate the points discussed. Let’s dive in!
 
 ## Turbo installation
 
-If you’re running Ruby on Rails 6.1+ with Turbo (v7) installed you can skip this part.
+If you’re running Ruby on Rails 6.1+ with Turbo (v7) installed you can [skip this part](#basic-crud).
 
 ### Step 0: Upgrade to Rails 6.1
 
@@ -38,7 +38,7 @@ Following the [instructions from the README](https://github.com/hotwired/turbo-r
 
 ### Step 2: Wire up the JavaScript
 
-If you are using webpack(er), you can add following to the end of your JavaScript pack. This imports the framework and exposes it to native adapters.
+If you are using webpack(er), you can add the following to the end of your JavaScript pack. This imports the framework and exposes it to native adapters.
 
 ```javascript
 import { Turbo } from “@hotwired/turbo-rails”
@@ -103,7 +103,7 @@ render :new, status: :unprocessable_entity
 
 ## Double pushed controllers
 
-Now that forms are working you might notice a different issue. If you view then edit a board game you end up with two “show” controllers on the navigation stack.
+Now that forms are working you might notice a different issue. If you view then edit a board game, you end up with two “show” controllers on the navigation stack.
 
 This is occurring because our `redirect_to` is coming down the wire as `VisitAction.advance`, which always pushes a new controller.
 
@@ -157,7 +157,7 @@ cookies.permanent.signed["user_id"] = current_user.id
 
 > `#signed` sets a signed cookie, which prevents users from tampering with its value. The cookie is signed by your app’s `secrets.secret_key_base` value. It can be read using the signed method `cookies.signed[:name]`. - [ActionDispatch::Cookies < Object](https://api.rubyonrails.org/v5.1.7/classes/ActionDispatch/Cookies.html)
 
-With Devise you need to make two changes – one to your `User` model and the other to the Devise configuration.
+With Devise you need to make two changes: one to your `User` model and the other to the Devise configuration.
 
 ```ruby
 # app/models/user.rb
@@ -194,7 +194,7 @@ let modalSession = Session(webViewConfiguration: configuration)
 
 ### Native authentication
 
-One major limitation of web-only authentication is, well, its web-only. That limits us to only interacting with our server via HTML and JavaScript. You’re out of luck if you need to make an authenticated HTTP request. And since those usually power the interesting native screens, those are off the table, too.
+One major limitation of web-only authentication is, well, its web only. That limits us to only interacting with our server via HTML and JavaScript. You’re out of luck if you need to make an authenticated HTTP request. And since those usually power the interesting native screens, those are off the table, too.
 
 Native authentication in a hybrid app follows this rough outline:
 
