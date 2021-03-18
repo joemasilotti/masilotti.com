@@ -23,7 +23,7 @@
         {% capture count %}{{ count | plus: '1' }}{% endcapture %}
         <li>
           {% if page.url == post.url %}
-            {{ post.title }}
+            <i>{{ post.title }}</i>
           {% else %}
             <a href="{{ post.url }}">{{post.title}}</a>
           {% endif %}
