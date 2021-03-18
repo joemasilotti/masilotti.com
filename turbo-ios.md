@@ -23,9 +23,11 @@ This introduction covers the benefits of hybrid apps and how Turbo helps bridge 
 
 The second article covers everything related to routing URLs. This includes visit actions (advance vs. replace), path configuration, error handling, and native view controllers. It also touches on how forms work in Turbo iOS and why you might be running into issues with your Rails app.
 
-### Coming soon...
+## [3. Forms and basic authentication]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %})
 
-#### 3. Forms and basic authentication
+Part 3 covers slightly more advanced topics: forms and basic authentication. Learn how to install Turbo in Rails 6, add custom form handling for the iOS client, and get up and running with web-based authentication.
+
+### Coming soon...
 
 #### 4. The JavaScript bridge
 
