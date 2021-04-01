@@ -10,10 +10,10 @@ description: How to extract XCTest helper methods and keep sane failure messages
 category: testing-swift
 ---
 
-<p class="text rounded-lg bg-blue-200 bg-opacity-25 text-blue-700 px-8 pt-4 pb-8 my-4">
+<p class="text-base rounded-lg bg-blue-200 bg-opacity-25 text-blue-900 px-6 py-4 my-4">
   Starting with Xcode 12, test failures automatically appear at the calling line!
 
-  <img src="/images/helper-failure-xcode-12.png" class="w-full rounded-lg mt-8 mb-0 lg:mb-0">
+  <img src="/images/helper-failure-xcode-12.png" class="w-full rounded-lg mt-6 mb-0 lg:mb-0">
 </p>
 
 As your test suite grows it's important to keep your code DRY. Or, [Don't Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). You wouldn't implement the same method three times in your production code, so why do it in your tests?

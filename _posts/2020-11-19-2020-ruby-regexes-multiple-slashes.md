@@ -10,11 +10,7 @@ title: Regexes with multiple slashes in Ruby
 
 ---
 
-I picked up a new tip yesterday while working with regexes in Ruby.
-
-{% include tldr.html tldr="Use <code>%r{}</code> over <code>/.../</code> when matching regexes with more than one <code>/</code>." %}
-
-I was testing if a string begins with `http://` or `https://` and wrote a small regex.
+I picked up a new tip yesterday while working with regexes in Ruby. I was testing if a string begins with `http://` or `https://` and wrote a small regex.
 
 ```ruby
 /^https?:\/\//

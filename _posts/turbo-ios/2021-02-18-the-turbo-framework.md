@@ -55,7 +55,7 @@ When you're ready to level up a screen to native code, Turbo gives you hooks to 
 
 Like Rails, Turbo was extracted from existing code at Basecamp. The team has been publicly using some form of Turbolinks since 2014. [Basecamp’s mobile app](https://apps.apple.com/us/app/basecamp-3/id1015603248) and their new email service, [Hey](https://apps.apple.com/us/app/hey-email/id1506603805), are both powered by Turbo.
 
-> Wait, what’s the difference between Turbo and Turbolinks? In the context of *hybrid apps*, not much. Version 7 of Turbolinks was renamed to Turbo when Basecamp consolidated a few products into [Hotwire](https://hotwire.dev). On the web, [lots of new features were added](https://turbo.hotwire.dev).
+{% include note.html body='Wait, what’s the difference between Turbo and Turbolinks? In the context of <i>hybrid apps</i>, not much. Version 7 of Turbolinks was renamed to Turbo when Basecamp consolidated a few products into <a href="https://hotwire.dev">Hotwire</a>. On the web, <a href="https://turbo.hotwire.dev">lots of new features were added</a>.' %}
 
 Outside of official Basecamp apps, there are a number of independent hybrid apps powered by Turbo. I built [BeerMenus](https://apps.apple.com/us/app/beermenus-find-great-beer/id917882057)’s iOS app in 2014 and officially jumped on the hybrid bandwagon. I also actively maintain [Zaarly's iOS app](https://apps.apple.com/us/app/zaarly/id964717947) after building their first version in 2016.
 
@@ -180,7 +180,7 @@ For example, at [Main Street](https://www.getmainstreet.com), all forms are pres
 
 We've also built a JavaScript API to dynamically add navigation buttons to any screen in the app. We hook into a custom Stimulus controller and take advantage of SF Symbols on the client side. This gives us flexibility to change portions of the native UI without a client update and App Store review.
 
-> If you find Main Street and this kind of Rails/iOS technology interesting, they are always looking for great talent. Feel free to reach out to the head of engineering directly, [john@getmainstreet.com](mailto:john@getmainstreet.com).
+{% include mainstreet.html %}
 
 ## Tune in next week for...
 

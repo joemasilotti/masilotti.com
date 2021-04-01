@@ -18,9 +18,7 @@ But a few links were broken and we shoved a bunch of code in the `SceneDelegate`
 
 Let’s dive in!
 
-<p class="text rounded-lg bg-blue-200 bg-opacity-25 text-blue-800 px-8 py-4 my-4">
-  All the code for this series can be found on my GitHub repository, <a class="text-blue-700 hover:text-blue-500" href="https://github.com/joemasilotti/Turbo-iOS-Demo">Turbo-iOS Demo</a>. Each article has a "start" and "complete" branch if you'd like to follow along.
-</p>
+{% include note.html body='All the code for this series can be found on my GitHub repository, <a class="text-blue-700 hover:text-blue-500" href="https://github.com/joemasilotti/Turbo-iOS-Demo">Turbo-iOS Demo</a>. Each article has a "start" and "complete" branch if you\'d like to follow along.' %}
 
 ## URL routing with Turbo
 
@@ -430,6 +428,7 @@ func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigatio
 ```
 
 ## Introduction to forms (and authentication)
+
 A big surprise with Turbo development is that all non-GET requests are ignored. This means that normal (non-remote) form submissions no-op. No error message, no logs, just… nothing.
 
 The short answer is that you need to convert these forms to AJAX. In a Rails world, this means `remote: true` or `local: false`, depending on which version of Rails you are running.
@@ -438,7 +437,7 @@ If you are on Rails 6.1 and Turbo v7, however, you can ignore all of this. All f
 
 Part 3 will address the form conversion with a generic Stimulus controller. We are using this JavaScript in production at [Main Street](https://getmainstreet.com) for 30+ forms while we transition from Turbolinks to Turbo.
 
-> If you find Main Street and this kind of Rails/iOS technology interesting, they are always looking for great talent. Feel free to reach out to the head of engineering directly, [john@getmainstreet.com](mailto:john@getmainstreet.com).
+{% include mainstreet.html %}
 
 We will also transition from the Turbo demo server to a real Rails app. Then, finally, can we start to talk about authentication!
 

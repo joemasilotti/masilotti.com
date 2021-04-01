@@ -27,6 +27,18 @@ module.exports = {
             marginLeft: "auto",
             marginRight: "auto"
           },
+          "blockquote": {
+            color: theme("colors.gray.600"),
+            fontStyle: "normal",
+            fontWeight: "normal",
+            marginLeft: theme("spacing.8"),
+          },
+          "blockquote p:first-of-type::before": {
+            content: "",
+          },
+          "blockquote p:first-of-type::after": {
+            content: "",
+          },
           ".highlight": {
             borderRadius: theme("borderRadius.lg")
           },

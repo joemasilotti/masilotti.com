@@ -51,7 +51,7 @@ Now is a good time to audit your app for any references to Turbo_links_. Most of
 
 You can now start pointing your iOS app to your Rails server. If Turbo is configured you should be able to navigate around and tap through links.
 
-> Don’t have a Turbo iOS app yet? The [first two parts]({% link turbo-ios.md %}) of this series build one from scratch! Or, feel free to [download the source directly](https://github.com/joemasilotti/Turbo-iOS-Demo).
+{% include note.html body='Don\'t have a Turbo iOS app yet? The <a href="/turbo-ios">first two parts</a> of this series build one from scratch! Or, feel free to <a href="https://github.com/joemasilotti/Turbo-iOS-Demo">download the source directly</a>.' %}
 
 To demonstrate how well Turbo works out of the box, I’m using the default Rails scaffolding generator. This creates the route, database migration, ActiveRecord model, controller, and views.
 

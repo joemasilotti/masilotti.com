@@ -227,7 +227,7 @@ class ScriptMessageHandler: NSObject, WKScriptMessageHandler {
 }
 ```
 
-> Note: This approach works fine for a single message. But when you have more than one I recommend creating a concrete type and doing the parsing there. A great example is [`ScriptMessage.swift`](https://github.com/hotwired/turbo-ios/blob/main/Source/WebView/ScriptMessage.swift) from the Turbo source code.
+{% include note.html body="This approach works fine for a single message. But when you have more than one I recommend creating a concrete type and doing the parsing there. A great example is <a href='https://github.com/hotwired/turbo-ios/blob/main/Source/WebView/ScriptMessage.swift'>ScriptMessage.swift</a> from the Turbo source code." %}
 
 Now the fun part: adding the button to the screen. Head back to our custom delegate callback, the one responsible for creating the handler and session. Add the button and route the URL when tapped. And my favorite, use the image name to render a [SF Symbol](https://developer.apple.com/sf-symbols/) icon!
 
@@ -256,7 +256,7 @@ func addActionButton(url: URL, imageName: String) {
 
 A single line of JavaScript can now add custom buttons across our entire app with different icons and different functionality. Who would ever have thought JavaScript could be so powerful for iOS developers?
 
-> If you find Main Street and this kind of Rails/iOS technology interesting, they are always looking for great talent. Feel free to reach out to the head of engineering directly, [john@getmainstreet.com](mailto:john@getmainstreet.com).
+{% include mainstreet.html %}
 
 ## Looking ahead at Strada
 
@@ -270,6 +270,6 @@ Or maybe it’s something else entirely! Basecamp likes to keep everything quite
 
 ## Up next: Native screens
 
-The next part in this series is a big one: native screens. I’m going to dive into how to present native screens from Turbo and how to implement authentication natively, no web view required!
+The [next part in this series]({% link turbo-ios.md %}) is a big one: native screens. I’m going to dive into how to present native screens from Turbo and how to implement authentication natively, no web view required!
 
 What are you hoping to learn about Turbo next? Let me know by [reaching out on Twitter](https://twitter.com/joemasilotti).
