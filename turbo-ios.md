@@ -27,7 +27,7 @@ The second article covers everything related to routing URLs. This includes visi
 
 Part 3 covers slightly more advanced topics: forms and basic authentication. Learn how to install Turbo in Rails 6, add custom form handling for the iOS client, and get up and running with web-based authentication.
 
-## [4. The JavaScript bridge]({% post_url turbo-ios/2021-04-01-the-javascript-bridge %})
+## [4. The JavaScript bridge]({% post_url turbo-ios/2021-04-02-the-javascript-bridge %})
 
 Having all our content in rendered on the web comes with some trade-offs. What if we want a native navigation bar button? Enter the JavaScript bridge, where we can pass messages between client and server without waiting for someone to tap a link.
 
