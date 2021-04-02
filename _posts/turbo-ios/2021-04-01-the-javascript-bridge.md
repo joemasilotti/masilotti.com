@@ -10,15 +10,15 @@ series: Turbo iOS
 
 ---
 
-This is part 4 of a 6 part series on building hybrid iOS apps with Turbo. Parts 1 through 3 built us an “out of the box” hybrid app with [navigation]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}), [URL routing]({% post_url turbo-ios/2021-02-26-url-routing %}), [forms, and basic authentication]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %}). This week we will customize our app to make it feel more native.
+This is part 4 of a 6 part series on building hybrid iOS apps with Turbo. Parts 1 through 3 built us an "out of the box" hybrid app with [navigation]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}), [URL routing]({% post_url turbo-ios/2021-02-26-url-routing %}), [forms, and basic authentication]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %}). This week, we will customize our app to make it feel more native.
 
 {% include series.html %}
 
 One of the big trade-offs of hybrid apps is that all interaction (and content) usually lives in the web view. This means we can update it without much issue by making changes to our Rails app. But what if we want a native navigation bar button? Or want to register a notification token with the server?
 
-Enter the JavaScript bridge, the intersection of client and server. With this bridge we can pass messages between the two worlds without waiting for someone to tap a link.
+Enter the JavaScript bridge, the intersection of client and server. With this bridge, we can pass messages between the two worlds without waiting for someone to tap a link.
 
-Like most bridges, this one is a two-way street. Let’s first dive in to how the client can post messages to the rendered HTML. Then we will cross back over by talking to the client.
+Like most bridges, this one is a two-way street. Let’s first dive into how the client can post messages to the rendered HTML. Then we will cross back over by talking to the client.
 
 ## Client → Server
 
@@ -38,7 +38,7 @@ webView.evaluateJavaScript(script) { object, error in
 
 > If you are targeting iOS 14+ I recommend taking a look at [`callAsyncJavaScript(_:arguments:in:in:completionHandler:)`](https://developer.apple.com/documentation/webkit/wkwebview/3656441-callasyncjavascript), which automatically serializes arguments.
 
-Now that we know how to execute a script, let’s integrate with our server’s JavaScript. First, create a new JavaScript file in your `app/javascript/` directory. I put mine under a new folder named “turbo”.
+Now that we know how to execute a script, let’s integrate with our server’s JavaScript. First, create a new JavaScript file in your `app/javascript/` directory. I put mine under a new folder named "turbo."
 
 ```javascript
 // app/javascript/turbo/bridge.js
@@ -132,7 +132,7 @@ let script = "window.bridge.register(\(token));"
 webView.evaluateJavaScript(script) { _, _ in }
 ```
 
-Since we are already signed in in the web view we don’t need to pass any sort of authentication with the request. This saves us a _ton_ of Swift networking boilerplate. The downside is we need to ignore the CSRF check in the controller, but this can be avoided by [adding the token to the POST request](https://discuss.hotwire.dev/t/csrf-token-invalidauthenticitytoken/91/3).
+Since we are already authenticated in the web view we don’t need to pass any sort of authentication with the request. This saves us a _ton_ of Swift networking boilerplate. The downside is we need to ignore the CSRF check in the controller, but this can be avoided by [adding the token to the POST request](https://discuss.hotwire.dev/t/csrf-token-invalidauthenticitytoken/91/3).
 
 <div class="pb-4 sm:pb-12">
   {% include newsletter.html %}
@@ -144,7 +144,7 @@ OK, so now we have the iOS app talking to our Rails app. But what about the othe
 
 In a similar fashion to above, we need to expose a JavaScript hook. WebKit provides a convenient interface to receive JavaScript messages in a single delegate callback.
 
-Let’s get started by creating our message handler. This class needs to confirm to the `WKScriptMessageHandler` protocol and implement a single method. 
+Let’s get started by creating our message handler. This class needs to conform to the `WKScriptMessageHandler` protocol and implement a single method. 
 
 ```swift
 class ScriptMessageHandler: NSObject, WKScriptMessageHandler {
@@ -197,7 +197,7 @@ window.webkit.messageHandlers.nativeApp.postMessage({
 });
 ```
 
-We attach a delegate to our script message handler and pass along the action. This “bridges” the gap between JavaScript and Swift.
+We attach a delegate to our script message handler and pass along the action. This bridges the gap between JavaScript and Swift.
 
 ```swift
 protocol ScriptMessageDelegate: class {
@@ -229,7 +229,7 @@ class ScriptMessageHandler: NSObject, WKScriptMessageHandler {
 
 {% include note.html body="This approach works fine for a single message. But when you have more than one I recommend creating a concrete type and doing the parsing there. A great example is <a href='https://github.com/hotwired/turbo-ios/blob/main/Source/WebView/ScriptMessage.swift'>ScriptMessage.swift</a> from the Turbo source code." %}
 
-Now the fun part: adding the button to the screen. Head back to our custom delegate callback, the one responsible for creating the handler and session. Add the button and route the URL when tapped. And my favorite, use the image name to render a [SF Symbol](https://developer.apple.com/sf-symbols/) icon!
+Now the fun part: Adding the button to the screen. Head back to our custom delegate callback — the one responsible for creating the handler and session. Add the button and route the URL when tapped. And my favorite, use the image name to render a [SF Symbol icon](https://developer.apple.com/sf-symbols/)!
 
 ```swift
 private var nextActionButtonURL: URL?
@@ -262,14 +262,14 @@ A single line of JavaScript can now add custom buttons across our entire app wit
 
 Not a fan of all this JavaScript? You might be in luck. The bottom of [Hotwire’s homepage](https://hotwire.dev) hints at a new part of the puzzle, Strada.
 
-> [Strada] standardizes the way that web and native parts of a mobile hybrid application talk to each other via HTML bridge attributes. This makes it easy to progressively level-up web interactions with native replacements.
+> [Strada] standardizes the way that web and native parts of a mobile hybrid application talk to each other via HTML bridge attributes. This makes it easy to progressively level up web interactions with native replacements.
 
-My guess is that Strada will move this “on load” JavaScript to special `<meta>` tags in the HTML’s `<head>`. And the framework will automatically parse them and provide native callbacks. This could speed up development drastically and remove the need to write custom Stimulus controllers to fire the methods.
+My guess is that Strada will move this "on load" JavaScript to special `<meta>` tags in the HTML’s `<head>`. And the framework will automatically parse them and provide native callbacks. This could speed up development drastically and remove the need to write custom Stimulus controllers to fire the methods.
 
 Or maybe it’s something else entirely! Basecamp likes to keep everything quite secret until they launch, so only time will tell.
 
-## Up next: Native screens
+## Up next: native screens
 
-The [next part in this series]({% link turbo-ios.md %}) is a big one: native screens. I’m going to dive into how to present native screens from Turbo and how to implement authentication natively, no web view required!
+The [next part in this series]({% link turbo-ios.md %}) is a big one: native screens. I’m going to dive into how to present native screens from Turbo and how to implement authentication natively – no web view required!
 
 What are you hoping to learn about Turbo next? Let me know by [reaching out on Twitter](https://twitter.com/joemasilotti).
