@@ -16,6 +16,8 @@ Apple finally decided to double down on user interface testing at WWDC 2015. Let
 
 ![Xcode Testing](/images/xcode-testing.png "Xcode Testing")
 
+{% include sponsor.html %}
+
 ## Background
 
 I’ve been testing on iOS for a few years now. Before starting at [BeerMenus](https://www.beermenus.com), I spent two years at [Pivotal Labs](http://pivotallabs.com). Pivots, as we like to be called, take testing seriously. Being a [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development) firm (or TDD firm), Pivots take the time to test every nook and cranny of an app or a website. While specific code coverage numbers aren't a priority, they easily comprise 95% of most, if not all, projects.

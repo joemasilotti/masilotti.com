@@ -19,12 +19,16 @@ Previously, I would extract the logic to some “test only” helper method on m
 
 We can solve both of these problems by embedding a tiny HTTP server *inside* our test suite! Here's how I test deep links with UI Testing.
 
+{% include sponsor.html %}
+
 ## How to manually open deep links
+
 First, some background.  There’s a tiny trick with opening a deep link in iOS: you have to actually tap it. You can’t copy and paste something into Safari and tap “Go”, it won’t register.
 
 We can take advantage of this by creating a tappable link somewhere on the simulator. We could drop it right in the app, but that brings us back to issue #2. Instead, let’s use Mobile Safari.
 
 ## Create a tiny server
+
 To ensure all the code remains in the test suite, we can create a tiny HTTP server with [Swifter](https://github.com/httpswift/swifter). We can then access the site directly with Mobile Safari on the simulator.
 
 To get a feel for the library add it as a Cocoapod (or Swift Package) and this code.

@@ -35,6 +35,8 @@ controller.present(alert, animated: true, completion: nil)
 
 In description, you set the title and message, add some actions, then present the alert on a `UIViewController`.
 
+{% include sponsor.html %}
+
 ## What to test
 
 Even in this tiny example I see four things that should be tested:

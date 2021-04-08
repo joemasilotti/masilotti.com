@@ -46,6 +46,8 @@ class MyTestCase {
 
 Turns out, we can get something very close to this Swift, but there are a few tradeoffs.
 
+{% include sponsor.html %}
+
 ## XCTContext and XCTActivity
 
 Another hidden XCTest gem appears! From [the docs on `XCTActivity`](https://developer.apple.com/documentation/xctest/xctcontext):

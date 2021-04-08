@@ -30,6 +30,8 @@ XCTAssertEqual(button.title, "Cancel")
 
 More examples can be found in a recent article on [how to clean up your Swift test suite with XCTUnwrap]({% post_url 2021-01-21-xctunwrap %}).
 
+{% include sponsor.html %}
+
 ### 2. Set `continueAfterFailure` to `false`
 
 If you have multiple assertions in a test they might increase in specificity. The first asserts the size of the array and the second assets the last element. You don't want to run the second if the first fails, it's just noise.

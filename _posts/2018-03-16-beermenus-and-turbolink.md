@@ -12,7 +12,7 @@ As my [time in Croatia wraps up]({% post_url 2017-08-22-where-is-joe %}) I was g
 
 ## Some highlights
 
-I walkd through how BeerMenus supports desktop, mobile web, Android, and iOS with a small dev team.
+I walked through how BeerMenus supports desktop, mobile web, Android, and iOS with a small dev team.
 
 * [32:06](https://youtu.be/xWJHy1ElG6E?t=32m6s) - Slide 22 - A quick start guide on getting Turbolinks up and running on iOS.
 * [24:31](https://youtu.be/xWJHy1ElG6E?t=24m31s) - Slide 18 - An animated overview of the Turbolinks request lifecycle.

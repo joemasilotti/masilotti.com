@@ -41,6 +41,8 @@ I’ve also been very active in the [Weekend Club](https://www.weekendclub.co) c
 
 All of my metrics are [publicly available](https://www.mugshotbot.com/stats/), too: total visitors, registered accounts, MRR, etc.
 
+{% include sponsor.html %}
+
 ### Get early upvotes
 
 You only get one day on Product Hunt, and those [24 hours are based on the Pacific time zone](https://blog.producthunt.com/how-to-launch-on-product-hunt-7c1843e06399). Ideally, you are launching early in the morning so you can maximize your time for upvotes.

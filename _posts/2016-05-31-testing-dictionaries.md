@@ -16,6 +16,8 @@ Dictionaries are the ultimate data courier. They can encapsulate different types
 
 To explain how I go about testing dictionaries, we will walk through a simple example: generating JSON from a model object. Yes, there are many libraries/posts on this but I will concentrate my efforts on *testing* the output, not generating it.
 
+{% include sponsor.html %}
+
 ## The test subject: `BoardGame().toJSON()`
 
 [I like board games]({% post_url 2020-03-15-great-two-player-board-games %}). Like, [a lot]({% post_url 2020-04-23-play-board-games-online %}). They also happen to translate well to data models. Board games hava string values, number values, and even nested attributes. For this post we will keep the modeling simple and use the following representation.

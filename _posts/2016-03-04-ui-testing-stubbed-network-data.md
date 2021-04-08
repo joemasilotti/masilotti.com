@@ -34,6 +34,8 @@ To recap, we learned how to use [IDEPEM]({% post_url 2020-03-31-better-swift-uni
 
 Next we discussed the problems with hitting the network under test. We injected a fake `URLSession` that immediately executes its callbacks to speed up our test suite. This enables our networking tests to occur almost instantaneously and much more reliable.
 
+{% include sponsor.html %}
+
 ### Diving right in
 
 If you haven't built out the code, you can checkout the GitHub repository at the [`part-3` tag](https://github.com/joemasilotti/TestingURLSession/releases/tag/part-3). This includes a working HTTP client with flattened asynchronous tests.

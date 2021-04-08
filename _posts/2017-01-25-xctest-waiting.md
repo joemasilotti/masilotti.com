@@ -51,6 +51,8 @@ This code is used in a UI Test to wait for a specific element to appear on the s
 
 The `waitForExpectations` helper is great, but it comes with one caveat. It raises an exception and fails the test if the timeout is reached. This limits its functionality to cases where we *absolutely know* the expectations will be met. 
 
+{% include sponsor.html %}
+
 ### The Expectation Completion Handler
 
 Take note that I've passed `nil` for the `handler:` parameter in the code sample. 

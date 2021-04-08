@@ -29,6 +29,8 @@ expectation(for: existsPredicate, evaluatedWith: element, handler: nil)
 waitForExpectations(timeout: 5, handler: nil)
 ````
 
+{% include sponsor.html %}
+
 Let's tease out a method that waits for an element to appear.
 
 ````swift

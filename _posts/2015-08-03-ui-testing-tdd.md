@@ -53,6 +53,8 @@ When using a generic querying syntax you never have to know the *exact* view hie
 
 You should never have to know *where* things are going to be when writing your tests first. Sure, we can make assumptions on the layout or design, but if we don't have to, why should we? By querying our view in a generic fashion we create confidence that we have written good tests.
 
+{% include sponsor.html %}
+
 ## 2. First-Class Support from Apple
 
 Testing became a first-class citizen at WWDC 2015. Apple introduced both `@testable` and UI Testing along with a few improvements to XCTest.

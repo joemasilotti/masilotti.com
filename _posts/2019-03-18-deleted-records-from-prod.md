@@ -27,6 +27,8 @@ I figured out _which_ records were missing by comparing the IDs of all records i
 
 I had somehow lost over 2500 records. 😭
 
+{% include sponsor.html %}
+
 ## Backups? What backups?
 
 Ideally, this would be fixed by merging a database backup into the current dataset in production. I could have downloaded a dump from a week ago, found all the records, and uploaded those back to prod.

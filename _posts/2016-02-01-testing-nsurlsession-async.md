@@ -26,6 +26,8 @@ If you haven't built out the code from [part 1]({% post_url 2016-01-11-testing-n
 
 As you read through the post, feel free to [follow along with the commits on GitHub](https://github.com/joemasilotti/TestingURLSession). Unfortunately XCTest is a pain to use with playgrounds so it's just an Xcode project.
 
+{% include sponsor.html %}
+
 ## Waiting for expectations
 
 The quickest way to test network requests is to just run them. Yep, you heard me right, let's have our test suite actually hit the network. To start, let's make sure we can get data from this website.

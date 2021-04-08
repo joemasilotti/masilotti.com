@@ -28,6 +28,8 @@ I spent *forever* trying to find the perfect stock photo. I tried all the "no de
 
 So I vowed to never waste another second generating these images.
 
+{% include sponsor.html %}
+
 ## The process
 
 What follows is a day-by-day overview of what I worked on and important milestones in building up the implementation.

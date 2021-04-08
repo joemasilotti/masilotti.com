@@ -46,6 +46,8 @@ func test_getResources_throwsADecodingError() throws {
 
 If `API` did _not_ throw an error this test would fail. The test suite would continue to run as expected. A **fatal error**, however, is quite different.
 
+{% include sponsor.html %}
+
 ### Fatal errors
 
 Consider the following (admittedly contrived) code.

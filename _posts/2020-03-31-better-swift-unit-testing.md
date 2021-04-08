@@ -20,6 +20,8 @@ With the release of Swift 2.0 and Xcode 7 I though it was a great time to try wr
 
 Here are some concepts that I've picked up over the past couple of months of "real-world" unit testing in Swift. I wish I knew these from the beginning, but hopefully they can help spark some light with seasoned Swift testers too.
 
+{% include sponsor.html %}
+
 ## Swift unit testing mindset
 
 Before diving into details, let's highlight the general ideas when writing a Swift unit test.

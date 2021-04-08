@@ -11,6 +11,8 @@ Validating that a web app's content is rendered correctly is an integral part of
 
 But what if you aren't displaying HTML to your users? What if the output is in a different format, like a PDF? **How do you validate PDF content using the standard RSpec and Capybara stack?**
 
+{% include sponsor.html %}
+
 ### Invalid byte sequence in UTF-8?
 
 Under one of my feature specs I attempted to call `page.should have_content('some content')` on a rendered PDF. Unfortunately, an error is thrown: `invalid byte sequence in UTF-8`. This error signals that the document contains invalid encoding. The problem could be a couple of unknown characters or that the document is missing an encoding type. Either way, Capybara needs a way to grab the actual contents in a format it can understand.

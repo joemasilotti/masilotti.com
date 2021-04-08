@@ -15,6 +15,8 @@ Note that these new APIs don’t add any new functionality to the framework. Thi
 
 > Follow along with the code [via this gist](https://gist.github.com/joemasilotti/8d80db6b4f453894bbac).
 
+{% include sponsor.html %}
+
 ## Create an `NSDate` Three Hours in the Future
 
 To create an `NSDate` object three hours from now we only have one API call (after getting an `NSCalendar` instance).

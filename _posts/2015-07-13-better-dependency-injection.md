@@ -21,6 +21,8 @@ A quick overview of the three for those that missed it:
 * Property injection - lazy load dependencies but explicitly set them under test
 * Method injection - pass in the dependency to each method when needed
 
+{% include sponsor.html %}
+
 ### Constructor injection
 
 If you have been exploring constructor injection you might be worried an object could be created without its dependencies. For example:

@@ -55,6 +55,8 @@ struct ContentView: View {
 
 If there were actually only two sheets, this isn’t a terrible approach. Each `Button` is tied directly to its sheet. But with six, things were unwieldy. And there was a lot of repeated boilerplate code.
 
+{% include sponsor.html %}
+
 ## Refactoring sheet state to an `enum` 
 
 I figured there’s a better way to manage this, but found nothing built into SwiftUI. Every time I added a new sheet I would need to add a new variable.

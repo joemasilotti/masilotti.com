@@ -47,6 +47,8 @@ Not so bad, right? This method has a few limitations, but we can start with it a
 
 As you read through the post, feel free to [follow along with the commits on GitHub](https://github.com/joemasilotti/TestingURLSession). Unfortunately XCTest is a pain to use with playgrounds so it's just an Xcode project.
 
+{% include sponsor.html %}
+
 ## Possible testing approaches
 
 Our goal is to unit test the interface to `URLSession`. To do so , we will create a new object, `HTTPClient`, that interacts with the session. The rest of the app's code will interact with `HTTPClient` directly.

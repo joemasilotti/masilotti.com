@@ -17,6 +17,8 @@ Oh, and both the [landing page](https://github.com/joemasilotti/x-wing-ai-tailwi
 </div>
 <div class="block text-center mt-4">Screenshot of the landing page, <a href="https://xwing.app">https://xwing.app</a>.</div>
 
+{% include sponsor.html %}
+
 ## What the h*ck is Tailwind?
 
 > [Tailwind](https://tailwindcss.com) is a CSS framework for people who hate CSS frameworks. - Joe Masilotti

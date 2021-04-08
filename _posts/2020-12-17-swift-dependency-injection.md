@@ -16,6 +16,8 @@ Without dependency injection we can’t mock out interactions farther down the s
 
 Instead of reaching for a third-party library, let’s build out our own little DI. By the end of this post you will have a robust, extendible framework you can use in all your apps.
 
+{% include sponsor.html %}
+
 ## Why dependency injection?
 
 This article focuses on one major advantage of DI: making it easier to test things.

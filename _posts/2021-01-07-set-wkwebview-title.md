@@ -14,6 +14,8 @@ I ran into an interesting problem working with the [Turbo framework](https://git
 
 Title is a read-only, computed property, so there’s no way to set it directly. Even subclassing can’t overwrite it. I ended up with a small snippet that loads HTML directly into the web view. This then propagates the title to the property which we can use for the test.
 
+{% include sponsor.html %}
+
 ## Load the HTML
 
 Loading HTML into a web view is built in and straightforward enough. The internals of `WKWebView` will automatically set the title property to whatever the HTML’s title is.

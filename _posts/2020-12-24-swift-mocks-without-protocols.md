@@ -18,6 +18,8 @@ This technique enables us to stub out whatever we need under test without worryi
 
 An alternative I’ve been exploring recently is using inheritance instead of protocols to create my mocks. This approach has its own set of tradeoffs, but might work better to get up and running. Let’s dive in!
 
+{% include sponsor.html %}
+
 ## Swift mocks with protocols
 
 Here’s quick recap of my [Better unit testing with Swift]({% post_url 2020-03-31-better-swift-unit-testing %}) post. Feel free to skip this section if you are familiar with IDEPEM.

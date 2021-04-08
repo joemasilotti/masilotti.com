@@ -20,6 +20,8 @@ Enter the JavaScript bridge, the intersection of client and server. With this br
 
 Like most bridges, this one is a two-way street. Let’s first dive into how the client can post messages to the rendered HTML. Then we will cross back over by talking to the client.
 
+{% include sponsor.html %}
+
 ## Client → Server
 
 `WKWebView`, the web view that Turbo is built on top of, has a helper to evaluate arbitrary JavaScript. The method expects the JavaScript to execute and a completion handler. You can handle the returned object or raised error with the completion block.

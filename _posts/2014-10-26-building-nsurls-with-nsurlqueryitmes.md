@@ -18,6 +18,8 @@ NSURL *url = [NSURL URLWithString:urlString];
     
 Note: All example code is available at [this gist](https://gist.github.com/joemasilotti/09fe1f247a3da1c782dd).
 
+{% include sponsor.html %}
+
 Nothing new or exciting going on there. But let's say you wanted to include retweets. According to the [API's documentation](https://dev.twitter.com/rest/reference/get/statuses/user_timeline) I can set the `include_rts` parameter to `true`. Let's try appending that on to our `NSString` object.
 
   urlString = [urlString stringByAppendingString:@"&include_rts=true"];

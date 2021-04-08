@@ -20,7 +20,10 @@ Last week I wrote about an alternative to Swift mocks, [inheritance instead of p
 
 To wrap up the month I’ll be diving into an alternative approach to recording function calls on Swift mocks. We’ll take advantage of a Swift literal expression to let the language do some of our heavy lifting.
 
+{% include sponsor.html %}
+
 ## Verifying function calls
+
 This post, as most on Masilotti.com, follows the approach I take in [Better unit testing with Swift]({% post_url 2020-03-31-better-swift-unit-testing %}). Here’s a quick summary/refresher.
 
 ### All dependencies are protocols

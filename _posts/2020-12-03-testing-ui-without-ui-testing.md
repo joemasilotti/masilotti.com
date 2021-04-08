@@ -23,6 +23,8 @@ Normally I’ve reached for UI Testing. Unfortunately, more and more issues with
 
 Whats been working for me is a middle ground: **testing the UI in XCTest**. In other words, integration- or feature-level tests written in Xcode’s unit testing framework.
 
+{% include sponsor.html %}
+
 ## Unit vs. integration vs. feature tests
 
 Before going deeper, let’s make sure we are using the same terms. Here’s how I differentiate the three different types of tests.

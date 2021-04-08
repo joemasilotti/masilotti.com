@@ -14,6 +14,8 @@ Naked domains, or root domains, are hosts without the leading `www`. This blog i
 
 If you set this up it’s also important to redirect `www` to the naked domain. Without the redirect, Rails might set up separate cookies for the two domains. So someone signed in on `www.example.com` might not be on `example.com`.
 
+{% include sponsor.html %}
+
 ## A single Rails route
 
 In Rails, you can redirect the `www` traffic with a single redirect in your routes configuration.

@@ -11,6 +11,7 @@ category: masilotti.com
 It’s been a busy month! I’ve gone all in on Tailwind CSS, launched a new product, and started building a newsletter. Here’s what’s been keeping me busy.
 
 ## Masilotti.com
+
 I’ve been playing around with [Tailwind CSS](https://tailwindcss.com) for a little while and finally hit that sweet spot in the learning curve where the magic happens. So, obviously, I’ve become completely obsessed with the framework and am rewriting everything.
 
 First to get the Tailwind treatment is this site, Masilotti.com. I tweaked my colors a bit so they aren’t so aggressively lime green, bumped up the font size, and toned down the contrast a bit.  For context, [it took me one weekend to convert my site to Tailwind CSS]({% post_url 2020-07-24-tailwind-css %}).
@@ -20,6 +21,8 @@ All the posts should have migrated over but let me know if anything looks off. H
 It was awesome to see the first PR bump my Lighthouse scores up to a perfect 100. Thanks again [@peterpeterparker](https://github.com/peterpeterparker).
 
 ![Perfect 100 scores on Lighthouse](/images/lighthouse-100s.png)
+
+{% include sponsor.html %}
 
 ## TailwindCSS colors in SwiftUI
 

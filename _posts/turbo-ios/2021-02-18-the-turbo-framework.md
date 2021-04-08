@@ -28,6 +28,8 @@ The [rest of the series](/turbo-ios/) will touch on the following:
 * Native screens
 * Architecture and coordinators
 
+{% include sponsor.html %}
+
 ## The power of hybrid...
 
 Basecamp highlights four major benefits of a hybrid approach to your mobile apps. You'll:

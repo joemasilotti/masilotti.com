@@ -19,6 +19,8 @@ Testing asynchronous code can be difficult in Cedar. Because the test suite is i
 
 But all hope is not lost. A small gem was introduced in [Cedar 0.9.7](https://github.com/pivotal/cedar/releases/tag/v0.9.7) that can help you easily navigate the world of completion blocks. 
 
+{% include sponsor.html %}
+
 ## Asynchronous blocks
 
 Let's say your app fetches the latest movies from [Rotten Tomatoes](http://developer.rottentomatoes.com). The `MovieController` asks your `MovieService` for the most recent showtimes. Since a network request is involved, we need this call to be asynchronous. To accomplish this we can pass in a block parameter to be called when the movies are fetched.
