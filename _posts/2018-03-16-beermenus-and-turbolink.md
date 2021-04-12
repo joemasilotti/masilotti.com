@@ -20,13 +20,13 @@ I walked through how BeerMenus supports desktop, mobile web, Android, and iOS wi
 
 ---
 
-<div class="embed-responsive aspect-ratio-16/9">
+<div class="embed-responsive aspect-w-16 aspect-h-9">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xWJHy1ElG6E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 Feel free to follow along with the slides.
 
-<div class="embed-responsive aspect-ratio-16/9">
+<div class="embed-responsive aspect-w-16 aspect-h-9">
   <iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vRynAGN6pexj9XgECGEDU_tp8iENwB6ZrM22q5c9njXULmfnMT6-CPFrAl29Yma6CM4Cfp_BHWiD5lr/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="425" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="overflow: hidden;"></iframe>
 </div>
 

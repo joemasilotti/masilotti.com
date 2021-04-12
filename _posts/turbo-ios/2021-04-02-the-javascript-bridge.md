@@ -38,7 +38,7 @@ webView.evaluateJavaScript(script) { object, error in
 }
 ```
 
-> If you are targeting iOS 14+ I recommend taking a look at [`callAsyncJavaScript(_:arguments:in:in:completionHandler:)`](https://developer.apple.com/documentation/webkit/wkwebview/3656441-callasyncjavascript), which automatically serializes arguments.
+> If you are targeting iOS 14+ I recommend taking a look at [`callAsyncJavaScript( _:arguments: in: in: completionHandler:)`](https://developer.apple.com/documentation/webkit/wkwebview/3656441-callasyncjavascript), which automatically serializes arguments.
 
 Now that we know how to execute a script, let’s integrate with our server’s JavaScript. First, create a new JavaScript file in your `app/javascript/` directory. I put mine under a new folder named "turbo."
 

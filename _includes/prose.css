@@ -3,5 +3,5 @@
 }
 
 .prose ul.timeline > li {
-  @apply .pl-1;
+  @apply pl-1;
 }
