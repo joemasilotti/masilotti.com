@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hybrid iOS apps with Turbo – Part 1: The Turbo framework"
+series_title: The Turbo Framework
 date: 2021-02-18
 permalink: turbo-ios/hybrid-apps-with-turbo/
 description: "Hybrid mobile apps powered by Turbo: Basecamp's not-so-secret formula for producing large scale apps with small teams."

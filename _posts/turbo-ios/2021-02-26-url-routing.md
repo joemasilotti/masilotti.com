@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hybrid iOS apps with Turbo – Part 2: URL routing"
+series_title: URL routing
 date: 2021-02-26
 permalink: turbo-ios/url-routing/
 description: "Part 2 covers visit actions, path configuration, error handling, native view controllers, and more with Turbo iOS."

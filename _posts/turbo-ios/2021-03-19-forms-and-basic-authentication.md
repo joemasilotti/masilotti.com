@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hybrid iOS apps with Turbo – Part 3: Forms and basic authentication"
+series_title: Forms and basic authentication
 date: 2021-03-19
 permalink: turbo-ios/forms-and-basic-authentication/
 description: "How to install Turbo in Rails 6, custom iOS form handling, and web-based authentication in hybrid apps."

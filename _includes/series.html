@@ -23,9 +23,9 @@
         {% capture count %}{{ count | plus: '1' }}{% endcapture %}
         <li>
           {% if page.url == post.url %}
-            <i>{{ post.title }}</i>
+            <i>{{ post.series_title | default: post.title }}</i>
           {% else %}
-            <a href="{{ post.url }}">{{post.title}}</a>
+            <a href="{{ post.url }}">{{ post.series_title | default: post.title }}</a>
           {% endif %}
         </li>
       {% endif %}
