@@ -204,15 +204,15 @@ Native authentication in a hybrid app follows this rough outline:
 1. Present a native sign in screen
 2. Sign in via a secure HTTP request
 3. Receive an authentication token for future requests
-4. Pass that token to the web view to get the cookies
+4. Pass that token to the web view to persist the cookies
 
 [I’ve been doing some heavy thinking on this and have implementation recommendations.]({% link _newsletters/4.md %}) These will be discussed in the “native screens” article of this series.
 
 Can’t wait? Here’s a sneak peek of what I will be covering.
 
-1. A native sign in screen powered by SwiftUI and Combine
+1. A native sign in screen powered by SwiftUI
 2. JWT-based auth via the [API Guard](https://github.com/Gokul595/api_guard) gem
-3. A hidden `WKWebView` to grab the cookie
+3. Parsing the `Set-Cookie` HTTP header response and passing the cookies to the web view
 
 *Really* can’t wait? Feel free to [send me an email](mailto:joe@masilotti.com) if you’d like 1:1 help.
 

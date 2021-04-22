@@ -21,14 +21,6 @@ This is the first post in a series on how to build high-fidelity, hybrid iOS app
 
 {% include series.html %}
 
-The [rest of the series](/turbo-ios/) will touch on the following:
-
-* URL routing
-* Forms and basic authentication
-* The JavaScript bridge
-* Native screens
-* Architecture and coordinators
-
 {% include sponsor.html %}
 
 ## The power of hybrid...

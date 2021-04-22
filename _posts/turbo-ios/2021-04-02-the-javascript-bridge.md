@@ -271,8 +271,8 @@ My guess is that Strada will move this "on load" JavaScript to special `<meta>` 
 
 Or maybe it’s something else entirely! Basecamp likes to keep everything quite secret until they launch, so only time will tell.
 
-## Up next: native screens
+## Up next: native authentication
 
-The [next part in this series]({% link turbo-ios.md %}) is a big one: native screens. I’m going to dive into how to present native screens from Turbo and how to implement authentication natively – no web view required!
+The [next part in this series]({% link turbo-ios.md %}) is a big one: native authentication. I’m going to dive into how to present native screens from Turbo and how to implement authentication natively – no web view required!
 
 What are you hoping to learn about Turbo next? Let me know by [reaching out on Twitter](https://twitter.com/joemasilotti).

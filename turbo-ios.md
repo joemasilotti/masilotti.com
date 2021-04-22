@@ -31,8 +31,10 @@ Part 3 covers slightly more advanced topics: forms and basic authentication. Lea
 
 Having all our content in rendered on the web comes with some trade-offs. What if we want a native navigation bar button? Enter the JavaScript bridge, where we can pass messages between client and server without waiting for someone to tap a link.
 
-### Coming soon...
+## [5. Native authentication]({% post_url turbo-ios/2021-04-22-native-authentication %})
 
-#### 5. Native screens
+One major limitation of web-only authentication is, well, its web only. Native authentication, on the other hand, opens up a world of possibilities. It breaks your app out of the “web world” and enables fully native screens. Meaning, you can integrate native SDKs like location services and push notifications. Or render SwiftUI views for the really important stuff.
+
+### Coming soon...
 
 #### 6. Architecture and coordinators
