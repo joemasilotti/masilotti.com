@@ -33,7 +33,7 @@ Having all our content in rendered on the web comes with some trade-offs. What i
 
 ## [5. Native authentication]({% post_url turbo-ios/2021-04-22-native-authentication %})
 
-One major limitation of web-only authentication is, well, its web only. Native authentication, on the other hand, opens up a world of possibilities. It breaks your app out of the "web world" and enables fully native screens. Meaning, you can integrate native SDKs like location services and push notifications. Or render SwiftUI views for the really important stuff.
+One major limitation of web-only authentication is, well, it's web only. Native authentication, on the other hand, opens up a world of possibilities. It breaks your app out of the web world and enables fully native screens. Meaning, you can integrate native SDKs like location services and push notifications. Or, you can render SwiftUI views for the really important stuff.
 
 ### Coming soon...
 

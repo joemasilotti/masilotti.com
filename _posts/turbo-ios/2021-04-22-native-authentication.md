@@ -13,9 +13,9 @@ series: Turbo iOS
 
 Welcome back to my [6-part series on hybrid iOS apps with Turbo]({% link turbo-ios.md %}). In [part 3]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %}) we learned how to do basic authentication via the web view.
 
-One major limitation of web-only authentication is, well, its web only. That limits us to only interacting with our server via HTML and JavaScript. You’re out of luck if you need to make an authenticated HTTP request.
+One major limitation of web-only authentication is, well, it's web only. That limits us to only interacting with our server via HTML and JavaScript. You’re out of luck if you need to make an authenticated HTTP request.
 
-Native authentication, on the other hand, opens up a world of possibilities. It breaks your app out of the "web world" and enables fully native screens. Meaning, you can integrate native SDKs like location services and push notifications. Or render SwiftUI views for the really important stuff!
+Native authentication, on the other hand, opens up a world of possibilities. It breaks your app out of the web world and enables fully native screens. Meaning, you can integrate native SDKs like location services and push notifications. Or, you can render SwiftUI views for the really important stuff!
 
 {% include series.html %}
 
@@ -41,9 +41,9 @@ These steps can be grouped into three big flows: unauthenticated requests, initi
 
 ## 1. Unauthenticated requests
 
-In order to "catch" the unauthenticated response in Turbo we need the server to return a non-200 status code. [401 Unauthorized](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401) is perfect, but you can also use [403 Forbidden](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403).
+In order to catch the unauthenticated response in Turbo we need the server to return a non-200 status code. [401 Unauthorized](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401) is perfect, but you can also use [403 Forbidden](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403).
 
-If you’re using Devise you can set up a [Failure App](https://www.rubydoc.info/github/plataformatec/devise/Devise/FailureApp) to render custom status codes when your `authenticate_user!` before action fails. Add the following to `config/initializers/devise.rb` to configure the custom Failure App.
+If you’re using Devise, you can set up a [Failure App](https://www.rubydoc.info/github/plataformatec/devise/Devise/FailureApp) to render custom status codes when your `authenticate_user!` before action fails. Add the following to `config/initializers/devise.rb` to configure the custom Failure App.
 
 ```ruby
 class TurboFailureApp < Devise::FailureApp
@@ -67,7 +67,7 @@ Devise.setup do |config|
 end
 ```
 
-`#turbo_native_app?` is part of [turbo-rails](https://github.com/hotwired/turbo-rails/blob/main/app/controllers/turbo/native/navigation.rb) and checks if the user agent contains "Turbo Native". Make sure to set your user agent on each `Session` you use.
+`#turbo_native_app?` is part of [turbo-rails](https://github.com/hotwired/turbo-rails/blob/main/app/controllers/turbo/native/navigation.rb) and checks if the user agent contains "Turbo Native." Make sure to set your user agent on each `Session` you use.
 
 ```swift
 let session = Session()
@@ -83,7 +83,7 @@ Sadly, the error parameter is untyped. So we need to first check if it is a `Tur
 ```swift
 func session(_ session: Session, didFailRequestForVisitable visitable: Visitable, error: Error) {
     if error.isUnauthorized {
-        // Render native sign in flow
+        // Render native sign-in flow
     } else {
         // Handle actual errors
     }
@@ -102,11 +102,11 @@ extension Error {
 }
 ```
 
-Once we know the user needs to authenticate we can handle the sign in flow natively. I usually reach for a new coordinator, but feel free to present a view controller if that is more comfortable for you.
+Once we know the user needs to authenticate we can handle the sign-in flow natively. I usually reach for a new coordinator, but feel free to present a view controller if that is more comfortable for you.
 
-### Native sign in form
+### Native sign-in form
 
-At a minimum, your sign in form needs an email field, a password field, and a submit button. I’ve been using `UIHostingController` to wrap SwiftUI views lately and I really like the ergonomics. You get the short feedback loops of SwiftUI but aren’t required to convert your entire app away from UIKit.
+At a minimum, your sign-in form needs an email field, a password field, and a submit button. I’ve been using `UIHostingController` to wrap SwiftUI views lately and I really like the ergonomics. You get the short feedback loops of SwiftUI but aren’t required to convert your entire app away from UIKit.
 
 ```swift
 let viewModel = SignInViewModel()
@@ -181,9 +181,9 @@ private struct Credentials: Encodable {
 
 Back to the server. We need to authenticate this request, create an access token, and sign in the user. The access token will be used for future native requests and the cookies for future web requests.
 
-First, authenticate the email/password combination. If you’re using Devise you can authenticate via `#valid_password?` after finding the user. Otherwise, make sure you are securely doing this validation and avoiding [timing attacks](https://en.wikipedia.org/wiki/Timing_attack).
+First, authenticate the email/password combination. If you’re using Devise, you can authenticate via `#valid_password?` after finding the user. Otherwise, make sure you are securely doing this validation and avoiding [timing attacks](https://en.wikipedia.org/wiki/Timing_attack).
 
-Next, generate the cookies and pass them to the response. With Devise you first need to "remember" the user. This ensures that the `session` cookie is set, which we will pass to the web view.
+Next, generate the cookies and pass them to the response. With Devise you first need to remember the user. This ensures that the `session` cookie is set, which we will pass to the web view.
 
 Finally, pass the generated access/auth token. This example is just that, **an example**. In production you should ensure this token is not stored in plain text and can be revoked when needed. JWTs or Rails 7’s [Active Record Encryption](https://edgeguides.rubyonrails.org/active_record_encryption.html) can help.
 
@@ -301,10 +301,10 @@ end
 
 ## Wrapping up
 
-This is only an example of one implementation of native authentication with Turbo. Ideas for improvement are a better designed sign in screen, using JWT or OAuth for access tokens, and leveraging a Swift networking library to cut down on the boilerplate.
+This is only an example of one implementation of native authentication with Turbo. Ideas for improvement are a better designed sign-in screen, using JWT or OAuth for access tokens, and leveraging a Swift networking library to cut down on the boilerplate.
 
 > I maintain [HTTP Client](https://github.com/joemasilotti/HTTP-Client), a small Swift library that drastically reduces the boilerplate needed to make network requests. It automatically sets HTTP headers and parses responses directly to your Codable objects.
 
-You’ve now broken your hybrid app out of the "web only" world and opened up iOS SDKs and fully native screens. You could route `/my/items/map` to a native `MapView` instead of dealing with Google Maps in the browser. Or route `messages/new` to use a completely custom text editor instead of something web-based.
+You’ve now broken your hybrid app out of the web only world and opened up iOS SDKs and fully native screens. You could route `/my/items/map` to a native `MapView` instead of dealing with Google Maps in the browser. Or route `messages/new` to use a completely custom text editor instead of something web-based.
 
-What will you build now that you have access to the best parts of Rails _and_ the best parts of iOS?
+What will you build now that you have access to the best parts of Rails _and_ the best parts of iOS? Let me know on [Twitter](https://twitter.com/joemasilotti) or by [sending me an email](mailto:joe@masilotti.com).
