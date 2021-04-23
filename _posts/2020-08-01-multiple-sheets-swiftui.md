@@ -41,7 +41,7 @@ struct ContentView: View {
                 Text("Sheet #1 content")
             }
 
-            Button("Show sheet ”2") {
+            Button("Show sheet "2") {
                 self.isPresentingSheetTwo = true
             }.sheet(isPresented: $isPresentingSheetTwo) {
                 Text("Sheet #2 content")

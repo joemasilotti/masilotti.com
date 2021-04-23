@@ -12,7 +12,7 @@ xcode: 12
 
 Over the years of testing applications I’ve started to put more and more value in end-to-end integration tests. They help me identify new categories of bugs that are harder to catch when only doing unit tests.
 
-Don’t get me wrong, unit tests are invaluable when working in the weeds or deep in the stack. And I would never integration test an HTTP client. But more recently I’ve been bitten by the “2 unit tests 0 integration tests” meme.
+Don’t get me wrong, unit tests are invaluable when working in the weeds or deep in the stack. And I would never integration test an HTTP client. But more recently I’ve been bitten by the "2 unit tests 0 integration tests" meme.
 
 <div class="max-w-sm mx-auto">
   <img src="/images/two-unit-tests-zero-integration-tests.png" alt="Two unit tests, zero integration tests" class="rounded-lg shadow-lg mb-0 lg:mb-0"/>
@@ -35,13 +35,13 @@ Before going deeper, let’s make sure we are using the same terms. Here’s how
 
 ### Unit tests
 
-The lowest level of testing and the one folks are most familiar with. These test a single “unit” - usually a struct or class. Ideally, all collaborators are mocked or stubbed out to return specific values.
+The lowest level of testing and the one folks are most familiar with. These test a single "unit" - usually a struct or class. Ideally, all collaborators are mocked or stubbed out to return specific values.
 
 A common example is testing a HTTP client. When you call a specific function, with specific parameters, the `URLSession` receives a specific function call. The session is stubbed out and you only verify the right messages and data were passed along.
 
 ### Integration tests
 
-One level up we have integration tests. I like to think of these as “friendly” unit tests - they get a few different units in the same room and let them mingle.
+One level up we have integration tests. I like to think of these as "friendly" unit tests - they get a few different units in the same room and let them mingle.
 
 Integration tests start somewhere in the middle of the stack and stub out as little as possible. For example, testing when a specific function is called on a controller the table view adds a row. We might stub out a network connection, but the interaction with our model is left unaltered.
 
@@ -95,7 +95,7 @@ func testTappingAButton() throws {
 
 But what replaces the comment? There’s no `.tap()` function on `UIButton`s, so how do we trigger the action?
 
-Turns out we can simulate the effects of this by sending the event. In our case, “touch up inside”.
+Turns out we can simulate the effects of this by sending the event. In our case, "touch up inside".
 
 `controller.toggleTextButton.sendActions(for: .touchUpInside)`
 
@@ -120,7 +120,7 @@ func testTappingAButton() throws {
 
 ### Test pushing a view controller
 
-Up next is testing the push of a new view controller on a `UINavigationController`. As before, here’s a first pass at a test using our “tap” knowledge from before.
+Up next is testing the push of a new view controller on a `UINavigationController`. As before, here’s a first pass at a test using our "tap" knowledge from before.
 
 ```swift
 func testPushingAViewController() throws {
@@ -138,11 +138,11 @@ func testPushingAViewController() throws {
 }
 ```
 
-Unfortunately, both of our assertions fail. However, unchecking “Animates” in the segue (or `push(controller, animated: false)`) gets them passing again. What’s going on?
+Unfortunately, both of our assertions fail. However, unchecking "Animates" in the segue (or `push(controller, animated: false)`) gets them passing again. What’s going on?
 
 The animation is happening outside the scope of the tests. Essentially, it’s asynchronous. While you might be tempted to reach for [asynchronous expectations]({% post_url 2016-02-01-testing-nsurlsession-async %}), there’s a better option.
 
-`RunLoop.current.run(until: Date())`, or as we called it at Pivotal Labs, “ticking the run loop.”
+`RunLoop.current.run(until: Date())`, or as we called it at Pivotal Labs, "ticking the run loop."
 
 This delays the test suite the slightest bit, _just_ enough to catch up with the asynchronous behavior of the animation.
 
@@ -150,7 +150,7 @@ Our completed, passing test now looks like this:
 
 ```swift
 func testPushingAViewController() throws {
-    let storyboard = UIStoryboard(name: “Main”, bundle: nil)
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let navigationController = storyboard.instantiateInitialViewController()
         as? UINavigationController
     let homeViewController = navigationController?.topViewController
@@ -174,7 +174,7 @@ Again, here’s a first pass at a test, building on the previous two examples.
 
 ```swift
 func testPresentingAModalViewController() throws {
-    let storyboard = UIStoryboard(name: “Main”, bundle: nil)
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let navigationController = storyboard.instantiateInitialViewController()
         as? UINavigationController
     let homeViewController = navigationController?.topViewController
@@ -299,12 +299,12 @@ func testPresentingAModalViewController() throws {
 We learned three different techniques for how to test the UI without UI Testing.
 
 1. Send the action to a button to simulate a tap
-2. Tick the run loop to “wait” for pushing a controller
+2. Tick the run loop to "wait" for pushing a controller
 3. Use a real `UIWindow` to simulate the real app
 
 ### Teach a dev to fish
 
-I challenge you the next time you reach for XCUITest to take a step back. Ask yourself, do I need this framework? Or can I get by with “just” XCTest and some UIKit manipulation? Can I use one of these new ideas to test what I’m working on?
+I challenge you the next time you reach for XCUITest to take a step back. Ask yourself, do I need this framework? Or can I get by with "just" XCTest and some UIKit manipulation? Can I use one of these new ideas to test what I’m working on?
 
 This is the approach I’ve started to take more often recently and I’ve really been enjoying it. I still have some UI Tests but they are starting to dwindle. And my test suite has never been faster or more reliable.
 

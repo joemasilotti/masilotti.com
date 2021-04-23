@@ -15,7 +15,7 @@ Welcome back to my [6-part series on hybrid iOS apps with Turbo]({% link turbo-i
 
 One major limitation of web-only authentication is, well, its web only. That limits us to only interacting with our server via HTML and JavaScript. You’re out of luck if you need to make an authenticated HTTP request.
 
-Native authentication, on the other hand, opens up a world of possibilities. It breaks your app out of the “web world” and enables fully native screens. Meaning, you can integrate native SDKs like location services and push notifications. Or render SwiftUI views for the really important stuff!
+Native authentication, on the other hand, opens up a world of possibilities. It breaks your app out of the "web world" and enables fully native screens. Meaning, you can integrate native SDKs like location services and push notifications. Or render SwiftUI views for the really important stuff!
 
 {% include series.html %}
 
@@ -41,7 +41,7 @@ These steps can be grouped into three big flows: unauthenticated requests, initi
 
 ## 1. Unauthenticated requests
 
-In order to “catch” the unauthenticated response in Turbo we need the server to return a non-200 status code. [401 Unauthorized](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401) is perfect, but you can also use [403 Forbidden](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403).
+In order to "catch" the unauthenticated response in Turbo we need the server to return a non-200 status code. [401 Unauthorized](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401) is perfect, but you can also use [403 Forbidden](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403).
 
 If you’re using Devise you can set up a [Failure App](https://www.rubydoc.info/github/plataformatec/devise/Devise/FailureApp) to render custom status codes when your `authenticate_user!` before action fails. Add the following to `config/initializers/devise.rb` to configure the custom Failure App.
 
@@ -67,7 +67,7 @@ Devise.setup do |config|
 end
 ```
 
-`#turbo_native_app?` is part of [turbo-rails](https://github.com/hotwired/turbo-rails/blob/main/app/controllers/turbo/native/navigation.rb) and checks if the user agent contains “Turbo Native”. Make sure to set your user agent on each `Session` you use.
+`#turbo_native_app?` is part of [turbo-rails](https://github.com/hotwired/turbo-rails/blob/main/app/controllers/turbo/native/navigation.rb) and checks if the user agent contains "Turbo Native". Make sure to set your user agent on each `Session` you use.
 
 ```swift
 let session = Session()
@@ -149,7 +149,7 @@ This view isn’t styled, but SwiftUI and `Form` do a pretty good job making it 
 
 ## 2. Initial authentication
 
-Once the user taps “Sign in” we need to send their email/password to the server. We also need to set the user agent and content type to JSON on the request. This ensures Rails can identify it as a Turbo Native API request.
+Once the user taps "Sign in" we need to send their email/password to the server. We also need to set the user agent and content type to JSON on the request. This ensures Rails can identify it as a Turbo Native API request.
 
 ```swift
 func signIn() {
@@ -183,7 +183,7 @@ Back to the server. We need to authenticate this request, create an access token
 
 First, authenticate the email/password combination. If you’re using Devise you can authenticate via `#valid_password?` after finding the user. Otherwise, make sure you are securely doing this validation and avoiding [timing attacks](https://en.wikipedia.org/wiki/Timing_attack).
 
-Next, generate the cookies and pass them to the response. With Devise you first need to “remember” the user. This ensures that the `session` cookie is set, which we will pass to the web view.
+Next, generate the cookies and pass them to the response. With Devise you first need to "remember" the user. This ensures that the `session` cookie is set, which we will pass to the web view.
 
 Finally, pass the generated access/auth token. This example is just that, **an example**. In production you should ensure this token is not stored in plain text and can be revoked when needed. JWTs or Rails 7’s [Active Record Encryption](https://edgeguides.rubyonrails.org/active_record_encryption.html) can help.
 
@@ -216,7 +216,7 @@ end
 
 Back to the client again. We now need to securely persist the access token and pass the cookies to the web view.
 
-From [the docs](https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain), the “keychain is the best place to store small secrets, like passwords and cryptographic keys.” The API is kind of rough, so I always reach for the [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess) package when I need to persist secure information.
+From [the docs](https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain), the "keychain is the best place to store small secrets, like passwords and cryptographic keys." The API is kind of rough, so I always reach for the [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess) package when I need to persist secure information.
 
 The cookies are available in the request in the `Set-Cookie` header. We can transform those into instances of `HTTPCookie` via [`cookies(withResponseHeaderFields:for:)`](https://developer.apple.com/documentation/foundation/httpcookie/1393011-cookies) and copy them to our web view’s shared storage.
 
@@ -272,7 +272,7 @@ if let token = keychain["access-token"] {
 }
 ```
 
-Back on the server, we can add a helper method to our API controller to find the user via the access token. Calling this in a `before_action` will authenticate the user via their access token. The “magic” here is using `#sign_in` from Devise. This sets `current_user` automatically!
+Back on the server, we can add a helper method to our API controller to find the user via the access token. Calling this in a `before_action` will authenticate the user via their access token. The "magic" here is using `#sign_in` from Devise. This sets `current_user` automatically!
 
 Also, note that we are passing false to the `store` key. This tells Devise not to create a session for the request and ignore cookies.
 
@@ -305,6 +305,6 @@ This is only an example of one implementation of native authentication with Turb
 
 > I maintain [HTTP Client](https://github.com/joemasilotti/HTTP-Client), a small Swift library that drastically reduces the boilerplate needed to make network requests. It automatically sets HTTP headers and parses responses directly to your Codable objects.
 
-You’ve now broken your hybrid app out of the “web only” world and opened up iOS SDKs and fully native screens. You could route `/my/items/map` to a native `MapView` instead of dealing with Google Maps in the browser. Or route `messages/new` to use a completely custom text editor instead of something web-based.
+You’ve now broken your hybrid app out of the "web only" world and opened up iOS SDKs and fully native screens. You could route `/my/items/map` to a native `MapView` instead of dealing with Google Maps in the browser. Or route `messages/new` to use a completely custom text editor instead of something web-based.
 
 What will you build now that you have access to the best parts of Rails _and_ the best parts of iOS?

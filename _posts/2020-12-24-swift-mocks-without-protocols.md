@@ -12,7 +12,7 @@ xcode: 12
 
 A true unit test mocks out the subject’s collaborators. If you’re testing the service layer you don’t want the HTTP client making real network requests in your test suite.
 
-A common approach for creating these mocks is to use (abuse, really) Swift protocols. A protocol with a single implementation in the app and a mock “implementation” for tests.
+A common approach for creating these mocks is to use (abuse, really) Swift protocols. A protocol with a single implementation in the app and a mock "implementation" for tests.
 
 This technique enables us to stub out whatever we need under test without worrying about the real implementation. However, it has a downside.  **You create an additional layer of indirection in your application code that is only needed for tests.**
 

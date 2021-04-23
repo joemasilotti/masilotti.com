@@ -142,7 +142,7 @@ func test_start_pushesJoesCustomerViewController() throws {
 
 If our little gremlin happens again and we push the wrong view controller we will now get a nice test failure and the suite will continue on like usual.
 
-> `XCTUnwrap failed: expected non-nil value of type “CustomerViewController”`
+> `XCTUnwrap failed: expected non-nil value of type "CustomerViewController"`
 
 We could even add our own failure message if we desire, like the rest of the `XCT*` helpers.
 

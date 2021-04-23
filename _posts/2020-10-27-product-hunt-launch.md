@@ -73,7 +73,7 @@ Shout out to [David](https://twitter.com/panphora) for this idea and for providi
 
 ### Be genuine
 
-Product Hunt has a strict policy against asking for upvotes. Instead, they recommend asking folks to “check out the page.”
+Product Hunt has a strict policy against asking for upvotes. Instead, they recommend asking folks to "check out the page."
 
 What worked well for me was being genuine. I wanted support from my audience so that’s what I asked for. "I would love if you could show me some support" seemed to resonate.
 

@@ -5,7 +5,7 @@ date: 2016-03-04
 seo:
   date_modified: 2020-08-03
 permalink: ui-testing-stub-network-data/
-description: Learn how to stub network data when running UI Tests with the magic of some “secret” XCTest APIs.
+description: Learn how to stub network data when running UI Tests with the magic of some "secret" XCTest APIs.
 category: ui-testing
 series: "Testing URLSession"
 xcode: 12

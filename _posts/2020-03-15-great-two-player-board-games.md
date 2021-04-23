@@ -28,11 +28,11 @@ Deck-builders are games that start you off with a small, boring set of cards. As
 
 ### [Hero Realms](https://amzn.to/2TSM6mE)
 
-Start with a meager, boring deck and enhance it with swords, magic spells, orcs, and even dragons. It’s very easy to pick up with only a few simple rules. Most cards have their own “special” ability that keeps the games interesting. All without adding unnecessary complexity.
+Start with a meager, boring deck and enhance it with swords, magic spells, orcs, and even dragons. It’s very easy to pick up with only a few simple rules. Most cards have their own "special" ability that keeps the games interesting. All without adding unnecessary complexity.
 
 [![Hero Realms](/images/hero-realms.jpeg)](https://amzn.to/2TSM6mE)
 
-[Hero Realms](https://amzn.to/2TSM6mE) takes less than 20 minutes to play, making it great for a quick break.  Adrienne and I love to go all in on one “faction,” or color. I love how green limits your opponent’s options and she opts for the healing strategy of yellow.
+[Hero Realms](https://amzn.to/2TSM6mE) takes less than 20 minutes to play, making it great for a quick break.  Adrienne and I love to go all in on one "faction," or color. I love how green limits your opponent’s options and she opts for the healing strategy of yellow.
 
 I spent last weekend catching up with my closest friends. We played a few games of Hero Realms and before they made it home three couples had bought it. Just saying.
 
@@ -58,11 +58,11 @@ As a bonus, this can be played with any regular deck of cards! You already have 
 
 ### [The Fox in the Forest](https://amzn.to/2TRPVsd)
 
-Adrienne and I love playing hearts with her family. When they taught me I lost my first 20 games. Not just “didn’t win,” but straight up came in last place. I’m happy to say I can now solidly take third. (Hearts is for four players.)
+Adrienne and I love playing hearts with her family. When they taught me I lost my first 20 games. Not just "didn’t win," but straight up came in last place. I’m happy to say I can now solidly take third. (Hearts is for four players.)
 
 [![The Fox in the Forest](/images/the-fox-in-the-forest.jpeg)](https://amzn.to/2TRPVsd)
 
-Hearts with two players doesn’t exist but [The Fox in the Forest](https://amzn.to/2TRPVsd) is as close as you can get. You play 13 tricks against your opponent trying to win a specific number. Win too few and you don’t score enough points. But win too many and you “get greedy” and don’t score any points at all!
+Hearts with two players doesn’t exist but [The Fox in the Forest](https://amzn.to/2TRPVsd) is as close as you can get. You play 13 tricks against your opponent trying to win a specific number. Win too few and you don’t score enough points. But win too many and you "get greedy" and don’t score any points at all!
 
 To keep things interesting half the cards have special abilities. For example, one card swaps out the trump suit and another lets you draw an extra card for your turn.
 
@@ -74,7 +74,7 @@ This category of games might look more advanced or complicated at first glance. 
 
 The OG game for Adrienne and me; we’ve been playing this one for over five years!
 
-Draw and place a tile to build out a landscape of cities, roads, cathedrals, rivers, and more. After your turn, place your (adorably named) “meeple" on your tile to claim it and score points.
+Draw and place a tile to build out a landscape of cities, roads, cathedrals, rivers, and more. After your turn, place your (adorably named) "meeple" on your tile to claim it and score points.
 
 [![Carcassonne](/images/carcassonne.jpeg?v2)](https://amzn.to/33i8skw)
 

@@ -201,7 +201,7 @@ app.maps.element.pinch(withScale: 1.5, velocity: 1)
 
 According to the [documentation for UI Testing](https://developer.apple.com/documentation/xctest/xcuielement/1618669-pinch), the `scale` parameter will determine a zoom out or zoom in gesture.
 
-> Use a scale between 0 and 1 to “pinch close” or zoom out and a scale greater than 1 to “pinch open” or zoom in.
+> Use a scale between 0 and 1 to "pinch close" or zoom out and a scale greater than 1 to "pinch open" or zoom in.
 
 Also note that the `velocity` parameter has a restrictions as well. If you are zooming out (a scale between 0 and 1) you the velocity must be less than zero.
 

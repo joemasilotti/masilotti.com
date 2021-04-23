@@ -20,7 +20,7 @@ In my experience, [Zoom](https://zoom.us/freesignup/) is the most consistent ser
 
 I will usually split my screen with a small, tiled video chat window on one side and the board game on the other. This lets me see everyone and the game at the same time. I do this by going fullscreen in my game then dragging the Zoom window on top of the fullscreen window.
 
-You can also use “Enter Minimal View” in Zoom to have a single, hovering video on top of your desktop. Enable that from the Menu bar item “Meeting” then click “Enter Minimal View.”
+You can also use "Enter Minimal View" in Zoom to have a single, hovering video on top of your desktop. Enable that from the Menu bar item "Meeting" then click "Enter Minimal View."
 
 ![Zoom and Dominion](/images/zoom-and-dominion.png)
 

@@ -12,7 +12,7 @@ xcode: 12
 
 Deep linking, and even universal links, are an important part of the app ecosystem. They seamlessly link content inside your app to the external world. Often these flows have complex behaviors with lots of branching logic. All the more reason they need to be covered by automated testing.
 
-Previously, I would extract the logic to some “test only” helper method on my root controller and call that via a hidden button press in UI Testing. This works, but it has two major issues:
+Previously, I would extract the logic to some "test only" helper method on my root controller and call that via a hidden button press in UI Testing. This works, but it has two major issues:
 
 1. It doesn’t simulate the actual behavior of going through `AppDelegate`
 2. You have to add custom, test-specific code your application bundle
@@ -23,7 +23,7 @@ We can solve both of these problems by embedding a tiny HTTP server *inside* our
 
 ## How to manually open deep links
 
-First, some background.  There’s a tiny trick with opening a deep link in iOS: you have to actually tap it. You can’t copy and paste something into Safari and tap “Go”, it won’t register.
+First, some background.  There’s a tiny trick with opening a deep link in iOS: you have to actually tap it. You can’t copy and paste something into Safari and tap "Go", it won’t register.
 
 We can take advantage of this by creating a tappable link somewhere on the simulator. We could drop it right in the app, but that brings us back to issue #2. Instead, let’s use Mobile Safari.
 

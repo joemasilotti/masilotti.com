@@ -7,7 +7,7 @@ description: "Create and modify dates by taking advantage of iOS 8's NSCalendar 
 category: ios
 ---
 
-Apple quietly introduced a whole new suite of public API methods to `NSCalendar` in iOS 8 titled “Calendrical Calculations”. For some reason they seemed to have forgotten to include them in the public documentation on their developer site. Fortunately, digging in to the header file in Xcode reveals lots of descriptive comments about how to use these powerful new ways of interacting with `NSDate` objects.
+Apple quietly introduced a whole new suite of public API methods to `NSCalendar` in iOS 8 titled "Calendrical Calculations". For some reason they seemed to have forgotten to include them in the public documentation on their developer site. Fortunately, digging in to the header file in Xcode reveals lots of descriptive comments about how to use these powerful new ways of interacting with `NSDate` objects.
 
 In iOS 7 all `NSDate` manipulation required working with `NSDateComponents` directly. While there is nothing inherently wrong with this class it is terribly verbose. Most of the manipulations require converting an `NSDate` to its components, fiddling with one or more of the values, then creating a new date by hand. I’ll compare a few common operations and you can decide which are more legible, terse, and easy to understand.
 
@@ -32,7 +32,7 @@ threeHoursFromNow = [calendar dateByAddingUnit:NSCalendarUnitHour
 
 This method will account for overflow as expected. Try passing in 24 for the `value` parameter and watch the date’s day increase. Following this same approach you can easily manipulate other units by setting the first parameter to your desired granularity.
 
-Comparing this to the old approach of fishing out `NSDateComponents`, then setting the specific property, then creating an `NSDate` from said components you can quickly see how powerful and readable the new API is. Here is a rundown of how we could have done it “the old way”. Note that all of the `NSCalendarUnit`s are required to ensure the newly created date has all of the same properties from the original one.
+Comparing this to the old approach of fishing out `NSDateComponents`, then setting the specific property, then creating an `NSDate` from said components you can quickly see how powerful and readable the new API is. Here is a rundown of how we could have done it "the old way". Note that all of the `NSCalendarUnit`s are required to ensure the newly created date has all of the same properties from the original one.
 
 ````objc
 NSCalendar *calendar = [NSCalendar currentCalendar];
@@ -58,7 +58,7 @@ NSDate *nextNineThirty = [calendar nextDateAfterDate:[NSDate date]
                                              options:NSCalendarMatchNextTime];
 ````
 
-Using the old APIs would require us to take a few more steps. First we create a new date from today’s date and set the relevant components. If the new date's hour and minute are “more than” todays’s then return the new date, otherwise increment the day component.
+Using the old APIs would require us to take a few more steps. First we create a new date from today’s date and set the relevant components. If the new date's hour and minute are "more than" todays’s then return the new date, otherwise increment the day component.
 
 Note the annoying and cryptic `if` statement doing the actual calculation. You can easily imagine how this would snowball if we cared about more components.
 

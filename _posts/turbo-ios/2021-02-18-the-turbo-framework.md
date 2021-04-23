@@ -40,9 +40,9 @@ This means you don’t need to hire a team of iOS developers to build your app. 
 
 The magic of Turbo comes from its hands-off approach to rendering. All content is derived from the existing Rails application, instead of being rebuilt natively in Swift.
 
-Very simply, Turbo lets you “wrap” your website in native chrome. It renders the web content inside of a web view with native navigation.
+Very simply, Turbo lets you "wrap" your website in native chrome. It renders the web content inside of a web view with native navigation.
 
-This means that all of the existing mobile web content can be used *immediately* when you create the iOS app. And any new web screens automatically “just work” in the app.
+This means that all of the existing mobile web content can be used *immediately* when you create the iOS app. And any new web screens automatically "just work" in the app.
 
 When you're ready to level up a screen to native code, Turbo gives you hooks to set up your own custom view controllers. But this is entirely optional; lots of websites look great as is!
 

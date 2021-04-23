@@ -85,7 +85,7 @@ To work around this I've adopted the official [typography](https://tailwindcss.c
 
 ## Building Tailwind
 
-OK, great, you’re convinced. “Let’s do Tailwind!” I can hear you yelling at your monitor. But how? …great question.
+OK, great, you’re convinced. "Let’s do Tailwind!" I can hear you yelling at your monitor. But how? …great question.
 
 For all my praise, Tailwind is still a pain in the butt to build. Because of its complex build process (relative to Bootstrap) it requires a bit of modern web packaging know-how.
 

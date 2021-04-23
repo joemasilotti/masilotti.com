@@ -61,7 +61,7 @@ Something magical happened when Xcode 6 was released. Apple decided to put a lit
 
 The [documentation on `XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase) comments on the new category's functionality (emphasis mine).
 
-> This category introduces support for asynchronous testing in XCTestCase. The mechanism allows you to specify one or more “expectations” that will **occur asynchronously as a result of actions in the test**. Once all expectations have been set, a “wait” API is called that will **block execution of subsequent test code** until all expected conditions have been fulfilled or a timeout occurs.
+> This category introduces support for asynchronous testing in XCTestCase. The mechanism allows you to specify one or more "expectations" that will **occur asynchronously as a result of actions in the test**. Once all expectations have been set, a "wait" API is called that will **block execution of subsequent test code** until all expected conditions have been fulfilled or a timeout occurs.
 
 So, how do we use it? 
 

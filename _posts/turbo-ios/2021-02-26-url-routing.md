@@ -39,7 +39,7 @@ Last week’s code example threw all of the Turbo-related code right in the `Sce
 
 ### Introducing the `AppCoordinator`
 
-To start, we can move all of our logic to a coordinator. We won’t be diving too deep into the coordinator pattern in this post. For now, think of this as a helper object that orchestrates the “flow” of the app. It will be in charge of bridging the gap between Turbo and the UI.
+To start, we can move all of our logic to a coordinator. We won’t be diving too deep into the coordinator pattern in this post. For now, think of this as a helper object that orchestrates the "flow" of the app. It will be in charge of bridging the gap between Turbo and the UI.
 
 Pull down my [Turbo-iOS Demo](https://github.com/joemasilotti/Turbo-iOS-Demo) codebase and checkout the `part-2/start` branch. Notice that we moved all of the Turbo-related logic to `AppCoordinator`. Now `SceneDelegate` is left to do one thing: manage the scene.
 
@@ -47,7 +47,7 @@ Next, let’s dig into our first broken link.
 
 ## 1. Visit actions
 
-We find our first broken link by tapping “Navigate to another page” then “Replace with another webpage.” This navigation should not have _pushed_ a new view controller onto the stack. Instead, it should have _replaced_ the visible content.
+We find our first broken link by tapping "Navigate to another page" then "Replace with another webpage." This navigation should not have _pushed_ a new view controller onto the stack. Instead, it should have _replaced_ the visible content.
 
 {% include simulator.html image="turbo-ios/push-or-replace.png" text="This should have been a modal." %}
 
@@ -84,7 +84,7 @@ Advance is the most commonly used action and also the most straightforward. When
 
 Instead of pushing a view controller onto the stack, `replace` instead...well... replaces it. This gives the impression of the content reloading or updating to reflect a change.
 
-A major benefit is that we can submit a form then replace the form contents with the “show” CRUD action to give the impression of modifying content natively.
+A major benefit is that we can submit a form then replace the form contents with the "show" CRUD action to give the impression of modifying content natively.
 
 ### `restore` visit action
 
@@ -122,11 +122,11 @@ By setting the navigation controller’s `viewControllers` property directly, we
 
 ## 2. Path configuration
 
-Tap on that “Load a page modally” link. See how it slides up from the bottom of the screen like a native modal? Oh, what? It doesn’t? Ah, silly me. We haven’t added routing yet!
+Tap on that "Load a page modally" link. See how it slides up from the bottom of the screen like a native modal? Oh, what? It doesn’t? Ah, silly me. We haven’t added routing yet!
 
 Routing, in the context of Turbo, is the translation of links to view controllers and presentation styles. It enables you to render native view controllers, present screens modally, and do all sorts of custom logic.
 
-At its core, routing is based on the URL, allowing specific “type” of URLs to behave differently. For example, you could present all URLs ending in `/new` to be presented modally. Or, you could show a native view controller when the path is `/settings`.
+At its core, routing is based on the URL, allowing specific "type" of URLs to behave differently. For example, you could present all URLs ending in `/new` to be presented modally. Or, you could show a native view controller when the path is `/settings`.
 
 ### `PathConfiguration.json`
 
@@ -223,7 +223,7 @@ private func visit(url: URL, action: VisitAction = .advance, properties: PathPro
 }
 ```
 
-Now the modal link should work as expected. Do note that we haven’t handled the “Submit Form” link yet, and tapping it will cause odd things to happen. Rest assured, we will get to forms later in the series.
+Now the modal link should work as expected. Do note that we haven’t handled the "Submit Form" link yet, and tapping it will cause odd things to happen. Rest assured, we will get to forms later in the series.
 
 {% include simulator.html image="turbo-ios/modal.png" text="Presented as a modal" %}
 
@@ -259,7 +259,7 @@ if properties["presentation"] as? String == "modal" {
 ```
 
 ## Native view controllers
-This approach is not limited to presentation logic; we can also route to different view controllers. Let’s piggy-back on the example server’s “Intercept with a native view” link to show some native content.
+This approach is not limited to presentation logic; we can also route to different view controllers. Let’s piggy-back on the example server’s "Intercept with a native view" link to show some native content.
 
 First, add a new rule to `PathConfiguration.json`.
 
@@ -332,13 +332,13 @@ This method is getting a little ugly, and we are checking the presence of a magi
 
 ## Error handling with Turbo
 
-The next broken link is “Hit an HTTP 404 error.” Clicking that shows a spinner, then a blank page. (Or, maybe this is the perfect example of a 404! 😆)
+The next broken link is "Hit an HTTP 404 error." Clicking that shows a spinner, then a blank page. (Or, maybe this is the perfect example of a 404! 😆)
 
 To fix this we need to address the other `SessionDelegate` callback, `session(_:didFailRequestForVisitable:error:)`. Currently, we are doing nothing more than logging the error.
 
 Instead, let’s render the error message in a custom view. This example uses SwiftUI, but feel free to drop in any ol’ `UIViewController`.
 
-First, create the SwiftUI view. It will be passed the error message as a string. I added this to a new group called “Views.”
+First, create the SwiftUI view. It will be passed the error message as a string. I added this to a new group called "Views."
 
 ```swift
 import SwiftUI
@@ -380,9 +380,9 @@ func session(_ session: Session, didFailRequestForVisitable visitable: Visitable
 You could also add a button to this view that tries to reload the page. Since we have a reference to the `Session` all we need to do is ask it to refresh via `session.reload()`. This will clear the Turbo cache and revisit the current page.
 
 ## External links
-Up next is “Follow an external link.” Tapping this opens the framework’s GitHub repository in Safari. While not technically broken, we can improve this UX by instead by opening an in-app browser.
+Up next is "Follow an external link." Tapping this opens the framework’s GitHub repository in Safari. While not technically broken, we can improve this UX by instead by opening an in-app browser.
 
-An external link is any URL that doesn’t match Turbo’s root URL domain. We kicked off the app pointing to `https://turbo-native-demo.glitch.me`, so anything that doesn’t match `turbo-native-demo.glitch.me` is considered “external” by the framework.
+An external link is any URL that doesn’t match Turbo’s root URL domain. We kicked off the app pointing to `https://turbo-native-demo.glitch.me`, so anything that doesn’t match `turbo-native-demo.glitch.me` is considered "external" by the framework.
 
 ### `WKNavigationDelegate`
 
@@ -436,7 +436,7 @@ A big surprise with Turbo development is that all non-GET requests are ignored. 
 
 The short answer is that you need to convert these forms to AJAX. In a Rails world, this means `remote: true` or `local: false`, depending on which version of Rails you are running.
 
-If you are on Rails 6.1 and Turbo v7, however, you can ignore all of this. All form submissions are handled via JavaScript which makes Turbo Native “just work” by default. If you are still running Turbolinks (Turbo v5) then you need to convert all of your forms by hand.
+If you are on Rails 6.1 and Turbo v7, however, you can ignore all of this. All form submissions are handled via JavaScript which makes Turbo Native "just work" by default. If you are still running Turbolinks (Turbo v5) then you need to convert all of your forms by hand.
 
 Part 3 will address the form conversion with a generic Stimulus controller. We are using this JavaScript in production at [Main Street](https://getmainstreet.com) for 30+ forms while we transition from Turbolinks to Turbo.
 

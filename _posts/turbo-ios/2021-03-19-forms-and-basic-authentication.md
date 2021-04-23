@@ -44,7 +44,7 @@ Following the [instructions from the README](https://github.com/hotwired/turbo-r
 If you are using webpack(er), you can add the following to the end of your JavaScript pack. This imports the framework and exposes it to native adapters.
 
 ```javascript
-import { Turbo } from “@hotwired/turbo-rails”
+import { Turbo } from "@hotwired/turbo-rails"
 window.Turbo = Turbo
 ```
 
@@ -84,7 +84,7 @@ But try the same in the iOS app. The submit button gets disabled but then that�
 
 {% include simulator.html image="turbo-ios/broken-form-ios.png" text="iOS form with the submit button disabled, but it doesn't seem to have actually submitted." %}
 
-From the generator, our controller re-renders the “new” view if the board game is invalid. By default, this sets the response status code as 200 OK.
+From the generator, our controller re-renders the "new" view if the board game is invalid. By default, this sets the response status code as 200 OK.
 
 ```ruby
 def create
@@ -106,7 +106,7 @@ render :new, status: :unprocessable_entity
 
 ## Double pushed controllers
 
-Now that forms are working you might notice a different issue. If you view then edit a board game, you end up with two “show” controllers on the navigation stack.
+Now that forms are working you might notice a different issue. If you view then edit a board game, you end up with two "show" controllers on the navigation stack.
 
 This is occurring because our `redirect_to` is coming down the wire as `VisitAction.advance`, which always pushes a new controller.
 
@@ -176,7 +176,7 @@ Devise.setup do |config|
 end
 ```
 
-These changes ensure the user is always remembered “forever.” 20 years is what Rails uses for [permanent cookies](https://apidock.com/rails/ActionDispatch/Cookies/CookieJar/permanent). You might also want to hide the “Remember me?” option in the sign in form.
+These changes ensure the user is always remembered "forever." 20 years is what Rails uses for [permanent cookies](https://apidock.com/rails/ActionDispatch/Cookies/CookieJar/permanent). You might also want to hide the "Remember me?" option in the sign in form.
 
 ### Client changes
 
@@ -206,7 +206,7 @@ Native authentication in a hybrid app follows this rough outline:
 3. Receive an authentication token for future requests
 4. Pass that token to the web view to persist the cookies
 
-[I’ve been doing some heavy thinking on this and have implementation recommendations.]({% link _newsletters/4.md %}) These will be discussed in the “native screens” article of this series.
+[I’ve been doing some heavy thinking on this and have implementation recommendations.]({% link _newsletters/4.md %}) These will be discussed in the "native screens" article of this series.
 
 Can’t wait? Here’s a sneak peek of what I will be covering.
 

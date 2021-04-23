@@ -23,7 +23,7 @@ You've sent your fully tested HTTP request off into the wild. Now, what happens 
 
 ## 3. [Stubbing Data for UI Testing]({% post_url 2016-03-04-ui-testing-stubbed-network-data %})
 
-> Learn how to stub network data when running UI Tests with the magic of some “secret” XCTest APIs.
+> Learn how to stub network data when running UI Tests with the magic of some "secret" XCTest APIs.
 
 We've all been there. We get super excited to try out UI Testing and start to use it for all the app's flows. And then one of the tests requires the user to be logged in.
 

@@ -12,7 +12,7 @@ xcode: 12
 
 Naming things is hard. And naming tests is no exception. But XCTest adds another layer of complexity: test names have to be functions.
 
-The framework creates a test for every function that starts with “test” in your `XCTestCase` subclass. Examples from [Apple’s docs](https://developer.apple.com/documentation/xctest/defining_test_cases_and_test_methods) include:
+The framework creates a test for every function that starts with "test" in your `XCTestCase` subclass. Examples from [Apple’s docs](https://developer.apple.com/documentation/xctest/defining_test_cases_and_test_methods) include:
 
 ```swift
 class NetworkReachabilityTests: XCTestCase {
@@ -84,7 +84,7 @@ extension XCTestCase {
 }
 ```
 
-The code should look pretty similar to the example above but with two major differences. We are wrapping everything in “test” and ignoring the return value. This cleans up our call site quite a bit.
+The code should look pretty similar to the example above but with two major differences. We are wrapping everything in "test" and ignoring the return value. This cleans up our call site quite a bit.
 
 ```swift
 class TestCase: XCTestCase {
@@ -108,7 +108,7 @@ The code in the example above only generates one test (not two). Each reports th
 
 And because of how XCTest groups these, you can’t run one without the other. Only one little diamond appears on the file, not on each context.
 
-Finally, you are now _always_ an additional “layer” nested. Instead of writing tests at level 2 (class -> function) you are now at level 3 (class -> function -> activity). This doesn’t bother me too much, but it is worth calling out.
+Finally, you are now _always_ an additional "layer" nested. Instead of writing tests at level 2 (class -> function) you are now at level 3 (class -> function -> activity). This doesn’t bother me too much, but it is worth calling out.
 
 ## Quick library
 
@@ -117,15 +117,15 @@ You could also accomplish this with a BDD-style testing library like [Quick](htt
 ```swift
 class TableOfContentsSpec: QuickSpec {
   override func spec() {
-    describe(“the ‘Documentation’ directory”) {
-      it(“has everything you need to get started”) {
-        let sections = Directory(“Documentation”).sections
-        expect(sections).to(contain(“Organized Tests with Quick Examples and Example Groups”))
-        expect(sections).to(contain(“Installing Quick”))
+    describe("the ‘Documentation’ directory") {
+      it("has everything you need to get started") {
+        let sections = Directory("Documentation").sections
+        expect(sections).to(contain("Organized Tests with Quick Examples and Example Groups"))
+        expect(sections).to(contain("Installing Quick"))
       }
 
-      context(“if it doesn’t have what you’re looking for”) {
-        it(“needs to be updated”) {
+      context("if it doesn’t have what you’re looking for") {
+        it("needs to be updated") {
           let you = You(awesome: true)
           expect{you.submittedAnIssue}.toEventually(beTruthy())
         }

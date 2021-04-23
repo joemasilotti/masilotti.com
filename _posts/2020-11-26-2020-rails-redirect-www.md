@@ -28,10 +28,10 @@ match "(*any)",
 ```
 
 Broken down:
-* `match “(*any)"` - matches any path to the site
-* `to: redirect(subdomain: “”)` - removes the subdomain, in this case `www`
+* `match "(*any)"` - matches any path to the site
+* `to: redirect(subdomain: "")` - removes the subdomain, in this case `www`
 * `via: :all` - matches all HTTP verbs (GET, POST, PUT, etc.)
-* `constraints: { subdomain: “www” }` - only match requests that start with `www`
+* `constraints: { subdomain: "www" }` - only match requests that start with `www`
 
 It’s important to note that this must be the first line in the file. At a high level, Rails goes down the list to find a match. If something matches the request gets routed. Keeping this at the top ensures it happens before anything else.
 

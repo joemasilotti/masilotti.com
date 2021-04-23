@@ -41,7 +41,7 @@ print(webView.title) // Prints "", an empty string!
 
 ## Waiting for the page to load
 
-We can use XCTest expectations to wait for the title to be set. The web view’s delegate will tell us when the “page” loads (really just our HTML).
+We can use XCTest expectations to wait for the title to be set. The web view’s delegate will tell us when the "page" loads (really just our HTML).
 
 Fulfilling the expectation in the delegate callback ensures we don’t have to keep checking the web view’s title to fulfill the expectation.
 
@@ -91,7 +91,7 @@ class Tests: XCTestCase {
 }
 ```
 
-Here’s how it looks, including the delegate “resetting” mentioned above.
+Here’s how it looks, including the delegate "resetting" mentioned above.
 
 ```swift
 extension XCTestCase {

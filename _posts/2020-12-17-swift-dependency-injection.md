@@ -12,7 +12,7 @@ xcode: 12
 
 Dependency injection, or DI, is a key piece of the Swift testing puzzle. It gives you necessary control over how your subject under test interacts with its collaborators.
 
-Without dependency injection we can’t mock out interactions farther down the stack. Our “unit tests” become integration tests at best, and unpredictable at worst.
+Without dependency injection we can’t mock out interactions farther down the stack. Our "unit tests" become integration tests at best, and unpredictable at worst.
 
 Instead of reaching for a third-party library, let’s build out our own little DI. By the end of this post you will have a robust, extendible framework you can use in all your apps.
 

@@ -1,7 +1,7 @@
 ---
 category: ui-testing
 date: 2015-09-14
-description: Answers to common “How do I test this with UI Testing?” questions. A quick reference for everything from tapping buttons to reordering table cells.
+description: Answers to common "How do I test this with UI Testing?" questions. A quick reference for everything from tapping buttons to reordering table cells.
 image: https://www.mugshotbot.com/m?theme=two_up&mode=light&color=green&pattern=diagonal_lines&image=d33ff6b7&url=https://masilotti.com/ui-testing-cheat-sheet/
 layout: post
 permalink: ui-testing-cheat-sheet/
