@@ -21,7 +21,7 @@ Let’s dive in!
 
 {% include note.html body='All the code for this series can be found on my GitHub repository, <a class="text-blue-700 hover:text-blue-500" href="https://github.com/joemasilotti/Turbo-iOS-Demo">Turbo-iOS Demo</a>. Each article has a "start" and "complete" branch if you\'d like to follow along.' %}
 
-{% include sponsor.html %}
+{% include jumpstart.html %}
 
 ## URL routing with Turbo
 

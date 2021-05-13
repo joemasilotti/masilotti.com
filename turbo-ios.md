@@ -15,6 +15,8 @@ This is possible with [Turbo](https://github.com/hotwired/turbo-ios/), a small f
 
 Follow along as we build a hybrid iOS from scratch alongside the supporting Rails code.
 
+{% include jumpstart.html %}
+
 ## [1. The Turbo framework]({% post_url turbo-ios/2021-02-18-the-turbo-framework %})
 
 This introduction covers the benefits of hybrid apps and how Turbo helps bridge the gap between web and native. It also breaks down the code in the Quick Start guide from the Turbo wiki line by line. A perfect place to start for those new to Turbo or hybrid in general.
@@ -35,6 +37,6 @@ Having all our content in rendered on the web comes with some trade-offs. What i
 
 One major limitation of web-only authentication is, well, it's web only. Native authentication, on the other hand, opens up a world of possibilities. It breaks your app out of the web world and enables fully native screens. Meaning, you can integrate native SDKs like location services and push notifications. Or, you can render SwiftUI views for the really important stuff.
 
-### Coming soon...
+## [6. Tips and tricks]({% post_url turbo-ios/2021-05-13-tips-and-tricks %})
 
-#### 6. Architecture and coordinators
+To wrap up the series I’m sharing tips and tricks I’ve picked up over the years that range from making development easier to making the app feel more native. How to dismiss a modal after submitting a form, fixes for double pushed controllers, disabling link previews (Force Touch), and more.

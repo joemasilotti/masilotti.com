@@ -21,7 +21,7 @@ This is the first post in a series on how to build high-fidelity, hybrid iOS app
 
 {% include series.html %}
 
-{% include sponsor.html %}
+{% include jumpstart.html %}
 
 ## The power of hybrid...
 

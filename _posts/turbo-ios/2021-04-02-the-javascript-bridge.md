@@ -21,7 +21,7 @@ Enter the JavaScript bridge, the intersection of client and server. With this br
 
 Like most bridges, this one is a two-way street. Let’s first dive into how the client can post messages to the rendered HTML. Then we will cross back over by talking to the client.
 
-{% include sponsor.html %}
+{% include jumpstart.html %}
 
 ## Client → Server
 

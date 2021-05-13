@@ -37,7 +37,7 @@ These steps can be grouped into three big flows: unauthenticated requests, initi
 	1. Client uses the token to authenticate native screens
 	1. Server authenticates user via token
 
-{% include sponsor.html %}
+{% include jumpstart.html %}
 
 ## 1. Unauthenticated requests
 
