@@ -21,7 +21,7 @@ Enter the JavaScript bridge, the intersection of client and server. With this br
 
 Like most bridges, this one is a two-way street. Let’s first dive into how the client can post messages to the rendered HTML. Then we will cross back over by talking to the client.
 
-{% include jumpstart.html %}
+{% include sponsor.html %}
 
 ## Client → Server
 
@@ -270,6 +270,8 @@ Not a fan of all this JavaScript? You might be in luck. The bottom of [Hotwire�
 My guess is that Strada will move this "on load" JavaScript to special `<meta>` tags in the HTML’s `<head>`. And the framework will automatically parse them and provide native callbacks. This could speed up development drastically and remove the need to write custom Stimulus controllers to fire the methods.
 
 Or maybe it’s something else entirely! Basecamp likes to keep everything quite secret until they launch, so only time will tell.
+
+{% include jumpstart.html %}
 
 ## Up next: native authentication
 

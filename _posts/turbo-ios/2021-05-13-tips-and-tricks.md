@@ -17,6 +17,8 @@ If you’re still new to Turbo iOS, check out the beginning of the series, [The 
 
 {% include series.html %}
 
+{% include sponsor.html %}
+
 ## Developer quality of life improvements
 
 To start, here are a few techniques I add to almost every Turbo Native app I work on. They make my life easier when I’m adding new code and help deal with how dynamic a Rails app can be.

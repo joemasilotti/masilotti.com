@@ -50,6 +50,8 @@ window.Turbo = Turbo
 
 Now is a good time to audit your app for any references to Turbo_links_. Most of the upgrade can be done with a find-and-replace and [Go Rails has a free video with more details](https://gorails.com/episodes/upgrade-from-turbolinks-to-hotwire-and-turbo).
 
+{% include sponsor.html %}
+
 ## Basic CRUD
 
 You can now start pointing your iOS app to your Rails server. If Turbo is configured you should be able to navigate around and tap through links.

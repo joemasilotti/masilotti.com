@@ -33,6 +33,8 @@ Here are the different types of routing we will cover from the Turbo framework i
 4. External links
 5. Introduction to forms (and authentication)
 
+{% include sponsor.html %}
+
 ## But first, a quick refactor
 
 Last week’s code example threw all of the Turbo-related code right in the `SceneDelegate`. Let’s move that to a new object so we can easily extend the behavior in the future.

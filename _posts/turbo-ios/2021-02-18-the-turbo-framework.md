@@ -56,6 +56,8 @@ Outside of official Basecamp apps, there are a number of independent hybrid apps
 
 Currently, I’m working with the fine folks at [Main Street](https://www.getmainstreet.com). They help people build successful painting businesses as quickly and painlessly as possible. A lot of design decisions and best practices expressed in this series were solidified while building this app.
 
+{% include sponsor.html %}
+
 ## Getting started with Turbo
 
 Enough talk, let’s see some code! The Turbo wiki includes a [quick start guide to Turbo](https://github.com/hotwired/turbo-ios/blob/main/Docs/QuickStartGuide.md). Let’s build that code snippet from scratch.
