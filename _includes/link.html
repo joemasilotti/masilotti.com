@@ -1,0 +1,6 @@
+<div class="pb-2">
+  <h4 class="mb-1 lg:mb-0"><a href="{{ include.url }}">{{ include.title }}</a></h4>
+  <span class="text-sm text-gray-600">by {{ include.author }} <a href="https://twitter.com/{{ include.twitter }}" class="text-gray-700">@{{ include.twitter }}</a></span>
+
+  <p>{{ include.body | markdownify }}</p>
+</div>

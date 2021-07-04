@@ -1,0 +1,27 @@
+<div class="sm:pt-4">
+  <h2 class="text-3xl lg:text-3xl leading-9 font-extrabold tracking-tight text-gray-900">
+    Turbo (Native), Stimulus, and Strada news and code.
+    <br class="hidden sm:inline">
+    <span class="text-green-600">Subscribe to the Hotwire dev newsletter.</span>
+  </h2>
+
+  <form class="sm:flex" action="https://static.mailerlite.com/webforms/submit/b1g1s7" method="post" target="_blank">
+    <input aria-label="Email address" type="email" name="fields[email]" autocomplete="email" placeholder="Enter your email" required class="appearance-none w-full px-5 py-3 border border-gray-300 text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:ring focus:border-green-300 transition duration-150 ease-in-out sm:max-w-xs">
+    <input type="hidden" name="ml-submit" value="1">
+
+    <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+      <button class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:bg-green-400 transition duration-150 ease-in-out">
+        Sign up
+      </button>
+    </div>
+
+    {% if include.hide_latest != true %}
+      <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+        {% assign newsletter = site.newsletters | last %}
+        <a href="/{{ newsletter.permalink }}" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-white hover:bg-gray-50 no-underline">
+          Read the latest
+        </a>
+      </div>
+    {% endif %}
+  </form>
+</div>

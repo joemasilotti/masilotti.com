@@ -5,9 +5,16 @@ author:
   linkedin: joemasilotti
   twitter: joemasilotti
 collections:
+  hotwire:
+    output: true
   newsletters:
     output: true
 defaults:
+  -
+    scope:
+      path: "_hotwire/**"
+    values:
+      sitemap: false
   -
     scope:
       path: "_newsletters/**"
@@ -27,6 +34,7 @@ google_analytics: UA-7503501-5
 include:
   - .htaccess
   - _newsletters
+  - _hotwire
 markdown: kramdown
 plugins:
   - jekyll-feed

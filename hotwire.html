@@ -89,6 +89,16 @@ permalink: hotwire/
           <a>
         </li>
       </ul>
+
+      <div class="mt-5">
+        {% assign hotwire = site.hotwire | last %}
+        <a href="/{{ hotwire.permalink }}" class="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+          <div class="-ml-1 mr-3 h-6 w-6">
+            {% include book.svg %}
+          </div>
+          Read the latest
+        </a>
+      </div>
     </div>
 
     <div class="mt-12 lg:mt-0 lg:ml-auto">
