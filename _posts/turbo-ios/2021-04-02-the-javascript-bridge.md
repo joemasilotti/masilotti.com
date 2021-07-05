@@ -135,7 +135,7 @@ let script = "window.bridge.register(\(token));"
 webView.evaluateJavaScript(script) { _, _ in }
 ```
 
-Since we are already authenticated in the web view we don’t need to pass any sort of authentication with the request. This saves us a _ton_ of Swift networking boilerplate. The downside is we need to ignore the CSRF check in the controller, but this can be avoided by [adding the token to the POST request](https://discuss.hotwire.dev/t/csrf-token-invalidauthenticitytoken/91/3).
+Since we are already authenticated in the web view we don’t need to pass any sort of authentication with the request. This saves us a _ton_ of Swift networking boilerplate. The downside is we need to ignore the CSRF check in the controller, but this can be avoided by [adding the token to the POST request](https://discuss.hotwired.dev/t/csrf-token-invalidauthenticitytoken/91/3).
 
 <div class="pb-4 sm:pb-12">
   {% include newsletter.html %}
@@ -263,7 +263,7 @@ A single line of JavaScript can now add custom buttons across our entire app wit
 
 ## Looking ahead at Strada
 
-Not a fan of all this JavaScript? You might be in luck. The bottom of [Hotwire’s homepage](https://hotwire.dev) hints at a new part of the puzzle, Strada.
+Not a fan of all this JavaScript? You might be in luck. The bottom of [Hotwire’s homepage](https://hotwired.dev) hints at a new part of the puzzle, Strada.
 
 > [Strada] standardizes the way that web and native parts of a mobile hybrid application talk to each other via HTML bridge attributes. This makes it easy to progressively level up web interactions with native replacements.
 
