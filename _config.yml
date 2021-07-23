@@ -9,17 +9,6 @@ collections:
     output: true
   newsletters:
     output: true
-defaults:
-  -
-    scope:
-      path: "_hotwire/**"
-    values:
-      sitemap: false
-  -
-    scope:
-      path: "_newsletters/**"
-    values:
-      sitemap: false
 exclude:
   - yarn.lock
   - package-lock.json
