@@ -7,7 +7,7 @@ permalink: hotwire/
 ---
 
 <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:py-8 lg:px-8">
-  <div class="py-10 px-6 bg-green-700 rounded-3xl sm:py-16 sm:px-12 lg:p-20 lg:flex lg:items-center">
+  <div class="py-10 px-6 bg-green-700 rounded-xl lg:rounded-3xl sm:py-16 sm:px-12 lg:p-20 lg:flex lg:items-center">
     <div class="lg:w-0 lg:flex-1">
       <h2 class="text-3xl font-extrabold tracking-tight text-white">
         Subscribe to the Hotwire newsletter
@@ -35,69 +35,28 @@ permalink: hotwire/
   </div>
 
   <div class="lg:flex sm:pb-8 md:pb-16 mt-12 lg:mt-20 px-4 sm:px-12 lg:px-20 mx-auto">
-    <div class="">
+    <div class="max-w-lg">
       <h3 class="text-2xl font-bold">
-        What to expect
+        Newsletter archive
       </h3>
 
-      <ul class="divide-y divide-gray-200 max-w-xl mt-4 -ml-3">
-        <li>
-          <a href="https://gorails.com/episodes/upgrade-from-turbolinks-to-hotwire-and-turbo" class="flex hover:bg-gray-100 py-4 px-2 my-1 rounded-lg" target="_blank">
-            <div class="h-12 w-12 text-gray-700">
-              {% include video_camera.svg %}
+      <div class="grid grid-cols-1 gap-4 mt-6">
+        {% for newsletter in site.hotwire %}
+          <a href="/{{ newsletter.permalink }}" class="relative rounded-lg border border-gray-300 bg-white shadow-sm flex space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+            <div class="hidden sm:flex flex-shrink-0 items-center justify-center w-16 bg-green-600 text-white text-xl font-medium rounded-l-md">
+              {{ newsletter.edition }}
             </div>
-            <div class="ml-4">
-              <p class="font-medium text-gray-900">How to Upgrade from Turbolinks to Hotwire & Turbo</p>
-              <p class="text-gray-500">GoRails screencast</p>
+            <div class="flex-1 min-w-0 py-3 space-y-1 pr-2">
+              <p class="text-base font-medium text-gray-900">
+                <span class="sm:hidden text-gray-700">{{ newsletter.edition }} - </span>
+                {{ newsletter.date | date: '%B %-d, %Y' }}
+              </p>
+              <p class="text-sm text-gray-500">
+                {{ newsletter.description }}
+              </p>
             </div>
-          <a>
-        </li>
-
-        <li>
-          <a href="https://www.betterstimulus.com" class="flex hover:bg-gray-100 py-4 px-2 my-1 rounded-lg" target="_blank">
-            <div class="h-12 w-12 text-gray-700">
-              {% include clipboard_check.svg %}
-            </div>
-            <div class="ml-4">
-              <p class="font-medium text-gray-900">Better StimulusJS</p>
-              <p class="text-gray-500">An opinionated collection of StimulusJS best practices</p>
-            </div>
-          <a>
-        </li>
-
-        <li>
-          <a href="https://store.afomera.dev/learn-hotwire" class="flex hover:bg-gray-100 py-4 px-2 my-1 rounded-lg" target="_blank">
-            <div class="h-12 w-12 text-gray-700">
-              {% include academic_cap.svg %}
-            </div>
-            <div class="ml-4">
-              <p class="font-medium text-gray-900">Learn Hotwire by Building a Forum</p>
-              <p class="text-gray-500">Paid course from Andrea Fomera</p>
-            </div>
-          <a>
-        </li>
-
-        <li>
-          <a href="https://masilotti.com/turbo-ios/" class="flex hover:bg-gray-100 py-4 px-2 my-1 rounded-lg" target="_blank">
-            <div class="h-12 w-12 text-gray-700">
-              {% include code.svg %}
-            </div>
-            <div class="ml-4">
-              <p class="font-medium text-gray-900">Hybrid iOS apps with Turbo</p>
-              <p class="text-gray-500">6-part blog series by yours truly</p>
-            </div>
-          <a>
-        </li>
-      </ul>
-
-      <div class="mt-5">
-        {% assign hotwire = site.hotwire | last %}
-        <a href="/{{ hotwire.permalink }}" class="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-          <div class="-ml-1 mr-3 h-6 w-6">
-            {% include book.svg %}
-          </div>
-          Read the latest
-        </a>
+          </a>
+        {% endfor %}
       </div>
     </div>
 
