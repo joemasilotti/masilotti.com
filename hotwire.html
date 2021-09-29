@@ -41,7 +41,8 @@ permalink: hotwire/
       </h3>
 
       <div class="grid grid-cols-1 gap-4 mt-6">
-        {% for newsletter in site.hotwire %}
+        {% assign newsletters = site.hotwire | reverse %}
+        {% for newsletter in newsletters %}
           <a href="/{{ newsletter.permalink }}" class="relative rounded-lg border border-gray-300 bg-white shadow-sm flex space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
             <div class="hidden sm:flex flex-shrink-0 items-center justify-center w-16 bg-green-600 text-white text-xl font-medium rounded-l-md">
               {{ newsletter.edition }}
