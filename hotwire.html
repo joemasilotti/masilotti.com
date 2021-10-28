@@ -19,17 +19,16 @@ permalink: hotwire/
     </div>
 
     <div class="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
-      <form class="sm:flex" action="https://static.mailerlite.com/webforms/submit/b1g1s7">
-        <input aria-label="Email address" type="email" name="fields[email]" autocomplete="email" placeholder="Enter your email" required class="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-700 focus:ring-white rounded-md">
-        <input type="hidden" name="ml-submit" value="1">
+      <form class="sm:flex" action="https://www.getrevue.co/profile/hotwire/add_subscriber" method="post" target="_blank">
+        <input aria-label="Email address" type="email" name="member[email]" autocomplete="email" placeholder="Enter your email" required class="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-700 focus:ring-white rounded-md">
 
-        <button type="submit" class="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-500 hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
+        <button type="submit" name="member[subscribe]" class="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-500 hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
           Notify me
         </button>
       </form>
 
-      <p class="mt-3 text-sm text-green-100">
-        You will only receive emails related to Hotwire development.
+      <p class="mt-3 text-xs text-green-100">
+        By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms" class="hover:text-green-200">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy" class="hover:text-green-200">Privacy Policy</a>.
       </p>
     </div>
   </div>
