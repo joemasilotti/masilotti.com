@@ -21,3 +21,15 @@ bin/start
 # Create a new post
 bin/new POST_TITLE
 ```
+
+## Deploy
+
+The GitHub Action deploys commits to `main` to `masilotti.com` via `rsync`. This is configured via the following GitHub Actions secrets.
+
+```
+REMOTE_HOST - the server to copy the code to
+REMOTE_KEY - SSH key
+REMOTE_KEY_PASS - password for SSH key
+REMOTE_PATH - where the code is deployed on the server
+REMOTE_USER - authenticated user for the SSH key
+```
