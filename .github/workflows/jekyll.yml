@@ -1,6 +1,8 @@
 
 name: Jekyll
-on: [push]
+on:
+  push:
+    branches: [ main ]
 
 jobs:
   jekyll:
