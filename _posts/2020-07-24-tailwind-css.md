@@ -148,7 +148,7 @@ I don’t think I can recommend using this repo. There are better ones on the of
 That said, the repo did get me where I needed to be. It has all of the standard CSS processing built in and integrated with Jekyll’s build scripts. All I have to do is run `bin/start` and it watches for changes. It even hooks up `live-reload` so I don’t have to refresh the page!
 
 ```bash
-bundle exec jekyll serve --livereload --drafts --future --port 5000 --livereload_port 35729 "$@"
+bundle exec jekyll serve --livereload --drafts --future --port 3000 --livereload_port 35729 "$@"
 ```
 
 [This site is open source](https://github.com/joemasilotti/masilotti.com-tailwind) so feel free to poke around!

@@ -112,7 +112,7 @@ enum Endpoint {
     static var root: URL {
         switch Environment.current {
         case .development:
-            return URL(string: "http://localhost:5000")!
+            return URL(string: "http://localhost:3000")!
         case .staging:
             return URL(string: "https://staging.example.com")!
         case .production:
