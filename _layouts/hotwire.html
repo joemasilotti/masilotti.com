@@ -5,7 +5,11 @@ layout: default
 <article class="prose lg:prose-xl max-w-3xl mx-auto px-4 pt-8 md:pt-0 pb-16">
   <div class="flex mb-2">
     <div class="font-medium block text-gray-600 ">
-      Edition {{ page.edition }}
+      {% if page.special_edition %}
+        {{ page.special_edition }}
+      {% else %}
+        {{ page.date | date: "%B" }} edition
+      {% endif %}
     </div>
   </div>
 

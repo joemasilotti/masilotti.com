@@ -4,6 +4,8 @@
     <span class="text-sm text-gray-600">by {{ include.author }} <a href="https://twitter.com/{{ include.twitter }}" class="text-gray-700">@{{ include.twitter }}</a></span>
     {% if include.author2 and include.twitter2 %}
       <span class="text-sm text-gray-600">and {{ include.author2 }} <a href="https://twitter.com/{{ include.twitter }}" class="text-gray-700">@{{ include.twitter2 }}</a></span>
+    {% elsif include.author2 %}
+      <span class="text-sm text-gray-600">and {{ include.author2 }}</span>
     {% endif %}
   {% elsif include.author %}
     <span class="text-sm text-gray-600">by {{ include.author }}</span>
