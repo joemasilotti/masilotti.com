@@ -145,8 +145,6 @@ This view isn’t styled, but SwiftUI and `Form` do a pretty good job making it 
 
 {% include simulator.html image="turbo-ios/native-sign-in-form.png" text="SwiftUI Form" %}
 
-{% include newsletter.html %}
-
 ## 2. Initial authentication
 
 Once the user taps "Sign in" we need to send their email/password to the server. We also need to set the user agent and content type to JSON on the request. This ensures Rails can identify it as a Turbo Native API request.

@@ -1,27 +1,26 @@
-<div class="sm:pt-4">
-  <h2 class="text-3xl lg:text-3xl leading-9 font-extrabold tracking-tight text-gray-900">
-    {{ include.title | default: "Testing, Turbo Native, and exclusive content." }}
-    <br class="hidden sm:inline">
-    <span class="text-green-600">Sign up for my monthly newsletter.</span>
-  </h2>
-
-  <form class="sm:flex" action="https://static.mailerlite.com/webforms/submit/p1q2b1" data-code="p1q2b1" method="post" target="_blank">
-    <input aria-label="Email address" type="email" name="fields[email]" autocomplete="email" placeholder="Enter your email" required class="appearance-none w-full px-5 py-3 border border-gray-300 text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:ring focus:border-green-300 transition duration-150 ease-in-out sm:max-w-xs">
-    <input type="hidden" name="ml-submit" value="1">
-
-    <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-      <button class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:bg-green-400 transition duration-150 ease-in-out">
-        Sign up
-      </button>
+<div class="bg-white">
+  <div class="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:py-32 lg:px-8 lg:flex lg:items-center">
+    <div class="lg:w-0 lg:flex-1">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+        Sign up for the ⚡️ <a href="/hotwire" class="underline">Hotwire dev newsletter</a>
+      </h2>
+      <p class="mt-3 max-w-3xl text-lg text-gray-600">
+        A monthly newsletter on Turbo (Native), Stimulus, and Strada articles, code, courses, and more. Plus, exclusive insights into how I build Turbo Native apps.
+      </p>
     </div>
-
-    {% if include.hide_latest != true %}
-      <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-        {% assign newsletter = site.newsletters | last %}
-        <a href="/{{ newsletter.permalink }}" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-white hover:bg-gray-50 no-underline">
-          Read the latest
-        </a>
-      </div>
-    {% endif %}
-  </form>
+    <div class="mt-8 lg:mt-0 lg:ml-8">
+      <form action="https://www.getrevue.co/profile/hotwire/add_subscriber" method="post" target="_blank" class="sm:flex">
+        <label for="email-address" class="sr-only">Email address</label>
+        <input id="email-address" name="member[email]" type="email" autocomplete="email" placeholder="Enter your email" required class="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-green-500 focus:border-green-500 sm:max-w-xs rounded-md" placeholder="Enter your email">
+        <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+          <button type="submit" name="member[subscribe]" class="w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+            Notify me
+          </button>
+        </div>
+      </form>
+      <p class="mt-3 text-xs text-gray-600">
+        By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms" class="hover:text-gray-800">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy" class="hover:text-gray-800">Privacy Policy</a>.
+      </p>
+    </div>
+  </div>
 </div>

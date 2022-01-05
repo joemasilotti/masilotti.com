@@ -137,10 +137,6 @@ webView.evaluateJavaScript(script) { _, _ in }
 
 Since we are already authenticated in the web view we don’t need to pass any sort of authentication with the request. This saves us a _ton_ of Swift networking boilerplate. The downside is we need to ignore the CSRF check in the controller, but this can be avoided by [adding the token to the POST request](https://discuss.hotwired.dev/t/csrf-token-invalidauthenticitytoken/91/3).
 
-<div class="pb-4 sm:pb-12">
-  {% include newsletter.html %}
-</div>
-
 ## Server → Client
 
 OK, so now we have the iOS app talking to our Rails app. But what about the other way around? How do we send a message from Rails to the iOS client?

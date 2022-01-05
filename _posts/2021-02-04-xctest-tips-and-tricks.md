@@ -81,10 +81,6 @@ XCTAssertEqual(array.count, 2)
 XCTAssertEqual(user.name, "Joe")
 ```
 
-<div class="pb-16">
-  {% include newsletter.html title="Want to level up your Swift testing?" %}
-</div>
-
 ### 6. Extract helpers judiciously
 
 If I need 3 or more lines of code to "do something" I extract it to a helper. This includes test setup, the action, and/or the assertion(s). 
