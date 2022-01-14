@@ -62,7 +62,7 @@ permalink: hotwire/
               {% if newsletter.special_edition %}
                 {{ newsletter.special_edition }}
               {% else %}
-                {{ newsletter.date | date: "%B" }} edition
+                {{ newsletter.date | date: "%B %Y" }} edition
               {% endif %}
             </h3>
 
