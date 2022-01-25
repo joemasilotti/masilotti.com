@@ -50,7 +50,7 @@ permalink: hotwire/
     </div>
 
     <div class="max-w-2xl mx-auto mt-6 pt-10 grid gap-20">
-      {% assign newsletters = site.hotwire | reverse %}
+      {% assign newsletters = site.categories.hotwire | reversed %}
       {% for newsletter in newsletters %}
         <div>
           <p class="text-base text-gray-500">
