@@ -1,7 +1,7 @@
 ---
 category: masilotti.com
 date: 2022-01-27
-description: "It is not OK that railsdevs represents 150+ developers but fewer than 10 identify as women. This is how I'm learning to create a more inclusive platform."
+description: "It is not OK that railsdevs represents 180+ developers but fewer than 10 identify as women. This is how I'm learning to create a more inclusive platform."
 image: images/twitter/railsdevs-gender-diversity.png
 layout: post
 permalink: railsdevs-gender-diversity/
@@ -11,7 +11,7 @@ title: railsdevs has a gender diversity problem
 
 Or, why are there so few women on railsdevs?
 
-I run [railsdevs](https://railsdevs.com), a reverse job board for freelance Ruby on Rails developers. If you scroll through the 150+ developer profiles on the site you’ll quickly notice something. There are very few people who identify as women. Fewer than 10 at this time of publication, actually.
+I run [railsdevs](https://railsdevs.com), a reverse job board for freelance Ruby on Rails developers. If you scroll through the 180+ developer profiles on the site you’ll quickly notice something. There are very few people who identify as women. Fewer than 10 at this time of publication, actually.
 
 This is not good. Hell, it’s downright *bad*. How can I claim that railsdevs is [creating an inclusive environment](https://railsdevs.com/about) if all I’m doing is promoting a list of men?
 
