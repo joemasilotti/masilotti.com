@@ -45,8 +45,8 @@ Investments will be in the form of newsletter sponsorships, meetup support, and 
 
 So far, I’m aware of the following groups. If you know of more, please [let me know](mailto:joe@masilotti.com).
 
-1. WNB.rb
-1. WomenOnRails
+1. [WNB.rb](https://twitter.com/wnb_rb)
+1. [WomenOnRails](https://twitter.com/womenonrails)
 
 ## This isn't enough
 
