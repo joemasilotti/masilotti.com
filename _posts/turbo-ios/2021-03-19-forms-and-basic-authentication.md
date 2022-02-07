@@ -123,7 +123,7 @@ let action: VisitAction = url ==
 
 There’s a bit more work if your server hasn’t migrated to Turbo (v7) and is still using Turbolinks (v5). We no longer have access to all of that generic form handling JavaScript so we are forced to write our own.
 
-At [Main Street](https://getmainstreet.com), we’ve generalized most of this work into a single Stimulus controller and corresponding View Component. The component takes in the name of the partial to re-render and the controller hooks into the AJAX form submission.
+My client and I have generalized most of this work into a single Stimulus controller and corresponding View Component. The component takes in the name of the partial to re-render and the controller hooks into the AJAX form submission.
 
 The bones of the approach listens for the `ajax:error` event. When fired, the form is re-rendered. While naive, it goes a long way in keeping the amount of custom JavaScript low while you migrate to Turbo.
 

@@ -440,9 +440,7 @@ The short answer is that you need to convert these forms to AJAX. In a Rails wor
 
 If you are on Rails 6.1 and Turbo v7, however, you can ignore all of this. All form submissions are handled via JavaScript which makes Turbo Native "just work" by default. If you are still running Turbolinks (Turbo v5) then you need to convert all of your forms by hand.
 
-Part 3 will address the form conversion with a generic Stimulus controller. We are using this JavaScript in production at [Main Street](https://getmainstreet.com) for 30+ forms while we transition from Turbolinks to Turbo.
-
-{% include mainstreet.html %}
+Part 3 will address the form conversion with a generic Stimulus controller. A client is using this JavaScript in production for 30+ forms while we transition from Turbolinks to Turbo.
 
 We will also transition from the Turbo demo server to a real Rails app. Then, finally, can we start to talk about authentication!
 

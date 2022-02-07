@@ -178,7 +178,7 @@ From there, we can parse out the name and any additional parameters. And based o
 
 ### Dynamically adding a native button
 
-At [Main Street](https://getmainstreet.com) we use this approach to add a native `UIBarButtonItem` to some screens. We call it an _Action Button_ and configure everything from the server, including:
+One of my clients uses this approach to add a native `UIBarButtonItem` to some screens. We call it an _Action Button_ and configure everything from the server, including:
 
 1. Which screens show the button
 2. The icon the button displays
@@ -254,8 +254,6 @@ func addActionButton(url: URL, imageName: String) {
 ```
 
 A single line of JavaScript can now add custom buttons across our entire app with different icons and different functionality. Who would ever have thought JavaScript could be so powerful for iOS developers?
-
-{% include mainstreet.html %}
 
 ## Looking ahead at Strada
 

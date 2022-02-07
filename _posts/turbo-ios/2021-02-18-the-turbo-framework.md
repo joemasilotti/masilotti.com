@@ -54,7 +54,7 @@ Like Rails, Turbo was extracted from existing code at Basecamp. The team has bee
 
 Outside of official Basecamp apps, there are a number of independent hybrid apps powered by Turbo. I built [BeerMenus](https://apps.apple.com/us/app/beermenus-find-great-beer/id917882057)’s iOS app in 2014 and officially jumped on the hybrid bandwagon. I also actively maintain [Zaarly's iOS app](https://apps.apple.com/us/app/zaarly/id964717947) after building their first version in 2016.
 
-Currently, I’m working with the fine folks at [Main Street](https://www.getmainstreet.com). They help people build successful painting businesses as quickly and painlessly as possible. A lot of design decisions and best practices expressed in this series were solidified while building this app.
+Currently, I’m working with the fine folks at [Hoist](https://www.hoistup.com). They help people build successful home service businesses as quickly and painlessly as possible. A lot of design decisions and best practices expressed in this series were solidified while building this app.
 
 {% include sponsor.html %}
 
@@ -62,7 +62,7 @@ Currently, I’m working with the fine folks at [Main Street](https://www.getmai
 
 Enough talk, let’s see some code! The Turbo wiki includes a [quick start guide to Turbo](https://github.com/hotwired/turbo-ios/blob/main/Docs/QuickStartGuide.md). Let’s build that code snippet from scratch.
 
-The first TestFlight build I uploaded for Main Street didn't look too different from the following code!
+The first TestFlight build I uploaded for Hoist didn't look too different from the following code!
 
 ### 1. Add the Turbo dependency
 
@@ -173,11 +173,9 @@ Hopefully by now it's clear how powerful Turbo is when backed by a robust mobile
 
 Remember, the big value of hybrid is only having to make changes once. This is accomplished by moving as much logic as possible to the Rails app.
 
-For example, at [Main Street](https://www.getmainstreet.com), all forms are presented modally. This follows iOS best practices and ties really nicely into Turbo's Path Configuration. The best part is that once configured it doesn't need to be adjusted for new workflows.
+For example, you might want to present all forms modally. This follows iOS best practices and ties really nicely into Turbo's Path Configuration. The best part is that once configured it doesn't need to be adjusted for new workflows.
 
 We've also built a JavaScript API to dynamically add navigation buttons to any screen in the app. We hook into a custom Stimulus controller and take advantage of SF Symbols on the client side. This gives us flexibility to change portions of the native UI without a client update and App Store review.
-
-{% include mainstreet.html %}
 
 ## Tune in next week for...
 
