@@ -63,4 +63,4 @@ These sessions range from teaching SwiftUI to new iOS developers to coaching ent
   <p>Continuing the board game trend, I'm the founder of <a href="https://www.wetabletop.com/remote-events?utm_source=masilotti.com">weTabletop</a>, a directory for remote board game events. You can also track your played games with <a href="https://www.wetabletop.com/journals?utm_source=masilotti.com">beautiful pictures of the board</a>.</p>
 </div>
 
-{% include newsletter.html %}
+{% include hotwire.html %}
