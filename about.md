@@ -31,9 +31,9 @@ I also work full stack across all disciplines, tackling anything from Sidekiq ba
   Coaching
 </h2>
 
-Pair programming is the quickest way to level up your development skills. I take this to heart and offer live, 1:1 coaching in Ruby on Rails, iOS, and general testing best practices.
+Pair programming is the quickest way to level up your development skills. I take this to heart and offer live 1:1 or group coaching in Ruby on Rails and iOS for teams.
 
-These sessions range from teaching SwiftUI to new iOS developers to coaching entire teams on high-level architecture. Occasionally, I run group sessions on specific topics, like UI Testing or Swift mocks.
+These sessions range from teaching SwiftUI to new iOS developers, getting ramped up in the latest Hotwire features, or in-depth code review. Occasionally, I run group sessions on specific topics, like Turbo Native, UI Testing, or Swift mocks.
 
 <h2 class="flex items-center">
   <div class="w-8 h-8 text-gray-800 mr-3">
@@ -43,24 +43,31 @@ These sessions range from teaching SwiftUI to new iOS developers to coaching ent
 </h2>
 
 <div class="sm:flex">
-  <a href="https://www.mugshotbot.com?utm_source=masilotti.com" class="sm:mx-8 flex-shrink-0">
-    <img src="/images/mugshot-bot.png" class="w-full sm:w-32 h-32 object-contain rounded-lg sm:rounded-full bg-purple-100 p-2" alt="Mugshot Bot" />
+  <a href="https://railsdevs.com?utm_source=masilotti.com" class="sm:mx-8 flex-shrink-0">
+    <img src="/images/railsdevs.png" class="w-full sm:w-32 h-32 object-contain rounded-lg sm:rounded-full p-2" alt="railsdevs" />
   </a>
-  <p>My primary focus is <a href="https://www.mugshotbot.com?utm_source=masilotti.com">Mugshot Bot</a>, a zero effort social image generator. Plug in a URL and it spits out a beautifully designed, perfectly sized image to share on Facebook and Twitter. You can even point your `og:image` tag directly to Mugshot Bot's servers.</p>
+  <p>My primary focus is <a href="https://railsdevs.com?utm_source=masilotti.com">railsdevs</a>, a reverse job board for Ruby on Rails developers. I built it to make it easier for devs to find their next gig, whether full-time or freelance. Also, it's <a href="https://github.com/joemasilotti/railsdevs.com">open source</a> and contributions are welcome!</p>
 </div>
 
 <div class="sm:flex mt-24 sm:mt-0">
-  <a href="https://xwing.app?utm_source=masilotti.com" class="sm:mx-8 sm:order-last flex-shrink-0">
-    <img src="/images/x-wing-ai.png" class="w-full sm:w-32 h-32 object-contain rounded-lg sm:rounded-full bg-gray-100 p-1" alt="X-Wing AI" style="background-color: #EFF3F3;"/>
+  <a href="https://jumpstartrails.com/ios?utm_source=masilotti.com" class="sm:mx-8 sm:order-last flex-shrink-0">
+    <img src="/images/jumpstart.png" class="w-full sm:w-32 h-32 object-contain rounded-lg sm:rounded-full bg-gray-100 p-1" alt="Jumpstart Pro for iOS"/>
+  </a>
+  <p>Somewhere between my <a href="{% link turbo-ios.md %}">tutorial on turbo-ios</a> and hiring me lives <a href="https://jumpstartrails.com/ios?utm_source=masilotti.com">Jumpstart Pro iOS</a>. It's a plug-and-play code template I built with Chris Oliver to quickly port your Rails app to iOS with Turbo Native.</p>
+</div>
+
+<div class="sm:flex mt-24 sm:mt-0">
+  <a href="https://xwing.app?utm_source=masilotti.com" class="sm:mx-8 flex-shrink-0">
+    <img src="/images/x-wing-ai.png" class="w-full sm:w-32 h-32 object-contain rounded-lg sm:rounded-full bg-gray-100 p-1" alt="X-Wing AI"/>
   </a>
   <p>On iOS I run a board game companion app for X-Wing, <a href="https://xwing.app?utm_source=masilotti.com">X-Wing AI</a>. The app simulates a human opponent with a believable yet unpredictable AI. This has been a huge welcome for a game that usually requires at least two people to play!</p>
 </div>
 
-<div class="sm:flex mt-24 sm:mt-0">
-  <a href="https://www.wetabletop.com/remote-events?utm_source=masilotti.com" class="sm:mx-8 flex-shrink-0">
-    <img src="/images/wetabletop.png" class="w-full sm:w-32 h-32 object-contain rounded-lg sm:rounded-full p-1" alt="weTabletop" style="background-color: #1C998A;" />
+<div class="sm:flex">
+  <a href="https://www.mugshotbot.com?utm_source=masilotti.com" class="sm:mx-8 sm:order-last flex-shrink-0">
+    <img src="/images/mugshot-bot.png" class="w-full sm:w-32 h-32 object-contain rounded-lg sm:rounded-full bg-purple-100 p-2" alt="Mugshot Bot" />
   </a>
-  <p>Continuing the board game trend, I'm the founder of <a href="https://www.wetabletop.com/remote-events?utm_source=masilotti.com">weTabletop</a>, a directory for remote board game events. You can also track your played games with <a href="https://www.wetabletop.com/journals?utm_source=masilotti.com">beautiful pictures of the board</a>.</p>
+  <p>I <a href="{% post_url 2022-01-05-idea-to-sold-in-14-months %}">recently sold Mugshot Bot</a>, a zero effort social image generator. Plug in a URL and it spits out a beautifully designed, perfectly sized image to share on Facebook and Twitter. You can even point your `og:image` tag directly to Mugshot Bot's servers.</p>
 </div>
 
 {% include hotwire.html %}
