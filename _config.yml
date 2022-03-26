@@ -35,7 +35,7 @@ url: https://masilotti.com
 
 # jekyll-seo-tag configuration
 title: Masilotti.com
-tagline: "iOS, Ruby on Rails, and testing. Maybe even a bit on board games."
+tagline: "Joe Masilotti’s blog on Ruby on Rails, iOS, Turbo Native, and automated testing."
 description: "A blog from Joe Masilotti, an independent developer who's passionate about clean, testable code."
 logo: images/avatar-circle.png
 twitter:
