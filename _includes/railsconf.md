@@ -73,3 +73,10 @@ By the way, [this page]({% post_url 2022-05-25-railsconf-2022 %}) will be update
   author="Brandon Weaver"
   twitter="keystonelemur"
 %}
+
+{% include link.html
+  title="Testing legacy code when you dislike tests (and legacy code)"
+  url="https://speakerdeck.com/maeve/railsconf-2022-testing-legacy-code-when-you-dislike-tests-and-legacy-code"
+  author="Maeve Revels"
+  twitter="maeverevels"
+%}
