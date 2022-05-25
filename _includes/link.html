@@ -11,5 +11,7 @@
     <span class="text-sm text-gray-600">by {{ include.author }}</span>
   {% endif %}
 
-  <p>{{ include.body | markdownify }}</p>
+  {% if include.body %}
+    <p>{{ include.body | markdownify }}</p>
+  {% endif %}
 </div>
