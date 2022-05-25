@@ -68,7 +68,7 @@ By the way, [this page]({% post_url 2022-05-25-railsconf-2022 %}) will be update
 %}
 
 {% include link.html
-  title="Behind the Lemurs - Delightfully Fashionable Lemurs Brandon Weaver"
+  title="Behind the Lemurs - Delightfully Fashionable Lemurs"
   url="https://drive.google.com/file/d/1CAWMKGq8DEWK7D30SWE0wjLFzWkd_536/view"
   author="Brandon Weaver"
   twitter="keystonelemur"
