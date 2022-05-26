@@ -80,3 +80,24 @@ By the way, [this page]({% post_url 2022-05-25-railsconf-2022 %}) will be update
   author="Maeve Revels"
   twitter="maeverevels"
 %}
+
+{% include link.html
+  title="Puny to Powerful PostgreSQL Rails Apps"
+  url="https://speakerdeck.com/andyatkinson/puny-to-powerful-postgresql-rails-apps"
+  author="Andrew Atkinson"
+  twitter="andatki"
+%}
+
+{% include link.html
+  title="Cultural Fit + Culturesmithing: Everyone Influences Culture"
+  url="https://docs.google.com/document/d/1OBIVaA43I1aQnPHmmCAWvpPmqG3_4DAVwZ-WRBcidzk/edit#"
+  author="Casey Watts"
+  twitter="heycaseywattsup"
+%}
+
+{% include link.html
+  title=" Reflecting on Active Record Associations"
+  url="https://danieljamescolson.com/assets/talks/railsconf2022-reflecting-on-active-record-associations.pdf"
+  author="Daniel J Colson"
+  twitter="dodecadaniel"
+%}
