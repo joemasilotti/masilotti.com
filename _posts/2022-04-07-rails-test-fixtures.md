@@ -1,5 +1,4 @@
 ---
-category: masilotti.com
 date: 2022-04-07
 description: "My approach on how I keep my test fixtures manageable, sane, and obvious. Not hard and fast rules, but guidelines to help you implement the same in your app."
 image: images/twitter/rails-test-fixtures.png

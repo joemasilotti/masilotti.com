@@ -1,12 +1,11 @@
 ---
-category: masilotti.com
+category: ruby-on-rails
 date: 2022-04-18
 description: "I was on another podcast! We talked about building railsdevs in public, challenges I have faced, and the technical decisions I am proud of. Also, a bit about my upcoming workshop."
 image: images/twitter/ruby-on-rails-podcast.png
 layout: post
 permalink: ruby-on-rails-podcast/
 title: 🎙 Positivity and railsdevs - guest on The Ruby on Rails podcast
-category: ruby-on-rails
 
 ---
 
