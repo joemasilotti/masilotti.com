@@ -8,7 +8,7 @@ layout: default
       {% if page.special_edition %}
         {{ page.special_edition }}
       {% else %}
-        {{ page.date | date: "%B" }} edition
+        {{ page.date | date: "%B %Y" }} edition
       {% endif %}
     </div>
   </div>
