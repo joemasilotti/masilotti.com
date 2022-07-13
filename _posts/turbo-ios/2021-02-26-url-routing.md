@@ -417,6 +417,8 @@ All that’s left is actually displaying the content. I’m using the [standard 
 Implement `webView(_: decidePolicyFor:decisionHandler:)` in the navigation delegate. We only want to catch tapped links, so we want to check that the navigation type is `.linkActivated`. If so, we cancel the request and handle it on our own, via the Safari view controller.
 
 ```swift
+import SafariServices
+
 func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
     guard
         navigationAction.navigationType == .linkActivated,
