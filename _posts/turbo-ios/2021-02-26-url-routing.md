@@ -6,7 +6,7 @@ date: 2021-02-26
 permalink: turbo-ios/url-routing/
 description: "Part 2 covers visit actions, path configuration, error handling, native view controllers, and more with Turbo iOS."
 image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/url-routing/
-category: turbo
+category: turbo-native
 series: Turbo iOS
 
 ---

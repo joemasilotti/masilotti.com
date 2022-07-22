@@ -6,7 +6,7 @@ date: 2021-04-02
 permalink: turbo-ios/native-authentication/
 description: "Authenticated requests, how to share cookies, and Devise-specific helpers to implement native authentication."
 image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/native-authentication/
-category: turbo
+category: turbo-native
 series: Turbo iOS
 
 ---

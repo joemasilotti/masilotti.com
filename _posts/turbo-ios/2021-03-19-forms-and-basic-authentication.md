@@ -6,7 +6,7 @@ date: 2021-03-19
 permalink: turbo-ios/forms-and-basic-authentication/
 description: "How to install Turbo in Rails 6, custom iOS form handling, and web-based authentication in hybrid apps."
 image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/forms-and-basic-authentication/
-category: turbo
+category: turbo-native
 series: Turbo iOS
 
 ---

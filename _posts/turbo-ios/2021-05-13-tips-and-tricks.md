@@ -6,7 +6,7 @@ date: 2021-05-13
 permalink: turbo-ios/tips-and-tricks/
 description: "Tips and tricks I’ve picked up over the years that help make the app feel more native and development easier."
 image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/tips-and-tricks/
-category: turbo
+category: turbo-native
 series: Turbo iOS
 
 ---

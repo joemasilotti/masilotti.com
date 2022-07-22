@@ -1,26 +1,8 @@
-- name: UI Testing
-  slug: ui-testing
-  color: red
-  lightColor: "fed7d7"
-  darkColor: "9b2c2c"
-
-- name: Swift Testing
-  slug: testing-swift
-  color: orange
-  lightColor: "feebc8"
-  darkColor: "9c4221"
-
-- name: iOS
-  slug: ios
+- name: Turbo Native
+  slug: turbo-native
   color: yellow
-  lightColor: "fefcbf"
-  darkColor: "975a16"
-
-- name: Masilotti.com
-  slug: masilotti.com
-  color: green
-  lightColor: "c6f6d5"
-  darkColor: "276749"
+  lightColor: "bee3f8"
+  darkColor: "2c5282"
 
 - name: Ruby on Rails
   slug: ruby-on-rails
@@ -28,11 +10,29 @@
   lightColor: "b2f5ea"
   darkColor: "285e61"
 
-- name: Turbo (Turbolinks)
-  slug: turbo
+- name: Masilotti.com
+  slug: masilotti.com
+  color: green
+  lightColor: "c6f6d5"
+  darkColor: "276749"
+
+- name: iOS
+  slug: ios
   color: blue
-  lightColor: "bee3f8"
-  darkColor: "2c5282"
+  lightColor: "fefcbf"
+  darkColor: "975a16"
+
+- name: Swift Testing
+  slug: testing-swift
+  color: orange
+  lightColor: "feebc8"
+  darkColor: "9c4221"
+
+- name: UI Testing
+  slug: ui-testing
+  color: red
+  lightColor: "fed7d7"
+  darkColor: "9b2c2c"
 
 - name: Objective-C Testing
   slug: testing-objective-c

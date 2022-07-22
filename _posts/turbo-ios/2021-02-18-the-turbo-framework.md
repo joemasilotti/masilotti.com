@@ -6,7 +6,7 @@ date: 2021-02-18
 permalink: turbo-ios/hybrid-apps-with-turbo/
 description: "Hybrid mobile apps powered by Turbo: Basecamp's not-so-secret formula for producing large scale apps with small teams."
 image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/hybrid-apps-with-turbo/
-category: turbo
+category: turbo-native
 series: Turbo iOS
 
 ---
