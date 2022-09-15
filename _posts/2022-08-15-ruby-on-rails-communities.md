@@ -13,7 +13,7 @@ Learning is better with friends! And as a solopreneur who mostly works alone, a 
 
 Here’s a curated list of active Ruby on Rails communities that you can join today, for free. I’ve included Discord servers, Slack channels, forums, and even communities hosted on social media platforms.
 
-In a community that isn’t on this list? [Send me an email](mailto:joe@masilotti.com) or submit a PR!
+In a community that isn’t on this list? [Send me an email](mailto:joe@masilotti.com) or [submit a PR](https://github.com/joemasilotti/masilotti.com/blob/main/_posts/2022-08-15-ruby-on-rails-communities.md)!
 
 ### [Official Ruby on Rails Discord server](https://discord.gg/a9KR88WmJn)
 
@@ -62,4 +62,4 @@ Totaling 75k members, these subreddits have grown quite large. As always with Re
 
 Twitter communities are like super focused newsfeeds. Content on The Ruby on Rails Twitter community focuses on sharing articles, asking for advice, and highlighting interesting gems. It’s a great alternative if you aren’t a fan of Reddit.
 
-Made it to the end but didn't find your favorite Ruby on Rails community? [Send me an email](mailto:joe@masilotti.com) or submit a PR!
+Made it to the end but didn't find your favorite Ruby on Rails community? [Send me an email](mailto:joe@masilotti.com) or [submit a PR](https://github.com/joemasilotti/masilotti.com/blob/main/_posts/2022-08-15-ruby-on-rails-communities.md)!
