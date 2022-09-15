@@ -34,7 +34,7 @@ WNB.rb is a virtual community for women and non-binary Rubyists. They host month
   {% include hotwire.html %}
 </div>
 
-### [Stimulus Reflex Discord server](https://discord.gg/stimulus-reflex) 
+### [Stimulus Reflex Discord server](https://discord.gg/z5fuJNgJsS)
 
 Another active Discord community focusing on Ruby on Rails. This is my go-to support channel for [Stimulus Reflex](https://docs.stimulusreflex.com), Cable Ready, and [AnyCable](https://anycable.io). The maintainers are quick to respond with help on specific questions on the frameworks and gems. And the more general channels see a lot of Q&A style activity for folks getting help with their individual codebases.
 
