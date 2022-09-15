@@ -1,6 +1,6 @@
 ---
 category: ruby-on-rails
-date: 2022-08-15
+date: 2022-09-15
 description: "I use online communities to ask for help, offer advice, and keep up to date with the latest trends. Here are 10+ of my favorites."
 image: images/twitter/communities.png
 layout: post
