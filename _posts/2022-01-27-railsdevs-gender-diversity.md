@@ -1,25 +1,25 @@
 ---
 category: masilotti.com
 date: 2022-01-27
-description: "It is not OK that railsdevs represents 180+ developers but fewer than 10 identify as women. This is how I'm learning to create a more inclusive platform."
+description: "It is not OK that RailsDevs represents 180+ developers but fewer than 10 identify as women. This is how I'm learning to create a more inclusive platform."
 image: images/twitter/railsdevs-gender-diversity.png
 layout: post
 permalink: railsdevs-gender-diversity/
-title: railsdevs has a gender diversity problem
+title: RailsDevs has a gender diversity problem
 
 ---
 
-Or, why are there so few women on railsdevs?
+Or, why are there so few women on RailsDevs?
 
-I run [railsdevs](https://railsdevs.com), a reverse job board for freelance Ruby on Rails developers. If you scroll through the 180+ developer profiles on the site you’ll quickly notice something. There are very few people who identify as women. Fewer than 10 at this time of publication, actually.
+I run [RailsDevs](https://railsdevs.com), a reverse job board for freelance Ruby on Rails developers. If you scroll through the 180+ developer profiles on the site you’ll quickly notice something. There are very few people who identify as women. Fewer than 10 at this time of publication, actually.
 
-This is not good. Hell, it’s downright *bad*. How can I claim that railsdevs is [creating an inclusive environment](https://railsdevs.com/about) if all I’m doing is promoting a list of men?
+This is not good. Hell, it’s downright *bad*. How can I claim that RailsDevs is [creating an inclusive environment](https://railsdevs.com/about) if all I’m doing is promoting a list of men?
 
 > One step is just acknowledging that and the next is acting on it. - [Jemma Issroff on Remote Ruby](https://overcast.fm/+NfJEy2xzI/13:52)
 
 [Jemma Issroff](https://twitter.com/JemmaIssroff) is co-organizer of [WNB.rb](https://twitter.com/wnb_rb), a community and monthly Ruby meetup for women and non-binary folks. She was recently on the Remote Ruby podcast talking about diversity (or lack thereof) in the Ruby community. This is her advice on how folks who don’t identify as women or non-binary can help the community as a whole.
 
-I’m taking these words to heart. A little bit louder for the folks in the back: **it is not OK that railsdevs represents so few women**.
+I’m taking these words to heart. A little bit louder for the folks in the back: **it is not OK that RailsDevs represents so few women**.
 
 I’m acknowledging the issue and here’s how I’m acting on it. These are the first steps of many as I learn how to create a more inclusive environment online. Also, I recognize that diversity isn’t limited to gender; it’s what I’m focusing on first.
 
@@ -39,7 +39,7 @@ If you are looking for a Ruby or Rails job or freelance gig then [send me an ema
 
 ## Sponsor Ruby and Rails communities for women
 
-For all of 2022, railsdevs will donate 10% of its profits to women- and non-binary-focused Ruby and Rails communities. At the end of each month I’ll tally up everything from the [public income report](https://same-legend-a38.notion.site/railsdevs-income-report-c28706a1b3a846d4a058e4fef135aa67) and invest that money into one group.
+For all of 2022, RailsDevs will donate 10% of its profits to women- and non-binary-focused Ruby and Rails communities. At the end of each month I’ll tally up everything from the [public income report](https://railsdevs.com/open) and invest that money into one group.
 
 Investments will be in the form of newsletter sponsorships, meetup support, and donations. The receiving organization can choose which medium works best for them.
 
