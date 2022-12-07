@@ -41,7 +41,7 @@ Let’s dive in! In this phase we will cover some high-level iOS concepts, integ
 
 Check out `phase-1` on both repos to begin.
 
-### Phase 1: Activity
+#### Phase 1: Activity
 
 Spend 5 minutes poking around and jot down things that feel “off” or weird in the app.
 
@@ -53,7 +53,7 @@ The app is working great but some things feel a little *off*. That navigation ba
 
 Check out `phase-2` on both repos to begin.
 
-### Phase 2: Activity
+#### Phase 2: Activity
 
 We successfully replaced a screen when signing in and out. But what about when updating a game? Let’s apply the same logic – be careful not to break the flow when adding a new game, though!
 
@@ -65,7 +65,7 @@ This phase introduces a way for the iOS app to authenticate with the Rails app w
 
 Check out `phase-3` on both repos to begin.
 
-### Phase 3: Activity
+#### Phase 3: Activity
 
 Authentication is looking good! But there’s a bug that can cause some confusion for users.
 
@@ -92,7 +92,7 @@ Enter the JavaScript bridge. Here we can pass messages back and forth between th
 
 Check out `phase-4` on both repos to begin.
 
-### Phase 4: Activity
+#### Phase 4: Activity
 
 Now that we have a feel for native buttons let’s add another! Add a `+` button on the right side of the Home Screen. When clicked, push the "Add a game" page.
 
@@ -115,6 +115,14 @@ Let’s add a profile page for signed in users. First, we will add the HTML-base
 We will authenticate the native HTTP request with cookies shared from the web view.
 
 Check out `phase-5` on both repos to begin.
+
+#### Phase 5: Activity
+
+Now that we have a feel for native screens, let’s add another one!
+
+Add a native screen, powered by a JSON endpoint, to view an individual board game.
+
+Check out `phase-5-activity` on both repos to begin.
 
 <h2 id="resources">Additional resources</h2>
 
