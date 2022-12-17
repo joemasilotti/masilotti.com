@@ -7,6 +7,8 @@
     "esbuild-dev": "node esbuild.config.js --watch"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.8",
     "cssnano": "^5.1.14",
     "esbuild": "^0.14.39",
     "glob": "^8.0.1",
