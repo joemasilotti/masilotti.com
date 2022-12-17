@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title><%= title %></title>
+<%= tag.meta name: "description", content: description %>
+
+<%= tag "meta", name: "canonical", href: url %>
+<%= tag "meta", name: "author", content: author %>
+
+<%= tag "meta", name: "og:title", content: title %>
+<%= tag "meta", name: "og:description", content: description %>
+<%= tag "meta", name: "og:image", content: image %>
+<%= tag "meta", name: "og:url", content: url %>
+<%= tag "meta", name: "og:site_name", content: site_name %>
+<meta property="og:locale" content="en_US">
+
+<%= tag "meta", name: "twitter:creator", content: twitter %>
+<%= tag "meta", name: "twitter:site", content: twitter %>
+<%= tag "meta", name: "twitter:title", content: title %>
+<%= tag "meta", name: "twitter:image", content: image %>
+<%= tag "meta", name: "twitter:card", content: twitter_card %>
+
+<%= tag "link", rel: "stylesheet", href: webpack_path(:css) %>
+<%= tag "script", src: webpack_path(:js), defer: true %></script>
+<%# Closing script tag otherwise live reload JS below doesn't work. %>
+
+<%= live_reload_dev_js %>

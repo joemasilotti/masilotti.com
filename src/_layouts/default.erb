@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <%= render Head.new(title: site.metadata.title) %>
+  </head>
+  <body>
+    <main>
+      <%= content %>
+    </main>
+
+    <%= render Footer.new(email: site.metadata.email) %>
+  </body>
+</html>
