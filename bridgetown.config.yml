@@ -1,4 +1,11 @@
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+development:
+  url: https://localhost:4000
+
+staging:
+  url: https://dev.masilotti.com
+
+production:
+  url: https://masilotti.com
 
 permalink: pretty
 template_engine: erb
