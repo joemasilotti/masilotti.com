@@ -1,13 +1,22 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" class="h-full antialiased">
   <head>
-    <%= render Head.new(title: site.metadata.title) %>
+    <%= render Head.new(page:, metadata: site.metadata) %>
   </head>
-  <body>
-    <main>
-      <%= content %>
-    </main>
 
-    <%= render Footer.new(email: site.metadata.email) %>
+  <body class="flex h-full flex-col bg-zinc-50">
+    <div class="fixed inset-0 flex justify-center sm:px-8">
+      <div class="flex w-full max-w-7xl lg:px-8">
+        <div class="w-full bg-white ring-1 ring-zinc-100"></div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <main>
+        <%= yield %>
+      </main>
+
+      <%= render Footer.new(email: site.metadata.email) %>
+    </div>
   </body>
 </html>
