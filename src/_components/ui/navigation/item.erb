@@ -1,5 +1,5 @@
 <li>
-  <%= tag.a href:, class: class_map("relative block px-3 py-2 transition": true, "text-primary-600": active?, "hover:text-primary-600": !active?) do %>
+  <%= content_tag "a", href:, class: class_map("relative block px-3 py-2 transition": true, "text-primary-600": active?, "hover:text-primary-600": !active?) do %>
     <%= title %>
 
     <% if active? %>

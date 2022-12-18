@@ -1,5 +1,5 @@
 <%= content_tag "li", class: class_map("flex": true, class_name => true) do %>
-  <%= tag.a href:, target: "_blank", class: "group flex items-center text-sm font-medium text-zinc-800 transition hover:text-primary-600" do %>
+  <%= content_tag "a", href:, target: "_blank", class: "group flex items-center text-sm font-medium text-zinc-800 transition hover:text-primary-600" do %>
     <%= svg "/images/icons/#{icon}.svg", class: "h-6 w-6 flex-none text-zinc-600 transition group-hover:fill-primary-600" %>
     <span class="ml-4"><%= label %></span>
   <% end %>
