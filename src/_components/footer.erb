@@ -11,9 +11,7 @@
             <p class="mt-2 text-base text-gray-500">Turbo (Native), Stimulus, and Strada articles, code, courses, and more every month.</p>
           </div>
 
-          <%= newsletter.action %>
-          <%# TODO: Add EmailCapture component %>
-          <%# render EmailCapture.new(data.newsletters.hotwire) %>
+          <%= render EmailCapture.new(newsletter) %>
         </div>
       </div>
     </div>
