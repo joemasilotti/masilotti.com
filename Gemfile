@@ -9,5 +9,5 @@ group :bridgetown_plugins do
 end
 
 group :development do
-  gem "puma"
+  gem "puma", "~> 5.6"
 end
