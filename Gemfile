@@ -5,6 +5,7 @@ gem "bridgetown"
 gem "view_component", "< 2.75"
 
 group :bridgetown_plugins do
+  gem "bridgetown-svg-inliner"
   gem "bridgetown-view-component"
 end
 
