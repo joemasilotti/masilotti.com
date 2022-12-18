@@ -1,3 +1,37 @@
-<footer>
-  Contact me at <%= tag.a email, href: "mailto:#{email}" %>
+<footer class="mt-32 sm:px-8">
+  <div class="mx-auto max-w-7xl lg:px-8">
+    <div class="relative px-4 sm:px-8 lg:px-12 border-t border-zinc-100 py-12">
+      <div class="mx-auto max-w-2xl lg:max-w-5xl">
+        <div class="lg:flex lg:items-center lg:justify-between lg:space-x-4">
+          <div>
+            <h3 class="flex items-center text-base font-medium text-gray-900">
+              <%= svg "images/icons/outline/envelope.svg", class: "h-6 w-6 flex-none text-zinc-500" %>
+              <span class="ml-2">Subscribe to the ⚡️ <%= link_to "Hotwire dev newsletter", "_pages/hotwire.erb", class: "underline" %></span>
+            </h3>
+            <p class="mt-2 text-base text-gray-500">Turbo (Native), Stimulus, and Strada articles, code, courses, and more every month.</p>
+          </div>
+
+          <%= newsletter.action %>
+          <%# TODO: Add EmailCapture component %>
+          <%# render EmailCapture.new(data.newsletters.hotwire) %>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative px-4 sm:px-8 lg:px-12 border-t border-zinc-100 pt-10 pb-16">
+      <div class="mx-auto max-w-2xl lg:max-w-5xl">
+        <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+          <div class="flex gap-6 text-sm font-medium text-zinc-800">
+            <% links.each do |link| %>
+              <%= link_to link.title, link.href, class: "transition hover:text-primary-500" %>
+            <% end %>
+          </div>
+
+          <p class="text-sm text-zinc-400">
+            &copy; <%= Time.current.year %> Joe Masilotti. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

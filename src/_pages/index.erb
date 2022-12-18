@@ -1,0 +1,42 @@
+---
+title: Joe Masilotti, the Turbo Native guy
+description: |
+  I help businesses build and launch hybrid iOS apps powered by Turbo Native and
+  Ruby on Rails.
+permalink: /
+
+---
+
+<%= render Ui::Container.new(class_name: "mt-16 sm:mt-32") do %>
+  <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+    <div class="lg:pl-20">
+      <div class="max-w-[250px] px-2.5 lg:max-w-none">
+        <figure>
+          <img src="/images/joe.jpg" alt="Joe Masilotti" class="aspect-square sm:rotate-3 rounded-2xl bg-zinc-100 object-cover">
+          <figcaption class="sr-only">Joe Masilotti</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="lg:order-first lg:row-span-2">
+      <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">I'm <%= page.data.title %>.</h1>
+
+      <div class="prose">
+        <%= markdownify do %>
+          <%= render "about" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="lg:pl-20">
+      <ul role="list">
+        <% socials = site.data.socials %>
+        <%= render WideSocialLink.new(href: socials.email.href, label: socials.email.handle, icon: socials.email.icon) %>
+        <%= render WideSocialLink.new(href: socials.twitter.href, label: socials.twitter.title, icon: socials.twitter.icon, class_name: "mt-8 border-t border-zinc-100 pt-8") %>
+        <%= render WideSocialLink.new(href: socials.github.href, label: socials.github.title, icon: socials.github.icon, class_name: "mt-4") %>
+        <%= render WideSocialLink.new(href: socials.mastodon.href, label: socials.mastodon.title, icon: socials.mastodon.icon, class_name: "mt-4") %>
+        <%= render WideSocialLink.new(href: socials.linkedin.href, label: socials.linkedin.title, icon: socials.linkedin.icon, class_name: "mt-4") %>
+      </ul>
+    </div>
+  </div>
+<% end %>

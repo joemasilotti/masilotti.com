@@ -1,0 +1,8 @@
+hotwire:
+  action: https://buttondown.email/api/emails/embed-subscribe/joemasilotti
+  onsubmit: https://buttondown.email/joemasilotti
+
+workshop:
+  action: https://buttondown.email/api/emails/embed-subscribe/joemasilotti
+  onsubmit: https://buttondown.email/joemasilotti
+  tag: workshop

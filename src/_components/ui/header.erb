@@ -1,0 +1,18 @@
+<header class="pointer-events-none relative z-50 flex flex-col">
+  <div class="top-0 z-10 h-16 pt-6">
+    <%= render Ui::Container.new do %>
+      <div class="relative flex gap-4 justify-center">
+        <div class="flex flex-1">
+          <%= render Ui::Avatar.new %>
+        </div>
+
+        <div class="flex flex-1 justify-end md:justify-center">
+          <%= render Ui::Navigation::Mobile.new(links:) %>
+          <%= render Ui::Navigation::Desktop.new(current_path:, links:) %>
+        </div>
+
+        <div class="flex justify-end md:flex-1"></div>
+      </div>
+    <% end %>
+  </div>
+</header>

@@ -12,11 +12,13 @@
     </div>
 
     <div class="relative">
+      <%= render Ui::Header.new(current_path: page.permalink) %>
+
       <main>
         <%= yield %>
       </main>
 
-      <%= render Footer.new(email: site.metadata.email) %>
+      <%= render Footer.new(newsletter: site.data.newsletters.hotwire) %>
     </div>
   </body>
 </html>

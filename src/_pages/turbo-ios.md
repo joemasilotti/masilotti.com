@@ -4,7 +4,9 @@ title: Hybrid iOS apps with Turbo
 permalink: turbo-ios/
 description: How to build hybrid iOS apps with Turbo and Ruby on Rails. An ongoing series covering authentication, the JavaScript bridge, architecture, and more.
 image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/
+
 template_engine: liquid
+permalink: /turbo-ios/
 
 ---
 
