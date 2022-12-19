@@ -6,9 +6,7 @@ description: |
   implement native authentication.
 permalink: /turbo-ios/native-authentication/
 
-series: Turbo iOS
 series_title: Native authentication
-series_path: /turbo-ios/
 
 ---
 
@@ -18,9 +16,7 @@ One major limitation of web-only authentication is, well, it's web only. That li
 
 Native authentication, on the other hand, opens up a world of possibilities. It breaks your app out of the web world and enables fully native screens. Meaning, you can integrate native SDKs like location services and push notifications. Or, you can render SwiftUI views for the really important stuff!
 
-{% comment %}
-{% include series.html %}
-{% endcomment %}
+{% render "turbo_ios", resource: resource, site: site %}
 
 Before diving in, let’s outline the flow of information through the server and client.
 

@@ -7,17 +7,13 @@ description: |
   link.
 permalink: /turbo-ios/the-javascript-bridge/
 
-series: Turbo iOS
 series_title: The JavaScript bridge
-series_path: /turbo-ios/
 
 ---
 
 This is part 4 of a 6 part series on building hybrid iOS apps with Turbo. Parts 1 through 3 built us an "out of the box" hybrid app with [navigation]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}), [URL routing]({% post_url turbo-ios/2021-02-26-url-routing %}), [forms, and basic authentication]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %}). This week, we will customize our app to make it feel more native.
 
-{% comment %}
-{% include series.html %}
-{% endcomment %}
+{% render "turbo_ios", resource: resource, site: site %}
 
 One of the big trade-offs of hybrid apps is that all interaction (and content) usually lives in the web view. This means we can update it without much issue by making changes to our Rails app. But what if we want a native navigation bar button? Or want to register a notification token with the server?
 

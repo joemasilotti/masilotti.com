@@ -6,9 +6,7 @@ description: |
   producing large scale apps with small teams.
 permalink: /turbo-ios/hybrid-apps-with-turbo/
 
-series: Turbo iOS
 series_title: The Turbo Framework
-series_path: /turbo-ios/
 
 ---
 
@@ -20,9 +18,7 @@ This is possible with [Turbo](https://github.com/hotwired/turbo-ios/), a small f
 
 This is the first post in a series on how to build high-fidelity, hybrid iOS apps with Turbo and Ruby on Rails. It covers the benefits of Turbo-powered hybrid apps and how to get up and running.
 
-{% comment %}
-{% include series.html %}
-{% endcomment %}
+{% render "turbo_ios", resource: resource, site: site %}
 
 {% comment %}
 {% include jumpstart.html %}
