@@ -1,17 +1,18 @@
 ---
-layout: post
 title: "Hybrid iOS apps with Turbo – Part 2: URL routing"
-series_title: URL routing
 date: 2021-02-26
-permalink: turbo-ios/url-routing/
-description: "Part 2 covers visit actions, path configuration, error handling, native view controllers, and more with Turbo iOS."
-image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/url-routing/
-category: turbo-native
+description: |
+  Part 2 covers visit actions, path configuration, error handling, native view
+  controllers, and more with Turbo iOS.
+permalink: /turbo-ios/url-routing/
+
 series: Turbo iOS
+series_title: URL routing
+series_path: /turbo-ios/
 
 ---
 
-This is part 2 of a [6-part series on Hybrid iOS apps with Turbo]({% link _pages/turbo-ios.md %}). In [part 1]({% link _posts/turbo-ios/2021-02-18-the-turbo-framework.md %}) we touched on the basics of the Turbo framework and why hybrid can be a great choice. We went through the [official Quick Start guide](https://github.com/hotwired/turbo-ios/blob/main/Docs/QuickStartGuide.md) line by line and ended up with a working Turbo Native demo.
+This is part 2 of a [6-part series on Hybrid iOS apps with Turbo]({% post_url 2021-05-14-turbo-ios %}). In [part 1]({% link _posts/turbo-ios/2021-02-18-the-turbo-framework.md %}) we touched on the basics of the Turbo framework and why hybrid can be a great choice. We went through the [official Quick Start guide](https://github.com/hotwired/turbo-ios/blob/main/Docs/QuickStartGuide.md) line by line and ended up with a working Turbo Native demo.
 
 {% comment %}
 {% include series.html %}

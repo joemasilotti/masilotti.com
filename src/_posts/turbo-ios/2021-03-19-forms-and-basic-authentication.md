@@ -1,17 +1,18 @@
 ---
-layout: post
 title: "Hybrid iOS apps with Turbo – Part 3: Forms and basic authentication"
-series_title: Forms and basic authentication
 date: 2021-03-19
-permalink: turbo-ios/forms-and-basic-authentication/
-description: "How to install Turbo in Rails 6, custom iOS form handling, and web-based authentication in hybrid apps."
-image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/forms-and-basic-authentication/
-category: turbo-native
+description: |
+  How to install Turbo in Rails 6, custom iOS form handling, and web-based
+  authentication in hybrid apps.
+permalink: /turbo-ios/forms-and-basic-authentication/
+
 series: Turbo iOS
+series_title: Forms and basic authentication
+series_path: /turbo-ios/
 
 ---
 
-This is part 3 of a [6-part series on Hybrid iOS apps with Turbo]({% link _pages/turbo-ios.md %}). We kicked off with an [introduction to the Turbo framework]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}) and touched on why hybrid can be a great choice. Part 2 dove into [URL routing with Turbo]({% post_url turbo-ios/2021-02-26-url-routing %}) and how to get your path configuration set up.
+This is part 3 of a [6-part series on Hybrid iOS apps with Turbo]({% post_url 2021-05-14-turbo-ios %}). We kicked off with an [introduction to the Turbo framework]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}) and touched on why hybrid can be a great choice. Part 2 dove into [URL routing with Turbo]({% post_url turbo-ios/2021-02-26-url-routing %}) and how to get your path configuration set up.
 
 {% comment %}
 {% include series.html %}
@@ -230,6 +231,6 @@ Can’t wait? Here’s a sneak peek of what I will be covering.
 
 Now that forms and basic authentication are out of the way we can dive into more exciting Turbo-iOS features.
 
-The next article [in the series]({% link _pages/turbo-ios.md %}) will cover the JavaScript bridge - this is how we send messages between Rails and iOS without HTTP requests. I use the bridge to trigger native actions, render native controls, register push notification tokens, and lots of other fun stuff.
+The next article [in the series]({% post_url 2021-05-14-turbo-ios %}) will cover the JavaScript bridge - this is how we send messages between Rails and iOS without HTTP requests. I use the bridge to trigger native actions, render native controls, register push notification tokens, and lots of other fun stuff.
 
 If you’re following along with the series I’d love if you could share it with another developer! As always, feel free to [reach out on Twitter](https://twitter.com/joemasilotti) or [via email](mailto:joe@masilotti.com) if you have any questions.

@@ -3,8 +3,34 @@ layout: default
 
 ---
 
-<h1><%= resource.data.title %></h1>
+<%= render Ui::Container.new(class_name: "mt-16 lg:mt-32") do %>
+  <div class="xl:relative">
+    <div class="mx-auto max-w-2xl">
+      <a href="<%= resource.back_href %>" aria-label="Go back to articles" title="Go back to articles" class="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition lg:absolute lg:-left-5 lg:mb-0 lg:-mt-2 xl:-top-1.5 xl:left-0 xl:mt-0">
+        <%= svg "/images/icons/mini/arrow_left.svg", class: "h-3 w-3 stroke-zinc-500 transition group-hover:stroke-zinc-700" %>
+      </a>
 
-<div class="prose">
-  <%= content %>
-</div>
+      <article>
+        <header class="flex flex-col">
+          <h1 class="mt-6 text-4xl sm:text-5xl font-bold tracking-tight text-zinc-800">
+            <% if resource.series? %>
+              <span class="block text-3xl sm:text-4xl font-semibold text-zinc-500"><%= resource.data.series %></span>
+              <span><%= resource.data.series_title %></span>
+            <% else %>
+              <%= resource.data.title %>
+            <% end %>
+          </h1>
+
+          <time datetime="<%= resource.date %>" class="order-first flex items-center text-base text-zinc-400">
+            <span class="h-4 w-0.5 rounded-full bg-zinc-200"></span>
+            <span class="ml-3"><%= resource.formatted_date %></span>
+          </time>
+        </header>
+
+        <div class="prose mt-8">
+          <%= yield %>
+        </div>
+      </article>
+    </div>
+  </div>
+<% end %>

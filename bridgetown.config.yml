@@ -9,3 +9,6 @@ production:
 
 permalink: pretty
 template_engine: erb
+
+# TODO: Categories, tags, or custom taxonomies for turbo-ios series.
+# https://www.bridgetownrb.com/docs/resources#taxonomies

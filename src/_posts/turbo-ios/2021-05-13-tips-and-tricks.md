@@ -1,17 +1,18 @@
 ---
-layout: post
 title: "Hybrid iOS apps with Turbo – Part 6: Tips and tricks"
-series_title: Tips and tricks
 date: 2021-05-13
-permalink: turbo-ios/tips-and-tricks/
-description: "Tips and tricks I’ve picked up over the years that help make the app feel more native and development easier."
-image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/tips-and-tricks/
-category: turbo-native
+description: |
+  Tips and tricks I’ve picked up over the years that help make the app feel
+  more native and development easier.
+permalink: /turbo-ios/tips-and-tricks/
+
 series: Turbo iOS
+series_title: Tips and tricks
+series_path: /turbo-ios/
 
 ---
 
-At this point in the [Hybrid iOS series]({% link _pages/turbo-ios.md %}), you should have a working Turbo Native app. To wrap up the series I’m sharing tips and tricks I’ve picked up over the years that range from making development easier to making the app feel more native.
+At this point in the [Hybrid iOS series]({% post_url 2021-05-14-turbo-ios %}), you should have a working Turbo Native app. To wrap up the series I’m sharing tips and tricks I’ve picked up over the years that range from making development easier to making the app feel more native.
 
 If you’re still new to Turbo iOS, check out the beginning of the series, [The Turbo framework]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}) . I walk you through building a Turbo Native app from scratch, including all the Ruby on Rails code needed for your server.
 

@@ -1,17 +1,18 @@
 ---
-layout: post
 title: "Hybrid iOS apps with Turbo – Part 5: Native authentication"
-series_title: Native authentication
-date: 2021-04-02
-permalink: turbo-ios/native-authentication/
-description: "Authenticated requests, how to share cookies, and Devise-specific helpers to implement native authentication."
-image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/native-authentication/
-category: turbo-native
+date: 2021-04-22
+description: |
+  Authenticated requests, how to share cookies, and Devise-specific helpers to
+  implement native authentication.
+permalink: /turbo-ios/native-authentication/
+
 series: Turbo iOS
+series_title: Native authentication
+series_path: /turbo-ios/
 
 ---
 
-Welcome back to my [6-part series on hybrid iOS apps with Turbo]({% link _pages/turbo-ios.md %}). In [part 3]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %}) we learned how to do basic authentication via the web view.
+Welcome back to my [6-part series on hybrid iOS apps with Turbo]({% post_url 2021-05-14-turbo-ios %}). In [part 3]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %}) we learned how to do basic authentication via the web view.
 
 One major limitation of web-only authentication is, well, it's web only. That limits us to only interacting with our server via HTML and JavaScript. You’re out of luck if you need to make an authenticated HTTP request.
 

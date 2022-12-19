@@ -1,0 +1,9 @@
+<%= content_tag as, class: class_map(class_name => true, "relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400" => true, "pl-3.5" => decorate), **properties do %>
+  <% if decorate %>
+    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
+      <span class="h-4 w-0.5 rounded-full bg-zinc-200"></span>
+    </span>
+  <% end %>
+
+  <%= content %>
+<% end %>

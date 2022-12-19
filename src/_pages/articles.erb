@@ -1,5 +1,24 @@
 ---
 title: Articles
+description: |
+  Over the years I’ve published dozens of articles — some more noteworthy
+  than others. Here are some of my personal favorites.
 permalink: /articles/
 
 ---
+
+<%= render Ui::SimpleLayout.new(
+  title: "My writing on Turbo Native, Ruby on Rails, and how I build transparent businesses.",
+  intro: resource.data.description
+) do %>
+  <div class="flex max-w-3xl flex-col space-y-16">
+    <%# TODO: Move to a model? %>
+    <% collections.posts.resources.select { |r| r.data.favorite }.sort_by { |r| r.data.index }.each do |post| %>
+      <%= render Article.new(post, hide_date: true) %>
+    <% end %>
+  </div>
+
+  <div class="prose mt-16">
+    <p>Read the rest of my articles in the <%= link_to "archives", "_pages/archives.erb" %>.</p>
+  </div>
+<% end %>

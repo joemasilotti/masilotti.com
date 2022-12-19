@@ -1,13 +1,15 @@
 ---
-layout: post
 title: "Hybrid iOS apps with Turbo – Part 4: The JavaScript bridge"
-series_title: The JavaScript bridge
 date: 2021-04-02
-permalink: turbo-ios/the-javascript-bridge/
-description: "The JavaScript bridge is the intersection of client and server. It enables passing messages between the two worlds without waiting for someone to tap a link."
-image: https://mugshotbot.com/m?theme=two_up&mode=dark&color=yellow&pattern=lines_in_motion&image=c5e5335e&url=https://masilotti.com/turbo-ios/the-javascript-bridge/
-category: turbo-native
+description: |
+  The JavaScript bridge is the intersection of client and server. It enables
+  passing messages between the two worlds without waiting for someone to tap a
+  link.
+permalink: /turbo-ios/the-javascript-bridge/
+
 series: Turbo iOS
+series_title: The JavaScript bridge
+series_path: /turbo-ios/
 
 ---
 
@@ -275,6 +277,6 @@ Or maybe it’s something else entirely! Basecamp likes to keep everything quite
 
 ## Up next: native authentication
 
-The [next part in this series]({% link _pages/turbo-ios.md %}) is a big one: native authentication. I’m going to dive into how to present native screens from Turbo and how to implement authentication natively – no web view required!
+The [next part in this series]({% post_url 2021-05-14-turbo-ios %}) is a big one: native authentication. I’m going to dive into how to present native screens from Turbo and how to implement authentication natively – no web view required!
 
 What are you hoping to learn about Turbo next? Let me know by [reaching out on Twitter](https://twitter.com/joemasilotti).
