@@ -1,16 +1,16 @@
 class Head < SiteComponent
-  attr_reader :page, :metadata
+  attr_reader :resource, :metadata
 
-  def initialize(page:, metadata:)
-    @page, @metadata = page, metadata
+  def initialize(resource:, metadata:)
+    @resource, @metadata = resource, metadata
   end
 
   def title
-    [page.data.title, metadata.title].compact.join(" | ")
+    [resource.data.title, metadata.title].compact.join(" | ")
   end
 
   def description
-    page.data.description.presence || metadata.description
+    resource.data.description.presence || metadata.description
   end
 
   def author
@@ -18,11 +18,11 @@ class Head < SiteComponent
   end
 
   def url
-    page.absolute_url
+    resource.absolute_url
   end
 
   def image
-    absolute_url(page.data.image || metadata.image)
+    absolute_url(resource.data.image || metadata.image)
   end
 
   def site_name

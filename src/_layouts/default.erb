@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" class="h-full antialiased">
   <head>
-    <%= render Head.new(page:, metadata: site.metadata) %>
+    <%= render Head.new(resource:, metadata: site.metadata) %>
   </head>
 
   <body class="flex h-full flex-col bg-zinc-50">
@@ -12,7 +12,7 @@
     </div>
 
     <div class="relative">
-      <%= render Ui::Header.new(current_path: page.permalink) %>
+      <%= render Ui::Header.new(current_path: resource.permalink) %>
 
       <main>
         <%= yield %>
