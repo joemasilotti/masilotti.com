@@ -2,8 +2,8 @@ Bridgetown.configure do |config|
   permalink "pretty"
   template_engine "erb"
 
-  init :"bridgetown-svg-inliner"
-  init :"bridgetown-view-component"
+  require "bridgetown-svg-inliner"
+  require "bridgetown-view-component"
 
   hook :loader, :pre_setup do |loader, _|
     loader.inflector.inflect(
