@@ -17,13 +17,13 @@ GEM
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     amazing_print (1.4.0)
-    bridgetown (1.1.0)
-      bridgetown-builder (= 1.1.0)
-      bridgetown-core (= 1.1.0)
-      bridgetown-paginate (= 1.1.0)
-    bridgetown-builder (1.1.0)
-      bridgetown-core (= 1.1.0)
-    bridgetown-core (1.1.0)
+    bridgetown (1.2.0.beta4)
+      bridgetown-builder (= 1.2.0.beta4)
+      bridgetown-core (= 1.2.0.beta4)
+      bridgetown-paginate (= 1.2.0.beta4)
+    bridgetown-builder (1.2.0.beta4)
+      bridgetown-core (= 1.2.0.beta4)
+    bridgetown-core (1.2.0.beta4)
       activemodel (>= 6.0, < 8.0)
       activesupport (>= 6.0, < 8.0)
       addressable (~> 2.4)
@@ -47,8 +47,8 @@ GEM
       tilt (~> 2.0)
       webrick (~> 1.7)
       zeitwerk (~> 2.5)
-    bridgetown-paginate (1.1.0)
-      bridgetown-core (= 1.1.0)
+    bridgetown-paginate (1.2.0.beta4)
+      bridgetown-core (= 1.2.0.beta4)
     bridgetown-svg-inliner (1.0.2)
       bridgetown (>= 0.20, < 2.0)
       nokogiri
@@ -149,7 +149,7 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
-  bridgetown
+  bridgetown (= 1.2.0.beta4)
   bridgetown-svg-inliner
   bridgetown-view-component
   puma (~> 5.6)
