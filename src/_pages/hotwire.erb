@@ -1,5 +1,20 @@
 ---
-title: Hotwire
+title: The ⚡️ Hotwire dev newsletter
+description: |
+  Turbo (Native), Stimulus, and Strada articles, code, courses, and more. Plus,
+  exclusive insights into how I build Turbo Native apps. Delivered monthly.
 permalink: /hotwire/
 
 ---
+
+<%= render UI::SimpleLayout.new(
+  title: resource.data.title,
+  intro: resource.data.description,
+  newsletter: site.data.newsletters.hotwire
+) do %>
+  <div class="flex max-w-3xl flex-col space-y-16">
+    <% collections.hotwire.resources.each do |newsletter| %>
+      <%= render Newsletter.new(newsletter) %>
+    <% end %>
+  </div>
+<% end %>
