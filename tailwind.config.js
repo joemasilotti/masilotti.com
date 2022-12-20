@@ -34,7 +34,7 @@ module.exports = {
     typography: (theme) => ({
       DEFAULT: {
         css: {
-          "--tw-prose-body": theme("colors.zinc.600"),
+          "--tw-prose-body": theme("colors.zinc.700"),
           "--tw-prose-headings": theme("colors.zinc.900"),
           "--tw-prose-links": theme("colors.primary.600"),
           "--tw-prose-links-hover": theme("colors.primary.700"),
