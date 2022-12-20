@@ -1,8 +1,6 @@
 <%= content_tag :article, class: "md:grid md:grid-cols-4 md:items-baseline" do %>
   <%= render UI::Card.new(class_name: "md:col-span-3") do %>
-    <%= render UI::Card::Title.new(href: url_for(article)) do %>
-      <%= article.data.title %>
-    <% end %>
+    <%= render UI::Card::Title.new(article.data.title, href: url_for(article)) %>
 
     <% unless hide_date %>
       <%= render UI::Card::Eyebrow.new(as: "time", decorate: true, class_name: "md:hidden", datetime: article.date) do %>
@@ -10,13 +8,8 @@
       <% end %>
     <% end %>
 
-    <%= render UI::Card::Description.new do %>
-      <%= article.data.description %>
-    <% end %>
-
-    <%= render UI::Card::CTA.new do %>
-      Read article
-    <% end %>
+    <%= render UI::Card::Description.new(article.data.description) %>
+    <%= render UI::Card::CTA.new("Read article") %>
   <% end %>
 
   <% if !hide_date %>

@@ -9,6 +9,8 @@ production:
 
 # TODO: Move to config/initializers.rb.
 collections:
+  hotwire:
+    output: true
   snippets:
     output: false
 
