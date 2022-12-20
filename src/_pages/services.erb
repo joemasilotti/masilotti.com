@@ -1,5 +1,20 @@
 ---
 title: Services
+description: |
+  I've been working with Turbo Native since 2015. Since then I've helped half
+  a dozen businesses launch in the App Store and consulted for twice as many.
+  Here's how I can help you port your Rails app to iOS with Turbo Native.
 permalink: /services/
 
 ---
+
+<%= render UI::SimpleLayout.new(
+  title: "Need a hand with your Turbo Native app? I'd love to help.",
+  intro: resource.data.description
+) do %>
+  <div class="flex max-w-xl flex-col space-y-16">
+    <% site.data.services.each do |service| %>
+      <%= render Service.new(**service.to_h.to_options.merge(href: site.data.socials.email.href)) %>
+    <% end %>
+  </div>
+<% end %>
