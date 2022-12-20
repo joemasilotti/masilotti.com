@@ -1,4 +1,4 @@
-class Ui::SimpleLayout < SiteComponent
+class UI::SimpleLayout < SiteComponent
   attr_reader :title, :intro, :newsletter
 
   def initialize(title: nil, intro: nil, newsletter: false)

@@ -1,2 +1,2 @@
-class Ui::Card::Cta < SiteComponent
+class UI::Card::CTA < SiteComponent
 end

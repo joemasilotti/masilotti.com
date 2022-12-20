@@ -1,4 +1,4 @@
-class Ui::Card < SiteComponent
+class UI::Card < SiteComponent
   attr_reader :as, :class_name
 
   def initialize(as: :div, class_name: nil)

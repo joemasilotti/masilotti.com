@@ -1,4 +1,4 @@
-class Ui::Navigation::Desktop < SiteComponent
+class UI::Navigation::Desktop < SiteComponent
   attr_reader :current_path, :links
 
   def initialize(current_path:, links:)

@@ -1,4 +1,4 @@
-class Ui::Container < SiteComponent
+class UI::Container < SiteComponent
   attr_reader :class_name
 
   def initialize(class_name: nil)

@@ -1,4 +1,4 @@
-class Ui::Navigation::Item < SiteComponent
+class UI::Navigation::Item < SiteComponent
   attr_reader :title, :href, :current_path
 
   def initialize(title, href, current_path:)

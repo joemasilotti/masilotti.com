@@ -1,4 +1,4 @@
-class Ui::Header < SiteComponent
+class UI::Header < SiteComponent
   Link = Struct.new(:title, :href)
 
   attr_reader :current_path

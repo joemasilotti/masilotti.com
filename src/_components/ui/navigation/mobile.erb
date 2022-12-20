@@ -19,7 +19,7 @@
       <nav class="mt-6">
         <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800">
           <% links.each do |link| %>
-            <%= render Ui::Navigation::MobileItem.new(link.title, link.href) %>
+            <%= render UI::Navigation::MobileItem.new(link.title, link.href) %>
           <% end %>
         </ul>
       </nav>

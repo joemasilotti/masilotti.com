@@ -1,2 +1,2 @@
-class Ui::Card::Description < SiteComponent
+class UI::Card::Description < SiteComponent
 end

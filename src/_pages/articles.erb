@@ -1,15 +1,15 @@
 ---
 title: Articles
 description: |
-  Over the years I’ve published dozens of articles — some more noteworthy
-  than others. Here are some of my personal favorites.
+  My writing on Turbo Native, Ruby on Rails, and building transparent
+  businesses. Here are some of my personal favorites.
 permalink: /articles/
 
 ---
 
-<%= render Ui::SimpleLayout.new(
-  title: "My writing on Turbo Native, Ruby on Rails, and how I build transparent businesses.",
-  intro: resource.data.description
+<%= render UI::SimpleLayout.new(
+  title: "My writing on Turbo Native, Ruby on Rails, and building transparent businesses.",
+  intro: "Over the years I’ve published dozens of articles — some more noteworthy than others. Here are some of my personal favorites."
 ) do %>
   <div class="flex max-w-3xl flex-col space-y-16">
     <%# TODO: Move to a model? %>

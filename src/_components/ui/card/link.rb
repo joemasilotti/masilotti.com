@@ -1,4 +1,4 @@
-class Ui::Card::Link < SiteComponent
+class UI::Card::Link < SiteComponent
   attr_reader :href, :properties
 
   def initialize(href, **properties)
