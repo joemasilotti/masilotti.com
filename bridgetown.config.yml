@@ -7,5 +7,10 @@ staging:
 production:
   url: https://masilotti.com
 
+# TODO: Move to config/initializers.rb.
+collections:
+  snippets:
+    output: false
+
 # TODO: Categories, tags, or custom taxonomies for turbo-ios series.
 # https://www.bridgetownrb.com/docs/resources#taxonomies
