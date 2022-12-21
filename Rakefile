@@ -5,7 +5,7 @@ Bridgetown.load_tasks
 task default: :deploy
 
 desc "Build the Bridgetown site for deployment"
-task :deploy => [:clean, "frontend:build"] do
+task deploy: [:clean, "frontend:build"] do
   Bridgetown::Commands::Build.start
 end
 
