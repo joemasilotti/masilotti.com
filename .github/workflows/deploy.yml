@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,11 +30,6 @@ jobs:
           BRIDGETOWN_ENV: production
         run: bin/bridgetown deploy
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
       - name: Deploy site
         uses: burnett01/rsync-deployments@5.1
         with:
