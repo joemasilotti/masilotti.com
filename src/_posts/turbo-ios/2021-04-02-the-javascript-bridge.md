@@ -224,9 +224,9 @@ class ScriptMessageHandler: NSObject, WKScriptMessageHandler {
 }
 ```
 
-{% comment %}
-{% include note.html body="This approach works fine for a single message. But when you have more than one I recommend creating a concrete type and doing the parsing there. A great example is <a href='https://github.com/hotwired/turbo-ios/blob/main/Source/WebView/ScriptMessage.swift'>ScriptMessage.swift</a> from the Turbo source code." %}
-{% endcomment %}
+{% rendercontent "note" %}
+ This approach works fine for a single message. But when you have more than one I recommend creating a concrete type and doing the parsing there. A great example is [`ScriptMessage.swift`](https://github.com/hotwired/turbo-ios/blob/main/Source/WebView/ScriptMessage.swift) from the Turbo source code.
+{% endrendercontent %}
 
 Now the fun part: Adding the button to the screen. Head back to our custom delegate callback — the one responsible for creating the handler and session. Add the button and route the URL when tapped. And my favorite, use the image name to render a [SF Symbol icon](https://developer.apple.com/sf-symbols/)!
 

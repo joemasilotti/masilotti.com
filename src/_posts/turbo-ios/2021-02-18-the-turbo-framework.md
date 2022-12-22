@@ -47,9 +47,11 @@ When you're ready to level up a screen to native code, Turbo gives you hooks to 
 
 Like Rails, Turbo was extracted from existing code at Basecamp. The team has been publicly using some form of Turbolinks since 2014. [Basecamp’s mobile app](https://apps.apple.com/us/app/basecamp-3/id1015603248) and their new email service, [Hey](https://apps.apple.com/us/app/hey-email/id1506603805), are both powered by Turbo.
 
-{% comment %}
-{% include note.html body='Wait, what’s the difference between Turbo and Turbolinks? In the context of <i>hybrid apps</i>, not much. Version 7 of Turbolinks was renamed to Turbo when Basecamp consolidated a few products into <a href="https://hotwire.dev">Hotwire</a>. On the web, <a href="https://turbo.hotwire.dev">lots of new features were added</a>.' %}
-{% endcomment %}
+> Wait, what’s the difference between Turbo and Turbolinks? In the context of _hybrid apps_, not much. Version 7 of Turbolinks was renamed to Turbo when Basecamp consolidated a few products into [Hotwire](https://hotwire.dev). On the web, [lots of new features were added](https://turbo.hotwire.dev).
+
+{% rendercontent "note" %}
+  Wait, what’s the difference between Turbo and Turbolinks? In the context of _hybrid apps_, not much. Version 7 of Turbolinks was renamed to Turbo when Basecamp consolidated a few products into [Hotwire](https://hotwire.dev). On the web, [lots of new features were added](https://turbo.hotwire.dev).
+{% endrendercontent %}
 
 Outside of official Basecamp apps, there are a number of independent hybrid apps powered by Turbo. I built [BeerMenus](https://apps.apple.com/us/app/beermenus-find-great-beer/id917882057)’s iOS app in 2014 and officially jumped on the hybrid bandwagon. I also actively maintain [Zaarly's iOS app](https://apps.apple.com/us/app/zaarly/id964717947) after building their first version in 2016.
 
