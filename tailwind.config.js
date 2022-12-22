@@ -5,6 +5,7 @@ module.exports = {
   content: [
     "./src/**/*.{html,md,liquid,erb,serb,rb}",
     "./frontend/javascript/**/*.js",
+    "./plugins/**/*.rb",
   ],
   plugins: [
     require("@tailwindcss/forms"),

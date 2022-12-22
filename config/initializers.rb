@@ -1,6 +1,7 @@
 Bridgetown.configure do |config|
   permalink "pretty"
   template_engine "erb"
+  markdown "CustomMarkdownProcessor"
 
   require "bridgetown-svg-inliner"
   require "bridgetown-view-component"
