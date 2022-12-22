@@ -143,9 +143,9 @@ session.webView.customUserAgent = "My Great App (Turbo Native)"
 You can use this helper to hide content that should only appear on the web, like the “Back” button generated from a scaffold.  Or, create a new layout file and use that for native apps. 
 
 ```erb
-<%% unless turbo_native_app? %>
-  <%%= link_to "Back", board_games_path %>
-<%% end %>
+<% unless turbo_native_app? %>
+  <%= link_to "Back", board_games_path %>
+<% end %>
 ```	
 
 ### Disable link previews and Force Touch

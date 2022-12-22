@@ -135,12 +135,12 @@ export default class extends Controller {
 ```
 
 ```erb
-<%%= form_with(model: board_game, local: false, data: {
+<%= form_with(model: board_game, local: false, data: {
   controller: "form",
   action: "ajax:error->form#onError"
 }) do |form| %>
-  <%%# ... %>
-<%% end %>
+  <%# ... %>
+<% end %>
 ```
 
 ## Basic authentication
