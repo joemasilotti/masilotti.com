@@ -296,10 +296,6 @@ class API::ApplicationController < ApplicationController
 end
 ```
 
-{% comment %}
-{% include jumpstart.html %}
-{% endcomment %}
-
 ## Wrapping up
 
 This is only an example of one implementation of native authentication with Turbo. Ideas for improvement are a better designed sign-in screen, using JWT or OAuth for access tokens, and leveraging a Swift networking library to cut down on the boilerplate.

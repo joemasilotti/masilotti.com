@@ -267,10 +267,6 @@ My guess is that Strada will move this "on load" JavaScript to special `<meta>` 
 
 Or maybe it’s something else entirely! Basecamp likes to keep everything quite secret until they launch, so only time will tell.
 
-{% comment %}
-{% include jumpstart.html %}
-{% endcomment %}
-
 ## Up next: native authentication
 
 The [next part in this series]({% post_url 2021-05-14-turbo-ios %}) is a big one: native authentication. I’m going to dive into how to present native screens from Turbo and how to implement authentication natively – no web view required!

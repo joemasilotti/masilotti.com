@@ -20,10 +20,6 @@ This is the first post in a series on how to build high-fidelity, hybrid iOS app
 
 {% render "turbo_ios", resource: resource, site: site %}
 
-{% comment %}
-{% include jumpstart.html %}
-{% endcomment %}
-
 ## The power of hybrid...
 
 Basecamp highlights four major benefits of a hybrid approach to your mobile apps. You'll:

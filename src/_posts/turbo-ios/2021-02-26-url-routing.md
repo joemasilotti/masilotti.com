@@ -22,10 +22,6 @@ Let’s dive in!
 {% include note.html body='All the code for this series can be found on my GitHub repository, <a class="text-blue-700 hover:text-blue-500" href="https://github.com/joemasilotti/Turbo-iOS-Demo">Turbo-iOS Demo</a>. Each article has a "start" and "complete" branch if you\'d like to follow along.' %}
 {% endcomment %}
 
-{% comment %}
-{% include jumpstart.html %}
-{% endcomment %}
-
 ## URL routing with Turbo
 
 Here are the different types of routing we will cover from the Turbo framework in this piece. Each lines up nicely with a broken link (or two) in the demo.

@@ -175,10 +175,6 @@ Note that this is an accessibility issue. If someone was zooming in to increase 
 
 I worked with [Chris Oliver](https://twitter.com/excid3) to create [Jumpstart Pro iOS](https://jumpstartrails.com/ios?utm_source=masilotti.com), an iOS app template to supercharge your Rails application with easy native integration.
 
-{% comment %}
-{% include jumpstart.html %}
-{% endcomment %}
-
 The template is the perfect place to kick start your native codebase. It contains implementation of all the content from this series, including:
 
 * URL routing with modals, forms, and a navigation stack

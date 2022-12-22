@@ -16,10 +16,6 @@ This is part 3 of a [6-part series on Hybrid iOS apps with Turbo]({% post_url 20
 
 This article focuses on two major components of hybrid app development: forms and authentication. We will also migrate from Basecamp’s example app to a real Rails app as examples to illustrate the points discussed. Let’s dive in!
 
-{% comment %}
-{% include jumpstart.html %}
-{% endcomment %}
-
 ## Turbo installation
 
 If you’re running Ruby on Rails 6.1+ with Turbo (v7) installed you can [skip this part](#basic-crud).
