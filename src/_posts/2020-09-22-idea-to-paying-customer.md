@@ -8,15 +8,13 @@ permalink: /idea-to-paying-customer/
 
 ---
 
-> Update: Mugshot Bot is [live on Product Hunt](https://www.producthunt.com/posts/mugshot-bot) today.
+> Update: Mugshot Bot was the [5th product of the day on Product Hunt](https://www.producthunt.com/posts/mugshot-bot)!
 
 When I get something in my head I dive in. And I dive deep. For example, a month ago I ran into a problem. One week later I solved it. And three weeks after that I turned it into a (tiny) business.
 
 Here’s how I went from an idea in a notebook to my first paying customer. In 31 days.
 
-{% comment %}
-{% include timelines/mugshot-bot.html %}
-{% endcomment %}
+![Mugshot Bot timeline](/images/mugshotbot-timeline.png){:standalone .max-w-sm}
 
 ## The problem
 

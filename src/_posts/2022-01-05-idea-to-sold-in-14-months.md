@@ -18,9 +18,7 @@ I built an MVP in one month and grew the product for a year. But now it’s time
 
 Back in October of 2020, I got sick of manually creating link preview images for Twitter every time I wrote a blog post. So, as a good engineer does, I built something to scratch my own itch.
 
-{% comment %}
 I [time boxed the entire project to one month]({% post_url 2020-09-22-idea-to-paying-customer %}). Whatever I had built by then I promised to ship. I [launched on Product Hunt to #5 Product of the Day]({% post_url 2020-10-27-product-hunt-launch %}) and acquired two paying customers within 20 minute of going live.
-{% endcomment %}
 
 <a href="https://www.producthunt.com/posts/mugshot-bot?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-mugshot-bot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=271792&theme=light&period=daily" alt="Mugshot Bot - Automated link preview images for your website. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 

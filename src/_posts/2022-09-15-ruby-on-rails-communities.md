@@ -29,12 +29,6 @@ Originally a paid server, GoRails recently went free with a very active communit
 
 WNB.rb is a virtual community for women and non-binary Rubyists. They host monthly meetups powered by a Slack community of 350+ members. There’s also a CFP working group where you can have experienced speakers review your conference proposal. A huge shoutout to Jemma and Emily for running such an amazing community!
 
-<div class="sm:pb-10">
-  {% comment %}
-  {% include hotwire.html %}
-  {% endcomment %}
-</div>
-
 ### [Stimulus Reflex Discord server](https://discord.gg/z5fuJNgJsS)
 
 Another active Discord community focusing on Ruby on Rails. This is my go-to support channel for [Stimulus Reflex](https://docs.stimulusreflex.com), Cable Ready, and [AnyCable](https://anycable.io). The maintainers are quick to respond with help on specific questions on the frameworks and gems. And the more general channels see a lot of Q&A style activity for folks getting help with their individual codebases.

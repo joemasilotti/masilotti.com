@@ -10,10 +10,6 @@ permalink: /multiple-sheets-swiftui/
 
 My first SwiftUI post! I recently converted my iOS app [X-Wing AI](https://xwing.app) to SwiftUI and ran into some issues with multiple sheets. Here's my step-by-step journey on how I refactored the code to handle any number of sheets with `ObservableObject` and an enum.
 
-{% comment %}
-{% include gist.html %}
-{% endcomment %}
-
 Side note, but it took *way* less time than I had expected to convert the app. And according to Crashlytics I’ve dramatically cut down on crashes.
 
 ![100% crash-free users on Crashlytics](/images/crashlytics.png)
