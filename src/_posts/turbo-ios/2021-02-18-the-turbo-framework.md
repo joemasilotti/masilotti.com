@@ -18,7 +18,7 @@ This is possible with [Turbo](https://github.com/hotwired/turbo-ios/), a small f
 
 This is the first post in a series on how to build high-fidelity, hybrid iOS apps with Turbo and Ruby on Rails. It covers the benefits of Turbo-powered hybrid apps and how to get up and running.
 
-{% render "turbo_ios", resource: resource, site: site %}
+{% render "inline/turbo_ios", resource: resource, site: site %}
 
 ## The power of hybrid...
 
@@ -49,7 +49,7 @@ Like Rails, Turbo was extracted from existing code at Basecamp. The team has bee
 
 > Wait, what’s the difference between Turbo and Turbolinks? In the context of _hybrid apps_, not much. Version 7 of Turbolinks was renamed to Turbo when Basecamp consolidated a few products into [Hotwire](https://hotwire.dev). On the web, [lots of new features were added](https://turbo.hotwire.dev).
 
-{% rendercontent "note" %}
+{% rendercontent "inline/note" %}
   Wait, what’s the difference between Turbo and Turbolinks? In the context of _hybrid apps_, not much. Version 7 of Turbolinks was renamed to Turbo when Basecamp consolidated a few products into [Hotwire](https://hotwire.dev). On the web, [lots of new features were added](https://turbo.hotwire.dev).
 {% endrendercontent %}
 

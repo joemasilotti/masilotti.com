@@ -13,7 +13,7 @@ series_title: The JavaScript bridge
 
 This is part 4 of a 6 part series on building hybrid iOS apps with Turbo. Parts 1 through 3 built us an "out of the box" hybrid app with [navigation]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}), [URL routing]({% post_url turbo-ios/2021-02-26-url-routing %}), [forms, and basic authentication]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %}). This week, we will customize our app to make it feel more native.
 
-{% render "turbo_ios", resource: resource, site: site %}
+{% render "inline/turbo_ios", resource: resource, site: site %}
 
 One of the big trade-offs of hybrid apps is that all interaction (and content) usually lives in the web view. This means we can update it without much issue by making changes to our Rails app. But what if we want a native navigation bar button? Or want to register a notification token with the server?
 
@@ -224,7 +224,7 @@ class ScriptMessageHandler: NSObject, WKScriptMessageHandler {
 }
 ```
 
-{% rendercontent "note" %}
+{% rendercontent "inline/note" %}
  This approach works fine for a single message. But when you have more than one I recommend creating a concrete type and doing the parsing there. A great example is [`ScriptMessage.swift`](https://github.com/hotwired/turbo-ios/blob/main/Source/WebView/ScriptMessage.swift) from the Turbo source code.
 {% endrendercontent %}
 

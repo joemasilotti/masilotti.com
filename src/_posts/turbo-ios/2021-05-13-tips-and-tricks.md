@@ -14,7 +14,7 @@ At this point in the [Hybrid iOS series]({% post_url 2021-05-14-turbo-ios %}), y
 
 If you’re still new to Turbo iOS, check out the beginning of the series, [The Turbo framework]({% post_url turbo-ios/2021-02-18-the-turbo-framework %}) . I walk you through building a Turbo Native app from scratch, including all the Ruby on Rails code needed for your server.
 
-{% render "turbo_ios", resource: resource, site: site %}
+{% render "inline/turbo_ios", resource: resource, site: site %}
 
 ## Developer quality of life improvements
 
