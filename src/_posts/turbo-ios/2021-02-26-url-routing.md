@@ -48,9 +48,7 @@ Next, let’s dig into our first broken link.
 
 We find our first broken link by tapping "Navigate to another page" then "Replace with another webpage." This navigation should not have _pushed_ a new view controller onto the stack. Instead, it should have _replaced_ the visible content.
 
-{% comment %}
-{% include simulator.html image="turbo-ios/push-or-replace.png" text="This should have been a modal." %}
-{% endcomment %}
+![This should have been a modal.](/images/turbo-ios/push-or-replace.png){:standalone .max-w-xs}
 
 This introduces a new Turbo concept: visit actions. Each time a link is clicked Turbo exposes the type of action in the `session(_:didProposeVisit:)` delegate callback.
 
@@ -226,9 +224,7 @@ private func visit(url: URL, action: VisitAction = .advance, properties: PathPro
 
 Now the modal link should work as expected. Do note that we haven’t handled the "Submit Form" link yet, and tapping it will cause odd things to happen. Rest assured, we will get to forms later in the series.
 
-{% comment %}
-{% include simulator.html image="turbo-ios/modal.png" text="Presented as a modal" %}
-{% endcomment %}
+![Presented as a modal](/images/turbo-ios/modal.png){:standalone .max-w-xs}
 
 ### Dismissing the modal breaks the app!
 
@@ -327,9 +323,7 @@ struct NumbersView_Preview: PreviewProvider {
 }
 ```
 
-{% comment %}
-{% include simulator.html image="turbo-ios/numbers-view-controller.png" text="A native view controller with Turbo iOS" %}
-{% endcomment %}
+![A native view controller with Turbo iOS](/images/turbo-ios/numbers-view-controller.png){:standalone .max-w-xs}
 
 #### Refactor imminent…
 

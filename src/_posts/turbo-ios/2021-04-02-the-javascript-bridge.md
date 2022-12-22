@@ -182,9 +182,7 @@ One of my clients uses this approach to add a native `UIBarButtonItem` to some s
 2. The icon the button displays
 3. Which URL to load when tapping the button
 
-{% comment %}
-{% include simulator.html image="turbo-ios/my-customers.png" text="A native UIBarButton item" %}
-{% endcomment %}
+![A native UIBarButton item](/images/turbo-ios/my-customers.png){:standalone .max-w-xs.rounded-none}
 
 For screens that should show the button we post the following JavaScript message.
 

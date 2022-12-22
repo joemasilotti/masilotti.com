@@ -65,10 +65,7 @@ The first TestFlight build I uploaded for Hoist didn't look too different from t
 
 First, add the Turbo Swift package pointed to `https://github.com/hotwired/turbo-ios`. File -> Swift Packages -> Add Package Dependency... Since the package is technically still in beta, I’m pointing directly to the `main` branch. Feel free to leave the default and fetch up to the latest major release.
 
-<div class="max-w-xl mx-auto">
-  <img src="/images/add-turbo-swift-package.png" alt="Add the Turbo Swift packge" class="rounded-lg shadow-lg mb-0 lg:mb-0"/>
-  <p class="text-center text-sm text-gray-500">Add the Turbo Swift package</p>
-</div>
+![Add the Turbo Swift package](/images/turbo-ios/add-turbo-swift-package.png){:standalone .rounded-none}
 
 ### 2. Create the core navigation
 
@@ -142,9 +139,7 @@ class SceneDelegate {
 
 Build and run the app and you should see the rendered page!
 
-{% comment %}
-{% include simulator.html image="turbo-ios/turbo-native-demo.png" text="Turbo Native Demo running in the simulator" %}
-{% endcomment %}
+![Turbo Native Demo running in the simulator](/images/turbo-ios/turbo-native-demo.png){:standalone .max-w-xs}
 
 However, nothing else seems to work. Try clicking a link. Notice that nothing happens? Let’s revisit our `SessionDelegate` and implement those methods.
 

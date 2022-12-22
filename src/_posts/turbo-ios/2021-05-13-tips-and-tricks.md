@@ -152,9 +152,7 @@ You can use this helper to hide content that should only appear on the web, like
 
 Tap and hold a link in your app. See how the little preview dialog appears? That doesn’t feel very native, does it!
 
-{% comment %}
-{% include simulator.html image="turbo-ios/link-preview.png" text="Link previews don't feel very native" %}
-{% endcomment %}
+![Link previews don't feel very native.](/images/turbo-ios/link-preview.png){:standalone .max-w-xs}
 
 We can disable these with one line of code. Disable link previews on the web view when you create your Turbo `Session`.
 

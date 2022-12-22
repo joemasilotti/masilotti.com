@@ -77,15 +77,11 @@ end
 
 Submitting the form without a name will generate a flash message in your browser. Standard Rails stuff.
 
-{% comment %}
-{% include desktop.html image="turbo-ios/flash-message-web.png" text="Standard Rails flash message." %}
-{% endcomment %}
+![Standard Rails flash message.](/images/turbo-ios/flash-message-web.png){:standalone .rounded-none}
 
 But try the same in the iOS app. The submit button gets disabled but then that’s it. Nothing else happens. What gives?
 
-{% comment %}
-{% include simulator.html image="turbo-ios/broken-form-ios.png" text="iOS form with the submit button disabled, but it doesn't seem to have actually submitted." %}
-{% endcomment %}
+![iOS form with the submit button disabled, but it doesn't seem to have actually submitted.](/images/turbo-ios/broken-form-ios.png){:standalone .max-w-xs}
 
 From the generator, our controller re-renders the "new" view if the board game is invalid. By default, this sets the response status code as 200 OK.
 

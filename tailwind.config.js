@@ -152,6 +152,9 @@ module.exports = {
           },
 
           // Figures
+          "figure.rounded-none img": {
+            borderRadius: 0,
+          },
           figcaption: {
             color: "var(--tw-prose-captions)",
             lineHeight: theme("lineHeight.6"),

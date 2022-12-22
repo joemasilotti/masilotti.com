@@ -20,7 +20,7 @@ Native authentication, on the other hand, opens up a world of possibilities. It 
 
 Before diving in, let’s outline the flow of information through the server and client.
 
-![Native authentication workflow](/images/turbo-ios/native-authentication-workflow.png)
+![Native authentication workflow](/images/turbo-ios/native-authentication-workflow.png){:standalone}
 
 These steps can be grouped into three big flows: unauthenticated requests, initial authentication, and authenticated requests.
 
@@ -140,9 +140,7 @@ struct NewSessionView: View {
 
 This view isn’t styled, but SwiftUI and `Form` do a pretty good job making it look decent. Also, this would have been like 50 lines of UIKit code. 😆
 
-{% comment %}
-{% include simulator.html image="turbo-ios/native-sign-in-form.png" text="SwiftUI Form" %}
-{% endcomment %}
+![SwiftUI Form](/images/turbo-ios/native-sign-in-form.png){:standalone .max-w-xs}
 
 ## 2. Initial authentication
 
