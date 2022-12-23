@@ -1,5 +1,5 @@
 ---
-title: 🎙 Positivity and railsdevs - guest on The Ruby on Rails podcast
+title: 🎙 Positivity and RailsDevs - guest on The Ruby on Rails podcast
 date: 2022-04-18
 description: |
   I was on another podcast! We talked about building RailsDevs in public,
