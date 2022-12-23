@@ -14,7 +14,7 @@ With every Xcode UI Testing is getting better. As of Xcode 12, UI Testing has be
 2. First-class support from Apple
 3. Native asynchronous assertions
 
-![Test-Driven Development with UI Testing](/images/ui-testing-tdd.png "Test-Driven Development with UI Testing")
+![Test-Driven Development with UI Testing](/images/ui-testing-tdd.png){:standalone .rounded-none}
 
 ## 1. Generic querying syntax
 

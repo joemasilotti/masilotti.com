@@ -12,10 +12,7 @@ This past weekend, I built [a landing page](https://xwing.app) and redesigned th
 
 Oh, and both the [landing page](https://github.com/joemasilotti/x-wing-ai-tailwind) and [Masilotti.com](https://github.com/joemasilotti/masilotti.com-tailwind) are now open source!
 
-<div class="h-64 overflow-y-scroll">
-  <img src="/images/xwing.app.png" alt="Screenshot of https://xwing.app" class="align-top my-0 lg:my-0" />
-</div>
-<div class="block text-center mt-4">Screenshot of the landing page, <a href="https://xwing.app">https://xwing.app</a>.</div>
+![Screenshot of the X-Wing AI landing page](/images/xwing.app.png){:standalone}
 
 ## What the h*ck is Tailwind?
 
@@ -71,7 +68,7 @@ The second phase (hint: where the magic happens) is done with CSS purging. This 
 
 ## With great power comes great responsibility
 
-![Spider man saying "With great power comes great responsibility"](/images/spiderman.png)
+!["With great power comes great responsibility" - Spiderman](/images/spiderman.png){:standalone}
 
 Tailwind gives you the flexibility to create anything you want. Like, literally anything. Take a peek at their CSS reset, [Preflight](https://tailwindcss.com/docs/preflight/). It even resets the font size of heading tags!
 

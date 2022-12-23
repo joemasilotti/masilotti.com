@@ -7,11 +7,11 @@ permalink: /xctest-helpers/
 
 ---
 
-<p class="text-base rounded-lg bg-blue-200 bg-opacity-25 text-blue-900 px-6 py-4 my-4">
-  Starting with Xcode 12, test failures automatically appear at the calling line!
+**Update**: Starting with Xcode 12, test failures automatically appear at the calling line!
 
-  <img src="/images/helper-failure-xcode-12.png" class="w-full rounded-lg mt-6 mb-0 lg:mb-0">
-</p>
+![Starting with Xcode 12, test failures automatically appear at the calling line!](/images/helper-failure-xcode-12.png){:standalone .rounded-none}
+
+---
 
 As your test suite grows it's important to keep your code DRY. Or, [Don't Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). You wouldn't implement the same method three times in your production code, so why do it in your tests?
 
@@ -38,7 +38,7 @@ private func waitForElementToAppear(element: XCUIElement) {
 
 Great! Now we can just call `waitForElementToAppear(app.cells["Joe"])` and our helper will take care of the rest. What happens when the test fails?
 
-![Error message showing up in helper method, not calling line](/images/helper-failure-incorrect.png "Error message showing up in helper method, not calling line")
+![Error message showing up in helper method, not calling line](/images/helper-failure-incorrect.png){:standalone .rounded-none}
 
 Oh, wait, that's not good. I want the failure message to be as close to the line of code *that I wrote* as possible.
 
@@ -67,6 +67,6 @@ The handler is called all the time and doesn't depened on whether the assertion 
 
 The `file` and `line` parameters are where the magic happens. By specifying them as optional the caller is not obligated to pass anything in. And by defaulting them to the `#file` and `#line` macros we can capture those attributes at the source; where are our methods is being *called*. The Swift blog has an awesome post peeking into [how Apple built `assert()` in Swift](https://developer.apple.com/swift/blog/?id=15).
 
-![Error message correctly showing up on calling line](/images/helper-failure-correct.png "Error message correctly showing up on calling line")
+![Error message correctly showing up on calling line](/images/helper-failure-correct.png){:standalone .rounded-none}
 
 Ah, much better. Now we can add helper methods to our heart's content! We can continue passing these parameters down the chain and create a highly abstracted testing framework built on XCTest.

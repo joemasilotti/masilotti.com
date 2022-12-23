@@ -12,7 +12,7 @@ My first SwiftUI post! I recently converted my iOS app [X-Wing AI](https://xwing
 
 Side note, but it took *way* less time than I had expected to convert the app. And according to Crashlytics I’ve dramatically cut down on crashes.
 
-![100% crash-free users on Crashlytics](/images/crashlytics.png)
+![100% crash-free users on Crashlytics](/images/crashlytics.png){:standalone .rounded-none}
 
 ## A first pass
 

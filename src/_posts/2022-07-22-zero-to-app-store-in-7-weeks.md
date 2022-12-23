@@ -23,12 +23,7 @@ This means you don’t have to recreate every screen in native Swift. You can re
 
 Using Turbo Native meant that we can leverage all of the existing screens, design decisions, Rails controllers, domain logic, and more. Without having to duplicate anything in Swift. If it works on the web it will work in the app.
 
-<div class="max-w-xl mx-auto">
-  <a href="https://hotwired.dev" target="_blank">
-    <img src="/images/hotwire.png" alt="Hotwire - HTML over the wire" class="rounded-lg shadow-lg mb-0 lg:mb-0"/>
-  </a>
-  <p class="text-center text-sm text-gray-500">Hotwire - HTML over the wire</p>
-</div>
+![Hotwire - HTML over the wire](/images/hotwire.png){:standalone}
 
 ## Existing mobile web screens
 
@@ -66,12 +61,7 @@ The first working build I released to TestFlight took less than 2 weeks. All it 
 
 I also upstream generalized changes into the template when working with clients. Code optimizations, bug fixes, and new features get added at a regular cadence. Everything is extracted from real world situations – just like Rails!
 
-<div class="max-w-xl mx-auto">
-  <a href="https://jumpstartrails.com/ios" target="_blank">
-    <img src="/images/jumpstart-pro-ios.png" alt="Jumpstart Pro iOS template" class="rounded-lg shadow-lg mb-0 lg:mb-0"/>
-  </a>
-  <p class="text-center text-sm text-gray-500">Jumpstart Pro iOS template</p>
-</div>
+![Jumpstart Pro iOS template](/images/jumpstart-pro-ios.png){:standalone}
 
 ## Short, async feedback loops
 
@@ -87,10 +77,7 @@ The first App Store submission was rejected. The Rails site uses Google Analytic
 
 I push clients to submit as early as possible to catch situations like this. From my experience, the App Store review team usually responds within 48 hours. But if you need to go back and forth a few times that can quickly add up.
 
-<div class="max-w-xl mx-auto">
-  <img src="/images/twitter/zero-to-app-store.png" alt="App Store approval!" class="rounded-lg shadow-lg mb-0 lg:mb-0"/>
-  <p class="text-center text-sm text-gray-500">App Store approval!</p>
-</div>
+![App Store approval!](/images/zero-to-app-store.png){:standalone}
 
 ## More on Turbo Native
 

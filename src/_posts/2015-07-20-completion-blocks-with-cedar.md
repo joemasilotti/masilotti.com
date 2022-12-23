@@ -9,7 +9,7 @@ permalink: /completion-blocks-with-cedar/
 
 [Cedar](http://github.com/pivotal/cedar) is a [behavior-driven development](http://guide.agilealliance.org/guide/bdd.html) framework for testing Objective-C. By following [Rspec-like syntax](http://www.rubydoc.info/gems/rspec-expectations/frames#Basic_usage), you can build up a series of interactions with your object under test.
 
-![!Cedar BDD](/images/cedar.png "Cedar BDD")
+![Cedar BDD](/images/cedar.png){:standalone}
 
 > Read more about how Cedar came to be in my [post on UI Testing]({% post_url 2015-06-29-ui-testing-in-xcode-7 %}).
 

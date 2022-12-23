@@ -20,7 +20,9 @@ Back in October of 2020, I got sick of manually creating link preview images for
 
 I [time boxed the entire project to one month]({% post_url 2020-09-22-idea-to-paying-customer %}). Whatever I had built by then I promised to ship. I [launched on Product Hunt to #5 Product of the Day]({% post_url 2020-10-27-product-hunt-launch %}) and acquired two paying customers within 20 minute of going live.
 
-<a href="https://www.producthunt.com/posts/mugshot-bot?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-mugshot-bot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=271792&theme=light&period=daily" alt="Mugshot Bot - Automated link preview images for your website. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/posts/mugshot-bot?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-mugshot-bot" target="_blank">
+  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=271792&theme=light&period=daily" alt="Mugshot Bot - Automated link preview images for your website. | Product Hunt" class="rounded-none">
+</a>
 
 To build momentum, I offered a handful of launch deals and spread the word on Twitter and Slack communities. If you were one of the first 50 folks to sign up you locked in annual pricing for 50%, forever. This attracted another 20 or so paying customers.
 
@@ -48,10 +50,7 @@ Can I prove that this grew sales? No. But over the next six months MRR doubled a
 
 In June my wife and I welcomed Duke into our family. He’s the most adorable, kind, interested, and surprising thing in the world. And it’s completely changed my perspective on life.
 
-<div class="max-w-xl mx-auto">
-  <img src="/images/duke.jpg" alt="Duke eyeing some sandwich falling out of my mouth" class="rounded-lg shadow-lg mb-0 lg:mb-0"/>
-  <p class="text-center text-sm text-gray-500">Duke eyeing some sandwich falling out of my mouth</p>
-</div>
+![Duke eyeing some sandwich falling out of my mouth](/images/duke.jpg){:standalone}
 
 My life goal quickly became: how can I spend as much time as possible with my family?
 

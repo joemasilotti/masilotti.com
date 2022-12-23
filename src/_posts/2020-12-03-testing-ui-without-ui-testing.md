@@ -11,10 +11,7 @@ Over the years of testing applications I’ve started to put more and more value
 
 Don’t get me wrong, unit tests are invaluable when working in the weeds or deep in the stack. And I would never integration test an HTTP client. But more recently I’ve been bitten by the "2 unit tests 0 integration tests" meme.
 
-<div class="max-w-sm mx-auto">
-  <img src="/images/two-unit-tests-zero-integration-tests.png" alt="Two unit tests, zero integration tests" class="rounded-lg shadow-lg mb-0 lg:mb-0"/>
-  <p class="text-center text-sm text-gray-500">Two unit tests, zero integration tests</p>
-</div>
+![Two unit tests, zero integration tests](/images/two-unit-tests-zero-integration-tests.png){:standalone}
 
 Normally I’ve reached for UI Testing. Unfortunately, more and more issues with XCUITest seem to pop up. It’s become (always has been?) a tad too flaky and unreliable. And even when it works it's orders of magnitude slower than XCTest.
 
@@ -24,9 +21,7 @@ Whats been working for me is a middle ground: **testing the UI in XCTest**. In o
 
 Before going deeper, let’s make sure we are using the same terms. Here’s how I differentiate the three different types of tests.
 
-<div class="max-w-md mx-auto">
-  <img src="/images/test-pyramid.png" alt="Testing pyramid, feature at the top, followed by integration, and unit at the base."/>
-</div>
+![Testing pyramid, feature at the top, followed by integration, and unit at the base.](/images/test-pyramid.png){:standalone}
 
 ### Unit tests
 
@@ -51,13 +46,6 @@ With the exception of network connections, third-party code, or seeded data, the
 The remainder of this post will focus on feature-level testing.
 
 Here are a few common interactions that are normally reserved for UI Testing. While not impossible with XCTest, there are a few hoops we have to jump through.
-
-<div class="tldr flex rounded-md bg-blue-300 bg-opacity-25 px-4 my-12">
-  <div class="flex items-center">
-    <div class="-ml-2 mr-2 my-6 transform rotate-90 tracking-tighter font-semibold uppercase text-blue-400">Code</div>
-    <p class="lg:text-lg leading-5 text-blue-800">The following code is available at <a href="https://github.com/joemasilotti/masilotti.com/tree/main/_projects/UI%20Tests" class="text-blue-800">this blog's open source repo</a>.</p>
-  </div>
-</div>
 
 ### Test tapping a button
 

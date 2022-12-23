@@ -46,7 +46,7 @@ func test_GET_ReturnsData() {
 
 Simple, enough, right? We call into our `HTTPClient` with a URL and make sure we get some data when the method calls its completion handler. Remember, we already have our `HTTPClient` implemented. We should be able to run these tests and see everything go green. Right?
 
-![URLSession Asynchronous Test Failure](/images/nsurlsession-async-failure.png)
+![URLSession Asynchronous Test Failure](/images/nsurlsession-async-failure.png){:standalone}
 
 Hmm, it seems testing the network request isn't so simple. Well, what's going on here?
 

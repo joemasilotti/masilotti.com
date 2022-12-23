@@ -8,9 +8,7 @@ permalink: /xctest-waiting/
 
 ---
 
-<p class="text rounded-lg bg-blue-200 bg-opacity-25 text-blue-700 px-8 py-4 my-4">
-  You can now wait for elements in UI Testing with a single line.
-</p>
+You can now wait for elements in UI Testing with a single line.
 
 ```swift
 let app = XCUIApplication()
@@ -22,10 +20,9 @@ Read on for how to do the same in older versions of Xcode.
 
 ---
 
-
 Waiting is hard, and waiting in Xcode is no exception. Even choosing from the myriad of options Xcode and XCTest provide can be difficult. Read on to learn an easy and straightforward approach to waiting for expectations with new classes introduced in Xcode.
 
-![the-waiting-is-the-hardest-part](/images/waiting.png)
+![The waiting is the hardest part](/images/waiting.png){:standalone}
 
 ## Before Xcode 8.3
 

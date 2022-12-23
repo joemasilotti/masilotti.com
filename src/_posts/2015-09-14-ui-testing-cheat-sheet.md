@@ -12,7 +12,7 @@ Shortly after Apple's "Hey Siri" event the Xcode 7 GM was released to developers
 
 The examples all use a test host that helps you manage your volleyball team. The app, Volley, lets the user manage the team roster, adjust the formation, and view game results. Feel free to take a look at [the source code](https://github.com/joemasilotti/UI-Testing-Cheat-Sheet) before continuing along to familiarize yourself with how it works.
 
-![!Volley Screenshots](/images/volley-screenshots.png "Volley Screenshots")
+![Volley Screenshots](/images/volley-screenshots.png){:standalone .rounded-none}
 
 ## Why not use recording?
 
@@ -47,7 +47,7 @@ Let's start off simple. The first thing you will do when validating your app wit
 
 Using Volley's home screen we can assert that the app's name exists like so. Note the wrapping of the call in an XCTest assertion. This ensures that the test would fail if the label were not to exist.
 
-![Volley Home Screen"](/images/volley-home-screen.png "Volley Home Screen")
+![Volley Home Screen](/images/volley-home-screen.png){:standalone .rounded-none}
 
 ````swift
 XCTAssert(app.staticTexts["Volley"].exists)
@@ -59,7 +59,7 @@ Viewing our schedule in Volley shows us our last couple of game results. Alright
 
 Tapping the *Load More Games* button simulates fetching data from a server. After two seconds pass, our fourth game comes back.
 
-![Loading](/images/loading.gif "Loading")
+![Loading...](/images/loading.gif){:standalone .rounded-none}
 
 ````swift
 let nextGameLabel = self.app.staticTexts["Game 4 - Tomorrow"]
@@ -108,7 +108,7 @@ app.alerts["You won!"].buttons["Awesome!"].tap()
 
 You can try this in Volley by going to the Schedule screen and tapping on the "Finish Game" button.
 
-![Alert](/images/alert.png "Alert")
+![Alert](/images/alert.png){:standalone .max-w-sm}
 
 ### How to interact with a system alert
 
@@ -199,7 +199,7 @@ XCTAssert(window.frame.contains(element.frame))
 
 Open up the Accessibility Inspector and hover over the Manage Roster screen. The little reordering icons automatically get their own accessibility titles based on the cell that they are contained in. Here the cell's label is "Adrienne," so the icon's identifier becomes "Reorder Adrienne."
 
-![Reordering Icons with Accessibility](/images/cell-reordering.png "Reordering Icons with Accessibility")
+![Reordering Icons with Accessibility](/images/cell-reordering.png){:standalone .rounded-none}
 
 We can now use these to drag cells up and down.
 

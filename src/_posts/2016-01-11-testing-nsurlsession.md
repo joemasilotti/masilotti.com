@@ -124,7 +124,7 @@ Now when we test `HTTPClient` we can inject any implementation of the `URLSessio
 
 But wait, we seem to have an error.
 
-![nsurlsession-exception](/images/nsurlsession-exception.png)
+![NSURLSession exception](/images/nsurlsession-exception.png){:standalone .rounded-none}
 
 > Default argument value of type 'URLSession' does not conform to 'URLSessionProtocol'
 
@@ -234,7 +234,7 @@ protocol URLSessionProtocol {
 
 Uh-oh, looks like we are back to the same error as before.
 
-![nsurlsession-exception](/images/nsurlsession-exception.png)
+![NSURLSession exception](/images/nsurlsession-exception.png){:standalone .rounded-none}
 
 > Default argument value of type 'URLSession' does not conform to 'URLSessionProtocol'
 

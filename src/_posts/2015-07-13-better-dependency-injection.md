@@ -61,7 +61,7 @@ Buried in the `NSObjCRuntime` header we find a seemingly useless macro, `NS_UNAV
 
 Now you can't initialize this object without its dependency. The best part is that it occurs at build time and won't even show up in the autocomplete results.
 
-![init is unavailable](/images/init-is-unavailable.png "-init is unavailable")
+![-init is unavailable](/images/init-is-unavailable.png){:standalone}
 
 We can take this one step farther by adding a `__nonnull` annotation. Now we can guarantee that our object is set up with all its dependencies in order.
 

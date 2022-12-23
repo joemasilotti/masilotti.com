@@ -10,7 +10,7 @@ permalink: /ui-testing-xcode-7/
 
 Apple finally decided to double down on user interface testing at WWDC 2015. Let's take a deep dive into the current API and see what we find.
 
-![Xcode Testing](/images/xcode-testing.png "Xcode Testing")
+![Xcode UI Testing](/images/xcode-testing.png){:standalone}
 
 ## Background
 
@@ -39,7 +39,7 @@ I worked on six separate apps during my time at Pivotal and tried a different fr
 
 ## WWDC 2015
 
-![WWDC](/images/wwdc.png)
+![WWDC 2015](/images/wwdc.png){:standalone}
 
 Exciting news came this year at WWDC: the [introduction of User Interface Testing](https://developer.apple.com/videos/wwdc/2015/?id=102) during the Platforms State of the Union.
 
@@ -47,7 +47,7 @@ Exciting news came this year at WWDC: the [introduction of User Interface Testin
 
 Wil Turner and Brooke Callahan present the new framework in session 406, [UI Testing in Xcode](https://developer.apple.com/videos/wwdc/2015/?id=406). If you haven't watched it yet, I recommend you take a look. They demo a simple task manager application and highlight some of the APIs and features included with the tools.
 
-![WWDC Demo](/images/wwdc-demo.png "WWDC Demo")
+![WWDC Demo](/images/wwdc-demo.png){:standalone}
 
 UI Testing's big claim to fame is "Recording." After you have a working application, you tap a big red circle and start tapping around in your app. As you interact with your app, code is automatically generated to reproduce your flow. In theory, you are then able to run the newly created test and watch as your app repeats your actions.
 
@@ -57,7 +57,7 @@ Claims and demos are one thing, but how does the framework work in the real worl
 
 ### Documentation
 
-![XCTest documentation in Dash](/images/documentation.png "XCTest documentation in Dash")
+![XCTest documentation in Dash](/images/documentation.png){:standalone}
 
 UI Testing lives in the `XCTest` framework and adds four new classes, one new protocol, and three new constants.
 
@@ -125,7 +125,7 @@ Another way to approach assertions is to not use any at all. While running the t
 
 ### Debugging
 
-![Table with five cells](/images/table-with-five-cells.png "Table with five cells")
+![Table with five cells](/images/table-with-five-cells.png){:standalone .rounded-none}
 
 When printing an `XCUIElementQuery` from the console, you are presented with a lot of noise. Imagine a table with five cells labeled "One" through "Five". To target the cell labeled "Three" you could print something like this (some keys omitted for clarity):
 
@@ -205,7 +205,7 @@ By using a combination of pinches and swipes, you can narrow in on a specific ad
 
 First, let's get a picker on the screen. Then populate it with ten items, one for each iPhone model released so far. I've added this [boilerplate to a GitHub project](https://github.com/joemasilotti/UIPickerViewTester) if you don't want to write the code yourself.
 
-![!UIPickerView Example](/images/picker-example.png "UIPickerViewExample")
+![!UIPickerView Example](/images/picker-example.png){:standalone .rounded-none}
 
 With the addition of `adjust(toPickerWheelValue:)` on `XCUIElement`, selecting an item is pretty trivial. Just make sure you call it on an actual picker or the framework will raise an exception.
 

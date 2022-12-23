@@ -8,7 +8,9 @@ permalink: /idea-to-paying-customer/
 
 ---
 
-> Update: Mugshot Bot was the [5th product of the day on Product Hunt](https://www.producthunt.com/posts/mugshot-bot)!
+> **October 26, 2020** update: [Mugshot Bot was #5 on Product Hunt](https://www.producthunt.com/posts/mugshot-bot).
+>
+> **January 5, 2022** update: [I sold Mugshot Bot 14 months later]({% post_url 2022-01-05-idea-to-sold-in-14-months %}).
 
 When I get something in my head I dive in. And I dive deep. For example, a month ago I ran into a problem. One week later I solved it. And three weeks after that I turned it into a (tiny) business.
 
@@ -22,7 +24,7 @@ It started when I was finishing up a [blog post]({% post_url 2020-08-12-test-dee
 
 But I forgot about the social share image. You know, the little preview that pops up when you tweet a link.
 
-![Twitter card preview for blog post](/images/twitter-card.png)
+![Twitter card preview for blog post](/images/twitter-card.png){:standalone .rounded-none}
 
 I spent *forever* trying to find the perfect stock photo. I tried all the "no design" tools to create one in my browser. Some were OK, a few were good, but most were just plain *generic*.
 
@@ -38,7 +40,7 @@ What if I could automate all my social share images? Instead of futzing with a t
 
 So I jotted some notes for a MVP. What’s the absolute least I could build to get market validation?
 
-![Notes for Mugshot Bot on August 18, 2020](/images/notebook.jpeg)
+![Notes for Mugshot Bot on August 18, 2020](/images/notebook.jpeg){:standalone}
 
 If you can’t read my chicken scratch most of those notes touch on three basic pieces of functionality.
 1. Scrape a website for the `og:title` and `og:description`
@@ -59,7 +61,7 @@ Having a hyper-focused scope encouraged me to work on only what mattered. There 
 
 Three days later I had something working. It was ugly and there was no landing page, but it worked.
 
-<img src="/images/mugshot-bot-v1.jpeg" alt="v1 of Mugshot Bot" class="shadow-lg" />
+![v1 of Mugshot Bot](/images/mugshot-bot-v1.jpeg){:standalone}
 
 I [tweeted](https://twitter.com/joemasilotti/status/1296089448942379008) asking for beta testers and discovered a few folks who were interested in helping. A few DMs later and the images were live on three different blogs!
 
@@ -73,7 +75,7 @@ I learned a lot of valuable information, including what to call these little ima
 
 During this time I also built out a landing page to test copy. This was helpful in learning how people describe the problem.
 
-<img src="/images/mugshot-bot-landing.jpeg" alt="Mugshot Bot landing page v1" class="shadow-lg" />
+![Mugshot Bot landing page v1](/images/mugshot-bot-landing.jpeg){:standalone}
 
 Every feature from here on out has come from (potential) customer feedback. This was an important learning because I usually build things where I'm the only customer.
 
@@ -81,7 +83,7 @@ Every feature from here on out has come from (potential) customer feedback. This
 
 The most requested feature by a long shot was customizations. Bloggers wanted to make their social share images look like their own, with their own branding.
 
-![v2 of Mugshot Bot](/images/mugshot-bot-v2.png)
+![v2 of Mugshot Bot](/images/mugshot-bot-v2.png){:standalone}
 
 So I added [Clearance](https://github.com/thoughtbot/clearance) for authentication and launched `/customize`, a single form to change a variety of settings. Now bloggers could change the accent color, the background pattern, and even upload a branded image for one of the themes.
 
@@ -105,9 +107,7 @@ It's easy to read books and learn how important this step is in building a produ
 
 In no way is this journey complete. Hell, it's only the beginning.
 
-<a href="https://www.mugshotbot.com?utm_source=masilotti.com">
-  <img src="/images/mugshot-bot-v3.jpg" alt="v3 of Mugshot Bot" class="shadow-lg rounded-lg" />
-</a>
+![v3 of Mugshot Bot](/images/mugshot-bot-v3.jpg){:standalone}
 
 Acquiring a customer is one of the most motivating things I've done since going independent. I've never been more excited about building something.
 
@@ -117,4 +117,6 @@ Watch this space for updates on [Mugshot Bot](https://www.mugshotbot.com?utm_sou
 
 Today I launched [Mugshot Bot on Product Hunt](https://www.producthunt.com/posts/mugshot-bot) and it's been a whirlwind of a day! I'll be posting a post mortem here tomorrow; sign up for the newsletter to get notified.
 
-<a href="https://www.producthunt.com/posts/mugshot-bot?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-mugshot-bot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=271792&theme=light&period=daily" alt="Mugshot Bot - Automated link preview images for your website. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/posts/mugshot-bot?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-mugshot-bot" target="_blank">
+  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=271792&theme=light&period=daily" alt="Mugshot Bot - Automated link preview images for your website. | Product Hunt" class="rounded-none">
+</a>

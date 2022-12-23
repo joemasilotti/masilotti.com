@@ -21,7 +21,7 @@ All the posts should have migrated over but let me know if anything looks off. H
 
 It was awesome to see the first PR bump my Lighthouse scores up to a perfect 100. Thanks again [@peterpeterparker](https://github.com/peterpeterparker).
 
-![Perfect 100 scores on Lighthouse](/images/lighthouse-100s.png)
+![Perfect 100 scores on Lighthouse](/images/lighthouse-100s.png){:standalone}
 
 ## TailwindCSS colors in SwiftUI
 
@@ -49,7 +49,7 @@ The tiny service does one thing and does it well: automates social images for yo
 
 Here’s an example. I set this page’s  `og:image` to `https://www.mugshotbot.com/m?url=https://masilotti.com/tailwind-css-and-mugshot-bot/` and Mugshot Bot created this image for me.
 
-<img src="/images/mugshot-bot-example.jpeg" alt="Mugshot Bot example image for this post" class="rounded shadow-lg"/>
+![Mugshot Bot example image for this post](/images/mugshot-bot-example.jpeg){:standalone}
 
 I don't even have to download the image as it is hosted on S3 automatically. Which means I can automate images for my entire site in like five minutes.
 
@@ -58,5 +58,3 @@ Up next are customizations, dark mode, and premium templates.
 ## Coming soon…
 
 I’m planning on releasing little updates like this every couple of weeks. I’d love to hear if this was interesting and if you want to learn more. Let me know what you think by sending me a message on Twitter or an email.
-
-I’ve also saved the best for last — I officially have a newsletter! Sign up for my thoughts on testing, development, and behind-the-scene looks at what I’m building.

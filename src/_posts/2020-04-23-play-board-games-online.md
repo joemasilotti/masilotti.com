@@ -22,7 +22,7 @@ I will usually split my screen with a small, tiled video chat window on one side
 
 You can also use "Enter Minimal View" in Zoom to have a single, hovering video on top of your desktop. Enable that from the Menu bar item "Meeting" then click "Enter Minimal View."
 
-![Zoom and Dominion](/images/zoom-and-dominion.png)
+![Zoom and Dominion](/images/zoom-and-dominion.png){:standalone}
 
 Discord recently added [screen sharing and video calls](https://support.discordapp.com/hc/en-us/articles/115000982752-Screen-sharing-Video-Calls) to their apps. If your playgroup already has accounts then you can use that to chat during your games.
 
@@ -39,7 +39,7 @@ Here are my favourite websites and apps to play board games online. I ranked the
 
 [Board Game Arena](https://boardgamearena.com/?sp=1ezpbz) is my top pick for playing board games online. It enforces the rules of each game automatically, runs directly in the browser, and there are a few games available for free.
 
-[![Carcassonne on Board Game Arena](/images/carcassonne-on-board-game-arena.png)](https://boardgamearena.com/?sp=1ezpbz)
+![Carcassonne on Board Game Arena](/images/carcassonne-on-board-game-arena.png){:standalone}
 
 The site is really well done, if a tad clunky to use. I was able to create an account, open a room, and invite three friends in less than 10 minutes. All four of us picked up the controls very quickly as almost everything is done via drag-and-drop movements. This is definitely the easiest way to get up and running quickly.
 
@@ -62,7 +62,7 @@ Here’s a sample of their [most popular games](https://boardgamearena.com/gamel
 
 If you’re looking for something a little more polished I recommend purchasing board games from Steam. These board games have added animations, contextual clues, and a whole lot more flavour than their physical counterparts. For example, playing a card from your hand might animate an explosion or cutscene.
 
-[![Ticket to Ride on Steam](/images/ticket-to-ride-on-steam.jpg)](https://store.steampowered.com/app/108200/Ticket_to_Ride/?snr=1_241_4_boardgame_104)
+![Ticket to Ride on Steam](/images/ticket-to-ride-on-steam.jpg){:standalone}
 
 These types of games are definitely the prettiest to look at but they come at a price. They are usually $5.99 to $19.99 each and sometimes require each player to own a copy. Also, they feel the least like playing a board game in real life and more like a video game.
 
@@ -85,7 +85,7 @@ To get started on Steam you will need to create a free account and download the 
 
 Going the other direction, Tabletop Simulator offers an open sandbox of board game fun. TTS, as it’s often known as online, is the closest you can get to playing games in real life. It’s a full blown physics simulator, too. Meaning you can stack pieces on top of each other or even flip the table!
 
-![Wingspan on Tabletop Simulator](/images/wingspan-on-tabletop-simulator.jpg)
+![Wingspan on Tabletop Simulator](/images/wingspan-on-tabletop-simulator.jpg){:standalone}
 
 Playing board games on Tabletop Simulator has a bit of a learning curve. Even moving your pieces around the board can take a little getting used to. Also very few rules, if any, are enforced by the game. You are in charge of making sure everyone is playing correctly.
 
@@ -107,7 +107,7 @@ Here are the most popular board games (DLC) on Tabletop Simulator:
 
 Player 2 has entered the game! [Tabletop Playground](https://store.steampowered.com/app/838410/Tabletop_Playground/), a new alternative to Tabletop Simulator, is in open beta. Videos and early reviews look promising.
 
-![Tabletop Playground](/images/tabletop-playground.jpg)
+![Tabletop Playground](/images/tabletop-playground.jpg){:standalone}
 
 A lot of the focus is on creating and customizing in-game. Give it a download if you're prototyping a board game or want to try your hand at creating one!
 

@@ -100,7 +100,7 @@ safari.buttons["Go"].tap()
 
 #### Disable "Slide to Type" in UI Testing
 
-![Slide to Type keyboard](/images/slide-to-type.png)
+![Slide to Type keyboard](/images/slide-to-type.png){:standalone .rounded-none}
 
 The first time the keyboard appears you need to dismiss the "Slide to Type" interface. The `if` statement ensures the code works on subsequent launches.
 
