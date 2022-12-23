@@ -49,10 +49,6 @@ Like Rails, Turbo was extracted from existing code at Basecamp. The team has bee
 
 > Wait, what’s the difference between Turbo and Turbolinks? In the context of _hybrid apps_, not much. Version 7 of Turbolinks was renamed to Turbo when Basecamp consolidated a few products into [Hotwire](https://hotwire.dev). On the web, [lots of new features were added](https://turbo.hotwire.dev).
 
-{% rendercontent "inline/note" %}
-  Wait, what’s the difference between Turbo and Turbolinks? In the context of _hybrid apps_, not much. Version 7 of Turbolinks was renamed to Turbo when Basecamp consolidated a few products into [Hotwire](https://hotwire.dev). On the web, [lots of new features were added](https://turbo.hotwire.dev).
-{% endrendercontent %}
-
 Outside of official Basecamp apps, there are a number of independent hybrid apps powered by Turbo. I built [BeerMenus](https://apps.apple.com/us/app/beermenus-find-great-beer/id917882057)’s iOS app in 2014 and officially jumped on the hybrid bandwagon. I also actively maintain [Zaarly's iOS app](https://apps.apple.com/us/app/zaarly/id964717947) after building their first version in 2016.
 
 Currently, I’m working with the fine folks at [Hoist](https://www.hoistup.com). They help people build successful home service businesses as quickly and painlessly as possible. A lot of design decisions and best practices expressed in this series were solidified while building this app.
