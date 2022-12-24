@@ -15,7 +15,7 @@ image: /images/pages/hotwire.png
   newsletter: site.data.newsletters.hotwire
 ) do %>
   <div class="flex max-w-3xl flex-col space-y-16">
-    <% collections.hotwire.resources.each do |newsletter| %>
+    <% collections.hotwire.resources.reverse.each do |newsletter| %>
       <%= render Newsletter.new(newsletter) %>
     <% end %>
   </div>
