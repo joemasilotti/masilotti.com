@@ -21,11 +21,11 @@
 <%= tag "meta", name: "twitter:card", content: twitter_card %>
 
 <% if previewify? %>
-  <%= tag "meta", name: "previewify:title", content: previewify_date %>
+  <%= tag "meta", name: "previewify:date", content: previewify_date %>
   <%= tag "meta", name: "previewify:title", content: previewify_title %>
-  <%= tag "meta", name: "previewify:title", content: previewify_image %>
-  <%= tag "meta", name: "previewify:title", content: previewify_author %>
-  <%= tag "meta", name: "previewify:title", content: previewify_handle %>
+  <%= tag "meta", name: "previewify:image", content: previewify_image %>
+  <%= tag "meta", name: "previewify:author", content: previewify_author %>
+  <%= tag "meta", name: "previewify:handle", content: previewify_handle %>
 <% end %>
 
 <%= tag "link", rel: "stylesheet", href: webpack_path(:css) %>
