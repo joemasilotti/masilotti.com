@@ -49,7 +49,9 @@ class Head < SiteComponent
     resource.formatted_date
   end
 
-  alias_method :previewify_title, :title
+  def previewify_title
+    resource.data.title
+  end
 
   def previewify_image
     absolute_url("/images/joe.jpg")
