@@ -20,6 +20,14 @@
 <%= tag "meta", name: "twitter:image", content: image %>
 <%= tag "meta", name: "twitter:card", content: twitter_card %>
 
+<% if previewify? %>
+  <%= tag "meta", name: "previewify:title", content: previewify_date %>
+  <%= tag "meta", name: "previewify:title", content: previewify_title %>
+  <%= tag "meta", name: "previewify:title", content: previewify_image %>
+  <%= tag "meta", name: "previewify:title", content: previewify_author %>
+  <%= tag "meta", name: "previewify:title", content: previewify_handle %>
+<% end %>
+
 <%= tag "link", rel: "stylesheet", href: webpack_path(:css) %>
 <%= tag "script", src: webpack_path(:js), defer: true %></script>
 <%# Closing script tag otherwise live reload JS below doesn't work. %>

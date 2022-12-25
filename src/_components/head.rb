@@ -22,7 +22,11 @@ class Head < SiteComponent
   end
 
   def image
-    absolute_url(resource.data.image || metadata.image)
+    if previewify?
+      "https://previewify.app/generate/templates/#{metadata.previewify.template}/meta?url=#{url}"
+    else
+      absolute_url(resource.data.image || metadata.image)
+    end
   end
 
   def site_name
@@ -34,7 +38,23 @@ class Head < SiteComponent
   end
 
   def twitter_card
-    # TODO: Always large?
     "summary_large_image"
   end
+
+  def previewify?
+    !!resource.data.previewify
+  end
+
+  def previewify_date
+    resource.formatted_date
+  end
+
+  alias_method :previewify_title, :title
+
+  def previewify_image
+    absolute_url("/images/joe.jpg")
+  end
+
+  alias_method :previewify_author, :author
+  alias_method :previewify_handle, :twitter
 end
