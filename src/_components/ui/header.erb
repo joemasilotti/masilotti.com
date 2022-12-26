@@ -11,7 +11,13 @@
           <%= render UI::Navigation::Desktop.new(current_path:, links:) %>
         </div>
 
-        <div class="flex justify-end md:flex-1"></div>
+        <div class="flex justify-end md:flex-1">
+          <div class="pointer-events-auto">
+            <a href="/feed.xml" title="RSS" aria-label="RSS" class="block group rounded-full bg-white/90 px-3.5 py-2.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+              <%= svg "/images/icons/solid/rss.svg", class: "h-5 w-5 text-zinc-500 group-hover:text-primary-600" %>
+            </a>
+          </div>
+        </div>
       </div>
     <% end %>
   </div>
