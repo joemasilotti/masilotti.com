@@ -3,6 +3,7 @@ Bridgetown.configure do |config|
   template_engine "erb"
   markdown "CustomMarkdownProcessor"
 
+  require "bridgetown-sitemap"
   require "bridgetown-svg-inliner"
   require "bridgetown-view-component"
 
