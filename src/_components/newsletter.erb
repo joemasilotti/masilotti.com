@@ -1,6 +1,6 @@
 <%= content_tag :article, class: "md:grid md:grid-cols-4 md:items-baseline" do %>
   <%= render UI::Card.new(class_name: "md:col-span-3") do %>
-    <%= render UI::Card::Title.new(newsletter.formatted_edition, href: url_for(newsletter)) %>
+    <%= render UI::Card::Title.new(newsletter.data.edition, href: url_for(newsletter)) %>
     <%= render UI::Card::Description.new(newsletter.data.description) %>
     <%= render UI::Card::CTA.new("Read edition") %>
   <% end %>

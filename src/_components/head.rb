@@ -23,7 +23,7 @@ class Head < SiteComponent
 
   def image
     if previewify?
-      "https://previewify.app/generate/templates/#{metadata.previewify.template}/meta?url=#{url}"
+      "https://previewify.app/generate/templates/#{resource.data.previewify_template}/meta?url=#{url}"
     else
       absolute_url(resource.data.image || metadata.image)
     end
@@ -42,19 +42,19 @@ class Head < SiteComponent
   end
 
   def previewify?
-    !!resource.data.previewify
+    !!resource.data.previewify_template.present?
   end
 
   def previewify_date
-    resource.formatted_date
+    resource.data.edition || resource.formatted_date
   end
 
   def previewify_title
-    resource.data.title
+    resource.data.previewify_title || resource.data.title
   end
 
   def previewify_image
-    absolute_url("/images/joe.jpg")
+    absolute_url(resource.data.previewify_image)
   end
 
   alias_method :previewify_author, :author

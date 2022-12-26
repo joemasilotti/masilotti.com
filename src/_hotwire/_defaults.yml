@@ -1,2 +1,5 @@
 layout: hotwire
 template_engine: liquid
+previewify_template: 998
+previewify_title: ⚡️ Hotwire dev newsletter
+previewify_image: /images/joe-no-background.png

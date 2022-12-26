@@ -4,10 +4,6 @@ module ResourceExtensions
       date.strftime("%B %e, %Y")
     end
 
-    def formatted_edition
-      "#{date.strftime("%B %Y")} edition"
-    end
-
     def series?
       data.series.present?
     end

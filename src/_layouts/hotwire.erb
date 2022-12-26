@@ -14,12 +14,12 @@ layout: default
         <header class="flex flex-col">
           <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
             ⚡️ Hotwire dev newsletter
-            <span class="sr-only">- <%= resource.formatted_edition %></span>
+            <span class="sr-only">- <%= resource.data.edition %></span>
           </h1>
 
           <time datetime="<%= resource.data.date %>" class="order-first flex items-center text-base text-zinc-400">
             <span class="h-4 w-0.5 rounded-full bg-zinc-200"></span>
-            <span class="ml-3"><%= resource.formatted_edition %></span>
+            <span class="ml-3"><%= resource.data.edition %></span>
           </time>
         </header>
 

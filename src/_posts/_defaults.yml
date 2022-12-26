@@ -1,3 +1,4 @@
 layout: post
 template_engine: liquid
-previewify: true
+previewify_template: 995
+previewify_image: /images/joe.jpg
