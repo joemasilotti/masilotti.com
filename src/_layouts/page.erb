@@ -1,0 +1,16 @@
+---
+layout: default
+
+---
+
+<%= render UI::Container.new(class_name: "mt-16 lg:mt-32") do %>
+  <div class="xl:relative">
+    <div class="mx-auto max-w-2xl">
+      <h1 class="mt-6 text-4xl sm:text-5xl font-bold tracking-tight text-zinc-800"><%= resource.data.title %></h1>
+
+      <div class="prose mt-8">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+<% end %>
