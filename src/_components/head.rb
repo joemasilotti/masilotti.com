@@ -14,7 +14,7 @@ class Head < SiteComponent
   end
 
   def author
-    metadata.author
+    metadata.author.name
   end
 
   def url
@@ -34,7 +34,7 @@ class Head < SiteComponent
   end
 
   def twitter
-    "@#{metadata.twitter}"
+    "@#{metadata.author.twitter}"
   end
 
   def twitter_card

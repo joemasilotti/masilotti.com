@@ -28,6 +28,8 @@
   <%= tag "meta", name: "previewify:handle", content: previewify_handle %>
 <% end %>
 
+<%= feed_meta %>
+
 <%= tag "link", rel: "stylesheet", href: webpack_path(:css) %>
 <%= tag "script", src: webpack_path(:js), defer: true %></script>
 <%# Closing script tag otherwise live reload JS below doesn't work. %>

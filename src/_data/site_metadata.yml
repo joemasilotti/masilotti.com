@@ -2,7 +2,8 @@ title: Masilotti.com
 description: |
   I help businesses build and launch hybrid iOS apps powered by Turbo Native and
   Ruby on Rails.
-author: Joe Masilotti
-email: joe@masilotti.com
-twitter: joemasilotti
+author:
+  name: Joe Masilotti
+  email: joe@masilotti.com
+  twitter: joemasilotti
 image: /images/masilotti.com.png

@@ -7,6 +7,8 @@ Bridgetown.configure do |config|
   require "bridgetown-svg-inliner"
   require "bridgetown-view-component"
 
+  init :"bridgetown-feed"
+
   hook :loader, :pre_setup do |loader, _|
     loader.inflector.inflect(
       "ui" => "UI",

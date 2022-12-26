@@ -3,9 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem "bridgetown", "1.2.0.beta4"
 
+gem "bridgetown-feed"
 gem "bridgetown-sitemap"
 gem "bridgetown-svg-inliner"
 gem "bridgetown-view-component"
+
+# bridgetown-view-component doesn't work with 2.75+
 gem "view_component", "< 2.75"
 
 group :development do

@@ -47,6 +47,8 @@ GEM
       tilt (~> 2.0)
       webrick (~> 1.7)
       zeitwerk (~> 2.5)
+    bridgetown-feed (3.0.0)
+      bridgetown (>= 1.2.0.beta2, < 2.0)
     bridgetown-paginate (1.2.0.beta4)
       bridgetown-core (= 1.2.0.beta4)
     bridgetown-sitemap (1.1.2)
@@ -155,6 +157,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (= 1.2.0.beta4)
+  bridgetown-feed
   bridgetown-sitemap
   bridgetown-svg-inliner
   bridgetown-view-component
