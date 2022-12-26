@@ -1,2 +1,2 @@
 layout: hotwire
-# template_engine: liquid
+template_engine: liquid
