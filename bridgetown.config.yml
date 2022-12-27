@@ -10,6 +10,7 @@ production:
 # TODO: Move to config/initializers.rb.
 collections:
   hotwire:
+    sort_direction: descending
     output: true
   snippets:
     output: false
