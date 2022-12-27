@@ -16,7 +16,6 @@ collections:
     output: false
 
 # TODO: Move to config/initializers.rb.
-# TODO: Sort hotwire.xml reversed (newest at top).
 feed:
   collections:
     hotwire:
