@@ -1,20 +1,20 @@
 class Head < SiteComponent
-  attr_reader :resource, :metadata
+  attr_reader :resource, :site
 
-  def initialize(resource:, metadata:)
-    @resource, @metadata = resource, metadata
+  def initialize(resource:, site:)
+    @resource, @site = resource, site
   end
 
   def title
-    [resource.data.title, metadata.title].compact.join(" | ")
+    [resource.data.title, site.metadata.title].compact.join(" | ")
   end
 
   def description
-    resource.data.description.presence || metadata.description
+    resource.data.description.presence || site.metadata.description
   end
 
   def author
-    metadata.author.name
+    site.metadata.author.name
   end
 
   def url
@@ -25,16 +25,16 @@ class Head < SiteComponent
     if previewify?
       "https://previewify.app/generate/templates/#{resource.data.previewify_template}/meta?url=#{url}"
     else
-      absolute_url(resource.data.image || metadata.image)
+      absolute_url(resource.data.image || site.metadata.image)
     end
   end
 
   def site_name
-    metadata.title
+    site.metadata.title
   end
 
   def twitter
-    "@#{metadata.author.twitter}"
+    "@#{site.metadata.author.twitter}"
   end
 
   def twitter_card
@@ -60,8 +60,7 @@ class Head < SiteComponent
   alias_method :previewify_author, :author
   alias_method :previewify_handle, :twitter
 
-  # TODO: Move to configuration.
   def site_id
-    "QNURQQHD"
+    site.config.fathom_site_id
   end
 end
