@@ -27,7 +27,7 @@ jobs:
 
       - name: Build
         env:
-          BRIDGETOWN_ENV: staging
+          BRIDGETOWN_ENV: production
         run: bin/bridgetown deploy
 
       - name: Deploy site
