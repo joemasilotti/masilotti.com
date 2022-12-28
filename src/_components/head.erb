@@ -31,9 +31,7 @@
 <%= feed_meta %>
 
 <%= tag "link", rel: "stylesheet", href: webpack_path(:css) %>
-<%= tag "script", src: webpack_path(:js), defer: true %></script>
-<%# Closing script tag otherwise live reload JS below doesn't work. %>
-
+<script src="<%= webpack_path(:js) %>" defer></script>
 <script src="https://cdn.usefathom.com/script.js" data-site="<%= site_id %>" defer></script>
 
 <%= live_reload_dev_js %>
