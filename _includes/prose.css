@@ -1,7 +1,0 @@
-.prose ul.timeline > li:before {
-  content: unset;
-}
-
-.prose ul.timeline > li {
-  @apply pl-1;
-}
