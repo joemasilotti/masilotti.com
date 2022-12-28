@@ -59,4 +59,9 @@ class Head < SiteComponent
 
   alias_method :previewify_author, :author
   alias_method :previewify_handle, :twitter
+
+  # TODO: Move to configuration.
+  def site_id
+    "QNURQQHD"
+  end
 end
