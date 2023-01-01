@@ -6,7 +6,7 @@ description: |
 permalink: /turbo-native-workshop/
 
 layout: page
-image: images/turbo-native-workshop.png
+image: /images/turbo-native-workshop.png
 
 ---
 

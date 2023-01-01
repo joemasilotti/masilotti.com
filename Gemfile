@@ -11,6 +11,9 @@ gem "bridgetown-view-component"
 # bridgetown-view-component doesn't work with 2.75+
 gem "view_component", "< 2.75"
 
+gem "dotenv"
+gem "faraday"
+
 group :development do
   gem "puma", "~> 5.6"
 end

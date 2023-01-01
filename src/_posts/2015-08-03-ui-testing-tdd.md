@@ -6,6 +6,8 @@ description: |
   assertions make for a great TDD experience on iOS.
 permalink: /ui-testing-tdd/
 
+previewify_title: 3 ways UI Testing just made TDD even better
+
 ---
 
 With every Xcode UI Testing is getting better. As of Xcode 12, UI Testing has become my go-to feature testing framework on iOS. Combined with XCTest for unit testing, it's becoming easier to not have to rely on any third-party frameworks. The three big reasons UI Testing offers a huge improvement to TDD on iOS are:

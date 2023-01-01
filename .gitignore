@@ -3,6 +3,7 @@ output
 .bridgetown-cache
 .bridgetown-metadata
 .bridgetown-webpack
+frontend/styles/jit-refresh.css
 
 # Dependency folders
 node_modules
@@ -34,4 +35,5 @@ yarn-debug.log*
 # Yarn Integrity file
 .yarn-integrity
 
-frontend/styles/jit-refresh.css
+# API keys
+.env

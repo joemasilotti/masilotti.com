@@ -64,6 +64,7 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    dotenv (2.8.1)
     erubi (1.11.0)
     faraday (1.10.2)
       faraday-em_http (~> 1.0)
@@ -161,6 +162,8 @@ DEPENDENCIES
   bridgetown-sitemap
   bridgetown-svg-inliner
   bridgetown-view-component
+  dotenv
+  faraday
   puma (~> 5.6)
   view_component (< 2.75)
 

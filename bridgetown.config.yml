@@ -10,6 +10,8 @@ production:
   url: https://masilotti.com
   fathom_site_id: QNURQQHD
 
+previewify_site_id: 755
+
 # TODO: Move to config/initializers.rb.
 collections:
   hotwire:

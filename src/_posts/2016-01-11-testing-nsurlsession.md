@@ -6,6 +6,10 @@ description: |
   URLSession with Swift and protocol-oriented programming.
 permalink: /testing-nsurlsession-input/
 
+previewify_description: |
+  Not owning a class doesn't mean you can't mock it! Learn how to unit test
+  URLSession with Swift protocol-oriented programming.
+
 ---
 
 My go-to approach when unit-testing Swift is [protocol-oriented programming](https://developer.apple.com/videos/play/wwdc2015-408/). As requested by you, let's see a real-world example. What better way to show some code than with the networking stack, something every iOS developer has dealt with!

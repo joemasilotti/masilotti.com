@@ -22,8 +22,8 @@ class Head < SiteComponent
   end
 
   def image
-    if previewify?
-      "https://previewify.app/generate/templates/#{resource.data.previewify_template}/meta?url=#{url}"
+    if cached_previewify_image?
+      URI.join(site.config.url, "images/og/#{resource.relative_url.parameterize}.png").to_s
     else
       absolute_url(resource.data.image || site.metadata.image)
     end
@@ -41,24 +41,9 @@ class Head < SiteComponent
     "summary_large_image"
   end
 
-  def previewify?
-    !!resource.data.previewify_template.present?
+  def cached_previewify_image?
+    !!resource.data.cached_previewify_image
   end
-
-  def previewify_date
-    resource.data.edition || resource.formatted_date
-  end
-
-  def previewify_title
-    resource.data.previewify_title || resource.data.title
-  end
-
-  def previewify_image
-    absolute_url(resource.data.previewify_image)
-  end
-
-  alias_method :previewify_author, :author
-  alias_method :previewify_handle, :twitter
 
   def site_id
     site.config.fathom_site_id

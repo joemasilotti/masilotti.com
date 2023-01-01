@@ -28,3 +28,17 @@ namespace :frontend do
   rescue Interrupt
   end
 end
+
+namespace :og do
+  desc "Download Open Graph images for all posts and newsletter editions"
+  task download_all: :environment do
+    site.process
+    OpenGraph::Images.new(site:).download
+  end
+
+  desc "Download Open Graph image for a resource"
+  task :download, [:resource_id] => :environment do |t, args|
+    site.process
+    OpenGraph::Image.new(args[:resource_id], site:).download
+  end
+end

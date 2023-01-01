@@ -1,7 +1,6 @@
 ---
 title: Joe's favorite things
 date: 2016-01-18
-image: images/twitter/favorite-things.png
 description: |
   All the stuff I'm enjoying right now: iOS apps and games, Mac productivity
   apps, card games, and programming books.

@@ -6,6 +6,7 @@ Bridgetown.configure do |config|
   require "bridgetown-sitemap"
   require "bridgetown-svg-inliner"
   require "bridgetown-view-component"
+  require "dotenv/load"
 
   init :"bridgetown-feed"
 

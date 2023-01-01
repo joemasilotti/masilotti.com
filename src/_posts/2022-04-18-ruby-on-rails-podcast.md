@@ -7,6 +7,11 @@ description: |
   bit about my upcoming workshop.
 permalink: /ruby-on-rails-podcast/
 
+previewify_title: 🎙 Guest on the Ruby on Rails podcast
+previewify_description: |
+  Brittany and I talked about building RailsDevs in public and my upcoming Turbo
+  Native workshop.
+
 ---
 
 Last week I had the pleasure of joining Brittany Martin and Brian Mariani on The Ruby on Rails podcast. We covered building RailsDevs in public, some challenges I've been facing, and a few technical decisions I'm proud of.
