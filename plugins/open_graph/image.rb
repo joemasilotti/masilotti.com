@@ -80,7 +80,7 @@ class OpenGraph::Image
   end
 
   def description
-    resource.data.description
+    resource.data.previewify_description || resource.data.description
   end
 
   def image
