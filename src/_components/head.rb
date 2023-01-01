@@ -22,7 +22,9 @@ class Head < SiteComponent
   end
 
   def image
-    if previewify?
+    if cached_previewify_image?
+      URI.join(site.config.url, "images/og/#{resource.relative_url.parameterize}.png").to_s
+    elsif previewify?
       "https://previewify.app/generate/templates/#{resource.data.previewify_template}/meta?url=#{url}"
     else
       absolute_url(resource.data.image || site.metadata.image)
@@ -39,6 +41,10 @@ class Head < SiteComponent
 
   def twitter_card
     "summary_large_image"
+  end
+
+  def cached_previewify_image?
+    !!resource.data.cached_previewify_image
   end
 
   def previewify?

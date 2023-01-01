@@ -1,4 +1,4 @@
 layout: post
 template_engine: liquid
-previewify_template: 995
-previewify_image: /images/joe.jpg
+previewify_template: 999
+previewify_image: /images/joe-no-background.png
