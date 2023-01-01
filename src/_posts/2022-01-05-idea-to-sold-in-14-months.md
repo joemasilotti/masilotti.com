@@ -7,6 +7,7 @@ description: |
   all went down.
 permalink: /idea-to-sold-in-14-months/
 
+image: /images/og/custom/idea-to-sold-in-14-months.png
 favorite: true
 index: 2
 

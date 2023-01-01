@@ -7,6 +7,10 @@ description: |
   busy.
 permalink: /tailwind-css-and-mugshot-bot/
 
+previewify_description: |
+  It's been a busy month! I've gone all in on Tailwind CSS, launched a new
+  product, and started building a newsletter.
+
 ---
 
 It’s been a busy month! I’ve gone all in on Tailwind CSS, launched a new product, and started building a newsletter. Here’s what’s been keeping me busy.
