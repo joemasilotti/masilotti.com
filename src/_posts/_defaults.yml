@@ -1,4 +1,5 @@
 layout: post
 template_engine: liquid
+cached_previewify_image: true
 previewify_template: 999
 previewify_image: /images/joe-no-background.png
