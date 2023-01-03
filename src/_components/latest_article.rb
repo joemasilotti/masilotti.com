@@ -4,4 +4,8 @@ class LatestArticle < SiteComponent
   def initialize(article)
     @article = article
   end
+
+  def new?
+    article.date > Date.today - 7
+  end
 end

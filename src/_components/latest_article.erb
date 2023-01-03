@@ -2,8 +2,10 @@
   <article>
     <%= render UI::Card.new do %>
       <%= render UI::Card::Title.new(href: url_for(article)) do %>
-        <span class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800">New</span>
-        <span class="ml-1.5"><%= article.data.title %></span>
+        <% if new? %>
+          <span class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 mr-1.5">New</span>
+        <% end %>
+        <span><%= article.data.title %></span>
       <% end %>
 
       <%= render UI::Card::Description.new(article.data.description) %>
