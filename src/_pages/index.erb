@@ -24,6 +24,8 @@ permalink: /
       <div class="prose">
         <%= render_snippet "about" %>
       </div>
+
+      <%= render LatestArticle.new(site.collections.posts.resources.first) %>
     </div>
 
     <div class="lg:pl-20">
