@@ -26,6 +26,10 @@ I’m hoping to change that in 2023 by **being more intentional** with everythin
 
 ### Add structure
 
+One of my coping mechanisms when I'm stressed about work is to work on passion projects.
+
+Sometimes this is a good thing – it led to RailsDevs! But most of the time it can be a distraction - taking time away from what will level up my business.
+
 Adding structure won’t enable me to do more work. It will, in fact, do the exact opposite.
 
 By putting up guardrails on what, and when, I work on things I give myself the freedom to step away when the day is done. I’m starting this with:
