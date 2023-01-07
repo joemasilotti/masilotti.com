@@ -21,7 +21,7 @@
   logo: workshop.png
 
 - name: Masilotti.com
-  description: This blog! An open source Sitepress site designed with Tailwind CSS + UI.
+  description: This blog! An open source Bridgetown site designed with Tailwind CSS + UI.
   link:
     href: https://github.com/joemasilotti/masilotti.com
     label: github.com
