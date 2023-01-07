@@ -8,15 +8,13 @@ permalink: /great-two-player-board-games/
 
 ---
 
+> Last updated on March 17, 2020 -  Added [most recommended games](#more-games).
+
 I’ve worked remotely for the past four years. First, at BeerMenus, a remote-only company. And now, doing [Ruby on Rails and iOS contract work](/about/) for a variety of companies. Three years ago my wife, [Adrienne](https://www.twitter.com/adrienneksmith), and I decided to leave NYC and become digital nomads. In that time we’ve played a lot, and I mean *a lot*, of board games together.
 
 Board games that are great for two players are hard to come by. A lot of games play best with three, four, or more players and have a tough time scaling down to two.
 
 Social distancing because of Corona virus has left a lot of duos looking for new ways to pass the time. What better way to stimulate your mind, relax, and enjoy with a few hours of board games!
-
-> Last updated on March 17, 2020 -  Added [most recommended games](#more-games).
-
----
 
 Here’s my list of board games that are great for two players. I’m positive you will find something you will like. Even if the last time you played a board game was Monopoly on your parent’s kitchen table.
 
@@ -99,8 +97,6 @@ My advice: memorize the two-letter word list as soon as possible. These help you
 ## More games!
 
 What games have you been playing that are great for two players? Did I miss anything? Let me know by [responding to this tweet](https://twitter.com/joemasilotti/status/1239316903895728129)!
-
----
 
 > Below was added on March 17, 2020.
 

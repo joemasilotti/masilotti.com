@@ -1,5 +1,5 @@
 ---
-title: BeerMenus &amp; Turbolinks
+title: BeerMenus & Turbolinks
 date: 2018-03-16
 description: |
   How our small team supports 600k+ monthly users on four platforms with

@@ -15,15 +15,17 @@ The launch finished with with over 250 upvotes, 39 comments, and #5 Product of t
 
 I even got a cute little badge from Product Hunt!
 
-<a href="https://www.producthunt.com/posts/mugshot-bot?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-mugshot-bot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=271792&theme=light&period=daily" alt="Mugshot Bot - Automated link preview images for your website. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<div class="not-prose">
+  <a href="https://www.producthunt.com/posts/mugshot-bot?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-mugshot-bot" target="_blank">
+    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=271792&theme=light&period=daily" alt="Mugshot Bot - Automated link preview images for your website. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54">
+  </a>
+</div>
 
 Here’s my journey on what worked, what didn’t work, and things I wish I spent more time on. I’m not guaranteeing following these will make your launch a success. But hopefully you can pick up a tip or two.
 
 Oh, and for newcomers, [Mugshot Bot](https://www.mugshotbot.com) is a tool that automates link preview images for your website without design tools.
 
-<div class="max-w-xl mx-auto">
-  <img src="/images/mugshotbot.gif" alt="Mugshot Bot in action generating link previews" />
-</div>
+![Mugshot Bot in action generating link previews](/images/mugshotbot.gif){:standalone}
 
 ## What worked
 
@@ -53,11 +55,9 @@ Shout out to [James](https://twitter.com/jmckinven) for getting the ball rolling
 
 About five seconds after I woke up I [tweeted a link](https://twitter.com/joemasilotti/status/1320674419077910530) to the Product Hunt post. I followed up on every milestone, every mishap, and every little victory.
 
-<div class="max-w-xl mx-auto">
-  <a href="https://twitter.com/joemasilotti/status/1320674419077910530">
-  <img src="/images/mugshotbot-tweet-thread.png" alt="Beginning of Twitter thread about Product Hunt launch" class="rounded-lg shadow-lg"/>
-  </a>
-</div>
+<a href="https://twitter.com/joemasilotti/status/1320674419077910530">
+  ![Beginning of Twitter thread about Product Hunt launch](/images/mugshotbot-tweet-thread.png){:standalone}
+</a>
 
 I also pinned the tweet to my profile and set my URL to the Product Hunt page for the day.
 
@@ -95,7 +95,7 @@ This one surprised me the most. Before the launch I had about 100 registered acc
 
 Oddly enough, only 9 people clicked through the Product Hunt post. Here’s the email, if you’re interested.
 
-<img src="/images/product-hunt-launch-email.jpeg" alt="Screenshot of email campaign announcing Product Hunt launch" class="rounded-lg shadow-lg" />
+![Screenshot of email campaign announcing Product Hunt launch](/images/product-hunt-launch-email.jpeg){:standalone}
 
 Looking back, I can’t tell if these folks didn’t care enough or my messaging was off. Probably a combination of the two!
 
@@ -111,11 +111,9 @@ In 2 hours I received 2 clicks. For $15. This might make sense for a direct acqu
 
 In the spirit of building in public all of [Mugshot Bot’s metrics are publicly available](https://www.mugshotbot.com/stats/).
 
-<div class="max-w-xl mx-auto">
-  <a href="https://www.mugshotbot.com/stats">
-  <img src="/images/mugshotbot-stats.png" alt="Mugshot Bot public metrics" class="rounded-lg shadow-lg"/>
-  </a>
-</div>
+<a href="https://www.mugshotbot.com/stats">
+  ![Mugshot Bot public metrics](/images/mugshotbot-stats.png){:standalone){:standalone}
+</a>
 
 I probably refreshed this page over 100 times throughout the day. Sure, there were a few dopamine hits when a number spiked. But overall, it was a waste of time.
 

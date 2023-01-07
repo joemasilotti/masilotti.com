@@ -12,5 +12,4 @@ Earlier this month I spoke on the [SwiftCoders podcast](http://swiftcoders.podbe
 
 If you have a few minutes go have a listen. And make sure to check out the other episodes. The podcast has an awesome cast of interviewees, such as [Josh Brown](https://swiftcoders.podbean.com/e/24-josh-brown-indie-ios-dev-and-content-publisher/) (Parsing JSON in Swift), [Dominik Hauser](https://swiftcoders.podbean.com/e/11-dominik-hauser-author-of-tdd-in-swift-swiftandpainlesscom/) (TDD in Swift and SwiftAndPainless.com), and [Ash Furrow](https://swiftcoders.podbean.com/e/ash-furrow/) (Artsy and Coocapods).
 
-### [Listen to the episode](http://swiftcoders.podbean.com/e/25-joe-masilotti-lead-developer-at-beermenus)
-Or [listen on iTunes](https://itunes.apple.com/us/podcast/swiftcoders/id1082937962?mt=2#) or [on Overcast](https://overcast.fm/+GCc4OLrz4).
+{% render "inline/button", title: "Listen to the episode", icon: "solid/play_circle", href: "http://swiftcoders.podbean.com/e/25-joe-masilotti-lead-developer-at-beermenus" %}

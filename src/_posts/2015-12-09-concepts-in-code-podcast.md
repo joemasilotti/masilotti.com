@@ -12,9 +12,9 @@ Last week I spoke on the [Concepts in Code podcast](http://podcast.conceptsincod
 
 If you have a few minutes go have a listen. And make sure to check out their other episodes. They are building a [Package Tracker app](https://github.com/ConceptsInCode/PackageTracker) from scratch and documenting their progress, live!
 
-### [Listen to the episode](http://podcast.conceptsincode.com/ep-10-testing-with-joe-masilotti)
+{% render "inline/button", title: "Listen to the episode", icon: "solid/play_circle", href: "http://podcast.conceptsincode.com/ep-10-testing-with-joe-masilotti" %}
 
-#### Topics
+## Topics
 
 * [BeerMenus](https://www.beermenus.com)
 * BJ's CocoaConf Columbus 2015 [presentation](https://github.com/SixFiveSoftware/TestingTesting123Presentation)

@@ -18,7 +18,7 @@ Side note, but it took *way* less time than I had expected to convert the app. A
 
 The app doesn’t do anything too crazy, so I was able to stick to standard SwiftUI paradigms and views for most of it. However, the Settings screen has a bunch of buttons that each present different content modally.
 
-<img src="/images/settings-screen.png" alt="Screenshot of app with buttons that each open different modals" class="max-w-sm" />
+![Screenshot of app with buttons that each open different modals](/images/settings-screen.png){:standalone .rounded-none.max-w-lg}
 
 Each button was added incrementally as it was needed. I created a `@State` property for each possible sheet (6 in total) and tossed a `.sheet` after each button. The essence looked something like this.
 
