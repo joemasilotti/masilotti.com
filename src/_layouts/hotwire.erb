@@ -23,17 +23,12 @@ layout: default
           </time>
         </header>
 
-        <form action="/thank-you" class="mt-8 mb-24">
-          <p class="mt-2 sm:mt-4 sm:text-lg text-zinc-600">
-            <span class="md:block">Turbo (Native), Stimulus, and Strada articles, code, courses, and more.</span>
-            <span class="md:block">Plus <span class="font-semibold">exclusive insights</span> into how I build Turbo Native apps. Delivered monthly.</span>
-          </p>
+        <p class="mt-2 sm:mt-4 sm:text-lg text-zinc-600">
+          <span class="md:block">Turbo (Native), Stimulus, and Strada articles, code, courses, and more.</span>
+          <span class="md:block">Plus <span class="font-semibold">exclusive insights</span> into how I build Turbo Native apps. Delivered monthly.</span>
+        </p>
 
-          <div class="mt-6 sm:mt-8 flex">
-            <input type="email" placeholder="Email address" aria-label="Email address" required autocomplete="email" class="min-w-0 max-w-xs flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-primary-600 focus:outline-none focus:ring-4 focus:ring-primary-600/10 sm:text-sm">
-            <%= render UI::Button.new(title: "Subscribe", class_name: "ml-4 flex-none") %>
-          </div>
-        </form>
+        <%= render EmailCapture.new(site.data.newsletters.hotwire) %>
 
         <div class="prose prose-h2:mb-8 prose-h3:mb-2 mt-8">
           <%= yield %>
