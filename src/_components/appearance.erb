@@ -1,0 +1,8 @@
+<%= render UI::Card.new(as: "article") do %>
+  <%= render UI::Card::Title.new(title, as: "h3", href:) %>
+  <%= render UI::Card::Eyebrow.new(decorate: true) do %>
+    <%= event %>
+  <% end %>
+  <%= render UI::Card::Description.new(description) %>
+  <%= render UI::Card::CTA.new(cta) %>
+<% end %>

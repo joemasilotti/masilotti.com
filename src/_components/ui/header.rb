@@ -13,7 +13,8 @@ class UI::Header < SiteComponent
       Link.new("Articles", url_for("_pages/articles.erb")),
       Link.new("Services", url_for("_pages/services.erb")),
       Link.new("Newsletter", url_for("_pages/hotwire.erb")),
-      Link.new("Projects", url_for("_pages/projects.erb"))
+      Link.new("Projects", url_for("_pages/projects.erb")),
+      Link.new("Speaking", url_for("_pages/speaking.erb"))
     ]
   end
 end

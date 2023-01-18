@@ -1,0 +1,24 @@
+---
+title: Speaking
+description: |
+  Conferences I've spoken at and podcasts I've been a guest on.
+permalink: /speaking/
+
+---
+
+<%= render UI::SimpleLayout.new(
+  title: "My conference talks and podcast appearances",
+  intro: nil
+) do %>
+  <div class="space-y-20">
+    <% site.data.appearances.each do |medium, appearances| %>
+      <%= render UI::Section.new(medium.titleize) do %>
+        <div class="space-y-16">
+          <% appearances.each do |appearance| %>
+            <%= render Appearance.new(**appearance.to_h.to_options) %>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>
