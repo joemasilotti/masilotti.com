@@ -9,8 +9,10 @@
     <span class="font-semibold">You get</span> <%= you_get %>
   <% end %>
 
-  <%= render UI::Card::Description.new do %>
-    <span class="font-semibold">Price</span>: <%= price %>
+  <% if price.present? %>
+    <%= render UI::Card::Description.new do %>
+      <span class="font-semibold">Price</span>: <%= price %>
+    <% end %>
   <% end %>
 
   <%= render UI::Card::Description.new(description) %>
