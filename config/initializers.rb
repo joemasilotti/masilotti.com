@@ -3,12 +3,11 @@ Bridgetown.configure do |config|
   template_engine "erb"
   markdown "CustomMarkdownProcessor"
 
-  require "bridgetown-sitemap"
-  require "bridgetown-svg-inliner"
-  require "bridgetown-view-component"
-  require "dotenv/load"
-
   init :"bridgetown-feed"
+  init :"bridgetown-sitemap"
+  init :"bridgetown-svg-inliner"
+  init :"bridgetown-view-component"
+  init :dotenv
 
   hook :loader, :pre_setup do |loader, _|
     loader.inflector.inflect(
