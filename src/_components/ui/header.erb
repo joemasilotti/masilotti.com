@@ -2,9 +2,11 @@
   <div class="top-0 z-10 h-16 pt-6">
     <%= render UI::Container.new do %>
       <div class="relative flex gap-4 justify-center">
-        <div class="flex flex-1">
-          <%= render UI::Avatar.new %>
-        </div>
+          <div class="flex flex-1">
+            <% unless hide_avatar? %>
+              <%= render UI::Avatar.new %>
+            <% end %>
+          </div>
 
         <div class="flex flex-1 justify-end md:justify-center">
           <%= render UI::Navigation::Mobile.new(links:) %>

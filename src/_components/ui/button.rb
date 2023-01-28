@@ -17,6 +17,6 @@ class UI::Button < SiteComponent
   private
 
   def variant
-    (@variant == :secondary) ? "button-secondary" : "button-primary"
+    @variant == :secondary ? "button-secondary" : "button-primary"
   end
 end

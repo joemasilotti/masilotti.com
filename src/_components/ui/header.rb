@@ -1,20 +1,12 @@
 class UI::Header < SiteComponent
-  Link = Struct.new(:title, :href)
+  attr_reader :links, :current_path
 
-  attr_reader :current_path
-
-  def initialize(current_path:)
-    @current_path = current_path
+  def initialize(links:, current_path:, hide_avatar: false)
+    @links, @current_path, @hide_avatar =
+      links, current_path, hide_avatar
   end
 
-  def links
-    [
-      Link.new("About", "/"),
-      Link.new("Articles", url_for("_pages/articles.erb")),
-      Link.new("Services", url_for("_pages/services.erb")),
-      Link.new("Newsletter", url_for("_pages/hotwire.erb")),
-      Link.new("Projects", url_for("_pages/projects.erb")),
-      Link.new("Speaking", url_for("_pages/speaking.erb"))
-    ]
+  def hide_avatar?
+    !!@hide_avatar
   end
 end

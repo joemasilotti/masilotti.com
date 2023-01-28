@@ -12,13 +12,17 @@
     </div>
 
     <div class="relative">
-      <%= render UI::Header.new(current_path: resource.permalink) %>
+      <%= render UI::Header.new(
+        links: site.data.navigation_links,
+        current_path: resource.permalink,
+        hide_avatar: resource.data.hide_avatar
+      ) %>
 
       <main>
         <%= yield %>
       </main>
 
-      <%= render Footer.new(newsletter: site.data.newsletters.hotwire) %>
+      <%= render Footer.new(links: site.data.navigation_links, newsletter: site.data.newsletters.hotwire) %>
     </div>
   </body>
 </html>
