@@ -16,7 +16,7 @@ image: /images/pages/services.png
 ) do %>
   <div class="flex max-w-xl flex-col space-y-16">
     <% site.data.services.each do |service| %>
-      <%= render Service.new(**service.to_h.to_options.merge(href: site.data.socials.email.href)) %>
+      <%= render Service.new(**{href: site.data.socials.email.href}.merge(service).to_options) %>
     <% end %>
   </div>
 <% end %>

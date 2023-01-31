@@ -1,8 +1,8 @@
 class Service < SiteComponent
-  attr_reader :title, :price, :best_if, :you_get, :description, :href
+  attr_reader :title, :best_if, :you_get, :description, :href, :cta, :price
 
-  def initialize(title:, price: nil, best_if:, you_get:, description:, href:)
-    @title, @price, @best_if, @you_get, @description, @href =
-      title, price, best_if, you_get, description, href
+  def initialize(title:, best_if:, you_get:, description:, href:, cta:, price: nil)
+    @title, @best_if, @you_get, @description, @href, @cta, @price =
+      title, best_if, you_get, description, href, cta, price
   end
 end
