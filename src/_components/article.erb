@@ -1,6 +1,13 @@
 <%= content_tag :article, class: "md:grid md:grid-cols-4 md:items-baseline" do %>
   <%= render UI::Card.new(class_name: "md:col-span-3") do %>
-    <%= render UI::Card::Title.new(article.data.title, href: url_for(article)) %>
+    <%= render UI::Card::Title.new(href: url_for(article)) do %>
+      <div class="flex items-center">
+        <%= article.data.title %>
+        <% if badge %>
+          <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ml-3 <%= badge_class_names %>"><%= badge %></span>
+        <% end %>
+      </div>
+    <% end %>
 
     <% unless hide_date %>
       <%= render UI::Card::Eyebrow.new(as: "time", decorate: true, class_name: "md:hidden", datetime: article.date) do %>

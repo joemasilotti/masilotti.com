@@ -1,3 +1,9 @@
-<a href="/" aria-label="Masilotti.com" title="Masilotti.com" class="block pointer-events-auto">
-  <img src="/images/joe-small.jpg" alt="Joe Masilotti" class="rounded-full bg-zinc-100 object-cover h-9 w-9">
-</a>
+<% if large? %>
+  <img src="/images/joe-small.jpg" alt="Joe Masilotti" class="rounded-full bg-zinc-100 object-cover h-24 w-24">
+<% else %>
+  <div class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+    <a href="/" aria-label="Masilotti.com" title="Masilotti.com" class="block pointer-events-auto">
+      <img src="/images/joe-small.jpg" alt="Joe Masilotti" class="rounded-full bg-zinc-100 object-cover h-9 w-9">
+    </a>
+  </div>
+<% end %>

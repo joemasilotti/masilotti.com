@@ -5,6 +5,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 Header always set Content-Security-Policy "upgrade-insecure-requests;"
 
 Redirect /atom.xml /feed.xml
-Redirect /topics /archives/
+Redirect /topics /articles/
+Redirect /archives /articles/
 Redirect /2p-board-games /great-two-player-board-games/
 Redirect /workshop /turbo-native-workshop/

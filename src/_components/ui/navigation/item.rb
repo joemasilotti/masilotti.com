@@ -6,6 +6,6 @@ class UI::Navigation::Item < SiteComponent
   end
 
   def active?
-    current_path == href
+    current_path == url_for(href)
   end
 end
