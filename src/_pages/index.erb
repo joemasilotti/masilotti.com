@@ -9,21 +9,35 @@ hide_avatar: true
 
 ---
 
-<%= render UI::Container.new(class_name: "mt-9") do %>
-  <div class="mt-16 mb-6">
-    <%= render UI::Avatar.new(large: true) %>
-  </div>
+<%= render UI::Container.new(class_name: "mt-16 sm:mt-32") do %>
+  <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+    <div class="lg:px-20">
+      <div class="max-w-[250px] px-2.5 lg:max-w-[300px]">
+        <figure>
+          <img src="/images/joe.jpg" alt="Joe Masilotti" class="aspect-square sm:-rotate-3 rounded-2xl bg-zinc-100 object-cover">
+          <figcaption class="sr-only">Joe Masilotti</figcaption>
+        </figure>
+      </div>
+    </div>
 
-  <div class="max-w-xl">
-    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
+    <div class="lg:row-span-2">
+      <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
       <span class="block">I'm Joe Masilotti,</span> the Turbo Native guy.
     </h1>
 
     <p class="mt-6 text-2xl text-zinc-600 font-medium"><%= resource.data.description %></p>
+
+    <div class="mt-6 flex gap-6">
+      <% site.data.socials.each do |title, social| %>
+        <a href="<%= social.href %>" aria-label="<%= title.titleize %>" class="group -m-1 p-1">
+          <%= svg "/images/icons/#{social.icon}.svg", class: "h-6 w-6 fill-zinc-400 transition group-hover:fill-zinc-600" %>
+        </a>
+      <% end %>
+    </div>
   </div>
 <% end %>
 
-<%= render UI::Container.new(class_name: "mt-20 md:mt-28") do %>
+<%= render UI::Container.new(class_name: "mt-16 md:mt-20") do %>
   <div class="grid md:grid-cols-3 justify-center gap-16 overflow-hidden py-4">
     <% site.data.core_offerings.each do |offering| %>
       <%= render CoreOffering.new(**offering.to_h.to_options) %>
