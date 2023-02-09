@@ -38,7 +38,7 @@ We were able to [launch this feature quickly]({% post_url 2022-07-22-zero-to-app
 
 ![HEY in the App Store](/images/app-store/hey.png){:standalone}
 
-[HEY](https://apps.apple.com/us/app/basecamp-project-management/id1015603248), a new take on email, and [Basecamp](https://apps.apple.com/us/app/basecamp-project-management/id1015603248), a project management tool, are flagship hybrid apps. They are both built by the maintainers of the Turbo Native library, Basecamp.
+[HEY](https://apps.apple.com/us/app/basecamp-project-management/id1015603248), a new take on email, and [Basecamp](https://apps.apple.com/us/app/basecamp-project-management/id1015603248), a project management tool, are flagship hybrid apps. They are both built by the maintainers of the Turbo Native library, 37signals.
 
 Opening each of these apps launch fully native home screens. Instantly.
 
