@@ -92,7 +92,7 @@ And some more Turbo Native apps live in the App Store.
 
 * [Beema](https://apps.apple.com/in/app/beema-insurance/id1553718589) - Pay-per-kilometer car insurance.
 * [Hoist](https://apps.apple.com/us/app/hoist-up/id1592340401) - Independent painting business partner.
-* [Golf Leaguer](https://apps.apple.com/us/app/golf-leaguer/id1627580628) - Golf league management.
+* [Golf Leaguer](https://apps.apple.com/us/app/golf-leaguer/id1627580628?platform=iphone) - Golf league management.
 * _Maybe your app?_
 
 ## Need help with _your_ Turbo Native app?
