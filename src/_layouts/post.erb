@@ -12,7 +12,7 @@ layout: default
 
       <article>
         <header class="flex flex-col">
-          <h1 class="mt-6 text-4xl sm:text-5xl font-bold tracking-tight text-zinc-800">
+          <h1 class="mt-8 text-4xl sm:text-5xl font-bold tracking-tight text-zinc-800">
             <% if resource.series? %>
               <span class="block text-3xl sm:text-4xl font-semibold text-zinc-500"><%= resource.data.series %></span>
               <span><%= resource.data.series_title %></span>
@@ -21,10 +21,25 @@ layout: default
             <% end %>
           </h1>
 
-          <time datetime="<%= resource.date %>" class="order-first flex items-center text-base text-zinc-400">
-            <span class="h-4 w-0.5 rounded-full bg-zinc-200"></span>
-            <span class="ml-3"><%= resource.formatted_date %></span>
-          </time>
+          <aside class="order-first flex items-center">
+            <div>
+              <div class="h-12 w-12 sm:h-20 sm:w-20 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+                <a href="/" aria-label="Joe Masilotti" title="Joe Masilotti" class="block pointer-events-auto">
+                  <img src="/images/joe-small.jpg" alt="Joe Masilotti" class="rounded-full bg-zinc-100 object-cover h-[11] w-[11] sm:h-[19] sm:w-[19]">
+                </a>
+              </div>
+            </div>
+
+            <div class="text-sm sm:text-base ml-4 leading-snug">
+              <p class="text-sm sm:text-lg font-medium text-zinc-900">
+                <a href="/" class="hover:underline">Joe Masilotti</a>
+              </p>
+              <div class="text-zinc-500">
+                <p>Solopreneur and Turbo Native expert.</p>
+                <time datetime="<%= resource.date %>"><%= resource.formatted_date %></time>
+              </div>
+            </div>
+          </aside>
         </header>
 
         <div class="prose mt-8">
