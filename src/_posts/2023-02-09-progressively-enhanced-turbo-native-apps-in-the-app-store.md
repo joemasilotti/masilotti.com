@@ -62,7 +62,7 @@ This means the app doesn’t need to run in the background, saving precious batt
 
 ![GroupUp in the App Store](/images/app-store/groupup.png){:standalone}
 
-GroupUp, an app helping folks find and form local groups, heavily relies on panning around a map. An embedded Google Maps or Apple Maps on mobile web still leaves a lot to be desired. The experience might work fine for a single screen but not when it’s the core feature of your product.
+[GroupUp](https://apps.apple.com/us/app/groupup-find-local-groups/id6444784184?platform=iphone), an app helping folks find and form local groups, heavily relies on panning around a map. An embedded Google Maps or Apple Maps on mobile web still leaves a lot to be desired. The experience might work fine for a single screen but not when it’s the core feature of your product.
 
 GroupUp’s iOS app launches directly to a native map with pins for each group nearby. Tapping a pin kicks off the Turbo Native integration by rendering the web version of that group’s landing page.
 
