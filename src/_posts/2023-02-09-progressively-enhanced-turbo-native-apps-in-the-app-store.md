@@ -32,7 +32,7 @@ I helped Context Travel add offline access to their Turbo Native app.
 
 On launch it downloads your next 30 days of tours to your device. And if you open the app without an internet connection it automatically switches to offline mode. Here you can view your upcoming tours, the meeting point, and contact information for your guide.
 
-We were able to [launch this feature quickly](post_url 2022-07-22-zero-to-app-store-in-7-weeks) by making offline access read only. Which means there’s no complicated syncing logic. On app launch it clears out the existing cache and overwrites it with the latest information.
+We were able to [launch this feature quickly]({% post_url 2022-07-22-zero-to-app-store-in-7-weeks %}) by making offline access read only. Which means there’s no complicated syncing logic. On app launch it clears out the existing cache and overwrites it with the latest information.
 
 ## Instant loading home screens for HEY and Basecamp
 
