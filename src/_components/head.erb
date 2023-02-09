@@ -20,7 +20,9 @@
 <%= tag "meta", name: "twitter:image", content: image %>
 <%= tag "meta", name: "twitter:card", content: twitter_card %>
 
-<%= feed_meta %>
+<% unless Bridgetown.env.development? %>
+  <%= feed_meta %>
+<% end %>
 
 <%= tag "link", rel: "stylesheet", href: webpack_path(:css) %>
 <script src="<%= webpack_path(:js) %>" defer></script>
