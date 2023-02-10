@@ -6,6 +6,8 @@ description: |
   leveraging native SDKs to enhance their hybrid apps.
 permalink: /progressively-enhanced-turbo-native-apps-in-the-app-store/
 
+template_engine: erb
+
 ---
 
 [Turbo Native](https://github.com/hotwired/turbo-ios) is a small framework to build high-fidelity hybrid apps. It renders your Ruby on Rails site inside a native iOS shell, like a tab bar or navigation controller.
@@ -32,7 +34,7 @@ I helped Context Travel add offline access to their Turbo Native app.
 
 On launch it downloads your next 30 days of tours to your device. And if you open the app without an internet connection it automatically switches to offline mode. Here you can view your upcoming tours, the meeting point, and contact information for your guide.
 
-We were able to [launch this feature quickly]({% post_url 2022-07-22-zero-to-app-store-in-7-weeks %}) by making offline access read only. Which means there’s no complicated syncing logic. On app launch it clears out the existing cache and overwrites it with the latest information.
+We were able to <%= link_to "launch this feature quickly", "_posts/2022-07-22-zero-to-app-store-in-7-weeks.md" %> by making offline access read only. Which means there’s no complicated syncing logic. On app launch it clears out the existing cache and overwrites it with the latest information.
 
 ## Instant loading home screens for HEY and Basecamp
 
@@ -57,6 +59,10 @@ A big reason they reached for Turbo Native is geofencing. When you walk into a B
 We integrated native [region monitoring](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions) into the iOS app for every bar, restaurant, and bottle shop on BeerMenus. The locations are monitored by the system, which wake up the app when the user crosses a defined boundary.
 
 This means the app doesn’t need to run in the background, saving precious battery life. And the notification is local to the device so it works even without an internet connection.
+
+<div class="not-prose">
+  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+</div>
 
 ## Native maps for GroupUp
 
@@ -99,4 +105,4 @@ And some more Turbo Native apps live in the App Store.
 
 I've been working with Turbo Native for 5+ years and have launched dozens of apps to the App Store. And I'd love to help you confidently launch yours.
 
-I can build and launch your app or level up your team so they can do it on their own. Check out my [services]({% link _pages/services.erb %}) to see how we can work together.
+I can build and launch your app or level up your team so they can do it on their own. Check out my <%= link_to "services", "_pages/services.erb" %> to see how we can work together.

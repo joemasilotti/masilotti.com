@@ -1,0 +1,10 @@
+<div class="rounded-2xl border border-zinc-100 p-6 my-16">
+  <h2 class="flex items-center font-semibold text-zinc-900">
+    <%= svg "images/icons/outline/envelope.svg", class: "h-6 w-6 flex-none text-zinc-500" %>
+    <span class="ml-3">Subscribe to the ⚡️ <%= link_to "Hotwire dev newsletter", "_pages/hotwire.erb", class: "underline" %></span>
+  </h2>
+
+  <p class="mt-2 text-zinc-600">Turbo (Native), Stimulus, and Strada articles, code, courses, and more every month.</p>
+
+  <%= render EmailCapture.new(newsletter) %>
+</div>
