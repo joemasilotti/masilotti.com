@@ -94,7 +94,7 @@ Following a theme here, [Hammerstone the product](https://hammerstone.dev) works
 
 The hosts rotate between episodes so each one feels fresh and exciting. Lots of Rails-related topics are covered but my favorite are the 1:1 interviews with guests. The high quality interviews work really well in keeping the conversation structured.
 
-I was on this podcast too! I shared [my journey growing railsdevs on episdode 413](https://www.therubyonrailspodcast.com/413) and dropped and exclusive on my upcoming Turbo Native workshop.
+I was on this podcast too! I shared [my journey growing RailsDevs on episdode 413](https://www.therubyonrailspodcast.com/413) and dropped and exclusive on my upcoming Turbo Native workshop.
 
 ## [above/board](https://usefathom.com/above-board)
 
@@ -102,7 +102,7 @@ I was on this podcast too! I shared [my journey growing railsdevs on episdode 41
 
 The hosts run a privacy focused analytics platform – a business that I have a lot of respect for. They made me rethink how I collect data from my users, how I use it, and most importantly, why.
 
-I now run all of my websites on Fathom – and can share this awesome [public dashboard for railsdevs](https://app.usefathom.com/share/cacnfaan/railsdevs.com#/?filters=%5B%5D&range=all_time&site=1125899910004402)!
+I now run all of my websites on Fathom – and can share this awesome [public dashboard for RailsDevs](https://app.usefathom.com/share/cacnfaan/railsdevs.com#/?filters=%5B%5D&range=all_time&site=1125899910004402)!
 
 ## What do you listen to?
 

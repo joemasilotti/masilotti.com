@@ -103,6 +103,6 @@ I sold Mugshot Bot to have more time to spend with my family. But I’d be lying
 
 I’m really excited for 2022. I’ve established myself as one of the only [Turbo Native]({% post_url 2021-05-14-turbo-ios %}) developers available for contract, I have a ton of ideas to make [Jumpstart Pro iOS](https://jumpstartrails.com/ios) better and easier to use, and I’m launching a new product.
 
-What’s the new product you ask? It’s called [railsdevs](https://railsdevs.com) and it’s a reverse job board for freelance Ruby on Rails developers. If you’re looking for your next gig I recommend you check it out.
+What’s the new product you ask? It’s called [RailsDevs](https://railsdevs.com) and it’s a reverse job board for freelance Ruby on Rails developers. If you’re looking for your next gig I recommend you check it out.
 
 Maybe in 14 months I’ll be writing another version of this post!

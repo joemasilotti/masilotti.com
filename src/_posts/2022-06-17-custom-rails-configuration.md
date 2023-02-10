@@ -125,6 +125,6 @@ More information on Rails configuration can be found in the [Configuring Rails A
 
 ## Real world example
 
-I’m using this in production on [railsdevs, my open source Rails app](https://github.com/joemasilotti/railsdevs.com). I have a few email addresses configured and pull them in on support pages and mailers.
+I’m using this in production on [RailsDevs, my open source Rails app](https://github.com/joemasilotti/railsdevs.com). I have a few email addresses configured and pull them in on support pages and mailers.
 
 It works really nice for Rails configuration that changes infrequently, might differ across environments, and doesn't need to be kept secure. Keeping these directly in the codebase makes onboarding new developers to the OSS project easier.

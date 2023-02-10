@@ -152,6 +152,6 @@ My refactor dropped the number of fixtures in the app from 89 to 43. That’s cl
 
 ---
 
-If you’re interested, the product I’ve been talking about is [railsdevs](https://railsdevs.com). It’s a reverse job board for Ruby on Rails developers. Instead of companies posting their job, you add your profile and they reach out to _you_. If you’re looking for your next gig (freelance or full-time) you should add your profile.
+If you’re interested, the product I’ve been talking about is [RailsDevs](https://railsdevs.com). It’s a reverse job board for Ruby on Rails developers. Instead of companies posting their job, you add your profile and they reach out to _you_. If you’re looking for your next gig (freelance or full-time) you should add your profile.
 
 Have an opinion to share about this article? Mention or DM me on Twitter, I’d love to hear your thoughts! I’m [@joemasilotti](https://twitter.com/joemasilotti) and I tweet about Ruby on Rails, iOS, automated testing, and the intersection between them all.
