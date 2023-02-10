@@ -6,6 +6,7 @@ description: |
   the App Store in 7 weeks.
 permalink: /zero-to-app-store-in-7-weeks/
 
+template_engine: erb
 favorite: true
 index: 1
 
@@ -45,6 +46,10 @@ Part of the magic of going hybrid is that new screens can be added without any a
 
 All the client needs to do is update their exiting Rails app and *poof* 💨 the iOS app gets the new content for free.
 
+<div class="not-prose">
+  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+</div>
+
 ## Jumpstart Pro iOS
 
 My secret weapon – we kicked off the project with my [Jumpstart Pro iOS code template](https://jumpstartrails.com/ios). This is all the knowledge I've accumulated launching Turbo Native apps for multiple clients over the last 5+ years.
@@ -83,6 +88,6 @@ I push clients to submit as early as possible to catch situations like this. Fro
 
 Want to learn more about how to port your Rails app to iOS with Turbo Native?
 
-I wrote a [6-part blog series on building hybrid iOS apps]({% post_url 2021-05-14-turbo-ios %}). It covers authentication, the JavaScript bridge, push notifications, and more.
+I wrote a <%= link_to "6-part blog series on building hybrid iOS apps", "_posts/2021-05-14-turbo-ios.md" %>. It covers authentication, the JavaScript bridge, push notifications, and more.
 
-Or, [send me an email](mailto:joe@masilotti.com) or [DM on Twitter](https://twitter.com/joemasilotti) if you need help with your project!
+I can also build and launch your app or level up your team so they can do it on their own. Check out my <%= link_to "services", "_pages/services.erb" %> to see how we can work together.

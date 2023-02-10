@@ -7,6 +7,8 @@ description: |
   app.
 permalink: /rails-test-fixtures/
 
+template_engine: erb
+
 ---
 
 I’ve been an RSpec/FactoryBot fan for a long time. Getting my Rails career started at Pivotal Labs we spent a lot of time TDDing with behavior-focused tooling.
@@ -27,6 +29,7 @@ That refactor taught me a lot on how to manage my Rails test fixtures. Here’s 
 4. Add additional fixtures only when dependencies are complex
 
 ## #1: 1-2 default fixtures per model
+
 Perhaps the most obvious of the guidelines: the fewer fixtures you have to manage the easier it is to write tests. My approach here is to have a single fixture with boring, sane, default attributes. Don’t try and tease out different permutations - stick with fixtures that are valid and have as few dependencies as possible.
 
  I reach for a second fixture when I need to compare two models of the same class. The second fixture also has boring, sane default attributes but with slightly different values to distinguish it from the first.
@@ -47,6 +50,7 @@ one:
 ```
 
 ## #2: Customize bespoke fixtures in the test suite
+
 But what happens when I need to test something that `developers(:one)` can’t handle? Say, a query for developers with specific `available_on` dates?
 
 Before I would add a new fixture with a different attribute. But this is exactly what got me into the problem in the first place! Instead, we modify the existing fixtures _in the tests_. (A developer is available if their `available_on` date is today or earlier.)
@@ -74,7 +78,12 @@ This might feel weird - it did to me at first. Aren’t two `UPDATE` queries slo
 
 > If we are modifying a fixture then why not use `FactoryBot`? Because most of the time you won’t be touching the fixture. There are a lot of test cases where `developers(:one)` needs a developer, that’s it. Not special in any way. This is where fixtures shine - they are already loaded into the test database!
 
+<div class="not-prose">
+  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+</div>
+
 ## #3: Extract helpers for common customizations
+
 For more complex tests you might need a handful of objects in the database. A common example is a query object that chains a couple of Active Record scopes. In my app we have a [`DeveloperQuery`](https://github.com/joemasilotti/railsdevs.com/blob/main/app/queries/developer_query.rb) that powers the search interface. As you can imagine, a _lot_ of different permutations of records are required.
 
 > Side note, but in hindsight I think this model is what originally blew up the number of fixtures in the app. As we added new filters it required more permutations to query by.
@@ -133,6 +142,7 @@ This works well when you need to build up a few persisted objects in the databas
 I don’t deny that. If you’d rather use FactoryBot _and_ fixtures then go for it! But for my use case this single helper was enough - and one less gem to worry about.
 
 ## Guideline #4: Add additional fixtures only when dependencies are complex
+
 Finally, my last guideline is to ignore the first guideline 😃.
 
 The 1-2 existing fixtures don’t have anything special about them. That’s by design. But what if you need to create a record that has a few levels of relationships?
@@ -144,6 +154,7 @@ Instead, I break guideline #1 and create a specialized fixture. The key here is 
 I try to use this guidelines as sparingly as possible. Adding more fixtures will just get us back to the original problem! But I think having 1 _maybe_ 2 of these per model is a good tradeoff.
 
 ## Wrapping up
+
 I felt the pain of having too many fixtures. To write a new test I had to dig through multiple files to figure out if there was the _perfect_ candidate for my test.
 
 My refactor dropped the number of fixtures in the app from 89 to 43. That’s close to half - gone!

@@ -7,6 +7,7 @@ description: |
   all went down.
 permalink: /idea-to-sold-in-14-months/
 
+template_engine: erb
 image: /images/og/custom/idea-to-sold-in-14-months.png
 favorite: true
 index: 2
@@ -19,7 +20,7 @@ I built an MVP in one month and grew the product for a year. But now it’s time
 
 Back in October of 2020, I got sick of manually creating link preview images for Twitter every time I wrote a blog post. So, as a good engineer does, I built something to scratch my own itch.
 
-I [time boxed the entire project to one month]({% post_url 2020-09-22-idea-to-paying-customer %}). Whatever I had built by then I promised to ship. I [launched on Product Hunt to #5 Product of the Day]({% post_url 2020-10-27-product-hunt-launch %}) and acquired two paying customers within 20 minute of going live.
+I <%= link_to "time boxed the entire project to one month", "_posts/2020-09-22-idea-to-paying-customer.md" %>. Whatever I had built by then I promised to ship. I <%= link_to "launched on Product Hunt to #5 Product of the Day", "_posts/2020-10-27-product-hunt-launch.md" %> and acquired two paying customers within 20 minute of going live.
 
 <a href="https://www.producthunt.com/posts/mugshot-bot?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-mugshot-bot" target="_blank">
   <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=271792&theme=light&period=daily" alt="Mugshot Bot - Automated link preview images for your website. | Product Hunt" class="rounded-none">
@@ -67,6 +68,10 @@ I also [posted on Twitter](https://twitter.com/joemasilotti/status/1460706255874
 
 In less than two weeks I was talking to 30+ interested buyers, most of them via DMs on Twitter. I was ecstatic! How could people be this interested in my little business?
 
+<div class="not-prose">
+  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+</div>
+
 ## Narrowing down the candidates
 
 I ended up having video calls with five of the 30+ people that reached out. Four of them made an offer on the spot, all for 100% ownership in 1-2 cash transactions.
@@ -101,7 +106,7 @@ Finally, I wish I experimented with more markets and use-cases outside of techni
 
 I sold Mugshot Bot to have more time to spend with my family. But I’d be lying if I said I wasn’t cooking up new ideas and exciting things to work on outside of family time.
 
-I’m really excited for 2022. I’ve established myself as one of the only [Turbo Native]({% post_url 2021-05-14-turbo-ios %}) developers available for contract, I have a ton of ideas to make [Jumpstart Pro iOS](https://jumpstartrails.com/ios) better and easier to use, and I’m launching a new product.
+I’m really excited for 2022. I’ve established myself as one of the only <%= link_to "Turbo Native", "_posts/2021-05-14-turbo-ios.md" %> developers available for contract, I have a ton of ideas to make [Jumpstart Pro iOS](https://jumpstartrails.com/ios) better and easier to use, and I’m launching a new product.
 
 What’s the new product you ask? It’s called [RailsDevs](https://railsdevs.com) and it’s a reverse job board for freelance Ruby on Rails developers. If you’re looking for your next gig I recommend you check it out.
 

@@ -6,11 +6,13 @@ description: |
   done." Here's how I'm hoping to fix that in 2023.
 permalink: /being-more-intentional-in-2023/
 
+template_engine: erb
+
 ---
 
 2022 was my most profitable year since going freelance, making almost twice as much as I did in 2021. But too many days ended with me feeling like "I didn’t get anything done."
 
-I completed three 5-figure projects, built a [hiring platform](https://railsdevs.com) and grew it to $150k, _and_ launched a [workshop]({% link _pages/turbo-native-workshop.md %}) with 15 attendees.
+I completed three 5-figure projects, built a [hiring platform](https://railsdevs.com) and grew it to $150k, _and_ launched a <%= link_to "workshop", "_pages/turbo-native-workshop.md" %> with 15 attendees.
 
 Those are big accomplishments. And on paper it means I was very successful!
 
@@ -46,7 +48,7 @@ To do what? To do **anything**! To go for a hike, to cook an elaborate dinner, t
 
 My first few years of freelancing I tracked every minute spent working for clients. And it helped me determine which projects to chase to maximize my effective rate.
 
-Once I found my [unique offering]({% link _pages/services.erb %}) I stopped tracking time entirely in 2022. And I think that it led me to being on my machine for _many_ more hours than I realize.
+Once I found my <%= link_to "unique offering", "_pages/services.erb" %> I stopped tracking time entirely in 2022. And I think that it led me to being on my machine for _many_ more hours than I realize.
 
 My goal for this year is to **track 100% of my time in front of a computer**. I don’t need granular details. But I want to know how much time I spent on, for example, emails vs. consulting or doom scrolling vs. writing blog posts.
 
@@ -54,9 +56,13 @@ My goal for this year is to **track 100% of my time in front of a computer**. I 
 
 I plan to then reflect on these numbers every week and every month to see where my time is going. Ideally, this will encourage me to spend _even less_ time staring at the screen and more time living my life.
 
+<div class="not-prose">
+  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+</div>
+
 ### Chase work that maximizes revenue and fulfillment
 
-[My consulting practice]({% link _pages/services.erb %}) is extremely niche and focused. Which means that when I find the right fit we make amazing things happen. I want to work with more folks like this.
+<%= link_to "My consulting practice", "_pages/services.erb" %> is extremely niche and focused. Which means that when I find the right fit we make amazing things happen. I want to work with more folks like this.
 
 These businesses:
 
@@ -76,7 +82,7 @@ Written down, this seems so obvious! But I think I needed to have the year of re
 
 Today is the first work day of 2023. The first day I’m applying these techniques.
 
-I hope they work! But only time will tell. I’ll be reflecting on these every quarter in my [monthly newsletter]({% link _pages/hotwire.erb %}).
+I hope they work! But only time will tell. I’ll be reflecting on these every quarter in my <%= link_to "monthly newsletter", "_pages/hotwire.erb" %>.
 
 [Send me an email](mailto:joe@masilotti.com) if you’d like to see my quarterly goals or a copy of the template I used.
 
