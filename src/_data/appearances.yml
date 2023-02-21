@@ -8,6 +8,23 @@ conferences:
     href: https://www.youtube.com/watch?v=NZionAE-Tj0
 
 podcasts:
+  - title: Episode 17
+    description: |
+      Joe joins the show to talk about his various projects, why it's so
+      important to build in public, and how doing less is helping him to do it
+      all.
+    event: Code and the Coding Coders who Code it
+    cta: Listen to podcast
+    href: https://podcast.drbragg.dev/episodes/episode-17-joe-masilotti/
+
+  - title: Espisode 2
+    description: |
+      Joe Masilotti shares his journey getting into coding, going independent,
+      consulting in iOS and Rails, building in public, and starting RailsDevs.
+    event: IndieRails
+    cta: Listen to podcast
+    href: https://www.indierails.com/2
+
   - title: Turbo Native Workshop
     description: |
       Brittany and Joe discuss why he is conducting the workshop(s), whether he
