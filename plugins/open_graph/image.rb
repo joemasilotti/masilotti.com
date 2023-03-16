@@ -35,7 +35,7 @@ class OpenGraph::Image
   end
 
   def base_url
-    "https://previewify.app"
+    "https://previewlinks.io"
   end
 
   def path
@@ -45,12 +45,12 @@ class OpenGraph::Image
   def params
     {
       fields: {
-        "previewify:date": date,
-        "previewify:title": title,
-        "previewify:description": description,
-        "previewify:image": image.to_s,
-        "previewify:author": author,
-        "previewify:handle": handle
+        "previewlinks:date": date,
+        "previewlinks:title": title,
+        "previewlinks:description": description,
+        "previewlinks:image": image.to_s,
+        "previewlinks:author": author,
+        "previewlinks:handle": handle
       }
     }
   end
