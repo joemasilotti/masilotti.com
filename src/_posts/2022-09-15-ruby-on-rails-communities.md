@@ -57,4 +57,7 @@ Totaling 75k members, these subreddits have grown quite large. As always with Re
 
 Twitter communities are like super focused newsfeeds. Content on The Ruby on Rails Twitter community focuses on sharing articles, asking for advice, and highlighting interesting gems. It’s a great alternative if you aren’t a fan of Reddit.
 
+### [Ruby for Good Slack](https://rubyforgood.slack.com/join/shared_invite/zt-1kfeimohe-KL~~~6Lkof7G94_7Ojd_Hw#/shared-invite/email)
+This is a small (around 2000 members) but active community working on impactful projects. It is maintained by the [Ruby for Good](https://rubyforgood.org) organization.
+
 Made it to the end but didn't find your favorite Ruby on Rails community? [Send me an email](mailto:joe@masilotti.com) or [submit a PR](https://github.com/joemasilotti/masilotti.com/blob/main/_posts/2022-08-15-ruby-on-rails-communities.md)!
