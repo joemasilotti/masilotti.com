@@ -4,9 +4,9 @@
       <div>
         <h3 class="flex items-center text-base font-medium text-gray-900">
           <%= svg "images/icons/outline/envelope.svg", class: "h-6 w-6 flex-none text-zinc-500" %>
-          <span class="ml-2">Subscribe to the ⚡️ <%= link_to "Hotwire dev newsletter", "_pages/hotwire.erb", class: "underline" %></span>
+          <span class="ml-2"><%= newsletter.title %></span>
         </h3>
-        <p class="mt-2 text-base text-gray-500">Turbo (Native), Stimulus, and Strada articles, code, courses, and more every month.</p>
+        <p class="mt-2 text-base text-gray-500 max-w-xl"><%= newsletter.description %></p>
       </div>
 
       <%= render EmailCapture.new(newsletter) %>

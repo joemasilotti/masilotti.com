@@ -5,10 +5,11 @@
 -
   title: Articles
   href: _pages/articles.erb
+
 -
   title: Services
   href: _pages/services.erb
 
 -
-  title: Newsletter
+  title: Hotwire
   href: _pages/hotwire.erb
