@@ -69,7 +69,7 @@ I also [posted on Twitter](https://twitter.com/joemasilotti/status/1460706255874
 In less than two weeks I was talking to 30+ interested buyers, most of them via DMs on Twitter. I was ecstatic! How could people be this interested in my little business?
 
 <div class="not-prose">
-  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+  <%= render Newsletter::CTA.new(site.data.newsletters.masilotti) %>
 </div>
 
 ## Narrowing down the candidates

@@ -57,7 +57,7 @@ My goal for this year is to **track 100% of my time in front of a computer**. I 
 I plan to then reflect on these numbers every week and every month to see where my time is going. Ideally, this will encourage me to spend _even less_ time staring at the screen and more time living my life.
 
 <div class="not-prose">
-  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+  <%= render Newsletter::CTA.new(site.data.newsletters.masilotti) %>
 </div>
 
 ### Chase work that maximizes revenue and fulfillment

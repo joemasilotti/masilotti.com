@@ -79,7 +79,7 @@ This might feel weird - it did to me at first. Aren’t two `UPDATE` queries slo
 > If we are modifying a fixture then why not use `FactoryBot`? Because most of the time you won’t be touching the fixture. There are a lot of test cases where `developers(:one)` needs a developer, that’s it. Not special in any way. This is where fixtures shine - they are already loaded into the test database!
 
 <div class="not-prose">
-  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+  <%= render Newsletter::CTA.new(site.data.newsletters.masilotti) %>
 </div>
 
 ## #3: Extract helpers for common customizations

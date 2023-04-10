@@ -47,7 +47,7 @@ Part of the magic of going hybrid is that new screens can be added without any a
 All the client needs to do is update their exiting Rails app and *poof* 💨 the iOS app gets the new content for free.
 
 <div class="not-prose">
-  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+  <%= render Newsletter::CTA.new(site.data.newsletters.masilotti) %>
 </div>
 
 ## Jumpstart Pro iOS

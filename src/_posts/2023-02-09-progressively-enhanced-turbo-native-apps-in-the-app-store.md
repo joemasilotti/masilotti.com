@@ -61,7 +61,7 @@ We integrated native [region monitoring](https://developer.apple.com/documentati
 This means the app doesn’t need to run in the background, saving precious battery life. And the notification is local to the device so it works even without an internet connection.
 
 <div class="not-prose">
-  <%= render Newsletter::CTA.new(site.data.newsletters.hotwire) %>
+  <%= render Newsletter::CTA.new(site.data.newsletters.masilotti) %>
 </div>
 
 ## Native maps for GroupUp
