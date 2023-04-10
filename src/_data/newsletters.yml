@@ -10,5 +10,7 @@ workshop:
 masilotti:
   action: https://buttondown.email/api/emails/embed-subscribe/joemasilotti
   onsubmit: https://buttondown.email/joemasilotti
-  title: Subscribe to my weekly newsletter
-  description: What I'm working on - Turbo Native, growing RailsDevs, and being a solopreneur. Be the first to know about my new posts, courses, and libraries.
+  title: Get my weekly newsletter
+  description: |
+     Be the first to know about my new posts, courses, and libraries.
+     Plus, exclusive insights into how I build Turbo Native apps.
