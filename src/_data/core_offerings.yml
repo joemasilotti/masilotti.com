@@ -11,6 +11,7 @@
   icon: /images/icons/outline/academic_cap.svg
   href: _pages/turbo-native-workshop.md
   cta: Attend a workshop
+  badge: New
   description: |
     Small, interative workshops to learn the basics of Turbo Native and iOS.
 

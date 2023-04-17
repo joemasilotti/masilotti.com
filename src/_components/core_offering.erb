@@ -3,6 +3,10 @@
     <div class="flex items-center">
       <%= svg icon, class: "w-5 h-5 mr-1.5" %>
       <%= title %>
+
+      <% if badge.present? %>
+        <span class="inline-flex items-center rounded bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-800 ml-4"><%= badge %></span>
+      <% end %>
     </div>
   <% end %>
 
