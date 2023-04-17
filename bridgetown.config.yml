@@ -1,6 +1,7 @@
 development:
   url: https://localhost:4000
   fathom_site_id: FWVZGVUN
+  future: true
 
 staging:
   url: https://dev.masilotti.com
