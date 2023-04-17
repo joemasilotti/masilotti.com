@@ -3,8 +3,8 @@
     <%= render UI::Card::Title.new(href: url_for(article)) do %>
       <div class="flex items-center">
         <%= article.data.title %>
-        <% if badge %>
-          <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ml-3 <%= badge_class_names %>"><%= badge %></span>
+        <% if badge.present? %>
+          <%= render UI::Badge.new(badge.to_s.titleize, badge_color) %>
         <% end %>
       </div>
     <% end %>
