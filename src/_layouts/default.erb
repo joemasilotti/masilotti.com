@@ -15,7 +15,8 @@
       <%= render UI::Header.new(
         links: site.data.navigation_links,
         current_path: resource.permalink,
-        hide_avatar: resource.data.hide_avatar
+        hide_avatar: resource.data.hide_avatar,
+        announcements: site.data.announcements
       ) %>
 
       <main>

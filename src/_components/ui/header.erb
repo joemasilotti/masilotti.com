@@ -1,4 +1,6 @@
 <header class="pointer-events-none relative z-50 flex flex-col">
+  <%= render Announcement.new(announcements) %>
+
   <div class="top-0 z-10 h-16 pt-6">
     <%= render UI::Container.new do %>
       <div class="relative flex gap-4 justify-center">
