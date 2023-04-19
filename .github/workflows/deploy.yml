@@ -26,12 +26,15 @@ jobs:
         with:
           node-version: "16"
           cache: "yarn"
+
       - run: yarn install
 
       - name: Build
+        run: bin/bridgetown deploy
         env:
           BRIDGETOWN_ENV: production
-        run: bin/bridgetown deploy
+          WORKSHOP_PAYMENT_LINK: ${{ secrets.WORKSHOP_PAYMENT_LINK }}
+          WORKSHOP_TICKETS_REMAINING: ${{ variables.WORKSHOP_TICKETS_REMAINING }}
 
       - name: Deploy site
         uses: burnett01/rsync-deployments@5.1
