@@ -34,7 +34,7 @@ jobs:
         env:
           BRIDGETOWN_ENV: production
           WORKSHOP_PAYMENT_LINK: ${{ secrets.WORKSHOP_PAYMENT_LINK }}
-          WORKSHOP_TICKETS_REMAINING: $WORKSHOP_TICKETS_REMAINING
+          WORKSHOP_TICKETS_REMAINING: ${{ vars.WORKSHOP_TICKETS_REMAINING }}
 
       - name: Deploy site
         uses: burnett01/rsync-deployments@5.1
