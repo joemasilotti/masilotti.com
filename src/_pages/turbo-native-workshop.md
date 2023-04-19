@@ -13,9 +13,9 @@ template_engine: erb
 
 <p class="lead">Learn how to bring your Ruby on Rails app to iOS in this 3-hour interactive workshop on Turbo Native.</p>
 
-<div class="no-prose">
-  <%= render UI::Button.new(title: "Buy my ticket", href: "https://buy.stripe.com/00gfZq9f11yD0z6001") %>
-</div>
+May 15, 10am - 1pm PT on Zoom. $499 per person, limited to 20 attendees.
+
+<%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop) %>
 
 Native apps are hard. They’re expensive to build and even more expensive to maintain. But with Turbo Native, that’s no longer true.
 
@@ -51,9 +51,7 @@ Attendees will also receive access to:
 
 May 15, 10am - 1pm PT on Zoom. $499 per person, limited to 20 attendees.
 
-<div class="no-prose">
-  <%= render UI::Button.new(title: "Buy my ticket", href: "https://buy.stripe.com/00gfZq9f11yD0z6001") %>
-</div>
+<%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop) %>
 
 ## About the author
 
