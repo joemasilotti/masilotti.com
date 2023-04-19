@@ -21,6 +21,13 @@ yarn install
 
 ## Development
 
+Create a new file named `.env` and add the following to it:
+
+```
+WORKSHOP_PAYMENT_LINK=https://stripe.com
+WORKSHOP_TICKETS_REMAINING=20
+```
+
 Start the server and navigate to [localhost:4000](https://localhost:4000/).
 
 ```bash
@@ -36,3 +43,13 @@ The GitHub Action copies builds the site then copies `output/` via `rsync` to a 
 * `REMOTE_KEY_PASS` - Password for SSH key
 * `REMOTE_PATH` - Where the code is deployed on the server
 * `REMOTE_USER` - authenticated user for the SSH key
+
+## Workshop tickets
+
+When someone buys a ticket to the workshop:
+
+1. Update the `WORKSHOP_TICKETS_REMAINING` [GitHub variable](https://github.com/joemasilotti/masilotti.com/settings/variables/actions) (not secret)
+1. Click into the most recent successful [workflow](https://github.com/joemasilotti/masilotti.com/actions)
+1. Click "Re-run all jobs"
+
+Setting the variable to 0 will hide the payment link from the UI. It should also be [deactivated on Stripe](https://dashboard.stripe.com/payment-links) to ensure no one else can purchase a ticket.
