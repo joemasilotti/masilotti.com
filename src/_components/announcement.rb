@@ -13,6 +13,6 @@ class Announcement < SiteComponent
 
   def announcement
     # Set to a key from src/_data/announcements.yml to render an announcement.
-    @announcements[""]
+    @announcements[ENV["ANNOUNCEMENT"]]
   end
 end
