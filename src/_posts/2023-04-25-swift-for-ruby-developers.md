@@ -17,25 +17,27 @@ previewify_description: |
 
 On Thursday I hosted a 40-minute crash course on Swift + iOS. The session was aimed at Ruby + Rails developers who want to build Turbo Native apps but lack knowledge of Swift and iOS.
 
-I covered the fundamentals of Swift and iOS, and compared and contrasted each concept to Ruby and Rails, making it easier for web developers to understand. Specifically, static typing, optionals, protocols, and extensions for Swift, and navigating Xcode, basic app architecture, and basic view controller navigation for iOS.
+I covered the fundamentals of Swift and iOS, and compared and contrasted each concept to Ruby and Rails, making it easier for web developers to understand.
 
-If you missed the live stream you can watch the recording on YouTube. Read on for a breakdown of the Swift topics with copy-pasteable code snippets.
-
-<iframe src="https://www.youtube-nocookie.com/embed/H58Tj-i2aSE?start=129" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full aspect-video"></iframe>
+If you missed the live stream you can [watch the recording on YouTube](https://www.youtube.com/live/H58Tj-i2aSE?start=129). Read on for a breakdown of the Swift topics with copy-pasteable code snippets.
 
 <div class="not-prose">
   <%= render Newsletter::CTA.new(site.data.newsletters.masilotti, title: "Don't miss the next session", description: "Get notified when I stream and join the live Q&A.") %>
 </div>
 
-## Getting started
+## Getting started with Swift
 
 To get started, you will need Xcode installed. You can [download the latest version](https://developer.apple.com/xcode/) from Apple’s Developer site for free.
 
-To demonstrate Swift we will use a Playground. Its kind of like being able to run a Ruby file without leaving your editor.
+To demonstrate Swift we will use a [Playground](https://www.apple.com/swift/playgrounds/). Its kind of like being able to edit and run a Ruby file without leaving your editor.
 
-To create a new playground, open Xcode and click File → New → Playground then select Blank.
+To create a new playground, open Xcode and click File → New → Playground. Then select Blank and click Next.
 
-![New Swift playground](/images/new-swift-playground.png){:standalone .rounded-none}
+![New Swift playground](/images/swift-for-ruby-developers/new-swift-playground.png){:standalone .rounded-none}
+
+Give your Playground a name (or leave the default) and click Create.
+
+![Create Swift playground](/images/swift-for-ruby-developers/create-swift-playground.png){:standalone .rounded-none}
 
 ## Constants vs. variables
 
@@ -55,17 +57,19 @@ CONSTANT = "SOMETHING ELSE"
 # (irb):1: warning: previous definition of CONSTANT was here
 ```
 
-But in Swift you must decide if a variable can be changed or not with `var` and `let`, respectively.
+But in Swift you must decide if a variable can be modified. Declare a mutable variable with `var` and one that cannot be changed with `let`.
 
 ```swift
 var x = 1
 x = 2
 
 let name = "Joe"
-name = "Duke" // Cannot assign to value: 'name' is a 'let' constant
+name = "Duke" // ERROR: Cannot assign to value: 'name' is a 'let' constant
 ```
 
-> Tip: Click the arrow at the bottom left of the editor to run the Playground, or `⌘ ⇧ ↵`.
+Click the arrow at the bottom left of the editor to run the Playground, or `⌘ ⇧ ↵`.
+
+![Run playground](/images/swift-for-ruby-developers/run-playground.png){:standalone .rounded-none}
 
 ## Types
 
@@ -81,16 +85,18 @@ x.class # => String
 
 Swift requires explicit, static typing. And once the type is assigned it can never be changed.
 
-> Tip: `⌥ + Click` on a variable to see its type in Xcode.
+Tip: `⌥ + Click` on a variable to see its type in Xcode.
+
+![⌥ + Click to view decleration](/images/swift-for-ruby-developers/option-click.png){:standalone .rounded-none}
 
 ```swift
 var x = 1 // Int
-x = "Joe" // Cannot assign value of type 'String' to type 'Int'
+x = "Joe" // ERROR: Cannot assign value of type 'String' to type 'Int'
 ```
 
 ## Optionals
 
-In Ruby, any variable could be `nil`.
+In Ruby, any variable could potentially be `nil`.
 
 ```ruby
 x = 1
@@ -105,7 +111,7 @@ In Swift, variables must be explicitly declared as optional.
 
 ```swift
 var x: Int = 1
-x = nil // 'nil' cannot be assigned to type 'Int'
+x = nil // ERROR: 'nil' cannot be assigned to type 'Int'
 
 // Note the question mark - this is an optional Int.
 var y: Int? = 1
@@ -126,12 +132,12 @@ We can *force unwrap* an optional with a bang, `!`. But if a `nil` is force unwr
 
 ```swift
 "2x " + breakfast! // "2x eggs"
-"2x " + snack! // Fatal error: Unexpectedly found `nil` while unwrapping an Optional value
+"2x " + snack! // FATAL ERROR: Unexpectedly found `nil` while unwrapping an Optional value
 ```
 
 ### Optional binding
 
-If you aren’t absolutely 100% sure a variable can’t be `nil` then *optional binding* is a safer choice. If the right hand side is `nil` then the body of the `if` statement won’t run, avoiding a crash.
+If you're not sure if a variable can be `nil` or not then *optional binding* is a safer choice. If the right hand side is `nil` then the body of the `if` statement won’t run, avoiding a crash.
 
 ```swift
 if let breakfast = breakfast {
@@ -151,9 +157,60 @@ if let breakfast {
 }
 ```
 
+## Classes and functions
+
+Creating a class in Swift is very similar to Ruby. Instead of a `do` `end` block we use braces.
+
+```swift
+class Person {}
+
+let person = Person()
+```
+
+By default functions don't return anything, "void functions". But a return type can be added.
+
+```swift
+class Person {
+    // Does not return anything.
+    func eat() {
+        // Go eat something.
+    }
+
+    // Must return a string.
+    func sayHi() -> String {
+        return "Hello"
+    }
+}
+
+let person = Person()
+person.eat()
+person.sayHi() // "Hello"
+```
+
+Function parameters in Swift behave like named parameters in Ruby.
+
+```swift
+func eat(food: String) {
+    print("Eating \(food)... Yum!")
+}
+
+eat(food: "pizza") // "Eating pizza... Yum!"
+```
+
+We can omit the parameter name at the call site by declaring the parameter with an underscore.
+
+```swift
+func drink(_ beverage: String) {
+    print("Drinking \(beverage)... Delicious!")
+}
+
+// Note how we omitted the parameter name.
+drink("coffee") // "Drinking coffee... Delicious!"
+```
+
 ## Static vs. Dynamic typed language
 
-Ruby is an implicitly typed language. Or, duck-typed. If it looks like a duck, walks like a duck, and quacks like a duck, well, it’s probably a duck. So lets treat it like one.
+Ruby is an implicitly typed language. Or, duck-typed. If it looks like a duck, walks like a duck, and quacks like a duck, well, it’s probably a duck. So let's treat it like one.
 
 This means we can attempt to call any method on any object in our system. And Ruby will figure out at runtime if that instance can actually handle it.
 
@@ -200,7 +257,7 @@ Cat().sayHi() // "Meow"
 // Note the generic typing of the array as Any, or "anything".
 let animals: [Any] = [Dog(), Cat()]
 animals.map { animal in
-    animal.sayHi() // Value of type 'Any' has no member 'sayHi'
+    animal.sayHi() // ERROR: Value of type 'Any' has no member 'sayHi'
 }
 ```
 
@@ -252,7 +309,7 @@ extension Dog: Animal {
 }
 ```
 
-Imagine if `Dog` implemented a few different protocols. Now we can organize the relevant methods in their own areas of the codebase.
+If `Dog` implemented a few different protocols we can organize the relevant methods in their own areas of the codebase.
 
 We can also add functionality to classes we don’t even own with an extension. Here we are adding a function to see if an integer is 42 or not. We don’t own `Int`, it’s part of the standrd Swift library!
 
@@ -267,6 +324,6 @@ extension Int {
 33.is42() // false
 ```
 
-That wraps up my Swift crash course for Ruby developers. I’d love to hear your feedback! If you have any suggestions for other topics please [send me an email](https://www.notion.so/Masilotti-com-683c7862d3e0485a905a343f4f5770fd).
+That wraps up my Swift crash course for Ruby developers. I’d love to hear your feedback! If you have any suggestions for other topics please [send me an email](mailto:joe@masilotti.com).
 
-Stay tuned for part 2, where I'll cover **iOS for Rails developers**. We'll dive into creating a new iOS project, navigating Xcode, and view controller navigation. Be the first to know when it's live by signing up for my newsletter below.
+Stay tuned for part 2, where I'll cover **iOS for Rails developers**. We'll dive into creating a new iOS project, navigating Xcode, and view controller navigation. Get notified when it's live by signing up for my weekly newsletter below.
