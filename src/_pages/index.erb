@@ -37,8 +37,8 @@ hide_avatar: true
   </div>
 <% end %>
 
-<%= render UI::Container.new(class_name: "mt-16 md:mt-20") do %>
-  <div class="grid md:grid-cols-3 justify-center gap-16 py-4">
+<%= render UI::Container.new(class_name: "mt-16 md:mt-20", inner_class_name: "sm:px-0") do %>
+  <div class="grid lg:grid-cols-3 lg:justify-center gap-16 py-4">
     <% site.data.core_offerings.each do |offering| %>
       <%= render CoreOffering.new(**offering.to_h.to_options) %>
     <% end %>
