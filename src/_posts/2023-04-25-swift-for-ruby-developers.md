@@ -2,14 +2,16 @@
 title: Swift for Ruby developers crash course
 date: 2023-04-25
 description: |
-  If you're a Ruby + Rails developer looking to dive into iOS development, this
+  If you're a Ruby or Rails developer looking to dive into iOS development, this
   crash course on Swift is exactly what you need! Ideal for anyone interested
   in Turbo Native development.
 permalink: /swift-for-ruby-developers/
 
 template_engine: erb
+previewify_title: Swift for Ruby developers<br>crash course
 previewify_description: |
-    Perfect for Ruby + Rails developers wanting to get started with iOS and Turbo Native development.
+    Perfect for Ruby and Rails developers wanting to get started with iOS and
+    Turbo Native development.
 
 ---
 
