@@ -21,12 +21,10 @@ I covered the fundamentals of Swift and iOS, and compared and contrasted each co
 
 If you missed the live stream you can watch the recording on YouTube. Read on for a breakdown of the Swift topics with copy-pasteable code snippets.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/H58Tj-i2aSE?start=129" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-Sign up for my weekly newsletter to get notified the next time I live stream.
+<iframe src="https://www.youtube-nocookie.com/embed/H58Tj-i2aSE?start=129" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full aspect-video"></iframe>
 
 <div class="not-prose">
-  <%= render Newsletter::CTA.new(site.data.newsletters.masilotti) %>
+  <%= render Newsletter::CTA.new(site.data.newsletters.masilotti, title: "Don't miss the next session", description: "Get notified when I stream and join the live Q&A.") %>
 </div>
 
 ## Getting started
