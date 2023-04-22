@@ -75,7 +75,7 @@ Click the arrow at the bottom left of the editor to run the Playground, or `⌘ 
 
 Ruby variables assume the type of whatever is assigned to them.
 
-```swift
+```ruby
 x = 1
 x.class # => Integer
 
