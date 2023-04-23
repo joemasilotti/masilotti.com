@@ -6,13 +6,13 @@ layout: default
 <%= render UI::Container.new(class_name: "mt-16 lg:mt-32") do %>
   <div class="xl:relative">
     <div class="mx-auto max-w-2xl">
-      <a href="<%= resource.back_href %>" aria-label="Go back to articles" title="Go back to articles" class="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition lg:absolute lg:-left-5 lg:mb-0 lg:-mt-2 xl:-top-1.5 xl:left-0 xl:mt-0">
+      <a href="<%= resource.back_href %>" aria-label="Go back to articles" title="Go back to articles" class="hidden lg:flex group mb-8 h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition lg:absolute lg:-left-5 lg:mb-0 lg:mt-2 xl:top-2 xl:left-0 xl:mt-0">
         <%= svg "/images/icons/mini/arrow_left.svg", class: "h-3 w-3 stroke-zinc-500 transition group-hover:stroke-zinc-700" %>
       </a>
 
-      <article>
+      <article id="content" class="scroll-mt-8">
         <header class="flex flex-col">
-          <h1 class="mt-8 text-4xl sm:text-5xl font-bold tracking-tight text-zinc-800">
+          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-800">
             <% if resource.series? %>
               <span class="block text-3xl sm:text-4xl font-semibold text-zinc-500"><%= resource.data.series %></span>
               <span><%= resource.data.series_title %></span>
@@ -21,7 +21,7 @@ layout: default
             <% end %>
           </h1>
 
-          <aside class="order-first flex items-center">
+          <aside class="flex items-center mt-4 sm:mt-8">
             <div>
               <div class="h-12 w-12 sm:h-20 sm:w-20 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
                 <a href="/" aria-label="Joe Masilotti" title="Joe Masilotti" class="block pointer-events-auto">
