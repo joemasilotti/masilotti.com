@@ -30,7 +30,7 @@ I’m taking a break and I don’t know when I’ll be back. It might be a week.
 
 I’m not returning until I know that opening the app will make me feel *better*. Not worse.
 
-I still want to stay in touch with the fiends I’ve made over the years. So I’m starting a weekly-ish newsletter on Turbo Native, growing RailsDevs, and being a solopreneur.
+I still want to stay in touch with the friends I’ve made over the years. So I’m starting a weekly-ish newsletter on Turbo Native, growing RailsDevs, and being a solopreneur.
 
 <div class="not-prose">
   <%= render Newsletter::CTA.new(site.data.newsletters.masilotti) %>
