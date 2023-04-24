@@ -1,0 +1,17 @@
+~~~ruby
+front_matter do
+  title "Joe Masilotti's newsletter"
+  description -> { site.data.newsletters.masilotti.description }
+  permalink "/newsletter/"
+
+  image "/images/pages/newsletter.png"
+  hide_newsletter true
+end
+~~~
+
+<%= render UI::SimpleLayout.new(
+  title: resource.data.title,
+  intro: resource.data.description,
+  newsletter: site.data.newsletters.masilotti
+) do %>
+<% end %>

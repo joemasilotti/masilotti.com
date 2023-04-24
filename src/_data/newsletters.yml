@@ -1,6 +1,9 @@
 hotwire:
   action: https://buttondown.email/api/emails/embed-subscribe/hotwire
   onsubmit: https://buttondown.email/hotwire
+  description: |
+    A curated, monthly roundup of the latest Turbo (Native), Stimulus, and
+    Strada articles, code, courses, and more.
 
 workshop:
   action: https://buttondown.email/api/emails/embed-subscribe/hotwire

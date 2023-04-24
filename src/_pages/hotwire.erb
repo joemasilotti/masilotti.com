@@ -1,13 +1,13 @@
----
-title: ⚡️ Hotwire dev newsletter
-description: |
-  Turbo (Native), Stimulus, and Strada articles, code, courses, and more. Plus,
-  exclusive insights into how I build Turbo Native apps. Delivered monthly.
-permalink: /hotwire/
+~~~ruby
+front_matter do
+  title "⚡️ Hotwire dev newsletter"
+  description -> { site.data.newsletters.hotwire.description }
+  permalink "/hotwire/"
 
-image: /images/pages/hotwire.png
+  image "/images/pages/hotwire.png"
+end
+~~~
 
----
 
 <%= render UI::SimpleLayout.new(
   title: resource.data.title,

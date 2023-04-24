@@ -23,7 +23,11 @@
         <%= yield %>
       </main>
 
-      <%= render Footer.new(links: site.data.navigation_links, newsletter: site.data.newsletters.masilotti) %>
+      <%= render Footer.new(
+        links: site.data.navigation_links,
+        newsletter: site.data.newsletters.masilotti,
+        hide_newsletter: resource.data.hide_newsletter
+      ) %>
     </div>
   </body>
 </html>
