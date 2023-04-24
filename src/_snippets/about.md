@@ -1,7 +1,7 @@
 ---
 ---
 
-<p class="lead">I help folks confidently launch iOS apps in the App Store with Turbo Native and Ruby on Rails.</p>
+<p class="lead">I help folks <a href="/services">confidently</a> launch iOS apps in the App Store with Turbo Native and Ruby on Rails.</p>
 
 I started by journey in 2012 at Pivotal Labs where I learned Ruby on Rails, test-driven development, and pair programming.
 
