@@ -2,8 +2,13 @@ module Workshop
   class CTA < SiteComponent
     attr_reader :newsletter
 
-    def initialize(newsletter:)
-      @newsletter = newsletter
+    def initialize(newsletter:, event_id:)
+      @newsletter, @event_id = newsletter, event_id
+    end
+
+    def event_id
+      raise "Fathom event ID missing!" unless @event_id.present?
+      @event_id
     end
 
     def href

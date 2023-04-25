@@ -1,7 +1,7 @@
 <% if available? %>
   <div class="not-prose">
     <div class="flex items-center">
-      <%= render UI::Button.new(title: "Buy my ticket", href:) %>
+      <%= render UI::Button.new(title: "Buy my ticket", href:, onclick: "fathom.trackGoal('#{event_id}', 0);") %>
       <p class="text-sm font-semibold leading-6 text-zinc-900 ml-6"><%= hero %></p>
     </div>
   </div>

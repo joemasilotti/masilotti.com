@@ -15,7 +15,7 @@ template_engine: erb
 
 May 15, 10am - 1pm PT on Zoom. $499 per person, limited to 20 attendees.
 
-<%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop) %>
+<%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket) %>
 
 Native apps are hard. They’re expensive to build and even more expensive to maintain. But with Turbo Native, that’s no longer true.
 
@@ -51,7 +51,7 @@ Attendees will also receive access to:
 
 May 15, 10am - 1pm PT on Zoom. $499 per person, limited to 20 attendees.
 
-<%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop) %>
+<%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket) %>
 
 ## About the author
 
