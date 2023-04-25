@@ -1,15 +1,18 @@
 development:
   url: https://localhost:4000
-  fathom_site_id: FWVZGVUN
   future: true
+  fathom:
+    site_id: FWVZGVUN
 
 staging:
   url: https://dev.masilotti.com
-  fathom_site_id: FWVZGVUN
+  fathom:
+    site_id: FWVZGVUN
 
 production:
   url: https://masilotti.com
-  fathom_site_id: QNURQQHD
+  fathom:
+    site_id: QNURQQHD
 
 previewify_site_id: 755
 

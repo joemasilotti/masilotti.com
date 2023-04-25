@@ -46,6 +46,6 @@ class Head < SiteComponent
   end
 
   def site_id
-    site.config.fathom_site_id
+    site.config.fathom.site_id
   end
 end
