@@ -7,7 +7,7 @@ description: |
   busy.
 permalink: /tailwind-css-and-mugshot-bot/
 
-previewify_description: |
+og_description: |
   It's been a busy month! I've gone all in on Tailwind CSS, launched a new
   product, and started building a newsletter.
 

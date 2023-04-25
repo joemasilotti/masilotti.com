@@ -22,7 +22,7 @@ class Head < SiteComponent
   end
 
   def image
-    if cached_previewify_image?
+    if cached_og_image?
       URI.join(site.config.url, "images/og/#{resource.relative_url.parameterize}.png").to_s
     else
       absolute_url(resource.data.image || site.metadata.image)
@@ -41,11 +41,11 @@ class Head < SiteComponent
     "summary_large_image"
   end
 
-  def cached_previewify_image?
-    !!resource.data.cached_previewify_image
+  def cached_og_image?
+    !!resource.data.cached_og_image
   end
 
-  def site_id
+  def fathom_site_id
     site.config.fathom.site_id
   end
 end

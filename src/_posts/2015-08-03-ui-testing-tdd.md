@@ -6,7 +6,7 @@ description: |
   assertions make for a great TDD experience on iOS.
 permalink: /ui-testing-tdd/
 
-previewify_title: 3 ways UI Testing just made TDD even better
+og_title: 3 ways UI Testing just made TDD even better
 
 ---
 

@@ -14,7 +14,8 @@ production:
   fathom:
     site_id: QNURQQHD
 
-previewify_site_id: 755
+preview_links:
+  site_id: 755
 
 # TODO: Move to config/initializers.rb.
 collections:

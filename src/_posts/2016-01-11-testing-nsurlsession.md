@@ -6,7 +6,7 @@ description: |
   URLSession with Swift and protocol-oriented programming.
 permalink: /testing-nsurlsession-input/
 
-previewify_description: |
+og_description: |
   Not owning a class doesn't mean you can't mock it! Learn how to unit test
   URLSession with Swift protocol-oriented programming.
 

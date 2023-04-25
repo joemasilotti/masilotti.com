@@ -8,8 +8,8 @@ description: |
 permalink: /swift-for-ruby-developers/
 
 template_engine: erb
-previewify_title: Swift for Ruby developers<br>crash course
-previewify_description: |
+og_title: Swift for Ruby developers<br>crash course
+og_description: |
     Perfect for Ruby and Rails developers wanting to get started with iOS and
     Turbo Native development.
 

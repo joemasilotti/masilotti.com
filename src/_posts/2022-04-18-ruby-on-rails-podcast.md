@@ -7,8 +7,8 @@ description: |
   bit about my upcoming workshop.
 permalink: /ruby-on-rails-podcast/
 
-previewify_title: 🎙 Guest on the Ruby on Rails podcast
-previewify_description: |
+og_title: 🎙 Guest on the Ruby on Rails podcast
+og_description: |
   Brittany and I talked about building RailsDevs in public and my upcoming Turbo
   Native workshop.
 

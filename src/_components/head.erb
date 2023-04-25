@@ -36,6 +36,6 @@
 
 <%= tag "link", rel: "stylesheet", href: webpack_path(:css) %>
 <script src="<%= webpack_path(:js) %>" defer></script>
-<script src="https://cdn.usefathom.com/script.js" data-site="<%= site_id %>" defer></script>
+<script src="https://cdn.usefathom.com/script.js" data-site="<%= fathom_site_id %>" defer></script>
 
 <%= live_reload_dev_js %>

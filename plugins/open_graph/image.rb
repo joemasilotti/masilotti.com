@@ -64,11 +64,11 @@ class OpenGraph::Image
   end
 
   def site_id
-    site.config.previewify_site_id
+    site.config.preview_links.site_id
   end
 
   def template_id
-    resource.data.previewify_template
+    resource.data.preview_links_template_id
   end
 
   def date
@@ -76,15 +76,15 @@ class OpenGraph::Image
   end
 
   def title
-    resource.data.previewify_title || resource.data.title
+    resource.data.og_title || resource.data.title
   end
 
   def description
-    resource.data.previewify_description || resource.data.description
+    resource.data.og_description || resource.data.description
   end
 
   def image
-    URI.join(site.config.url, resource.data.previewify_image)
+    URI.join(site.config.url, resource.data.og_image)
   end
 
   def author
@@ -100,6 +100,6 @@ class OpenGraph::Image
   end
 
   def api_key
-    ENV["PREVIEWIFY_API_KEY"]
+    ENV["PREVIEW_LINKS_API_KEY"]
   end
 end
