@@ -15,7 +15,7 @@ previewify_description: |
 
 ---
 
-On Thursday I hosted a 40-minute crash course on Swift + iOS. The session was aimed at Ruby + Rails developers who want to build Turbo Native apps but lack knowledge of Swift and iOS.
+On Thursday I hosted a 40-minute crash course on Swift + iOS. The session was aimed at Ruby + Rails developers who want to <%= link_to "build Turbo Native apps", "_posts/2021-05-14-turbo-ios.md" %> but lack knowledge of Swift and iOS.
 
 I covered the fundamentals of Swift and iOS, and compared and contrasted each concept to Ruby and Rails, making it easier for web developers to understand.
 
