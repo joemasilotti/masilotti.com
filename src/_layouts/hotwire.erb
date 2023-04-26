@@ -24,8 +24,8 @@ layout: default
         </header>
 
         <p class="mt-2 sm:mt-4 sm:text-lg text-zinc-600">
-          <span class="md:block">Turbo (Native), Stimulus, and Strada articles, code, courses, and more.</span>
-          <span class="md:block">Plus <span class="font-semibold">exclusive insights</span> into how I build Turbo Native apps. Delivered monthly.</span>
+          <%= site.data.newsletters.hotwire.description.gsub(/\.$/, "") %>
+          by <%= link_to "Joe Masilotti", "/" %>.
         </p>
 
         <%= render EmailCapture.new(site.data.newsletters.hotwire) %>
