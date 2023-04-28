@@ -10,15 +10,13 @@ template_engine: erb
 og_title: "Enhancing Turbo Native apps:<br>How to hide web-rendered content"
 ---
 
-Hybrid apps built with [Turbo Native](<%= url_for "_posts/2021-05-14-turbo-ios.md" %>) come with a ton of benefits. Namely, they enable small teams to ship multiplatform apps by sharing web content. They let Rails developers to focus on what they do best: working in Rails.
+Hybrid apps built with [Turbo Native](<%= url_for "_posts/2021-05-14-turbo-ios.md" %>) come with a ton of benefits. Namely, they enable small teams to ship multiplatform apps by sharing web content. They let Rails developers focus on what they do best: working in Rails.
 
-But sometimes shoving a web view in native chrome can look a little… off. Here’s how to hide web-rendered content in a Turbo Native app to make it feel a little more native.
+But sometimes shoving a web view in native chrome can look a little… off. Here’s how to hide web-rendered content in a Turbo Native app to make it feel a little more native. All from the comfort of Ruby and HTML.
 
-## Native navigation bar title with `<h1>`
+## Navigation bar titles and `<h1>` tags
 
 On iOS, when we use `UINavigationController` we get a navigation bar running along the top of the screen. We can optionally set the `title` property to a string.
-
-Turbo Native automatically sets this for us from the `<title>` of the page being rendered.
 
 ![Native navigation title](/images/hide-web-rendered-content-on-turbo-native-apps/native-title.png){:standalone .rounded-none .max-w-xs}
 
@@ -28,7 +26,9 @@ viewController.title = "Joe's amazing app"
 UINavigationController(rootViewController: viewController)
 ```
 
-And on web we usually render a big `<h1>` near the top of a page.
+Turbo Native will automatically set this from the title of the page being rendered. This means we can use `<title>Joe's amazing app</title>` from our HTML to update a native UI element. And this is built directly into turbo-ios!
+
+But on the web we usually render a big `<h1>` near the top of a page.
 
 ![HTML <h1>](/images/hide-web-rendered-content-on-turbo-native-apps/html-title.png){:standalone .rounded-none .max-w-xs}
 
@@ -40,7 +40,7 @@ Combining these feels a bit weird. We have the same content, duplicated, immedia
 
 ![Double title](/images/hide-web-rendered-content-on-turbo-native-apps/double-title.png){:standalone .rounded-none .max-w-xs}
 
-To make the app feel more native we can hide the web-based content and rely on the native navigation bar to convey the title of the page.
+To make the Turbo Native app feel more native we can hide the web-based title, the `<h1>`, and rely on the native navigation bar for the title of the page.
 
 ## Custom user agent
 
@@ -106,8 +106,37 @@ We can rework our original HTML to use the new CSS like this.
 
 We are now always sending the same HTML, regardless of user agent. It’s up to the client to render the `<h1>` or not. And caching is happy again!
 
+## DRYing up the title
+
+We can take this one step farther with `content_for`. This is a [small Rails helper](https://guides.rubyonrails.org/layouts_and_rendering.html#using-the-content-for-method) that allows you to insert content into a named `yield` block in your layout.
+
+For example, `content_for(:title, "New title")` sets the content and `content_for(:title)` renders it. Rendering the content can come "before" you set it in your code, making it quite powerful.
+
+Here's how we can set the title of the page, and therefore the native iOS title, from our views.
+
+```erb
+# app/views/layouts/application.html.erb
+<html>
+  <head>
+    <title><%%= content_for(:title) || "Joe's amazing app" %></title>
+  </head>
+</html>
+
+# app/views/shared/_header.html.erb
+<%% content_for :title, title %>
+<h1 class="turbo-native:hidden"><%%= title %></h1>
+```
+
+Then, in any view in our app, we can set both the `<h1>` and `<title>` with one line of code.
+
+```erb
+<%%= render "shared/header", title: "A custom title" %>
+```
+
+This approach has the added benefit of consolidating any design or logic around the header of your app. It could be migrated to a component, too.
+
 ## Making the app feel even _more_ native
 
 There are a bunch of other small improvements you can apply to make a Turbo Native app feel more native. Disabling link previews, native navigation buttons, in-app image viewers… the list goes on!
 
-Subscribe to my newsletter to be the first to know when I publish more Turbo Native content.
+What would you like me to cover next? [Send me an email](mailto:joe@masilotti.com) about what you need help with.
