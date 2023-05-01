@@ -22,7 +22,18 @@ But all hope is not lost! Safari’s Developer Mode lets us attach a debug sessi
 
 ## How to attach the Safari debugger to the simulator
 
-First, launch your Turbo Native app in the simulator.
+First, enable the inspection of web content in your app. This was recently [added in iOS 16.4](https://webkit.org/blog/13936/enabling-the-inspection-of-web-content-in-apps/) so make sure to check for API availability, like so.
+
+```swift
+let webView = WKWebView()
+if #available(iOS 16.4, *) {
+    webView.isInspectable = true
+}
+
+let session = Session(webView: webView)
+```
+
+Then launch your Turbo Native app in the simulator.
 
 > Need an example to play with? Try the [demo app from the turbo-ios package](https://github.com/hotwired/turbo-ios/tree/main/Demo).
 
@@ -30,7 +41,7 @@ Enable Developer Mode in Safari by opening Preferences (`⌘,`) and navigating t
 
 ![Enable Developer Mode in Safari](/images/debug-turbo-native-apps-with-safari/enable-developer-mode.png){:standalone}
 
-In Safari, click the Develop menu item and look for the name of your simulator. Then click the web view rendering the content you want to debug. Here I’m connecting to the web view rendering `localhost` from an iPhone 14 Pro running iOS 16.0. 
+In Safari, click the Develop menu item and look for the name of your simulator. Then click the web view rendering the content you want to debug. Here I’m connecting to the web view rendering `localhost` from an iPhone 14 Pro running iOS 16.0.
 
 ![Attach to simulator](/images/debug-turbo-native-apps-with-safari/attach-to-simulator.png){:standalone .rounded-none}
 
@@ -53,8 +64,6 @@ I see "No Inspectable Applications" fairly often when trying to attach to the si
 ![No Inspectable Applications](/images/debug-turbo-native-apps-with-safari/no-inspectable-applications.png){:standalone}
 
 First, ensure you are running the latest versions of Safari, Xcode, and iOS.
-
-But I did have issues with iOS 16.4. Installing iOS 16.0 on a simulator fixed the issue.
 
 Second, try restarting the simulator, Safari, and Xcode in different orders. Sometimes launching the app *after* Safari is open works. Other times it works the other way around. Experiment and see what works for your machine!
 
