@@ -58,10 +58,11 @@ configuration.applicationNameForUserAgent = "Turbo Native iOS"
 Session(webViewConfiguration: configuration)
 ```
 
-Using `applicationNameForUserAgent` _appends_ the string. So we still report our actual device/browser information in requests.
+Using `applicationNameForUserAgent` _appends_ the string. So we still report our actual device/browser information in requests. Line break added for readability.
 
 ```
-Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Turbo Native iOS
+Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X)
+AppleWebKit/605.1.15 (KHTML, like Gecko) Turbo Native iOS
 ```
 
 ## Rails helper to identify Turbo Native apps
