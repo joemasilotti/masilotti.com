@@ -71,6 +71,17 @@ Back in the Rails app we can use the built in `turbo_native_app?` helper to iden
 
 This helper is provided by [turbo-rails](https://github.com/hotwired/turbo-rails/blob/main/app/controllers/turbo/native/navigation.rb#L8-L10) - along with some custom, "hidden" route helpers. More info on those in a future post!
 
+The helper only exists in a controller context, so we need to expose it to our views.
+
+```ruby
+# app/controllers/application_controller.rb
+class ApplicationController < ActionController::Base
+  helper_method :turbo_native_app?
+end
+```
+
+Then, in our views, we can determine which content to render.
+
 ```erb
 <%% unless turbo_native_app? %>
   <h1>Hello, world!</h1>
