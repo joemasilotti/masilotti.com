@@ -67,4 +67,4 @@ All attendees must be able to run a Ruby on Rails app and Xcode on their machine
 
 They must also have a basic understanding of Swift and iOS development. You should be comfortable working with optionals, protocols, delegates, extensions, and UIKit classes like `UIViewController` and `UINavigationController`.
 
-Read through <%= link_to "Swift for Ruby developers", "_posts/2023-04-25-swift-for-ruby-developers.md" %> to get to speed.
+Read through <%= link_to "Swift for Ruby developers", "_posts/2023-04-25-swift-for-ruby-developers.md" %> to get up to speed.
