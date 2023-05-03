@@ -17,15 +17,17 @@ May 15, 10am - 1pm PT on Zoom. $499 per person, limited to 20 attendees.
 
 <%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket) %>
 
+> "Just wrapped at @joemasilotti first Turbo Native workshop. **Money well spent.** His workshop was huge in helping me wrap some concepts together." - [Mike Monroe](https://twitter.com/mikepmunroe/status/1603513381599715336)
+
 Native apps are hard. They’re expensive to build and even more expensive to maintain. But with Turbo Native, that’s no longer true.
 
 The framework enables Rails developers like you and me to build high-fidelity hybrid apps with native navigation in a fraction of the time.
 
 Turbo Native unlocks native apps for Rails developers in a way that avoids a maintenance nightmare. Adding a new feature to your Rails app is automatically available to your native apps — no rebuilding or resubmitting needed. And since you’re building mobile web views there’s not another framework or library to learn once you have Turbo Native set up.
 
-The interactive workshop will be 3 hours long. You will learn how to use the native iOS Turbo wrapper to build high-fidelity hybrid apps with native navigation.
+The interactive workshop will be 3 hours long. You'll learn how to use the native iOS Turbo wrapper to build high-fidelity hybrid apps with native navigation.
 
-## What you will get out of this workshop
+## What you'll get out of this workshop
 
 **How to use Turbo Native** - Learn how to integrate the framework into a new Xcode project and how to handle common flows like clicking links and handling errors.
 
@@ -36,6 +38,8 @@ The interactive workshop will be 3 hours long. You will learn how to use the nat
 **How to authenticate users** - Configure Devise to ensure users remain signed in to the iOS app and how to make authenticated, non-web HTTP requests.
 
 **How to build native screens with SwiftUI** - Progressively enhance screens by converting them to fully native SwiftUI views, powered JSON endpoints.
+
+> "I was always searching for that missing piece to complete my understanding of Turbo Native. I found it in Joe's workshop. It blew me away with new and innovative tricks. **If you're thinking of giving Turbo Native a try, Joe is the perfect guide.**" - Tony Messias
 
 ## Resources
 
@@ -52,6 +56,8 @@ Attendees will also receive access to:
 May 15, 10am - 1pm PT on Zoom. $499 per person, limited to 20 attendees.
 
 <%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket) %>
+
+> "What we learned in few hours **unlocks the possibilities for us to spin up a mobile app for our users quickly and reliably**." - Sweta Sanghavi
 
 ## About the author
 
