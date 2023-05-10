@@ -2,7 +2,7 @@ hotwire:
   action: https://buttondown.email/api/emails/embed-subscribe/hotwire
   onsubmit: https://buttondown.email/hotwire
   description: |
-    A curated, monthly roundup of the latest Turbo (Native), Stimulus, and
+    A curated, monthly roundup of the best Turbo (Native), Stimulus, and
     Strada articles, code, courses, and more.
 
 workshop:
@@ -16,4 +16,4 @@ masilotti:
   title: Get my weekly newsletter
   description: |
     A weekly newsletter on Turbo Native, Ruby on Rails, and being a solopreneur.
-    Be the first to know about my new posts, courses, and libraries.
+    Get my new posts, courses, and libraries before they are published publicly.
