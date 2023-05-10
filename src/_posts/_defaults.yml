@@ -2,4 +2,3 @@ layout: post
 template_engine: liquid
 cached_og_image: true
 preview_links_template_id: 999
-og_image: /images/joe-no-background.png

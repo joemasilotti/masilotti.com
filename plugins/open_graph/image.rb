@@ -48,7 +48,6 @@ class OpenGraph::Image
         "previewlinks:date": date,
         "previewlinks:title": title,
         "previewlinks:description": description,
-        "previewlinks:image": image.to_s,
         "previewlinks:author": author,
         "previewlinks:handle": handle
       }
@@ -81,10 +80,6 @@ class OpenGraph::Image
 
   def description
     resource.data.og_description || resource.data.description
-  end
-
-  def image
-    URI.join(site.config.url, resource.data.og_image)
   end
 
   def author
