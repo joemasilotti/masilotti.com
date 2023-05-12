@@ -1,6 +1,6 @@
 ---
 title: A Rails-like endpoint switcher for iOS apps
-date: 2023-05-16
+date: 2023-05-12
 description: |
   A copy-pasteable code snippet to bring a little Rails magic to your iOS app.
 permalink: /rails-like-endpoint-switcher-for-ios-apps/
@@ -95,4 +95,6 @@ Again, here’s a link to the [`Environment.swift` gist](https://gist.github.com
 
 I hope that helps bring a little Rails magic to your Turbo Native apps! If you need more help don’t hesitate to reach out by [sending me an email](mailto:joe@masilotti.com).
 
-I write about Turbo Native every week. Subscribe to my newsletter below to get posts delivered to your inbox before they are published here.
+Want to learn how to bring your Rails app to iOS? I'm hosting a small group of developers on Monday for a 3 hour workshop. I'd love if you could join!
+
+[Turbo Native workshop](/turbo-native-workshop/)
