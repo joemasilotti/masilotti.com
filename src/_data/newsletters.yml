@@ -6,8 +6,8 @@ hotwire:
     Strada articles, code, courses, and more.
 
 workshop:
-  action: https://buttondown.email/api/emails/embed-subscribe/hotwire
-  onsubmit: https://buttondown.email/hotwire
+  action: https://buttondown.email/api/emails/embed-subscribe/joemasilotti
+  onsubmit: https://buttondown.email/joemasilotti
   tag: workshop
 
 masilotti:
@@ -16,4 +16,4 @@ masilotti:
   title: Get my weekly newsletter
   description: |
     A weekly newsletter on Turbo Native, Ruby on Rails, and being a solopreneur.
-    Subscribe for a discount code for $100 off my next workshop.
+    Get my new posts, courses, and libraries before they are published publicly.
