@@ -17,7 +17,7 @@ The next workshop will take place in Spring 2023. Add your email to get first ac
 
 <div class="not-prose">
   <%= render EmailCapture.new(site.data.newsletters.workshop) %>
-  <small class="block mt-4">By signing up you’ll also be subscribed to my weekly newslettter.</small>
+  <small class="block mt-4">By signing up you’ll also be subscribed to my <%= link_to "weekly newslettter", "_pages/newsletter.erb", class: "underline" %>.</small>
 </div>
 
 > "Just wrapped at @joemasilotti first Turbo Native workshop. **Money well spent.** His workshop was huge in helping me wrap some concepts together." - [Mike Monroe](https://twitter.com/mikepmunroe/status/1603513381599715336)
@@ -60,7 +60,7 @@ The next workshop will take place in Spring 2023. Add your email to get first ac
 
 <div class="not-prose">
   <%= render EmailCapture.new(site.data.newsletters.workshop) %>
-  <small class="block mt-4">By signing up you’ll also be subscribed to my weekly newslettter.</small>
+  <small class="block mt-4">By signing up you’ll also be subscribed to my <%= link_to "weekly newslettter", "_pages/newsletter.erb", class: "underline" %>.</small>
 </div>
 
 > "What we learned in few hours **unlocks the possibilities for us to spin up a mobile app for our users quickly and reliably**." - Sweta Sanghavi
