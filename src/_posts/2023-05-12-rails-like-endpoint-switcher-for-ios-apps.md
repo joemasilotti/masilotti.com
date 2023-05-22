@@ -94,7 +94,3 @@ let rootURL = Endpoint.root
 Again, here’s a link to the [`Environment.swift` gist](https://gist.github.com/joemasilotti/ed002068cc1239d5e799fae1e4038386). Feel free to copy-paste it into any Xcode project.
 
 I hope that helps bring a little Rails magic to your Turbo Native apps! If you need more help don’t hesitate to reach out by [sending me an email](mailto:joe@masilotti.com).
-
-Want to learn how to bring your Rails app to iOS? I'm hosting a small group of developers on Monday for a 3 hour workshop. I'd love if you could join!
-
-[Turbo Native workshop](/turbo-native-workshop/)
