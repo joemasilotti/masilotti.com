@@ -25,7 +25,7 @@
 
       <%= render Footer.new(
         links: site.data.navigation_links,
-        newsletter: site.data.newsletters.masilotti,
+        newsletter: site.data.newsletters[resource.data.newsletter] || site.data.newsletters.masilotti,
         hide_newsletter: resource.data.hide_newsletter
       ) %>
     </div>

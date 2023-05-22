@@ -1,6 +1,7 @@
 hotwire:
   action: https://buttondown.email/api/emails/embed-subscribe/hotwire
   onsubmit: https://buttondown.email/hotwire
+  title: ⚡️ Hotwire dev newsletter
   description: |
     A curated, monthly roundup of the best Turbo (Native), Stimulus, and
     Strada articles, code, courses, and more.
