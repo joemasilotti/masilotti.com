@@ -14,4 +14,14 @@ end
   intro: resource.data.description,
   newsletter: site.data.newsletters.masilotti
 ) do %>
+  <div class="prose max-w-xl">
+    <h2>Content sneak peek</h2>
+    <p>Here are some recent exlusives for my newsletter subscribers.</p>
+
+    <ul class="not-prose flex flex-col space-y-16 pl-0">
+      <% site.data.exclusives.each do |exclusive| %>
+        <%= render Exclusive.new(**exclusive.to_options) %>
+      <% end %>
+    </ul>
+  </div>
 <% end %>
