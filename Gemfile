@@ -13,6 +13,7 @@ gem "faraday"
 gem "view_component"
 
 group :development do
+  gem "pry"
   gem "puma", "~> 5.6"
   gem "rack", "~> 2.2"
 end
