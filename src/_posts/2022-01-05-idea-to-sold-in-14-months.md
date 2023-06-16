@@ -8,7 +8,6 @@ description: |
 permalink: /idea-to-sold-in-14-months/
 
 template_engine: erb
-image: /images/og/custom/idea-to-sold-in-14-months.png
 favorite: true
 index: 2
 

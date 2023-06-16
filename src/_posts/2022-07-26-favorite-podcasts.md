@@ -5,9 +5,6 @@ description: |
   The podcasts I listen to every week – mostly about Ruby on Rails and
   bootstrapping.
 permalink: /favorite-podcasts/
-
-image: /images/og/custom/favorite-podcasts.png
-
 ---
 
 My favorite thing about Monday morning is the awesome list of podcasts I get to listen to!
