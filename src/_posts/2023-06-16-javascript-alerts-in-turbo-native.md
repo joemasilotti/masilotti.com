@@ -1,6 +1,6 @@
 ---
 title: JavaScript alerts in Turbo Native
-date: 2023-06-19
+date: 2023-06-16
 description: |
   Learn how to handle data-turbo-confirm in your iOS app so you can render
   native Swift alerts directly from your Rails code.
