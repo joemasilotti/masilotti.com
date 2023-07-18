@@ -13,9 +13,12 @@ template_engine: erb
 
 <p class="lead">Learn how to bring your Ruby on Rails app to iOS in this 3-hour interactive workshop on Turbo Native.</p>
 
-Tuesday, July 18, 10am - 1pm PT on Zoom. $499 per person, limited to 20 attendees.
+The next workshop will take place in late 2023. Add your email to get first access when I open up registration.
 
-<%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket) %>
+<div class="not-prose">
+  <%= render EmailCapture.new(site.data.newsletters.workshop) %>
+  <small class="block mt-4">By signing up you’ll also be subscribed to my <%= link_to "weekly newslettter", "_pages/newsletter.erb", class: "underline" %>.</small>
+</div>
 
 > "Just wrapped at @joemasilotti first Turbo Native workshop. **Money well spent.** His workshop was huge in helping me wrap some concepts together." - [Mike Monroe](https://twitter.com/mikepmunroe/status/1603513381599715336)
 
@@ -53,9 +56,12 @@ Attendees will also receive access to:
 
 ## Register
 
-Tuesday, July 18, 10am - 1pm PT on Zoom. $499 per person, limited to 20 attendees.
+The next workshop will take place in late 2023. Add your email to get first access when I open up registration.
 
-<%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket) %>
+<div class="not-prose">
+  <%= render EmailCapture.new(site.data.newsletters.workshop) %>
+  <small class="block mt-4">By signing up you’ll also be subscribed to my <%= link_to "weekly newslettter", "_pages/newsletter.erb", class: "underline" %>.</small>
+</div>
 
 > "What we learned in few hours **unlocks the possibilities for us to spin up a mobile app for our users quickly and reliably**." - Sweta Sanghavi
 
@@ -75,6 +81,6 @@ They must also have a basic understanding of Swift and iOS development. You shou
 
 Read through <%= link_to "Swift for Ruby developers", "_posts/2023-04-25-swift-for-ruby-developers.md" %> to get up to speed.
 
-## Discount code
+## Coupon code
 
 Subscribe to my newsletter below for a discount code for **$100 off**.
