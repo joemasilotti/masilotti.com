@@ -20,7 +20,7 @@ The next workshop will take place in late 2023. Add your email to get first acce
   <small class="block mt-4">By signing up you’ll also be subscribed to my <%= link_to "weekly newslettter", "_pages/newsletter.erb", class: "underline" %>.</small>
 </div>
 
-> "Just wrapped at @joemasilotti first Turbo Native workshop. **Money well spent.** His workshop was huge in helping me wrap some concepts together." - [Mike Monroe](https://twitter.com/mikepmunroe/status/1603513381599715336)
+> "Just wrapped at Joe's first Turbo Native workshop. **Money well spent.** His workshop was huge in helping me wrap some concepts together." - [Mike Monroe](https://twitter.com/mikepmunroe/status/1603513381599715336)
 
 Native apps are hard. They’re expensive to build and even more expensive to maintain. But with Turbo Native, that’s no longer true.
 
@@ -42,7 +42,7 @@ The interactive workshop will be 3 hours long. You'll learn how to use the nativ
 
 **How to build native screens with SwiftUI** - Progressively enhance screens by converting them to fully native SwiftUI views, powered JSON endpoints.
 
-> "I was always searching for that missing piece to complete my understanding of Turbo Native. I found it in Joe's workshop. It blew me away with new and innovative tricks. **If you're thinking of giving Turbo Native a try, Joe is the perfect guide.**" - Tony Messias
+> "Great pace and content, and opportunity to get clarification on some key concepts real time was priceless. **Highly recommended**!" 💯 - [Miles](https://twitter.com/tapster/status/1681582444707807234)
 
 ## Resources
 
@@ -84,3 +84,5 @@ Read through <%= link_to "Swift for Ruby developers", "_posts/2023-04-25-swift-f
 ## Coupon code
 
 Subscribe to my newsletter below for a discount code for **$100 off**.
+
+> "I was always searching for that missing piece to complete my understanding of Turbo Native. I found it in Joe's workshop. It blew me away with new and innovative tricks. **If you're thinking of giving Turbo Native a try, Joe is the perfect guide.**" - Tony Messias
