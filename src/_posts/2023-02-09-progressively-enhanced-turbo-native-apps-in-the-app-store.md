@@ -103,6 +103,6 @@ And some more Turbo Native apps live in the App Store.
 
 ## Need help with _your_ Turbo Native app?
 
-I've been working with Turbo Native for 5+ years and have launched dozens of apps to the App Store. And I'd love to help you confidently launch yours.
+I've been working with Turbo Native for 6+ years and have launched dozens of apps to the App Store. And I'd love to help you confidently launch yours.
 
 I can build and launch your app or level up your team so they can do it on their own. Check out my <%= link_to "services", "_pages/services.erb" %> to see how we can work together.
