@@ -1,7 +1,6 @@
 <%= content_tag "form",
   action: newsletter.action,
   method: "post",
-  target: "popupwindow",
   onsubmit: "window.open('#{newsletter.onsubmit}', 'popupwindow')",
   class: "flex mt-6" do
 %>
