@@ -28,7 +28,7 @@ When I was laid off at the beginning of 2021 I decided to go solo. Already havin
 
 I also learned that no one else was talking about Turbo Native. If you needed help back then, good luck! I saw an opportunity to fill the gap and become the expert. It aligned so well – I had a decade of both iOS and Rails experience and was excited about the intersection of the two.
 
-Since going solo I’ve helped dozens of companies launch their iOS apps in the App Store with Turbo Native. It's become the driving factor in practically [everything I write about]({% link _pages/articles.erb %}), including [my newsletter]({% link _pages/hotwire.erb %}).
+Since going solo I’ve helped dozens of companies launch their iOS apps in the App Store with Turbo Native. It's become the driving factor in practically [everything I write about]({% link _pages/articles.erb %}), including [my newsletter]({% link _pages/newsletter.erb %}).
 
 If you want a Turbo Native app done right you come to me. I've built up years of experience and have seen what works (and doesn't). And I know the path of least resistance for getting a hybrid app approved in the App Store.
 
