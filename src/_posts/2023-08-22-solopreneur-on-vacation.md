@@ -17,7 +17,7 @@ That’s because this week, I’m on vacation. I’m spending two weeks in Sydne
 
 ![Adrienne and Joe at the Sydney Opera House](/images/adrienne-and-joe-at-the-sydney-opera-house.jpeg){:standalone}
 
-And what’s top of mind is recognizing what it's like to take time off from work as a solopreneur. **And I _struggle_ with time off.**
+What’s top of mind is recognizing what it's like to take time off from work as a solopreneur. **And I _struggle_ with time off.**
 
 I find it hard to step away and stop working. When I’m in the zone I feel like I would lose momentum if I stepped away. Momentum that I wouldn’t be able to pick back up.
 
