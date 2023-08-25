@@ -23,7 +23,7 @@ I find it hard to step away and stop working. When I’m in the zone I feel like
 
 Hell, I’m writing this newsletter right now from a coffee shop before the rest of my travel group wakes up!
 
-But what I always fail to see is **helpful** time off is. Even to me.
+But what I always fail to see is how **helpful** time off is. Even to me.
 
 If I’m stuck and can’t figure something out the **last** thing I want to do is step away. But going for a quick walk almost always brings me clarity and highlights something I’d previously overlooked.
 
