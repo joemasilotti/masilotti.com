@@ -10,7 +10,7 @@
   title: Weekly newsletter
   icon: /images/icons/outline/envelope.svg
   href: _pages/newsletter.erb
-  cta: Attend a workshop
+  cta: Subscribe
   badge: New
   description: |
     Turbo Native, Ruby on Rails, and being a solopreneur with exclusive content.
