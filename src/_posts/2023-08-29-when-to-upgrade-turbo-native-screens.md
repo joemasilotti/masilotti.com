@@ -29,7 +29,7 @@ Screens that interact with **native APIs** are often easier to build directly in
 
 Screens that are **changed frequently**, like settings or preferences, are easier to manage when rendered via HTML. Changes on the web are cheap relative to native ones. A SwiftUI update often requires updates to the view _and_ the API. And each API change needs to ensure backwards compatibility with all previous versions.
 
-![Frequently changed screens.png](/images/when-to-upgrade-turbo-native-screens/frequently-changed-screens.png){:standalone}
+![Frequently changed screens](/images/when-to-upgrade-turbo-native-screens/frequently-changed-screens.png){:standalone}
 
 Boring, **CRUD-like operations** that aren’t unique to your app’s experience or product probably don’t need to be native. Yes, they might be fun to experiment with. But the time and resources spent are most likely better served working on critical workflows like the three examples above.
 
