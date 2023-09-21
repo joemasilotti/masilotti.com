@@ -84,7 +84,7 @@ export default class extends BridgeComponent { // 1.
 
 1. Not a `Controller` but something very close.
 2. This component is identified as `"form"` to the native apps.
-3. A [`BridgeComponent`](https://strada.hotwired.dev/reference/elements) to access bridge-specific behaviors and elements. 🤩
+3. A [`BridgeElement`](https://strada.hotwired.dev/reference/elements) to access bridge-specific behaviors and elements. 🤩
 4. When the `<submit>` button connects send the button title to the app.
 5. When the native button is tapped _click_ the HTML `<submit>` button.
 
