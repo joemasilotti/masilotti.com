@@ -9,7 +9,7 @@ permalink: /strada-launch/
 
 Yesterday 37signals [officially launched Strada](https://dev.37signals.com/announcing-strada/). After waiting for what feels like forever, I’m excited to finally explore the last missing piece of Hotwire. Let’s dive in!
 
-Strada is an optional add-on for Turbo Native apps that enables native components driven by the web. It unlocks _progressive enhancement_ of individual controls without converting entire screens to native.
+Strada is an optional add-on for [Turbo Native apps]({% post_url 2021-05-14-turbo-ios %}) that enables native components driven by the web. It unlocks _progressive enhancement_ of individual controls without converting entire screens to native.
 
 For example, converting a `<button>` to a `UIBarButtonItem` on iOS or rendering a HTML modal with `ModalBottomSheetLayout` on Android.
 
@@ -146,6 +146,6 @@ I’m excited to integrate Strada into my Turbo Native apps. The existing bridge
 
 Being able to reply *directly* to a message is going to simplify a lot of behavior around native components. And unlock some new behavior that would not have been worth the effort before Strada.
 
-When I return from [Rails World](https://rubyonrails.org/world/agenda/day-2/6-joe-masilotti-se4ssion) I have a lot of work ahead of me! I plan to rewrite the [JavaScript bridge section]({% post_url 2021-05-14-turbo-ios %}) of my turbo-ios tutorial to use Strada. I'd also love to compare and contrast the two approaches [when building a `UIMenu`]({% post_url 2023-07-24-uimenu-turbo-native %}).
+When I return from [Rails World](https://rubyonrails.org/world/agenda/day-2/6-joe-masilotti-se4ssion) I have a lot of work ahead of me! I plan to rewrite the [JavaScript bridge section]({% post_url turbo-ios/2021-04-02-the-javascript-bridge %}) of my turbo-ios tutorial to use Strada. I'd also love to compare and contrast the two approaches [when building a `UIMenu`]({% post_url 2023-07-24-uimenu-turbo-native %}).
 
 And I'll obviously be including an entire chapter (or more) about Strada in my upcoming book on Turbo Native. So many things to do and so little time!
