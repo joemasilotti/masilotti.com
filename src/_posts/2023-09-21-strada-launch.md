@@ -5,6 +5,8 @@ description: |
   A first look at Strada, the last missing piece of Hotwire. Let's explore how
   it unlocks native components driven by the web in Turbo Native apps.
 permalink: /strada-launch/
+
+template_engine: erb
 ---
 
 Yesterday 37signals [officially launched Strada](https://dev.37signals.com/announcing-strada/). After waiting for what feels like forever, I’m excited to finally explore the last missing piece of Hotwire. Let’s dive in!
@@ -36,6 +38,13 @@ The [documentation](https://strada.hotwired.dev/handbook/how-it-works) includes 
 It starts with a `<form>` element in your web app and wires up the Strada component via Stimulus. Then it walks through building the native side on both iOS and Android.
 
 Let’s walk through what each line does and how it relates to the rest of the demo.
+
+<div class="not-prose">
+  <%= render Newsletter::CTA.new(site.data.newsletters.masilotti,
+      title: "Want to learn more about Turbo Native?",
+      description: "Subscribe to my newsletter with a new Turbo Native tip every week. And get first access to my upcoming workshops and book."
+  ) %>
+</div>
 
 ### HTML
 
