@@ -2,8 +2,8 @@ module Workshop
   class CTA < SiteComponent
     attr_reader :newsletter
 
-    def initialize(newsletter:, event_id:)
-      @newsletter, @event_id = newsletter, event_id
+    def initialize(newsletter:, event_id:, hide_count: false)
+      @newsletter, @event_id, @hide_count = newsletter, event_id, hide_count
     end
 
     def event_id
@@ -20,7 +20,9 @@ module Workshop
     end
 
     def hero
-      "#{tickets} #{"ticket".pluralize(tickets)} remaining"
+      unless @hide_count
+        "#{tickets} #{"ticket".pluralize(tickets)} remaining"
+      end
     end
 
     private
