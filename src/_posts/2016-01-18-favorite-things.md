@@ -68,7 +68,7 @@ Splitwise helps me keep track of group expenses. I use it in two scenarios. Firs
 
 This is one of the few apps I would call "magical." You place your phone on each wall in a room and it creates a floor plan. I mapped my entire apartment in about fifteen minutes.
 
-<iframe src="https://www.youtube.com/embed/Karfy4Q9VZA" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/Karfy4Q9VZA" frameborder="0" allowfullscreen></iframe>
 
 #### [OneShot](https://itunes.apple.com/us/app/oneshot-for-screenshots/id953724147?mt=8)
 
