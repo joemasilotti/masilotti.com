@@ -46,7 +46,7 @@ module.exports = {
           "--tw-prose-bullets": theme("colors.zinc.900"),
           "--tw-prose-hr": theme("colors.zinc.100"),
           "--tw-prose-quote-borders": theme("colors.zinc.200"),
-          "--tw-prose-captions": theme("colors.zinc.400"),
+          "--tw-prose-captions": theme("colors.zinc.500"),
           "--tw-prose-code": theme("colors.zinc.700"),
           "--tw-prose-code-bg": theme("colors.zinc.300 / 0.2"),
           "--tw-prose-pre-code": theme("colors.zinc.100"),
