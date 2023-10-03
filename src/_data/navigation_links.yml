@@ -11,10 +11,6 @@
   href: _pages/services.erb
 
 -
-  title: Workshop
-  href: _pages/turbo-native-workshop.md
-
--
   title: Newsletter
   href: _pages/newsletter.erb
 
