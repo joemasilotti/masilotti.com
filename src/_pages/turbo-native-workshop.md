@@ -1,7 +1,7 @@
 ---
 title: Turbo Native crash course
 description: |
-  Everything you need to know to get started with Turbo Native on iOS in 2 hours.
+  Your quick start guide to Turbo Native on iOS.
 permalink: /turbo-native-workshop/
 
 layout: page
@@ -10,21 +10,21 @@ template_engine: erb
 
 ---
 
-<p class="lead">Everything you need to know to get started with Turbo Native on iOS.</p>
+<p class="lead"><%= resource.data.description %></p>
 
-Tuesday, October 17 at 10am-12pm PT on Zoom. $99 per person.
+When: Tuesday, October 17 at 10am-12pm PT on Zoom \| Cost: $99 per person
 
 <%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket, hide_count: true) %>
 
 > "Just wrapped at Joe's first Turbo Native workshop. **Money well spent.** His workshop was huge in helping me wrap some concepts together." - [Mike Monroe](https://twitter.com/mikepmunroe/status/1603513381599715336)
 
-Turbo Native is a Rails developer's secret weapon. It enables us to launch native apps in a fraction of the time. It is a true _write once deploy anywhere_ framework, rendering mobile web views inside native chrome.
+As a Rails developer, Turbo Native is your shortcut to creating native apps. It lets you code once and deploy everywhere, using mobile web views in native frames.
 
-But getting started isn't easy. The documentation leaves a lot to be desired. Outside of the demo app there aren't a lot of examples to follow.
-
-This crash course will teach you everything you need to know to get started with Turbo Native on iOS.
+The problem? The official docs are sparse and there aren't many examples out there.
 
 ## What you'll get out of this workshop
+
+You'll learn everything you need to know to get started with Turbo Native on iOS:
 
 1.  **How to use Turbo Native** - The steps to integrate the framework into a Xcode project.
 1.  **How to navigate** - Add Turbo Navigator to handle the most important navigation flows.
@@ -34,18 +34,22 @@ This crash course will teach you everything you need to know to get started with
 
 > "Great pace and content, and opportunity to get clarification on some key concepts real time was priceless. **Highly recommended**!" 💯 - [Miles](https://twitter.com/tapster/status/1681582444707807234)
 
-## Resources
+## Format
 
-A good portion of the workshop is live coding – sometimes I'll be driving and other times you will be given prompts to complete with other attendees. The session will have one break and wrap up with Q&A.
+The 2-hour session combines live coding with hands-on exercises.
 
-Attendees will also receive:
+There'll be a short break and a Q&A session at the end.
 
-* **iOS + Rails codebases** - Access to private GitHub repositories to work through during the workshop. Together, these build the groundwork for launching your own Turbo Native app.
-* **Turbo Native community** - A Discord server invitation to discuss Turbo Native and the take home activities with other attendees and myself.
+## Extras
+
+You'll also get:
+
+* **iOS + Rails codebases** - The groundwork for launching your own Turbo Native app.
+* **Turbo Native community** - Access to a Discord server to discuss Turbo Native.
 
 ## Register
 
-Tuesday, October 17 at 10am-12pm PT on Zoom. $99 per person.
+When: Tuesday, October 17 at 10am-12pm PT on Zoom \| Cost: $99 per person
 
 <%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket, hide_count: true) %>
 
@@ -53,14 +57,10 @@ Tuesday, October 17 at 10am-12pm PT on Zoom. $99 per person.
 
 ## About the author
 
-Hi, I'm Joe! I've been working with Turbo Native since 2015.
+I'm Joe, your Turbo Native guide since 2015. I've helped businesses go live on the App Store and I'm excited to share my expertise with you.
 
-I've helped dozens of businesses launch in the App Store. I know the gotchas, trade offs, and best practices. I'm excited to share what I've learned so you can launch your own app with Turbo Native.
-
-Have questions about the workshop? [Send me an email](mailto:joe@masilotti.com).
+Question about the workshop? [Send me an email](mailto:joe@masilotti.com).
 
 ## Prerequisites
 
-All attendees must be able to run a Ruby on Rails app and Xcode on their machine, clone a git repository, and navigate between git branches/tags.
-
-You must also have a basic understanding of Swift. Read through <%= link_to "Swift for Ruby developers", "\_posts/2023-04-25-swift-for-ruby-developers.md" %> to get up to speed.
+You need to run Ruby on Rails and Xcode, clone git repos, and know very basic Swift. Brush up on <%= link_to "Swift for Ruby developers", "\_posts/2023-04-25-swift-for-ruby-developers.md" %> if needed.
