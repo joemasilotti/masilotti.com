@@ -1,14 +1,15 @@
-<div class="sm:px-8">
-  <div class="w-full max-w-7xl mx-auto mb-2 lg:px-8">
-    <div class="text-center bg-gray-900 px-6 py-2.5 sm:px-3.5">
-      <p class="text-sm leading-6 text-white">
-        <%= title %>
+<div class="mb-2">
+  <div class="text-center bg-zinc-900 px-6 py-2.5 sm:px-3.5">
+    <p class="text-sm leading-6 text-white">
+      <strong class="font-semibold"><%= title %></strong>
+      <svg viewBox="0 0 2 2" class="mx-1 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>
 
-        <a class="whitespace-nowrap font-semibold pointer-events-auto" href="<%= href %>">
-          <%= cta %>
-          <span aria-hidden="true">→</span>
-        </a>
-      </p>
-    </div>
+      <%= body %>
+
+      <a class="whitespace-nowrap font-semibold pointer-events-auto ml-4" href="<%= href %>">
+        <%= cta %>
+        <span aria-hidden="true">→</span>
+      </a>
+    </p>
   </div>
 </div>

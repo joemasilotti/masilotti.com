@@ -1,5 +1,5 @@
 class Announcement < SiteComponent
-  delegate :title, :cta, :href, to: :announcement
+  delegate :title, :body, :cta, :href, to: :announcement
 
   def initialize(announcements)
     @announcements = announcements
