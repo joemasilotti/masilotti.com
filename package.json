@@ -12,7 +12,7 @@
     "cssnano": "^5.1.14",
     "esbuild": "^0.14.39",
     "glob": "^8.0.1",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.31",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.1.0",
