@@ -1,3 +1,5 @@
+<p>When: Tuesday, October 17 at 10am-12pm PT on Zoom | Cost: $99 per person</p>
+
 <% if available? %>
   <div class="not-prose">
     <div class="flex items-center">
@@ -6,8 +8,7 @@
     </div>
   </div>
 <% else %>
-  <p class="text-lg font-semibold">Sorry, this workshop is sold out.</p>
-  <p>The next session will be in mid 2023. Add your email to get first access when it goes on sale.</p>
+  <p><span class="font-semibold">Sorry, this session is sold out.</span> The next session will take place in late 2023. Add your email to get first access when it goes on sale.</p>
 
   <div class="not-prose">
     <%= render EmailCapture.new(newsletter, cta: "Notify me") %>

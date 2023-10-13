@@ -12,8 +12,6 @@ template_engine: erb
 
 <p class="lead"><%= resource.data.description %></p>
 
-When: Tuesday, October 17 at 10am-12pm PT on Zoom \| Cost: $99 per person
-
 <%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket, hide_count: true) %>
 
 > "Just wrapped at Joe's first Turbo Native workshop. **Money well spent.** His workshop was huge in helping me wrap some concepts together." - [Mike Monroe](https://twitter.com/mikepmunroe/status/1603513381599715336)
@@ -48,8 +46,6 @@ You'll also get:
 * **Turbo Native community** - Access to a Discord server to discuss Turbo Native.
 
 ## Register
-
-When: Tuesday, October 17 at 10am-12pm PT on Zoom \| Cost: $99 per person
 
 <%= render Workshop::CTA.new(newsletter: site.data.newsletters.workshop, event_id: site.config.fathom.events.workshop_ticket, hide_count: true) %>
 
