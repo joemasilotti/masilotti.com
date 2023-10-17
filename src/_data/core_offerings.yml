@@ -7,13 +7,12 @@
     Development, advisory, and custom Turbo Native training for your team.
 
 -
-  title: Turbo Native crash course
-  icon: /images/icons/outline/academic_cap.svg
-  href: _pages/turbo-native-workshop.md
-  cta: Buy my ticket
-  badge: New
+  title: Weekly newsletter
+  icon: /images/icons/outline/envelope.svg
+  href: _pages/newsletter.erb
+  cta: Subscribe
   description: |
-    Everything you need to know to get started with Turbo Native on iOS.
+    Turbo Native and Ruby on Rails, with first access and exclusive content.
 
 -
   title: Follow my journey
