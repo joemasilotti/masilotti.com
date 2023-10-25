@@ -10,6 +10,10 @@ permalink: /test-deep-links-with-ui-testing/
 
 Deep linking, and even universal links, are an important part of the app ecosystem. They seamlessly link content inside your app to the external world. Often these flows have complex behaviors with lots of branching logic. All the more reason they need to be covered by automated testing.
 
+{% rendercontent "inline/note" %}
+**UPDATE** _October 25, 2023_: Starting with iOS 16.4, macOS 13.3, and Xcode 14.3 you can bypass all of this nonsense and open URLs directly with [`open(_:)`](https://developer.apple.com/documentation/xctest/xcuiapplication/4108226-open). If you are able to use these toolchains I recommend this function instead of what follows.
+{% endrendercontent %}
+
 Previously, I would extract the logic to some "test only" helper method on my root controller and call that via a hidden button press in UI Testing. This works, but it has two major issues:
 
 1. It doesn’t simulate the actual behavior of going through `AppDelegate`
