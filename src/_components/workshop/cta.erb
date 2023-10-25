@@ -1,6 +1,13 @@
-<p>When: Tuesday, October 17 at 10am-12pm PT on Zoom | Cost: $99 per person</p>
+<% if past_date? %>
+  <p>The next session will be in late 2023. Add your email to get first access when it goes on sale.</p>
 
-<% if available? %>
+  <div class="not-prose">
+    <%= render EmailCapture.new(newsletter, cta: "Notify me") %>
+    <p class="mt-4"><small>You’ll also be subscribed the <a href="/newsletter" class="underline">Turbo Native newsletter</a>.</small></p>
+  </div>
+<% elsif available? %>
+  <p>When: <%= date %></p>
+
   <div class="not-prose">
     <div class="flex items-center">
       <%= render UI::Button.new(title: "Buy my ticket", href:, onclick: "fathom.trackGoal('#{event_id}', 0);") %>
@@ -8,10 +15,11 @@
     </div>
   </div>
 <% else %>
+  <p>When: <%= date %></p>
   <p><span class="font-semibold">Sorry, this session is sold out.</span> The next session will take place in late 2023. Add your email to get first access when it goes on sale.</p>
 
   <div class="not-prose">
     <%= render EmailCapture.new(newsletter, cta: "Notify me") %>
-    <p class="mt-4"><small>You’ll also be subscribed to the <a href="/hotwire" class="underline">Hotwire dev newsletter</a>.</small></p>
+    <p class="mt-4"><small>You’ll also be subscribed the <a href="/newsletter" class="underline">Turbo Native newsletter</a>.</small></p>
   </div>
 <% end %>
