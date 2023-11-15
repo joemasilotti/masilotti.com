@@ -45,7 +45,7 @@ module Workshop
     end
 
     def price
-      "$99"
+      "$149"
     end
   end
 end
