@@ -1,5 +1,5 @@
 <% if past_date? %>
-  <p>The next session will be in late 2023. Add your email to get first access when it goes on sale.</p>
+  <p>The next session will be in early 2024. Add your email to get first access when it goes on sale.</p>
 
   <div class="not-prose">
     <%= render EmailCapture.new(newsletter, cta: "Notify me") %>
@@ -16,7 +16,7 @@
   </div>
 <% else %>
   <p>When: <%= date %></p>
-  <p><span class="font-semibold">Sorry, this session is sold out.</span> The next session will take place in late 2023. Add your email to get first access when it goes on sale.</p>
+  <p><span class="font-semibold">Sorry, this session is sold out.</span> The next session will take place in early 2024. Add your email to get first access when it goes on sale.</p>
 
   <div class="not-prose">
     <%= render EmailCapture.new(newsletter, cta: "Notify me") %>
