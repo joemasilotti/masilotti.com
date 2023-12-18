@@ -1,7 +1,7 @@
 module Workshop
   class CTA < SiteComponent
     DATE = Time.use_zone("Pacific Time (US & Canada)") do
-      Time.zone.local(2023, 12, 5, 10)
+      Time.zone.local(2024, 2, 16, 10)
     end
 
     attr_reader :newsletter
