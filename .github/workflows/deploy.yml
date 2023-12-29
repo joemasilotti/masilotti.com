@@ -39,7 +39,7 @@ jobs:
         uses: burnett01/rsync-deployments@5.1
         with:
           switches: -rtzq --progress --del
-          path: output/
+          path: _site/
           remote_host: ${{ secrets.REMOTE_HOST }}
           remote_key: ${{ secrets.REMOTE_KEY }}
           remote_key_pass: ${{ secrets.REMOTE_KEY_PASS }}
