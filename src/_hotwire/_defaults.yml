@@ -1,6 +1,0 @@
-layout: hotwire
-template_engine: liquid
-cached_og_image: true
-preview_links_template_id: 1000
-og_title: ⚡️ Hotwire dev newsletter
-newsletter: hotwire

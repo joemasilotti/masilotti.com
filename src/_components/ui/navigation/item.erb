@@ -1,9 +1,0 @@
-<li>
-  <%= content_tag "a", href: url_for(href), class: class_map("relative block px-3 py-2 transition": true, "text-primary-600": active?, "hover:text-primary-600": !active?) do %>
-    <%= title %>
-
-    <% if active? %>
-      <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-600/0 via-primary-600/40 to-primary-600/0" />
-    <% end %>
-  <% end %>
-</li>
