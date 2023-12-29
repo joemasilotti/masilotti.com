@@ -1,0 +1,16 @@
+---
+layout: container
+---
+
+<header class="max-w-prose">
+  <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">{{ page.layout_title | default: page.title }}</h1>
+  <p class="mt-6 text-lg text-gray-600">{{ page.layout_description | default: page.description }}</p>
+</header>
+
+{% if page.newsletter %}
+  {% include newsletter/subscribe.liquid newsletter=page.newsletter%}
+{% endif %}
+
+<div class="mt-16 sm:mt-20">
+  {{ content }}
+</div>

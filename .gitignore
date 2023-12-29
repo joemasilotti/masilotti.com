@@ -1,0 +1,4 @@
+.env
+.jekyll-cache/
+_site/
+node_modules

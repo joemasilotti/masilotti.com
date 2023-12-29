@@ -1,0 +1,25 @@
+{% comment %}
+Renders a block for the current page's series.
+Expects the page to define the following frontmatter:
+- series: The identifier of the series, from _data/series.yml.
+{% endcomment %}
+
+{% assign posts = site.posts | where: "series", page.series %}
+{% assign series = site.data.series[page.series] %}
+
+<div class="rounded-2xl border border-gray-100 pt-6 pb-2 px-6">
+  <h3 class="text-lg lg:text-lg font-medium text-gray-900 mt-0 lg:mt-0">This is part of a {{ posts | size }}-part series on <span class="font-bold">{{ series.title }}</span>.</h3>
+  <ol class="pt-1">
+    {% for post in posts reversed %}
+      {% if page == post %}
+        <li>
+          <em>{{ post.title }}</em>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</div>

@@ -1,0 +1,14 @@
+{% comment %}
+Renders an email capture form.
+- newsletter: Optional (default value). Which Buttondown newsletter to subscribe to.
+- cta: Optional (default value). The text on the submit button.
+- tag: Optional. A Buttondown tag to add to the subscriber.
+{% endcomment %}
+
+<form action="https://buttondown.email/api/emails/embed-subscribe/{{ include.newsletter | default: "joemasilotti" }}" method="post" onsubmit="window.open('https://buttondown.email/joemasilotti', 'popupwindow')" class="not-prose flex mt-6">
+  <input type="email" name="email" placeholder="Email address" aria-label="Email address" required autocomplete="email" class="min-w-0 max-w-xs flex-auto appearance-none rounded-md border border-gray-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-gray-800/5 placeholder:text-gray-500 focus:border-primary-600 focus:outline-none focus:ring-4 focus:ring-primary-600/10 sm:text-sm">
+  {% if include.tag %}
+    <input type="hidden" name="tag" value="{{ include.tag }}">
+  {% endif %}
+  <button type="submit" class="button button-primary ml-4 flex-none">{{ include.cta | default: "Subscribe" }}</button>
+</form>

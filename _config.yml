@@ -1,0 +1,64 @@
+# Jekyll configuration
+url: https://masilotti.com
+title: Masilotti.com
+description:
+author:
+  name: Joe Masilotti
+  email: joe@masilotti.com
+  twitter: joemasilotti
+  github: joemasilotti
+  linkedin: joemasilotti
+exclude:
+  - README.md
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js
+  - yarn.lock
+
+# Page configuration
+permalink: /:title/
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  hotwire:
+    output: true
+    permalink: /hotwire/edition-:title/
+defaults:
+  - scope:
+      path: _posts/
+      type: posts
+    values:
+      layout: post
+      back: _pages/articles.liquid
+      preview_links_template_id: 999
+  - scope:
+      path: _posts/turbo-ios
+      type: posts
+    values:
+      permalink: /turbo-ios/:title/
+      back: _posts/2021-05-14-turbo-ios.md
+  - scope:
+      path: _hotwire/
+      type: hotwire
+    values:
+      layout: hotwire
+      back: _pages/hotwire.liquid
+      preview_links_template_id: 1000
+      og_title: ⚡️ Hotwire dev newsletter
+
+# Plugin configuration
+plugins:
+  - jekyll-postcss
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-inline-svg
+postcss:
+  cache: false
+# svg:
+  # optimize: true
+
+# Custom configuration
+fathom: QNURQQHD
+preview_links:
+  site_id: 755

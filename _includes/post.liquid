@@ -1,0 +1,71 @@
+{% comment %}
+Renders a summary card for an article or other content.
+- post: An object defining title, date, url, and description.
+- date: Optional. If true, renders a formatted date of the post.
+- badge: Optional. Set to "favorite" or "new" to render next to the title.
+{% endcomment %}
+
+{% if include.badge %}
+  {% assign badge = include.badge | capitalize %}
+  {% if include.badge == "favorite" %}
+    {% assign badge_css = "bg-primary-100 text-primary-700" %}
+  {% elsif include.badge == "new" %}
+    {% assign badge_css = "bg-pink-100 text-pink-700" %}
+  {% endif %}
+{% endif %}
+
+{% assign title = include.title | default: include.post.title %}
+{% assign cta = include.cta | default: "Read article" %}
+
+{% if include.date %}
+  {% assign datetime = include.post.date | date: "%Y-%m-%d" %}
+  <article class="md:grid md:grid-cols-4 md:items-baseline">
+    <div class="md:col-span-3 group relative flex flex-col items-start">
+      <h2 class="text-lg font-semibold tracking-tight text-gray-800">
+        <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
+        <a href="{{ include.post.url }}">
+          <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+          <span class="relative z-10">
+            <div class="flex items-center">{{ title }}</div>
+          </span>
+        </a>
+      </h2>
+      <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-gray-500 pl-3.5" datetime="{{ datetime }}">
+        <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
+          <span class="h-4 w-0.5 rounded-full bg-gray-200"></span>
+        </span>
+        {{ datetime }}
+      </time>
+      <p class="relative z-10 mt-2 text-gray-600">{{ include.post.description }}</p>
+      <div aria-hidden="true" class="relative z-10 mt-4 flex items-center font-medium text-primary-600">
+        {{ cta }}
+        {% svg /assets/icons/micro/chevron_right.svg class="ml-1.5 h-3 w-3 stroke-current" %}
+      </div>
+    </div>
+    <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-gray-500" datetime="{{ datetime }}">{{ include.post.date | date: "%B %d, %Y" }}</time>
+  </article>
+{% else %}
+  <article class="md:grid md:grid-cols-4 md:items-baseline">
+    <div class="md:col-span-3 group relative flex flex-col items-start">
+      <h2 class="text-lg font-semibold tracking-tight text-gray-800">
+        <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
+        <a href="{{ include.post.url }}">
+          <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+          <span class="relative z-10">
+            <div class="flex items-center">
+              {{ title }}
+              {% if badge %}
+                <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ml-3 {{ badge_css }}">{{ badge }}</span>
+              {% endif %}
+            </div>
+          </span>
+        </a>
+      </h2>
+      <p class="relative z-10 mt-2 text-gray-600">{{ include.post.description }}</p>
+      <div aria-hidden="true" class="relative z-10 mt-4 flex items-center font-medium text-primary-600">
+        {{ cta }}
+        {% svg /assets/icons/micro/chevron_right.svg class="ml-1.5 h-3 w-3 stroke-current" %}
+      </div>
+    </div>
+  </article>
+{% endif %}

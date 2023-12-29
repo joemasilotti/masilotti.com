@@ -1,0 +1,40 @@
+{% comment %}
+Renders a card styled for a service to offer.
+- service.href: A link to the service.
+- service.title: The header copy.
+- service.best_if: Renders after "Best if" in body.
+- service.you_get: Renders after "You get" in body.
+- service.description: A sentence or two about the service.
+- service.cta: The title of the colored link.
+- service.price: Optional. Should include currency.
+{% endcomment %}
+
+<li class="group relative flex flex-col items-start">
+  <h3 class="text-lg font-semibold tracking-tight text-gray-800">
+    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
+    {% assign email = site.data.socials | find: "name", "email" %}
+    <a href="{{ include.service.href | default: email.href }}" target="_blank">
+      <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+      <span class="relative z-10">{{ include.service.title }}</span>
+      </span>
+    </a>
+  </h3>
+  <p class="relative z-10 mt-2 text-gray-600">
+    <span class="font-semibold">Best if</span> {{ include.service.best_if }}
+  </p>
+  <p class="relative z-10 mt-2 text-gray-600">
+    <span class="font-semibold">You get</span> {{ include.service.you_get }}
+  </p>
+
+  {% if include.service.price %}
+    <p class="relative z-10 mt-2 text-gray-600">
+      <span class="font-semibold">Price</span>: {{ include.service.price }}
+    </p>
+  {% endif %}
+
+  <p class="relative z-10 mt-2 text-gray-600">{{ include.service.description }}</p>
+  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center font-medium text-primary-600">
+    {{ include.service.cta }}
+    {% svg /assets/icons/micro/chevron_right.svg class="ml-1.5 h-3 w-3 stroke-current" %}
+  </div>
+</li>

@@ -1,0 +1,20 @@
+{% comment %}
+Renders a buy button if available or an email capture if not.
+Set availability in _data/workshop/event.yml.
+{% endcomment %}
+
+{% assign date = site.data.workshop.event.date | date: "%A, %B %e" | append: " at 10am-12pm PT on Zoom" %}
+
+<div class="not-prose mb-8">
+  {% if site.data.workshop.event.available %}
+    <p>{{ date }} | {{ site.data.workshop.event.price }} per person</p>
+    <a href="https://book.stripe.com/7sI5kMezl4KPchOfZ4" class="button button-primary button-lg flex mt-6">
+      {% svg /assets/icons/mini/ticket.svg class="-ml-0.5 h-5 w-5" %}
+      Buy my ticket
+    </a>
+  {% else %}
+    <p class="text-base">The next session will be available soon. Add your email to get first access when it goes on sale.</p>
+    {% include newsletter/subscribe.liquid tag="workshop" cta="Notify me" %}
+    <p class="mt-2"><small>You’ll also be subscribed my <a href="{% link _pages/newsletter.liquid %}" class="underline">Turbo Native newsletter</a>.</small></p>
+  {% endif %}
+</div>

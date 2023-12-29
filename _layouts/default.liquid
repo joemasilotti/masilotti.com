@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US" class="h-full antialiased">
+  <head>
+    {% include meta.liquid %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/rouge.css" | relative_url }}">
+    <script src="{{ "/assets/javascripts/toggler.js" | relative_url }}"></script>
+    {% if jekyll.environment == "production" %}
+      <script src="https://cdn.usefathom.com/script.js" data-site="{{ site.fathom }}" defer></script>
+    {% endif %}
+  </head>
+  <body class="flex h-full bg-gray-50">
+    <div class="flex w-full">
+      <div class="fixed inset-0 flex justify-center sm:px-8">
+        <div class="flex w-full max-w-7xl lg:px-8">
+          <div class="w-full bg-white ring-1 ring-gray-100"></div>
+        </div>
+      </div>
+      <div class="relative flex w-full flex-col">
+        {% include header.liquid %}
+        <main class="flex-auto">
+          {{ content }}
+        </main>
+        {% include footer.liquid %}
+      </div>
+    </div>
+  </body>
+</html>

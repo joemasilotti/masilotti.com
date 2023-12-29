@@ -1,0 +1,26 @@
+<div class="pointer-events-auto md:hidden">
+  <button type="button" id="menu-close-button" class="group flex items-center rounded-full bg-white/90 px-4 py-2.5 text-sm font-medium text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
+    Menu {% svg "assets/icons/micro/chevron_down.svg" class="ml-3 h-auto w-3 stroke-gray-500 group-hover:stroke-gray-700" %}
+  </button>
+  <div id="menu-content" class="hidden fixed inset-0 z-50 bg-gray-800/40 backdrop-blur-sm">
+    <div class="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-gray-900/5">
+      <div class="flex flex-row-reverse items-center justify-between">
+        <button type="button" id="menu-open-button" aria-label="Close menu" class="-m-1 p-1">
+          {% svg "assets/icons/micro/x_mark.svg" class="h-6 w-6 text-gray-500" %}
+        </button>
+        <h2 class="text-sm font-medium text-gray-600">
+          Navigation
+        </h2>
+      </div>
+      <nav class="mt-6">
+        <ul class="-my-2 divide-y divide-gray-100 text-base text-gray-800">
+          {% for link in site.data.navigation_links %}
+            <li>
+              <a href="{% link {{ link.href }} %}" class="block py-2">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+{% comment %}
+Renders an icon link to the social account.
+- social.href: A link to the social account.
+- social.icon: The name of the icon to render.
+- social.cta: Optional (default value). The copy displayed on the button.
+{% endcomment %}
+
+<li>
+  <a href="{{ include.social.href }}" target="_blank" class="group flex items-center text-sm font-medium text-gray-800 transition hover:text-emerald-600">
+    {% svg "/assets/icons/{{ include.social.icon }}" class="h-6 w-6 flex-none text-gray-600 transition group-hover:fill-emerald-600" %}
+    <span class="ml-4">{{ include.cta | default: include.social.title }}</span>
+  </a>
+</li>

@@ -1,0 +1,47 @@
+name: Build and deploy site
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Redeploy site at 9:00 UTC every day.
+    - cron: "0 9 * * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: "yarn"
+
+      - name: Install JavaScript dependencies
+        run: yarn install
+
+      - name: Build
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy site
+        uses: burnett01/rsync-deployments@5.1
+        with:
+          switches: -rtzq --progress --del
+          path: output/
+          remote_host: ${{ secrets.REMOTE_HOST }}
+          remote_key: ${{ secrets.REMOTE_KEY }}
+          remote_key_pass: ${{ secrets.REMOTE_KEY_PASS }}
+          remote_path: ${{ secrets.REMOTE_PATH }}
+          remote_user: ${{ secrets.REMOTE_USER }}

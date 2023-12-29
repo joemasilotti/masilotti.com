@@ -1,0 +1,17 @@
+mike:
+  quote: <strong>Money well spent</strong>. Joe's workshop was huge in helping me wrap some concepts together.
+  author: Mike Munroe
+  image: /assets/images/testimonials/mike-munroe.jpg
+  handle: Founder at OBLSK
+
+miles:
+  quote: Great pace and content. <strong>Highly recommended!</strong>
+  author: Miles Woodroffe
+  image: /assets/images/testimonials/miles-woodroffe.jpg
+  handle: CTO at Mindful Chef
+
+sweta:
+  quote: Unlocks the possibilities for us to <strong>spin up a mobile app quickly and reliably</strong>.
+  author: Sweta Sanghavi
+  image: /assets/images/testimonials/sweta-sanghavi.jpg
+  handle: Tech Lead at BackerKit

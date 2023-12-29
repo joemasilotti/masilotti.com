@@ -1,0 +1,33 @@
+{% assign title = page.title | append: " | " | append: site.title %}
+{% assign description = page.description | default: site.description %}
+{% assign url = page.url | absolute_url %}
+{% assign image = "/assets/images/og" | append: page.id | append: ".png" | absolute_url %}
+{% assign twitter = "@" | append: site.author.twitter %}
+
+<meta charset="UTF-8">
+<meta name="og:locale" content="en_US">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ title }}</title>
+
+<meta name="description" content="{{ description }}">
+<meta name="canonical" href="{{ url }}">
+<meta name="author" content="{{ site.author.name }}">
+
+<meta name="og:title" content="{{ title }}">
+<meta name="og:description" content="{{ description }}">
+<meta name="og:image" content="{{ image }}">
+<meta name="og:url" content="{{ url }}">
+<meta name="og:site_name" content="{{ site.title }}">
+
+<meta name="twitter:creator" content="{{ twitter }}">
+<meta name="twitter:site" content="{{ twitter }}">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:image" content="{{ image }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="/assets/favicons/32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/favicons/192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/favicons/180x180.png" sizes="180x180">
+
+{% feed_meta %}

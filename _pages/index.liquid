@@ -1,0 +1,42 @@
+---
+layout: container
+title: Joe Masilotti, the Turbo Native guy.
+description: I help Rails developers build server-powered Android and iOS apps with Turbo Native.
+permalink: /
+hide_avatar: true
+---
+
+<div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+  <div class="lg:px-20">
+    <div class="max-w-[250px] px-2.5 lg:max-w-[300px]">
+      <figure>
+        <img src="/assets/images/joe.jpg" width="300" height="300" alt="Joe Masilotti" class="aspect-square sm:-rotate-3 rounded-2xl bg-gray-100 object-cover">
+        <figcaption class="sr-only">Joe Masilotti</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="lg:row-span-2">
+    <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">
+      <span class="block">I'm Joe Masilotti,</span> the <span class="text-primary-600">Turbo Native</span> guy!
+    </h1>
+
+    <p class="mt-6 text-2xl text-gray-600 font-medium">{{ page.description }}</p>
+
+    <div class="mt-6 flex gap-6">
+      {% for social in site.data.socials %}
+        <a href="{{ social.href }}" target="_blank" title="{{ social.title }}" aria-label="{{ social.title.titleize }}" class="group cursor-pointer -m-1 p-1">
+          {% svg "/assets/icons/{{ social.icon }}" class="h-6 w-6 fill-gray-500 transition group-hover:fill-gray-600" %}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="mt-16 md:mt-20 -mx-4">
+  <div class="grid lg:grid-cols-3 lg:justify-center gap-8 py-4">
+    {% for offering in site.data.offerings %}
+      {% include card.liquid object=offering %}
+    {% endfor %}
+  </div>
+</div>

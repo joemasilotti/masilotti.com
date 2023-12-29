@@ -1,0 +1,14 @@
+- title: About
+  href: _pages/about.liquid
+
+- title: Articles
+  href: _pages/articles.liquid
+
+- title: Services
+  href: _pages/services.liquid
+
+- title: Newsletter
+  href: _pages/newsletter.liquid
+
+- title: Hotwire
+  href: _pages/hotwire.liquid

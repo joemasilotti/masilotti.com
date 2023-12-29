@@ -1,0 +1,29 @@
+- name: email
+  handle: joe@masilotti.com
+  title: Email Joe
+  href: mailto:joe@masilotti.com
+  icon: solid/envelope.svg
+
+- name: twitter
+  handle: joemasilotti
+  title: Follow Joe on Twitter
+  href: https://twitter.com/joemasilotti
+  icon: twitter.svg
+
+- name: github
+  handle: joemasilotti
+  title: Follow Joe on GitHub
+  href: https://github.com/joemasilotti
+  icon: github.svg
+
+- name: mastodon
+  handle: joemasilotti
+  title: Follow Joe on Mastodon
+  href: https://ruby.social/@joemasilotti
+  icon: mastodon.svg
+
+- name: linkedin
+  handle: joemasilotti
+  title: Follow Joe on LinkedIn
+  href: https://www.linkedin.com/in/joemasilotti
+  icon: linkedin.svg

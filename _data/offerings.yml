@@ -1,0 +1,24 @@
+- title: Articles
+  icon: outline/newspaper.svg
+  href: _pages/articles.liquid
+  cta: Read more
+  description: My writing on Turbo Native, Ruby on Rails, and being a solopreneur.
+
+- title: Newsletter
+  icon: outline/envelope.svg
+  href: _pages/newsletter.liquid
+  cta: Subscribe
+  description: Turbo Native and Ruby on Rails, with first access and exclusive content.
+
+# - title: Turbo Native crash course
+  # icon: outline/academic_cap.svg
+  # href: _pages/turbo-native-workshop.liquid
+  # cta: Buy my ticket
+  # badge: New
+  # description: Everything you need to know to get started with Turbo Native on iOS.
+
+- title: Consulting
+  icon: outline/computer_desktop.svg
+  href: _pages/services.liquid
+  cta: Work with Joe
+  description: Turbo Native development, advisory, training, and coaching.

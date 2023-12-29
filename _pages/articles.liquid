@@ -1,0 +1,30 @@
+---
+title: Articles
+description: My writing on Turbo Native, Ruby on Rails, and being a solopreneur.
+layout: simple
+layout_title: My writing on Turbo Native, Ruby on Rails, and being a solopreneur.
+layout_description: Get started with my latest article and some of my favorites.
+---
+
+<div class="flex max-w-3xl flex-col space-y-12">
+  {% assign post = site.posts.first %}
+  {% include post.liquid post=post badge="new" %}
+  <div class="space-y-16">
+    {% assign favorites = site.posts | where: "favorite", true | sort: "index" %}
+    {% for post in favorites %}
+      {% include post.liquid post=post badge="favorite" %}
+    {% endfor %}
+  </div>
+</div>
+<div class="max-w-prose">
+  {% include newsletter/cta.liquid %}
+</div>
+<p class="mt-16 text-lg text-gray-600 md:mt-24">And all {{ site.posts.size }} articles I've ever published, most recent first.</p>
+<div class="mt-8 md:border-l md:border-gray-100 md:pl-6 md:mt-16">
+  <div class="flex max-w-3xl flex-col space-y-16">
+    {% assign posts = site.posts %}
+    {% for post in posts %}
+      {% include post.liquid post=post date=true %}
+    {% endfor %}
+  </div>
+</div>

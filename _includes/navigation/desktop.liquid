@@ -1,0 +1,16 @@
+<nav class="pointer-events-auto hidden md:block">
+  <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
+    {% for link in site.data.navigation_links %}
+      {% capture href %} {% link {{ link.href }} %} {% endcapture %}
+      {% assign href = href | strip %}
+      <li>
+        <a href="{{ href }}" class="relative block px-3 py-2.5 transition {% if href == page.url %} text-primary-600 {% else %} hover:text-primary-600 {% endif %}">
+          {{ link.title }}
+          {% if href == page.url %}
+            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-600/0 via-primary-600/40 to-primary-600/0" />
+          {% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

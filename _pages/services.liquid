@@ -1,0 +1,20 @@
+---
+title: Services
+description: I've been working with Turbo Native since 2015. Since then I've helped half a dozen businesses launch and consulted for twice as many. Here's how I can help you bring your Rails app to Android and iOS with Turbo Native.
+layout: simple
+layout_title: Need a hand with your Turbo Native app? I'd love to help.
+---
+
+{% comment %} <div class="-mt-12 sm:-mt-[56px]"> {% endcomment %}
+<div class="-mt-16 sm:-mt-20">
+  <a href="mailto:joe@masilotti.com" class="button button-primary button-lg flex mt-4">
+    {% svg /assets/icons/mini/envelope.svg class="-ml-0.5 h-5 w-5" %}
+    Email Joe
+  </a>
+</div>
+
+<ul class="flex max-w-xl flex-col space-y-16 mt-16">
+  {% for service in site.data.services %}
+    {% include service.liquid service=service %}
+  {% endfor %}
+</ul>

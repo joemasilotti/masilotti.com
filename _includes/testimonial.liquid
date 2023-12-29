@@ -1,0 +1,22 @@
+{% comment %}
+Renders a testimonial with author name and optional image and handle.
+- object.quote: The main content, what the author said.
+- object.author: The name of the person who provided the testimonial.
+- object.image: Optional. A path or href to an image of the author.
+- object.handle: Optional. The author's title or social media handle.
+{% endcomment %}
+
+<figure class="not-prose inline-block max-w-lg rounded-2xl bg-gray-50 p-6 leading-6">
+  <blockquote class="text-gray-900">
+    <p>&ldquo;{{ include.object.quote }}&rdquo;</p>
+  </blockquote>
+  <figcaption class="mt-4 flex items-center text-sm gap-x-4">
+    {% if include.object.image %}
+      <img class="h-10 w-10 rounded-full bg-gray-50" src="{{ include.object.image }}" alt="{{ include.object.author }}">
+    {% endif %}
+    <div>
+      <div class="font-semibold text-gray-900">{{ include.object.author }}</div>
+      <div class="text-gray-600">{{ include.object.handle }}</div>
+    </div>
+  </figcaption>
+</figure>
