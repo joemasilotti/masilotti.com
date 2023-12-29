@@ -1,6 +1,5 @@
 require "faraday"
 require "json"
-# require "pry"
 
 class Image
   attr_reader :post, :site
@@ -8,7 +7,6 @@ class Image
   def initialize(post, site:)
     @post = post
     @site = site
-    # binding.pry
   end
 
   def download

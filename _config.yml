@@ -55,8 +55,6 @@ plugins:
   - jekyll-inline-svg
 postcss:
   cache: false
-# svg:
-  # optimize: true
 
 # Custom configuration
 fathom: QNURQQHD
