@@ -1,0 +1,30 @@
+---
+title: Recap
+---
+
+<html lang="en-US" class="h-full antialiased">
+  <head>
+    {% include meta.liquid %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/rouge.css" | relative_url }}">
+    <script src="{{ "/assets/javascripts/toggler.js" | relative_url }}"></script>
+    {% if jekyll.environment == "production" %}
+      <script src="https://cdn.usefathom.com/script.js" data-site="{{ site.fathom }}" defer></script>
+    {% endif %}
+  </head>
+
+  <body class="bg-gray-100">
+    <div class="w-[600px] h-[368px] bg-gray-50 mx-auto flex items-center my-24 rounded-lg px-8">
+      <div class="w-full">
+        <h3 class="text-2xl font-semibold leading-6 text-gray-900">Masilotti.com newsletter</h3>
+        <p class="text-lg font-medium text-gray-500 uppercase mt-1">2023 wrapped</p>
+        <dl class="mt-5 grid grid-cols-2 gap-5">
+          {% include stat.liquid color="bg-rose-600" svg="users.svg" title="Subscribers" value="645" %}
+          {% include stat.liquid color="bg-indigo-600" svg="pencil.svg" title="Words" value="19,138" %}
+          {% include stat.liquid color="bg-cyan-600" svg="envelope_open.svg" title="Open rate" value="57%" %}
+          {% include stat.liquid color="bg-emerald-600" svg="newspaper.svg" title="Issues" value="35" %}
+        </dl>
+      </div>
+    </div>
+  </body>
+</html>

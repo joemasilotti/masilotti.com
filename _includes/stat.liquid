@@ -1,0 +1,11 @@
+<div class="relative overflow-hidden rounded-lg bg-white px-6 py-6 shadow">
+  <dt>
+    <div class="absolute rounded-md {{ include.color | default: "bg-primary-600" }} p-3">
+      {% svg "/assets/icons/outline/{{ include.svg }}" class="h-6 w-6 text-white" %}
+    </div>
+    <p class="ml-16 truncate text-sm font-medium text-gray-500">{{ include.title }}</p>
+  </dt>
+  <dd class="ml-16 flex items-baseline">
+    <p class="text-2xl font-semibold text-gray-900">{{ include.value }}</p>
+  </dd>
+</div>
