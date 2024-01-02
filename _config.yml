@@ -43,9 +43,9 @@ defaults:
       type: hotwire
     values:
       layout: hotwire
-      back: _pages/hotwire.liquid
+      back: _pages/newsletter.liquid
       preview_links_template_id: 1000
-      og_title: ⚡️ Hotwire dev newsletter
+      og_title: ⚡️ Hotwire Monthly newsletter
 
 # Plugin configuration
 plugins:
