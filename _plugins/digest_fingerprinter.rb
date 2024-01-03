@@ -17,8 +17,7 @@ class DigestFingerprinter < Liquid::Tag
     )
     "#{filename}?#{sha256.hexdigest[0, 6]}"
   rescue Errno::ENOENT
-    # File not found - return filename without fingerprint.
-    filename
+    raise "File not found, cannot digest: #{filename} - #{@markup}"
   end
 end
 
