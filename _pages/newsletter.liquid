@@ -1,9 +1,14 @@
 ---
 title: "Joe Masilotti's newsletter"
-description: Turbo Native, Hotwire, and Ruby on Rails - weekly editions with monthly link roundups. Subscribe for exclusive content and first access to upcoming products.
+description: A weekly newsletter on Turbo Native, Hotwire, and Ruby on Rails. Subscribe for exclusive content and first access to upcoming products.
 layout: simple
 ---
 
+<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 -mt-4">
+  {% for testimonial in site.data.testimonials %}
+    {% include testimonial.liquid object=testimonial %}
+  {% endfor %}
+</div>
 <div class="prose lg:prose-lg mt-20">
   <h2>Content sneak peek</h2>
   <p>Some recent exclusives for my newsletter subscribers. 👀</p>
@@ -12,20 +17,4 @@ layout: simple
       {% include card.liquid object=exclusive %}
     {% endfor %}
   </ul>
-</div>
-<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-20">
-  {% for testimonial in site.data.testimonials %}
-    {% include testimonial.liquid object=testimonial %}
-  {% endfor %}
-</div>
-<div class="prose lg:prose-lg mt-20">
-  <h2>⚡️ Hotwire Monthly archives</h2>
-  <p>Every month I also send a curated, monthly roundup of the best Turbo, Stimulus, and Strada articles, code, courses, and more. Here's the latest few edition.</p>
-</div>
-<div class="grid lg:grid-cols-2 gap-y-12 pt-12">
-  {% assign newsletters = site.hotwire | reverse  %}
-  {% for newsletter in newsletters limit: 6 %}
-    {% assign title = newsletter.edition %}
-    {% include post.liquid post=newsletter title=newsletter.edition cta="Read edition" %}
-  {% endfor %}
 </div>
