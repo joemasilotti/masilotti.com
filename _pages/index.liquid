@@ -15,14 +15,11 @@ hide_avatar: true
       </figure>
     </div>
   </div>
-
   <div class="lg:row-span-2">
     <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">
       <span class="block">I'm Joe Masilotti,</span> the <span class="text-primary-600">Turbo Native</span> guy!
     </h1>
-
     <p class="mt-6 text-2xl text-gray-600 font-medium">{{ page.description }}</p>
-
     <div class="mt-6 flex gap-6">
       {% for social in site.data.socials %}
         <a href="{{ social.href }}" target="_blank" title="{{ social.title }}" aria-label="{{ social.title.titleize }}" class="group cursor-pointer -m-1 p-1">
@@ -32,7 +29,6 @@ hide_avatar: true
     </div>
   </div>
 </div>
-
 <div class="mt-16 md:mt-20 -mx-4">
   <div class="grid lg:grid-cols-3 lg:justify-center gap-8 py-4">
     {% for offering in site.data.offerings %}
