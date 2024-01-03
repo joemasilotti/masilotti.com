@@ -2,9 +2,9 @@
 <html lang="en-US" class="h-full antialiased">
   <head>
     {% include meta.liquid %}
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/rouge.css" | relative_url }}">
-    <script src="{{ "/assets/javascripts/toggler.js" | relative_url }}"></script>
+    <link rel="stylesheet" href="{% digest "/assets/css/main.css" %}">
+    <link rel="stylesheet" href="{% digest "/assets/css/rouge.css" %}">
+    <script src="{% digest "/assets/javascripts/toggler.js" %}"></script>
     {% if jekyll.environment == "production" %}
       <script src="https://cdn.usefathom.com/script.js" data-site="{{ site.fathom }}" defer></script>
     {% endif %}
