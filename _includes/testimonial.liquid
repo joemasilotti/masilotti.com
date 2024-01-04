@@ -2,8 +2,10 @@
 Renders a testimonial with author name and optional image and handle.
 - object.quote: The main content, what the author said.
 - object.author: The name of the person who provided the testimonial.
-- object.image: Optional. A path or href to an image of the author.
-- object.handle: Optional. The author's title or social media handle.
+- object.title: The author's title or social media handle.
+- object.image: Optional. A path to an image of the author.
+- object.link: Optional. The text to display for href, usually the author's company.
+- object.href: Optional. The URL when link is clicked.
 {% endcomment %}
 
 <figure class="not-prose max-w-lg rounded-2xl bg-gray-50 p-6 leading-6 sm:w-full sm:inline-block mt-8">
@@ -16,7 +18,12 @@ Renders a testimonial with author name and optional image and handle.
     {% endif %}
     <div>
       <div class="font-semibold text-gray-900">{{ include.object.author }}</div>
-      <div class="text-gray-600">{{ include.object.handle }}</div>
+      <div class="text-gray-600">
+        {{ include.object.title }}
+        {% if include.object.link %}
+          <a href="{{ include.object.href }}" class="hover:underline">{{ include.object.link }}</a>
+        {% endif %}
+      </div>
     </div>
   </figcaption>
 </figure>
