@@ -1,6 +1,32 @@
-# TODO: Get 3 testimonials for newsletter.
+- quote: I never miss this newsletter! Simply the best place to learn and keep up with the key Turbo Native and Hotwire tips, tricks and techniques.
+  author: Miles Woodroffe
+  image: testimonials/miles-woodroffe.jpg
+  handle: CTO
+  link: https://twitter.com/tapster
+
+- quote: Joe’s advice and insights helped kickstart my coding journey. 100% worth reading!
+  author: Derek Kolstad
+  image: testimonials/derek-kolstad.png
+  handle: Founder of Remotejobs.com
+  link: https://remotejobs.com
+
+- quote: Joe's newsletter is always packed with interesting articles about the latest Turbo, Hotwire and Rails features.
+  author: Harrison Broadbent
+  image: testimonials/harrison-broadbent.png
+  handle: Founder of RailsNotes
+  link: https://railsnotes.xyz
+
+- quote: An indispensable part of my routine. Highly impressed and always looking forward to the next edition!
+  author: Aniket Patidar
+  image: testimonials/aniket-patidar.png
+  handle: Ruby on Rails Developer
+  link: https://www.linkedin.com/in/aniketpatidar/
+
+- quote: Joe’s articles were like a gulp of fresh water amidst the arid desert of Turbo Native development. He is one of the few who covers turbo-ios.
+  author: Kyrylo Silin
+  image: testimonials/kyrylo-silin.jpg
+  handle: Indie developer
+  link: https://twitter.com/kyrylosilin
 
 - quote: Joe's newsletter is consistently the best 10 minutes I’ll spend all day.
   author: Alan Lattimore
-  # image:
-  # handle:

@@ -5,10 +5,12 @@ layout: simple
 newsletter: true
 ---
 
-<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 -mt-4">
-  {% for testimonial in site.data.testimonials %}
-    {% include testimonial.liquid object=testimonial %}
-  {% endfor %}
+<div class="flow-root -mt-4">
+  <div class="-mt-8 sm:-mx-4 sm:columns-2 lg:columns-3">
+    {% for testimonial in site.data.testimonials %}
+      {% include testimonial.liquid object=testimonial %}
+    {% endfor %}
+  </div>
 </div>
 <div class="prose lg:prose-lg mt-20">
   <h2>Content sneak peek</h2>
