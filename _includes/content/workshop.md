@@ -13,11 +13,11 @@ You'll learn everything you need to know to get started with Turbo Native on iOS
 
 {% comment %} TODO: Revamp workshop agenda for Turbo Navigator. {% endcomment %}
 
-1. **How to use Turbo Native** - The steps to integrate the framework into a Xcode project.
-1. **How to navigate** - Add Turbo Navigator to handle the most important navigation flows.
-1. **How to progressively enhance** - Uncover hidden Rails helpers to work with native.
-1. **How to authenticate users** - Ensure users remain signed in between launches.
-1. **How to add native components** - Use Strada for Swift components driven by HTML.
+1. **Turbo Native** - Steps to integrate the framework into a Xcode project.
+1. **Navigation** - Add Turbo Navigator to handle the important navigation flows.
+1. **Progressively enhancement** - Uncover hidden Rails helpers to work with native.
+1. **Authentication** - Ensure users remain signed in between launches.
+1. **Native components** - Use Strada for Swift components driven by HTML.
 
 {% assign testimonial = site.data.workshop.testimonials["miles"] %}
 {% include testimonial.liquid object=testimonial %}
