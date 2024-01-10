@@ -1,6 +1,6 @@
 ---
 title: Safer Rails partials with strict locals
-date: 2024-01-10
+date: 2024-01-11
 description: Rails 7.1 introduced strict locals which we can use to make our partials safer and easier to work with.
 ---
 
