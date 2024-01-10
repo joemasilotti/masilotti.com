@@ -7,7 +7,7 @@ newsletter: true
 
 <div class="flow-root -mt-4">
   <div class="-mt-8 sm:-mx-4 sm:columns-2 lg:columns-3">
-    {% for testimonial in site.data.testimonials %}
+    {% for testimonial in site.data.testimonials limit: 6 %}
       {% include testimonial.liquid object=testimonial %}
     {% endfor %}
   </div>
