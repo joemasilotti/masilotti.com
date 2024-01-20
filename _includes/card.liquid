@@ -11,7 +11,7 @@ Renders a card with a title and description with an optional link, CTA, and icon
   <a href="{% link {{ include.object.href }} %}" class="group block relative p-4 rounded-2xl transition ease-in-out duration-300 hover:bg-gray-50">
     <div class="flex items-center">
       {% svg "/assets/icons/{{ include.object.icon }}" class="w-5 h-5 mr-2.5" %}
-      <span class="text-xl font-semibold tracking-tight text-gray-800">{{ include.object.title }}</span>
+      <span class="text-xl font-semibold text-gray-800">{{ include.object.title }}</span>
     </div>
     <p class="text-gray-600 text-lg mt-2">{{ include.object.description }}</p>
     <div class="mt-4 flex items-center font-medium text-primary-600">
