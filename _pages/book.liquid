@@ -1,0 +1,40 @@
+---
+title: Turbo Native for Rails developers
+description: An upcoming book by Joe Masilotti that teaches Rails developers how to build iOS and Android apps with Turbo Native.
+layout: simple
+permalink: /turbo-native-for-rails-developers/
+---
+
+<div class="prose lg:prose-lg">
+  {% capture markdown %} {% include content/book.md %} {% endcapture %}
+  {{ markdown | markdownify }}
+</div>
+
+<div class="bg-gray-50 max-w-screen-sm rounded-2xl p-6 mt-16">
+  <h2 class="flex items-center font-medium text-gray-900">
+    {% svg /assets/icons/outline/envelope.svg class="h-6 w-6 flex-none text-gray-500" %}
+    <span class="ml-3">Sign up for updates</span>
+  </h2>
+  <p class="mt-3 text-base text-gray-600 pr-4">Books take a while and I'm still writing this one! Sign up to get first access to the beta release and help shape the future of the book.</p>
+  {% include newsletter/subscribe.liquid tag="book" %}
+  <p class="mt-3 text-gray-500 text-sm">You’ll also be subscribed my <a href="{% link _pages/newsletter.liquid %}" class="hover:underline">weekly newsletter</a>.</p>
+</div>
+
+<section class="isolate overflow-hidden bg-white px-6 lg:px-8">
+  <div class="relative mx-auto max-w-2xl pt-20 sm:pt-24 lg:max-w-4xl">
+    <figure class="grid grid-cols-1 items-center gap-x-6 gap-y-8 lg:gap-x-10">
+      <div class="relative col-span-2 lg:col-start-1 lg:row-start-2">
+        <blockquote class="text-xl font-medium leading-8 text-gray-900 sm:leading-9">
+          <p>I've been building iOS and Android apps with Turbo Native since 2016. I know where it shines and where it falls short. And I'm excited to share everything I know with you in this book!</p>
+        </blockquote>
+      </div>
+      <div class="col-end-1 w-16 lg:row-span-4 lg:w-72">
+        <img class="rounded-xl bg-primary-50 lg:rounded-3xl" src="/assets/images/joe.jpg" alt="Joe Masilotti">
+      </div>
+      <figcaption class="text-lg lg:col-start-1 lg:row-start-3">
+        <div class="font-semibold text-gray-900"><a href="{% link _pages/index.liquid %}" class="hover:underline">Joe Masilotti</a></div>
+        <div class="text-gray-500">The Turbo Native guy</div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
