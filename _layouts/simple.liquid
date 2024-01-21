@@ -2,9 +2,9 @@
 layout: container
 ---
 
-<header class="max-w-prose">
+<header class="max-w-screen-md">
   <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">{{ page.layout_title | default: page.title }}</h1>
-  <p class="mt-6 text-lg text-gray-600">{{ page.layout_description | default: page.description }}</p>
+  <p class="mt-4 text-xl text-gray-600 sm:mt-6 sm:text-2xl ">{{ page.layout_description | default: page.description }}</p>
 </header>
 
 {% if page.newsletter %}

@@ -1,15 +1,10 @@
 ---
 title: Turbo Native workshop
 description: Your quick start guide to Turbo Native on iOS.
-layout: container
+layout: simple
 ---
 
-<header class="max-w-prose">
-  <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">{{ page.title }}</h1>
-  <p class="mt-4 text-xl text-gray-600 sm:mt-6 sm:text-2xl ">{{ page.layout_description | default: page.description }}</p>
-</header>
-
-<div class="prose lg:prose-lg mt-4">
+<div class="prose lg:prose-lg -mt-6">
   {% capture markdown %} {% include content/workshop.md %} {% endcapture %}
   {{ markdown | markdownify }}
 </div>
