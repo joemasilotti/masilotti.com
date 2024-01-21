@@ -5,16 +5,20 @@ Set availability in _data/workshop/event.yml.
 
 {% assign date = site.data.workshop.event.date | date: "%A, %B %e" | append: " at 10am-12pm PT on Zoom" %}
 
-<div class="not-prose mb-8">
+<div class="not-prose">
   {% if site.data.workshop.event.available %}
-    <p>{{ date }} | {{ site.data.workshop.event.price }} per person</p>
-    <a href="https://book.stripe.com/7sI5kMezl4KPchOfZ4" class="button button-primary button-lg flex mt-6">
-      {% svg /assets/icons/mini/ticket.svg class="-ml-0.5 h-5 w-5" %}
-      Buy my ticket
-    </a>
+    <div class="mb-8">
+      <p>{{ date }} | {{ site.data.workshop.event.price }} per person</p>
+      <a href="https://book.stripe.com/7sI5kMezl4KPchOfZ4" class="button button-primary button-lg flex mt-4">
+        {% svg /assets/icons/mini/ticket.svg class="-ml-0.5 h-5 w-5" %}
+        Buy my ticket
+      </a>
+    </div>
   {% else %}
-    <p class="text-base">The next session will be available soon. Add your email to get first access when it goes on sale.</p>
-    {% include newsletter/subscribe.liquid tag="workshop" cta="Notify me" %}
-    <p class="mt-2"><small>You’ll also be subscribed my <a href="{% link _pages/newsletter.liquid %}" class="underline">Turbo Native newsletter</a>.</small></p>
+    <div class="rounded-r-2xl bg-red-200/15 border-l-4 border-red-400 p-6">
+      <p class="text-lg">This session is sold out. Get notified when the next one goes one sale.</p>
+      {% include newsletter/subscribe.liquid tag="workshop" cta="Notify me" %}
+      <p class="mt-3 text-gray-500 text-sm">You’ll also be subscribed my <a href="{% link _pages/newsletter.liquid %}" class="hover:underline">weekly newsletter</a>.</p>
+    </div>
   {% endif %}
 </div>
