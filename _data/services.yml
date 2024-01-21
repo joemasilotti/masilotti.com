@@ -3,7 +3,7 @@
   you_get: a developer (me!) to build your iOS and Android apps and launch them.
   cta: Email Joe to get started
   description: |
-    I write all of the native Kotlin/Swift code and Rails integration needed. We can
+    I write all of the native Swift/Kotlin code and Rails integration needed. We can
     integrate with native Apple/Android SDKs, too. I work with your designers and
     developers to teach and apply the best practices I've accumulated working
     with the framework for 7+ years.
@@ -14,7 +14,7 @@
   cta: Email Joe to get started
   description: |
     Workshops can range from virtual, half-day sessions to in-person, multi-day
-    events.  They can cover Kotlin/Swift syntax, dive right into the Turbo
+    events.  They can cover Swift/Kotlin syntax, dive right into the Turbo
     Native integration, or skip ahead to best practices in building scalable
     hybrid apps with small teams.
 
