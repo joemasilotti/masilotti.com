@@ -6,4 +6,5 @@ Header always set Content-Security-Policy "upgrade-insecure-requests;"
 
 ErrorDocument 404 /404/
 
+Redirect /hotwire /newsletter/
 Redirect /workshop /turbo-native-workshop/
