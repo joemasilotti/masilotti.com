@@ -6,7 +6,7 @@ description: Too many days last year ended with me feeling like "I didn’t get 
 
 2022 was my most profitable year since going freelance, making almost twice as much as I did in 2021. But too many days ended with me feeling like "I didn’t get anything done."
 
-I completed three 5-figure projects, built a [hiring platform](https://railsdevs.com) and grew it to $150k, _and_ launched a [workshop]({% link _pages/turbo-native-workshop.liquid %}) with 15 attendees.
+I completed three 5-figure projects, built a [hiring platform](https://railsdevs.com) and grew it to $150k, _and_ launched a [workshop]({% link _pages/workshop.liquid %}) with 15 attendees.
 
 Those are big accomplishments. And on paper it means I was very successful!
 

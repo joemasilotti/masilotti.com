@@ -67,6 +67,6 @@ Next week I'm hosting a 2-hour live session on Turbo Native for Rails developers
 
 This is perfect for some guided, hands-on experience working with Turbo Navigator. It will also cover how to integrate Strada to create native components.
 
-Registration closes tomorrow. [Grab your ticket here]({% link _pages/turbo-native-workshop.liquid %}).
+Registration closes tomorrow. [Grab your ticket here]({% link _pages/workshop.liquid %}).
 
 [Send me an email](mailto:joe@masilotti.com) if you have any questions – I hope to see you there!
