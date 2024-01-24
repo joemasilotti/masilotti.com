@@ -8,7 +8,9 @@ task :generate_opengraph_images, [:post_id] do |t, args|
   post_id = args[:post_id]
   raise "Missing post_id" unless post_id
 
-  site = Jekyll::Site.new(Jekyll.configuration)
+  config = Jekyll.configuration({})
+  config["future"] = true
+  site = Jekyll::Site.new(config)
   site.process
 
   find_post = proc do |collection|
