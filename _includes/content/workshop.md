@@ -15,7 +15,7 @@ You'll learn everything you need to know to get started with Turbo Native on iOS
 
 1. **Turbo Native** - Steps to integrate the framework into a Xcode project.
 1. **Navigation** - Add Turbo Navigator to handle the important navigation flows.
-1. **Progressively enhancement** - Uncover hidden Rails helpers to work with native.
+1. **Progressive enhancement** - Uncover hidden Rails helpers to work with native.
 1. **Authentication** - Ensure users remain signed in between launches.
 1. **Native components** - Use Strada for Swift components driven by HTML.
 
