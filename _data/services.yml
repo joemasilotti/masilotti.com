@@ -27,12 +27,12 @@
     topics, or even to dive into your Turbo Native code. I return all messages
     no later than the next business day. Meetings must be scheduled in advance.
 
-# - title: 1:1 advisory meeting
-  # price: $299 for a 45 minute call
-  # best_if: you have a few specific questions on Turbo Native.
-  # you_get: a live video call to consult with an expert.
-  # href: https://savvycal.com/joemasilotti/3abb50a0
-  # cta: Schedule a meeting
-  # description: |
-    # A private 45-minute video chat with me. Use our time to ask questions, learn
-    # best practices, or request feedback on your Turbo Native code.
+- title: Pair with Joe
+  price: $499 for a 90 minute pairing session
+  best_if: you have specific questions on your Turbo Native app.
+  you_get: a hands-on pairing session with a Turbo Native expert.
+  href: https://savvycal.com/joemasilotti/pair
+  cta: Schedule a meeting
+  description: |
+    A private 90-minute pairing session with me. Use our time to dive into a
+    specific question or problem you're having with your Turbo Native app.
