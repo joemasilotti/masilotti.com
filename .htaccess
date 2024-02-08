@@ -6,6 +6,7 @@ Header always set Content-Security-Policy "upgrade-insecure-requests;"
 
 ErrorDocument 404 /404/
 
-Redirect /hotwire /newsletter/
-Redirect /workshop /turbo-native-workshop/
 Redirect /book /turbo-native-for-rails-developers/
+Redirect /hotwire /newsletter/
+Redirect /topics /articles/
+Redirect /workshop /turbo-native-workshop/
