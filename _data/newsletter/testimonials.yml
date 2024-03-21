@@ -4,12 +4,6 @@
   link: CTO
   href: https://twitter.com/tapster
 
-- quote: An indispensable part of my routine. Highly impressed and always looking forward to the next edition!
-  author: Aniket Patidar
-  image: testimonials/aniket-patidar.png
-  link: Ruby on Rails Developer
-  href: https://www.linkedin.com/in/aniketpatidar/
-
 - quote: If you're ready to stop doing tutorials and take Rails and Turbo Native to the next level for your business, Joe's newsletter is where you get started.
   author: Andrew Mason
   image: testimonials/andrew-mason.jpg
@@ -17,19 +11,25 @@
   link: Remote Ruby
   href: https://www.remoteruby.com
 
-- quote: Joe’s advice and insights helped kickstart my coding journey. 100% worth reading!
-  author: Derek Kolstad
-  image: testimonials/derek-kolstad.png
-  title: Founder of
-  link: Remotejobs.com
-  href: https://remotejobs.com
-
 - quote: Hands down the best Howtire newsletter out there. So much interesting content that I would never come across otherwise.
   author: Matt Kuras
   image: testimonials/matt-kuras.jpg
   title: Software Engineer at
   link: Workforce.com
   href: https://workforce.com
+
+- quote: An indispensable part of my routine. Highly impressed and always looking forward to the next edition!
+  author: Aniket Patidar
+  image: testimonials/aniket-patidar.png
+  link: Ruby on Rails Developer
+  href: https://www.linkedin.com/in/aniketpatidar/
+
+- quote: Joe’s advice and insights helped kickstart my coding journey. 100% worth reading!
+  author: Derek Kolstad
+  image: testimonials/derek-kolstad.png
+  title: Founder of
+  link: Remotejobs.com
+  href: https://remotejobs.com
 
 - quote: Joe's newsletter is always packed with interesting articles about the latest Turbo, Hotwire and Rails features.
   author: Harrison Broadbent
