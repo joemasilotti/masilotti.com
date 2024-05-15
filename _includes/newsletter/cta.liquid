@@ -26,9 +26,9 @@ Renders a newsletter subscription CTA and email capture.
   </div>
 {% else %}
   <div class="not-prose bg-gray-50 rounded-2xl p-6 my-16">
-    <h2 class="flex items-center font-medium text-gray-900">
-      {% svg /assets/icons/outline/envelope.svg class="h-6 w-6 flex-none text-gray-500" %}
-      <span class="ml-3">{{ title }}</span>
+    <h2 class="flex items-center font-medium leading-snug text-gray-900">
+      {% svg /assets/icons/outline/envelope.svg class="h-6 w-6 flex-none hidden sm:block text-gray-500 mr-3" %}
+      <span>{{ title }}</span>
     </h2>
     <p class="mt-3 text-base text-gray-600 max-w-xl pr-4">{{ description }}</p>
     {% include newsletter/subscribe.liquid tag=include.tag %}
