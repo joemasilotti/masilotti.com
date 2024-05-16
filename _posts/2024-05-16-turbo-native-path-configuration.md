@@ -85,6 +85,7 @@ Converting the example from above, “presenting forms as modals”, looks like 
         "context": "modal"
       }
     }
+  ]
 }
 ```
 
@@ -129,7 +130,7 @@ end
 # app/controllers/configurations_controller.rb
 
 class ConfigurationsController < ApplicationController
-  definitely show
+  def show
     render json: {
       settings: {},
       rules: [
