@@ -4,6 +4,8 @@ date: 2023-05-02
 description: Learn two ways to conditionally show web content in your Turbo Native app. One quick and dirty and one cache-friendly.
 ---
 
+{% include warning.liquid %}
+
 Hybrid apps built with [Turbo Native](<%= url_for "_posts/2021-05-14-turbo-ios.md" %>) come with a ton of benefits. Namely, they enable small teams to ship multiplatform apps by sharing web content. They let Rails developers focus on what they do best: working in Rails.
 
 But sometimes shoving a web view in native chrome can look a little… off. Here’s how to hide web-rendered content in a Turbo Native app to make it feel a little more native. All from the comfort of Ruby and HTML.

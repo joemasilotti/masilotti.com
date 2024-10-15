@@ -1,24 +1,24 @@
 ---
-title: A roadmap for building Turbo Native apps
+title: A roadmap for building Hotwire Native apps
 date: 2024-01-25
-description: The approach I follow for every Turbo Native app I build, including which app store to submit to first and how to prioritize work.
+description: The approach I follow for every Hotwire Native app I build, including which app store to submit to first and how to prioritize work.
 ---
 
 Last week 40+ folks joined me for a [live Q&A session on Turbo Native + rails](https://www.youtube.com/watch?v=z5vlVeLf9Nw). I answered 20ish questions over the 90 minute session.
 
-But of all the questions, one really stuck out. It touches on an essential part of building Turbo Native apps. And I haven’t spoken about it publicly yet!
+But of all the questions, one really stuck out. It touches on an essential part of building Hotwire Native apps. And I haven’t spoken about it publicly yet!
 
-> What’s my roadmap for building Turbo Native apps?
+> What’s my roadmap for building Hotwire Native apps?
 
-Getting started with Turbo Native apps can feel overwhelming, especially with *multiple* new platforms to learn. It’s important to know how to prioritize work to get into the app stores as quickly as possible.
+Getting started with Hotwire Native apps can feel overwhelming, especially with *multiple* new platforms to learn. It’s important to know how to prioritize work to get into the app stores as quickly as possible.
 
-I follow this approach for every Turbo Native app I build. I apply it to personal projects, like [Daily Log](https://dailylog.ing), and my [client work]({% link _pages/services.liquid %}) as well. Follow my guide for the most effective way to launch your own apps to both app stores.
+I follow this approach for every Hotwire Native app I build. I apply it to personal projects, like [Daily Log](https://dailylog.ing), and my [client work]({% link _pages/services.liquid %}) as well. Follow my guide for the most effective way to launch your own apps to both app stores.
 
 ## 1. Build mobile-friendly web screens
 
 My first step starts before I even open Xcode or Android Studio.
 
-First up is making sure there are enough mobile-friendly web screens built. At its core, Turbo Native renders web content in native chrome. So having a good sampling of screens already complete will kick start our Turbo Native development.
+First up is making sure there are enough mobile-friendly web screens built. At its core, Hotwire Native renders web content in native chrome. So having a good sampling of screens already complete will kick start our Hotwire Native development.
 
 At a minimum, you’ll want mobile-friendly screens for at least **three static pages** and **one form flow**. The static screens ensure that the core navigation between pages works correctly. And the form pushes your hybrid apps to present and dismiss modals. Both are key to making our hybrid app feel like a native one.
 
@@ -34,11 +34,11 @@ Apple might dictate that you *must* add in-app purchases. Or add a link to compl
 
 <p class="note">Check out my collection of <a href="{% post_url 2023-08-14-turbo-native-app-store-tips %}">App Store submission tips</a> with examples from real apps I've worked on.</p>
 
-Finally, **don’t try to launch a pixel-perfect app right now.** Your goal is to get into the app stores as quickly as possible. Take advantage of Turbo Native! Use your existing web screens as much as possible and only upgrade to native when absolutely necessary.
+Finally, **don’t try to launch a pixel-perfect app right now.** Your goal is to get into the app stores as quickly as possible. Take advantage of Hotwire Native! Use your existing web screens as much as possible and only upgrade to native when absolutely necessary.
 
 ## 3. Launch the Android app to Google Play
 
-Once your app is in the App Store then it’s time to move on to Android. By now you've ideally identified most of the thorny bits. Building the Turbo Native integration on Android will be more straightforward.
+Once your app is in the App Store then it’s time to move on to Android. By now you've ideally identified most of the thorny bits. Building the Hotwire Native integration on Android will be more straightforward.
 
 Follow the same recommendation as above and **build something that works. Nothing more.**
 
@@ -54,13 +54,13 @@ Up next is upgrading these apps to feel more native. This includes adding [nativ
 
 ## But how do I get started?
 
-You now have a solid roadmap for building and launching your iOS and Android Turbo Native. But actually *writing* the code is an entirely different journey!
+You now have a solid roadmap for building and launching your iOS and Android Hotwire Native apps. But actually *writing* the code is an entirely different journey!
 
 Here are some resources to help you along your way:
 
+- [Hotwire Native for Rails developers]({% link _pages/book.liquid %}) - My upcoming book for Rails developers with *zero* Swift or Kotlin experience.
 - [Just enough Turbo Native to be dangerous](https://www.youtube.com/watch?v=hAq05KSra2g) - My 30m talk at Rails World with a live coding demo.
 - [Hybrid iOS apps with Turbo]({% post_url 2021-05-14-turbo-ios %}) - 6-part series building Turbo Native apps on iOS.
 - [How to Get Up and Running With Turbo Android](https://williamkennedy.ninja/android/2023/05/10/up-and-running-with-turbo-android-part-1/) - The first post of a series on Turbo Native Android development from William Kennedy.
-- [Turbo Native for Rails developers]({% link _pages/book.liquid %}) - My upcoming book for Rails developers with *zero* Swift or Kotlin experience.
 
 And if you’re looking for a more hands-on approach then check out [how I can help]({% link _pages/services.liquid %}). I've worked with dozens of businesses to launch their Rails app to the app stores. And I’d love to do the same for you!

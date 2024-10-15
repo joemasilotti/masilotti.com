@@ -4,6 +4,8 @@ date: 2024-04-18
 description: "How to set up pull-to-refresh in Turbo Native apps for iOS and Android via path configuration rules."
 ---
 
+{% include warning.liquid %}
+
 Earlier this week someone asked me on [my Discord](https://discord.gg/EE6yKspVWr) how to configure pull-to-refresh in their Turbo Native app. Matthew, the developer, is building an iOS and Android app that translates scribbled text to letters and numbers.
 
 Drawing horizontally works fine. But every time you draw *down* the page refreshes.

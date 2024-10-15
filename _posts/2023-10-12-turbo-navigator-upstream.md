@@ -8,6 +8,10 @@ I'm still coming off the high of Rails World last week. What an amazing experien
 
 In Amsterdam I spoke with a _ton_ of folks in the community. I even got some time with the other maintainer of Turbo Native, Jay Ohms. And good news... **we are almost ready to upstream [Turbo Navigator](https://github.com/joemasilotti/TurboNavigator) into turbo-ios**!
 
+<div class="note">
+  <span class="font-semibold">Update October 15, 2024</span>: Turbo Navigator is now a part of Hotwire Native, the new framework for building mobile apps with Rails: <a href="https://native.hotwired.dev" target="_blank">native.hotwired.dev</a>
+</div>
+
 The package handles common navigation flows from configuration that lives on your server. It goes beyond the demo app of pushing screens and presenting modals, covering **15+ different flows**.
 
 ![Turbo Navigator demo](/assets/images/turbo-navigator-upstream/turbo-navigator-demo.gif){:standalone}

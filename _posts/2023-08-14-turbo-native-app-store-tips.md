@@ -1,24 +1,24 @@
 ---
-title: App Store submission tips for Turbo Native apps
+title: App Store submission tips for Hotwire Native apps
 date: 2023-08-14
-description: The App Store Review Guidelines to watch out for when submitting your own Turbo Native app to the App Store.
+description: The App Store Review Guidelines to watch out for when submitting your own Hotwire Native app to the App Store.
 ---
 
-Last week, one of my client’s [Turbo Native]({% post_url 2021-05-14-turbo-ios %}) apps was approved for sale in the App Store. It took a few back-and-forths with the Apple review team, but after 3 weeks we finally made it!
+Last week, one of my client’s [Hotwire Native]({% post_url 2021-05-14-turbo-ios %}) apps was approved for sale in the App Store. It took a few back-and-forths with the Apple review team, but after 3 weeks we finally made it!
 
-![Turbo Native app version 1.0 approved!](/assets/images/turbo-native-app-store-tips/app-store-approval-notification.jpeg){:standalone}
+![Hotwire Native app version 1.0 approved!](/assets/images/turbo-native-app-store-tips/app-store-approval-notification.jpeg){:standalone}
 
-The good news is that most of the issues could have been avoided with our first submission. Here are some [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) to watch out for when submitting your own Turbo Native app to the App Store.
+The good news is that most of the issues could have been avoided with our first submission. Here are some [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) to watch out for when submitting your own Hotwire Native app to the App Store.
 
 ## [4.2 Minimum Functionality](https://developer.apple.com/app-store/review/guidelines/#4.2)
 
 > Your app should include features, content, and UI that **elevate it beyond a repackaged website**…
 
-4.2 is by far the most important guideline to consider when building a Turbo Native app. You will most likely _not_ get accepted if you repackage your Rails app in some native chrome.
+4.2 is by far the most important guideline to consider when building a Hotwire Native app. You will most likely _not_ get accepted if you repackage your Rails app in some native chrome.
 
 It needs something more to warrant an app. Ideally something unique to the platform, like a native feature or two.
 
-I usually reach for a [native tab bar]({% post_url 2023-08-07-turbo-native-tabs %}) or push notifications. These are not especially difficult to add on top of a barebones Turbo Native app. But they go a long way in making it feel way more native.
+I usually reach for a [native tab bar]({% post_url 2023-08-07-turbo-native-tabs %}) or push notifications. These are not especially difficult to add on top of a barebones Hotwire Native app. But they go a long way in making it feel way more native.
 
 Another option is to replace your web-based hamburger menu with a [native `UIMenu`]({% post_url 2023-07-24-uimenu-turbo-native %}). This is a bit more work than a tab bar, yes. But it does look really good!
 
@@ -32,7 +32,7 @@ In short, don’t submit an app that crashes.
 
 A common and easily overlooked crash occurs when accessing the camera or photo library. For example, a web form that accepts files via `<input type="file">`.
 
-When accessed in the web view that powers Turbo Native, we need to ask the user for permission first. Otherwise, the app will crash. Lucky for us, it’s a two-liner!
+When accessed in the web view that powers Hotwire Native, we need to ask the user for permission first. Otherwise, the app will crash. Lucky for us, it’s a two-liner!
 
 Set [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information_property_list/nscamerausagedescription) and [`NSPhotoLibraryUsageDescription`](https://developer.apple.com/documentation/bundleresources/information_property_list/nsphotolibraryusagedescription) to request access to the user’s camera and photo library, respectively. These can be set in the `Info.plist` file in your Xcode project.
 
@@ -48,7 +48,7 @@ A rather new requirement that was added in June 2022. And one that I forget more
 
 The [guidelines](https://developer.apple.com/support/offering-account-deletion-in-your-app/) include making the account deletion option easy to find in your app and offering to delete the entire account record, along with associated personal data.
 
-For Turbo Native apps, I treat this interaction the same as when someone signs out. But instead of sending `DELETE` to `/sessions`, it goes to `/users`. The actual account deletion all occurs on the server side.
+For Hotwire Native apps, I treat this interaction the same as when someone signs out. But instead of sending `DELETE` to `/sessions`, it goes to `/users`. The actual account deletion all occurs on the server side.
 
 ## [3.1.3(b) Multiplatform Services](https://developer.apple.com/app-store/review/guidelines/#3.1.3b)
 
@@ -87,6 +87,6 @@ Here are a few notes I’ve forgotten and have had apps rejected for in the past
 
 ## Need some extra help?
 
-I’ve picked up these tips first hand, helping dozens of folks launch their Turbo Native apps in the App Store. But the process can be overwhelming to someone who is new to the Apple ecosystem.
+I’ve picked up these tips first hand, helping dozens of folks launch their Hotwire Native apps in the App Store. But the process can be overwhelming to someone who is new to the Apple ecosystem.
 
-If you’re thinking of launching an iOS app then [get in touch]({% link _pages/services.liquid %}). I offer everything from 1:1 advisory calls, leveling up your team, and building full apps. I’d love to help you launch your Rails app in the App Store with Turbo Native!
+If you’re thinking of launching an iOS app then [get in touch]({% link _pages/services.liquid %}). I offer everything from 1:1 advisory calls, leveling up your team, and building full apps. I’d love to help you launch your Rails app in the App Store with Hotwire Native!

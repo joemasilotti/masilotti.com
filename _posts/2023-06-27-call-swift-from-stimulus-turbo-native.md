@@ -4,6 +4,10 @@ date: 2023-06-27
 description: Wire up your iOS app to call Swift code from events triggered in Stimulus controllers, like native share sheets, push notifications, and more.
 ---
 
+<div class="note">
+  <span class="font-semibold">Update October 15, 2024</span>: Bridge components are now the recommended way to handle JavaScript interactions like this: <a href="https://native.hotwired.dev" target="_blank">native.hotwired.dev</a>
+</div>
+
 Turbo Native brings your Rails app to iOS without investing a ton of time writing Swift code. The framework renders your existing HTML and sprinkles on native navigation and chrome, like tab bars.
 
 But what if we want to interact with a *native* API, like sending a push notification or reading calendar data? Enter the JavaScript bridge.

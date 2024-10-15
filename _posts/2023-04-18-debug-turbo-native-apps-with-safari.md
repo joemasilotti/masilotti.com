@@ -1,12 +1,12 @@
 ---
-title: How to debug Turbo Native apps with Safari
+title: How to debug Hotwire Native apps with Safari
 date: 2023-04-18
 description: How to attach a Safari debugger to the simulator with some tips on dealing with "No Inspectable Applications".
 ---
 
-[Turbo Native](https://github.com/hotwired/turbo-ios) is a framework for building high-fidelity mobile apps powered by mobile web content. It enables small teams to build big apps by reusing most of your web content in hybrid iOS apps.
+[Hotwire Native](https://native.hotwired.dev) is a framework for building high-fidelity mobile apps powered by mobile web content. It enables small teams to build big apps by reusing most of your web content in hybrid iOS apps.
 
-Even though the rendered content is boring ol’ HTML, there is still a bit of JavaScript glue holding it all together. For example, when a link is clicked [Turbo hijacks it to perform a fetch request](https://turbo.hotwired.dev/handbook/introduction#turbo-drive%3A-navigate-within-a-persistent-process) instead of the embedded browser navigating to the new page.
+Even though the rendered content is boring ol’ HTML, there is still a bit of JavaScript glue holding it all together. For example, when a link is clicked [Hotwire hijacks it to perform a fetch request](https://turbo.hotwired.dev/handbook/introduction#turbo-drive%3A-navigate-within-a-persistent-process) instead of the embedded browser navigating to the new page.
 
 There are also times where a developer might want to bridge the gap to native Swift code when a web button or link is tapped. A common approach is to [fire a JavaScript message]({% post_url turbo-ios/2021-04-02-the-javascript-bridge %}) for the client to receive and call into a native SDK.
 
@@ -17,6 +17,10 @@ Unfortunately, Xcode doesn’t relay these error messages to the console. So thi
 But all hope is not lost! Safari’s Developer Mode lets us attach a debug session directly to the embedded web view. Granting us the full web dev experience we are used to: an interactive console, HTML/CSS debugging, local storage spelunking, and more.
 
 ## How to attach the Safari debugger to the simulator
+
+<div class="note">
+  <span class="font-semibold">Update October 15, 2024</span>: Hotwire Native now configures a debuggable web view automatically: <a href="https://native.hotwired.dev" target="_blank">native.hotwired.dev</a>
+</div>
 
 First, enable the inspection of web content in your app. This was recently [added in iOS 16.4](https://webkit.org/blog/13936/enabling-the-inspection-of-web-content-in-apps/) so make sure to check for API availability, like so.
 
@@ -67,7 +71,7 @@ Finally, ensure your app is running in Debug mode and not Release. This can be v
 
 ![Debug build configuration](/assets/images/debug-turbo-native-apps-with-safari/debug-mode.png){:standalone}
 
-Good luck debugging your Turbo Native app! If you need a hand launching your Rails app to the App Store check out [how I can help]({% link _pages/services.liquid %}).
+Good luck debugging your Hotwire Native app! If you need a hand launching your Rails app to the App Store check out [how I can help]({% link _pages/services.liquid %}).
 
 ---
 

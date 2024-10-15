@@ -4,6 +4,10 @@ date: 2023-06-06
 description: A low-maintenance approach to interacting with Stimulus controllers from native Swift code.
 ---
 
+<div class="note">
+  <span class="font-semibold">Update October 15, 2024</span>: Bridge components are now the recommended way to handle JavaScript interactions like this: <a href="https://native.hotwired.dev" target="_blank">native.hotwired.dev</a>
+</div>
+
 Last week [I asked Twitter what I should write about next](https://twitter.com/joemasilotti/status/1664632478752210944).
 
 And **accessing Stimulus from iOS code** received the most votes - so let’s dive in!

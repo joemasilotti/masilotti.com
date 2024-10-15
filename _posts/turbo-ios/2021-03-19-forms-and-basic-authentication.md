@@ -6,6 +6,8 @@ series: turbo-ios
 series_title: Forms and basic authentication
 ---
 
+{% include warning.liquid %}
+
 This is part 3 of a [6-part series on Hybrid iOS apps with Turbo]({% post_url 2021-05-14-turbo-ios %}). We kicked off with an [introduction to the Turbo framework]({% post_url turbo-ios/2021-02-18-hybrid-apps-with-turbo %}) and touched on why hybrid can be a great choice. Part 2 dove into [URL routing with Turbo]({% post_url turbo-ios/2021-02-26-url-routing %}) and how to get your path configuration set up.
 
 {% include series.liquid %}

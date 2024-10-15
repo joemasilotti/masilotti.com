@@ -4,6 +4,8 @@ date: 2023-07-24
 description: Build a native UIMenu from existing HTML elements on your server, powered by a Stimulus controller.
 ---
 
+{% include warning.liquid %}
+
 A big promise of [Turbo Native]({% post_url 2021-05-14-turbo-ios %}) is to progressively enhance a web screen with native components. And a common area to improve is the hamburger menu found in many apps.
 
 Take, for example, my website. Tapping the Menu button opens a list of navigation options.

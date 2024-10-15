@@ -34,7 +34,7 @@ But there’s no build configuration for production or staging in Swift. And cre
 
 ## A Rails-like environment helper for iOS apps
 
-When building Turbo Native apps I like to borrow Rails paradigms and bring them to iOS. So for an *environment helper* I want to mimic the Rails API and spirit. To me, that means:
+When building Hotwire Native apps I like to borrow Rails paradigms and bring them to iOS. So for an *environment helper* I want to mimic the Rails API and spirit. To me, that means:
 
 - Development - app was installed via Xcode
 - Staging - app was downloaded via TestFlight
@@ -65,7 +65,7 @@ case .production:
 
 ## Changing endpoints based on environment
 
-I use this in my [Turbo Native apps]({% post_url 2021-05-14-turbo-ios %}) to change the root endpoint based on the environment.
+I use this in my [Hotwire Native apps]({% post_url 2021-05-14-turbo-ios %}) to change the root endpoint based on the environment.
 
 This ensures the app automatically points to the right URL. When I build to the simulator from Xcode I hit my local server. And folks who download from the App Store hit the production endpoint.
 
@@ -88,4 +88,4 @@ let rootURL = Endpoint.root
 
 Again, here’s a link to the [`Environment.swift` gist](https://gist.github.com/joemasilotti/ed002068cc1239d5e799fae1e4038386). Feel free to copy-paste it into any Xcode project.
 
-I hope that helps bring a little Rails magic to your Turbo Native apps! If you need more help don’t hesitate to reach out by [sending me an email](mailto:joe@masilotti.com).
+I hope that helps bring a little Rails magic to your Hotwire Native apps! If you need more help don’t hesitate to reach out by [sending me an email](mailto:joe@masilotti.com).

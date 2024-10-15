@@ -4,6 +4,8 @@ date: 2023-11-02
 description: A step-by-step Rails and iOS guide to integrating Strada with your Turbo Native app powered by Turbo Navigator.
 ---
 
+{% include warning.liquid %}
+
 Not too long ago 37signals officially launched [Strada]({% post_url 2023-09-21-strada-launch %}), the long-awaited third and final piece of Hotwire. It unlocks _progressive enhancement_ of native components in Turbo Native apps.
 
 But there are a few hoops you need to jump through to use it. This is especially true when working with Turbo Navigator.

@@ -4,6 +4,10 @@ date: 2023-06-16
 description: Learn how to handle data-turbo-confirm in your iOS app so you can render native Swift alerts directly from your Rails code.
 ---
 
+<div class="note">
+  <span class="font-semibold">Update October 15, 2024</span>: JavaScript alerts are now handled automatically in Hotwire Native: <a href="https://native.hotwired.dev" target="_blank">native.hotwired.dev</a>
+</div>
+
 Last week my client ran into an issue with their Turbo Native app. They couldn't figure out why their Turbo confirmation dialog worked on mobile web but not in the app.
 
 Their code looked something like this:

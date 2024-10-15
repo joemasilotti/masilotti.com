@@ -8,6 +8,10 @@ Yesterday 37signals [officially launched Strada](https://dev.37signals.com/annou
 
 Strada is an optional add-on for [Turbo Native apps]({% post_url 2021-05-14-turbo-ios %}) that enables native components driven by the web. It unlocks _progressive enhancement_ of individual controls without converting entire screens to native.
 
+<div class="note">
+  <span class="font-semibold">Update October 15, 2024</span>: Strada has been renamed to Bridge Components and comes preconfigured in Hotwire Native apps: <a href="https://native.hotwired.dev" target="_blank">native.hotwired.dev</a>
+</div>
+
 For example, converting a `<button>` to a `UIBarButtonItem` on iOS or rendering a HTML modal with `ModalBottomSheetLayout` on Android.
 
 It's important to call out that Strada alone doesn't unlock new features for Turbo Native apps. Everything you can do with the framework you could already do before. Albeit with much, much more code.

@@ -4,6 +4,8 @@ date: 2024-05-16
 description: "Level up your Turbo Native apps by moving behavior to the server with remote path configuration."
 ---
 
+{% include warning.liquid %}
+
 Turbo Native helps Rails developers build iOS and Android apps quickly, bridging the gap between web and mobile development. It unlocks big apps for small teams, requiring relatively little maintenance compared to fully native ones.
 
 Getting started with Turbo Native is quick: all you need is your existing Rails app, a copy of Xcode or Android Studio, and my [quick-start guide]({% post_url 2024-03-28-turbo-native-apps-in-15-minutes %}). You can go from zero to working apps in less than 15 minutes.

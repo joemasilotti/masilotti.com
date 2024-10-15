@@ -1,14 +1,14 @@
 ---
-title: "Turbo Native: When to upgrade screens to native?"
+title: "Hotwire Native: When to upgrade screens to native?"
 date: 2023-08-29
-description: Deciding when to go native and when to use web views in Turbo Native apps, from experience.
+description: Deciding when to go native and when to use web views in Hotwire Native apps, from experience.
 ---
 
-Going hybrid with Turbo Native doesn’t mean _every_ screen needs to be powered by a web view. While good enough for most of your app, there are times where a little more fidelity is required. Times when you want something a bit more… _native_.
+Going hybrid with Hotwire Native doesn’t mean _every_ screen needs to be powered by a web view. While good enough for most of your app, there are times where a little more fidelity is required. Times when you want something a bit more… _native_.
 
 There are no hard and fast rules about _when_ to go native. Every app is different. Remember, each native screen adds additional complexity and maintenance.
 
-Here are a few examples I’ve picked up [building Turbo Native apps for clients]({% post_url 2022-07-22-zero-to-app-store-in-7-weeks %}). I follow these rough guidelines to decide if a screen should be native or not.
+Here are a few examples I’ve picked up [building Hotwire Native apps for clients]({% post_url 2022-07-22-zero-to-app-store-in-7-weeks %}). I follow these rough guidelines to decide if a screen should be native or not.
 
 ## Three candidates for native screens
 

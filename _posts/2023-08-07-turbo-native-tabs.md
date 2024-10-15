@@ -4,6 +4,8 @@ date: 2023-08-07
 description: Learn how to add a native tab bar to a Turbo Native app. And some hints for fixing common gotchas.
 ---
 
+{% include warning.liquid %}
+
 [Turbo Native]({% post_url 2021-05-14-turbo-ios %}) promises feature parity with your Rails app via web-powered screens. But it doesn’t have anything special built in to handle native components, like a tab bar.
 
 This row of buttons along the bottom of an iOS app is a common UX pattern. And it makes the app feel more native. Take, for example, the built in Clock app.

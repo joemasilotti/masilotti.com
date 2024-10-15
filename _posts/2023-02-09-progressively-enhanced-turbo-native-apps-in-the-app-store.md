@@ -1,20 +1,20 @@
 ---
-title: Progressively enhanced Turbo Native apps in the App Store
+title: Progressively enhanced Hotwire Native apps in the App Store
 date: 2023-02-09
-description: Turbo Native is a game changer for small teams. Here's how folks are leveraging native SDKs to enhance their hybrid apps.
+description: Hotwire Native is a game changer for small teams. Here's how folks are leveraging native SDKs to enhance their hybrid apps.
 ---
 
-[Turbo Native](https://github.com/hotwired/turbo-ios) is a small framework to build high-fidelity hybrid apps. It renders your Ruby on Rails site inside a native iOS shell, like a tab bar or navigation controller.
+[Hotwire Native](https://native.hotwired.dev) is a small framework to build high-fidelity hybrid apps. It renders your Ruby on Rails site inside a native iOS shell, like a tab bar or navigation controller.
 
 Reusing your existing HTML + CSS means you can push an update to your website and your mobile app gets new features for free. All without having to release a new version to the App Store.
 
 This is a game changer for small teams who don’t have a dedicated mobile developer. It lets Rails developers do what they do best: write Ruby code.
 
-And the best part? Really important screens can also be progressively enhanced when needed. Turbo Native offers hooks to drop down and interact directly with native iOS APIs.
+And the best part? Really important screens can also be progressively enhanced when needed. Hotwire Native offers hooks to drop down and interact directly with native iOS APIs.
 
 Think native maps, access to the contact book, push notifications, and more. All ways of making your hybrid mobile app feel a little more native.
 
-Here’s how businesses are using Turbo Native to make high-fidelity mobile apps with native SDK integrations.
+Here’s how businesses are using Hotwire Native to make high-fidelity mobile apps with native SDK integrations.
 
 ## Offline access with Context Travel
 
@@ -24,7 +24,7 @@ Here’s how businesses are using Turbo Native to make high-fidelity mobile apps
 
 But many folks travel without a data plan. So they open their phone and the map won’t load.
 
-I helped Context Travel add offline access to their Turbo Native app.
+I helped Context Travel add offline access to their Hotwire Native app.
 
 On launch it downloads your next 30 days of tours to your device. And if you open the app without an internet connection it automatically switches to offline mode. Here you can view your upcoming tours, the meeting point, and contact information for your guide.
 
@@ -34,7 +34,7 @@ We were able to [launch this feature quickly]({% post_url 2022-07-22-zero-to-app
 
 ![HEY in the App Store](/assets/images/progressively-enhanced-turbo-native-apps-in-the-app-store/hey.png){:standalone .unstyled}
 
-[HEY](https://apps.apple.com/us/app/basecamp-project-management/id1015603248), a new take on email, and [Basecamp](https://apps.apple.com/us/app/basecamp-project-management/id1015603248), a project management tool, are flagship hybrid apps. They are both built by the maintainers of the Turbo Native library, 37signals.
+[HEY](https://apps.apple.com/us/app/basecamp-project-management/id1015603248), a new take on email, and [Basecamp](https://apps.apple.com/us/app/basecamp-project-management/id1015603248), a project management tool, are flagship hybrid apps. They are both built by the maintainers of the Hotwire Native library, 37signals.
 
 Opening each of these apps launch fully native home screens. Instantly.
 
@@ -48,7 +48,7 @@ The Basecamp app takes this a step farther with a native tab bar. These five tab
 
 [BeerMenus](https://apps.apple.com/app/apple-store/id917882057) is a popular beer finder app in the North East. Their website helps beer aficionados find rare beer nearby.
 
-A big reason they reached for Turbo Native is geofencing. When you walk into a BeerMenus establishment you are notified if anything on your “must try” list is available.
+A big reason they reached for Hotwire Native is geofencing. When you walk into a BeerMenus establishment you are notified if anything on your “must try” list is available.
 
 We integrated native [region monitoring](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions) into the iOS app for every bar, restaurant, and bottle shop on BeerMenus. The locations are monitored by the system, which wake up the app when the user crosses a defined boundary.
 
@@ -62,7 +62,7 @@ This means the app doesn’t need to run in the background, saving precious batt
 
 [GroupUp](https://apps.apple.com/us/app/groupup-find-local-groups/id6444784184?platform=iphone), an app helping folks find and form local groups, heavily relies on panning around a map. An embedded Google Maps or Apple Maps on mobile web still leaves a lot to be desired. The experience might work fine for a single screen but not when it’s the core feature of your product.
 
-GroupUp’s iOS app launches directly to a native map with pins for each group nearby. Tapping a pin kicks off the Turbo Native integration by rendering the web version of that group’s landing page.
+GroupUp’s iOS app launches directly to a native map with pins for each group nearby. Tapping a pin kicks off the Hotwire Native integration by rendering the web version of that group’s landing page.
 
 This hybrid approach means GroupUp can focus on the core experience - the map - and leave everything else to the existing HTML and CSS screens rendered from the server.
 
@@ -82,19 +82,14 @@ The push notifications are built on top of [Noticed](https://github.com/excid3/n
 
 [Hauling Buddies](https://apps.apple.com/us/app/hauling-buddies/id6443831303) matches hauling businesses with folks who need to transport their animals.
 
-[Andrew](https://twitter.com/mybuddyandrew), the founder, built and maintains a Rails website, iOS app, _and_ Android app all on his own. He's able to ship across three different platforms because he can focus his time and energy on one thing: the Ruby on Rails website. And let Turbo Native do the hard work.
+[Andrew](https://twitter.com/mybuddyandrew), the founder, built and maintains a Rails website, iOS app, _and_ Android app all on his own. He's able to ship across three different platforms because he can focus his time and energy on one thing: the Ruby on Rails website. And let Hotwire Native do the hard work.
 
-## More Turbo Native apps
+## More Hotwire Native apps
 
-And some more Turbo Native apps live in the App Store.
+The [Turbo Native Directory](https://turbonative.directory) has 40+ Turbo Native and Hotwire Native apps listed on both iOS and Android. Some are even open source!
 
-* [Beema](https://apps.apple.com/in/app/beema-insurance/id1553718589) - Pay-per-kilometer car insurance.
-* [Hoist](https://apps.apple.com/us/app/hoist-up/id1592340401) - Independent painting business partner.
-* [Golf Leaguer](https://apps.apple.com/us/app/golf-leaguer/id1627580628?platform=iphone) - Golf league management.
-* _Maybe your app?_
+## Need help with _your_ Hotwire Native app?
 
-## Need help with _your_ Turbo Native app?
-
-I've been working with Turbo Native for 6+ years and have launched dozens of apps to the App Store. And I'd love to help you confidently launch yours.
+I've been working with Hotwire Native for 6+ years and have launched dozens of apps to the App Store. And I'd love to help you confidently launch yours.
 
 I can build and launch your app or level up your team so they can do it on their own. Check out my [services]({% link _pages/services.liquid %}) to see how we can work together.

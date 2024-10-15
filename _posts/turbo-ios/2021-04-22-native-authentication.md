@@ -6,6 +6,8 @@ series: turbo-ios
 series_title: Native authentication
 ---
 
+{% include warning.liquid %}
+
 Welcome back to my [6-part series on hybrid iOS apps with Turbo]({% post_url 2021-05-14-turbo-ios %}). In [part 3]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %}) we learned how to do basic authentication via the web view.
 
 One major limitation of web-only authentication is, well, it's web only. That limits us to only interacting with our server via HTML and JavaScript. You’re out of luck if you need to make an authenticated HTTP request.

@@ -4,6 +4,8 @@ date: 2024-03-28
 description: "A quick-start guide to building Turbo Native apps for Ruby on Rails developers, no Swift or Kotlin experience necessary."
 ---
 
+{% include warning.liquid %}
+
 With Turbo Native, Ruby on Rails developers can build [iOS](https://github.com/hotwired/turbo-ios) and [Android](https://github.com/hotwired/turbo-android) apps that aren't a nightmare to maintain. An embedded web view renders the HTML and CSS content you already have, letting you skip the slow and expensive development cycles of building fully native apps. Make a change to your Rails codebase and the apps are updated right away - without releasing new versions to the app stores.
 
 But getting started isn't easy. You need to know a bit of Swift and Kotlin to build the initial version of the apps. And the [official documentation](https://turbo.hotwired.dev/handbook/native) is... a little sparse.

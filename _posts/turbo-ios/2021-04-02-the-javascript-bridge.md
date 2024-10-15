@@ -6,6 +6,8 @@ series: turbo-ios
 series_title: The JavaScript bridge
 ---
 
+{% include warning.liquid %}
+
 This is part 4 of a 6 part series on building hybrid iOS apps with Turbo. Parts 1 through 3 built us an "out of the box" hybrid app with [navigation]({% post_url turbo-ios/2021-02-18-hybrid-apps-with-turbo %}), [URL routing]({% post_url turbo-ios/2021-02-26-url-routing %}), [forms, and basic authentication]({% post_url turbo-ios/2021-03-19-forms-and-basic-authentication %}). This week, we will customize our app to make it feel more native.
 
 {% include series.liquid %}

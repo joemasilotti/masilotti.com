@@ -9,6 +9,10 @@
   @apply text-gray-700 rounded-r-md bg-gray-300 bg-opacity-25 border-l-8 border-emerald-500 border-opacity-75 px-6 py-4;
 }
 
+.warning {
+  @apply text-yellow-700 rounded-r-md bg-yellow-50 border-l-8 border-yellow-500 border-opacity-75 px-6 py-4 text-base;
+}
+
 .button {
   @apply inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none no-underline;
 }
