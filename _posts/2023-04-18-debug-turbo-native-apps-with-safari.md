@@ -33,9 +33,9 @@ if #available(iOS 16.4, *) {
 let session = Session(webView: webView)
 ```
 
-Then launch your Turbo Native app in the simulator.
+Then launch your Hotwire Native app in the simulator.
 
-> Need an example to play with? Try the [demo app from the turbo-ios package](https://github.com/hotwired/turbo-ios/tree/main/Demo).
+> Need an example to play with? Try the [demo app from the Hotwire Native iOS package](https://github.com/hotwired/hotwire-native-ios/tree/main/Demo).
 
 Enable Developer Mode in Safari by opening Preferences (`⌘,`) and navigating to the Advanced tab. Check the box for "Show Develop menu in the menu bar".
 

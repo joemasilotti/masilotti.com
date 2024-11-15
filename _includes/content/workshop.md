@@ -11,7 +11,7 @@ The problem? The official docs are sparse and there aren't many examples out the
 
 You'll learn everything you need to know to get started with Turbo Native on iOS:
 
-{% comment %} TODO: Revamp workshop agenda for Turbo Navigator. {% endcomment %}
+{% comment %} TODO: Revamp workshop agenda for Hotwire Native. {% endcomment %}
 
 1. **Turbo Native** - Steps to integrate the framework into a Xcode project.
 1. **Navigation** - Add Turbo Navigator to handle the important navigation flows.

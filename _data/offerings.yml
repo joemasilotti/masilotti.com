@@ -10,12 +10,12 @@
   cta: Subscribe
   description: Weekly-ish Hotwire Native newsletter with exclusive content.
 
-# - title: Turbo Native crash course
+# - title: Hotwire Native crash course
   # icon: outline/academic_cap.svg
   # href: _pages/workshop.liquid
   # cta: Buy my ticket
   # badge: New
-  # description: Everything you need to know to get started with Turbo Native on iOS.
+  # description: Everything you need to know to get started with Hotwire Native on iOS.
 
 - title: Consulting
   icon: outline/computer_desktop.svg
