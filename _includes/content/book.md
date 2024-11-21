@@ -22,6 +22,7 @@ By the end of this book, you'll be able to work with confidence across multiple 
 1. Add a Native Tab Bar
 1. Render Native Screens with SwiftUI
 1. Render Native Screens with Jetpack Compose
-1. Build Native Components with the Bridge
-1. Send Push Notifications with APNS and FCM
+1. Build Native iOS Components with the Bridge
+1. Build Native Android Components with the Bridge
 1. Deploy to Physical Devices with TestFlight and Internal Testing
+1. Send Push Notifications with APNS and FCM
