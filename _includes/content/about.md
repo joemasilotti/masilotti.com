@@ -1,9 +1,6 @@
-<p class="lead mt-12">I help folks <a href="{% link _pages/services.liquid %}">confidently</a> launch iOS and Android apps with Hotwire Native and Ruby on Rails.</p>
+<h2> Divashen Govender </h2>
+<p class="lead mt-12"> A friendly neighbourhood programmer…? A star-struck star gazer…? A local ex-kook…? Yes! </p>
 
-I started by journey in 2012 at Pivotal Labs where I learned Ruby on Rails, test-driven development, and pair programming.
+I'm an Astrophysicist turned Software Engineer that loves problem solving, surfing and just being a general pleasant human being! When I’m not glued to a computer screen, coding or gaming, you’ll find me out at backline, chasing those green waves!
 
-After Labs I worked for a startup for 5 years as the lead developer. I built the iOS and Android apps with Hotwire Native and advice from the team at Basecamp. Back when it was still called Turbolinks!
-
-At the beginning of 2020 I decided to stake out on my own and went independent. Since then I've worked on a bunch of side projects and launched dozens of apps in the App Store.
-
-Now I'm focused on spreading Hotwire Native and teaching developers what it takes to be a solopreneur. I'm sharing my journey as the solo-founder of transparent businesses like [RailsDevs](https://railsdevs.com), the _reverse_ job board for Ruby on Rails developers.
+I have lots of opinions on legacy code, longboards & life that I can’t wait to share with you.

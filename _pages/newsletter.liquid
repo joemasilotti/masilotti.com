@@ -1,26 +1,42 @@
 ---
-title: "Joe Masilotti's newsletter"
-description: A weekly-ish newsletter on building Hotwire Native apps powered by Ruby on Rails. Includes exclusive content and first access to upcoming products.
+title: Waves and Code Newsletter
+description: Where I share my professional experiences as a Software Engineer; my athletic adventures as a surfer/snowboarder and my creative exploration into leathercraft...
 layout: simple
 newsletter: true
 ---
 
+<div class="prose lg:prose-md mt-20">
+  <h2>Why Waves & Code?</h2>
+  <p>
+    My diverse interests never quite fit into one box, so I decided to create my own. Welcome to Waves & Code, a weekly newsletter where we explore the worlds of software engineering, surfing, leathercraft, and everything in between.
+  </p>
+  <p>
+    I envision this to be a space in which I share my professional experiences as a Software Engineer; my athletic adventures as a mid-level surfer/snowboarder and my creative exploration into leathercraft. All of this with the intention of fostering a community of like-minded individuals who can learn from one another and embark on journeys of personal and professional growth together. Join us in creating, sharing, and learning through Waves & Code.
+  </p>
+</div>
+
 <div class="flow-root -mt-4">
-  <div class="-mt-8 sm:-mx-4 columns-1 sm:columns-2 lg:columns-3">
+  <div class="grid lg:grid-cols-3 lg:justify-center gap-8 py-4">
     {% for testimonial in site.data.newsletter.testimonials limit: 3 %}
       {% include testimonial.liquid object=testimonial %}
     {% endfor %}
   </div>
 </div>
-<div class="prose lg:prose-md mt-20">
-  <h2>Content sneak peek</h2>
-  <p>Some recent exclusives for my newsletter subscribers. 👀</p>
-  <ul class="not-prose flex flex-col space-y-16 pt-8">
-    {% for exclusive in site.data.exclusives %}
-      {% include card.liquid object=exclusive %}
-    {% endfor %}
+
+<div class="prose lg:prose-md mt-10">
+  <h2>What to expect?</h2>
+  <p>
+    Every post, I share a blend of personal experiences, insights, and discoveries. The general content structure will be:
+  </p>
+  <ul class="list-disc pl-6 space-y-4">
+    <li><strong>Feature Article:</strong> A random thought, musing, or discovery.</li>
+    <li><strong>Dev Insights:</strong> Any interesting dev content or tools stumbled upon.</li>
+    <li><strong>Adventures:</strong> Join me as I share recent adventures or surf experiences as I attempt to transition from an intermediate to the next Kelly Slater (with a touch of humour, of course).</li>
+    <li><strong>Leathercraft Corner:</strong> I'll take you along on my newest journey into the world of leathercraft.</li>
+    <li><strong>Favorites this Week:</strong> Quick bullet points sharing the highlights and discoveries from the past week.</li>
   </ul>
 </div>
+
 <div class="flow-root mt-20">
   <div class="-mt-8 sm:-mx-4 sm:columns-2 lg:columns-3">
     {% for testimonial in site.data.newsletter.testimonials limit: 3 offset: 3 %}

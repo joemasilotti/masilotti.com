@@ -9,11 +9,13 @@
       <div class="mx-auto max-w-2xl lg:max-w-5xl">
         <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <div class="flex gap-6 text-sm font-medium text-gray-800">
+            {% comment %}
             {% for link in site.data.navigation_links %}
               <a href="{% link {{ link.href }} %}" class="transition hover:text-primary-600">{{ link.title }}</a>
             {% endfor %}
+            {% endcomment %}
           </div>
-          <p class="text-sm text-gray-500">&copy; {{ "now" | date: "%Y" }} Joe Masilotti. All rights reserved.</p>
+          <p class="text-sm text-gray-500">&copy; {{ "now" | date: "%Y" }} Divashen Govender. All rights reserved.</p>
         </div>
       </div>
     </div>

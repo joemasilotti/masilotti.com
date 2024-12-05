@@ -1,13 +1,15 @@
 # Jekyll configuration
-url: https://masilotti.com
-title: Masilotti.com
+url: https://divashen.com
+title: divashen.com
 description:
 author:
-  name: Joe Masilotti
-  email: joe@masilotti.com
-  twitter: joemasilotti
-  github: joemasilotti
-  linkedin: joemasilotti
+  name: Divashen Govender
+  email: ''
+  twitter: divasheng
+  github: divasheng
+  linkedin: divasheng
+
+# Files to exclude from the generated site
 exclude:
   - README.md
   - package-lock.json
