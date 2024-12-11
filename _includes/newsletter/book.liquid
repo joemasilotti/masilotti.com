@@ -1,0 +1,9 @@
+<div class="bg-gray-50 max-w-screen-sm rounded-2xl p-6 mt-16">
+  <h2 class="flex items-center font-medium text-gray-900">
+    {% svg /assets/icons/outline/envelope.svg class="h-6 w-6 flex-none text-gray-500" %}
+    <span class="ml-3">Sign up for updates</span>
+  </h2>
+  <p class="mt-3 text-base text-gray-600 pr-4">Books take a while and I'm still writing this one! Sign up to get first access to the beta release in January and help shape the future of the book.</p>
+  {% include newsletter/subscribe.liquid tag="book" %}
+  <p class="mt-3 text-gray-500 text-sm">You’ll also be subscribed my <a href="{% link _pages/newsletter.liquid %}" class="hover:underline">weekly newsletter</a>.</p>
+</div>
