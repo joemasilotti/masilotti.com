@@ -90,6 +90,6 @@ The [Turbo Native Directory](https://turbonative.directory) has 40+ Turbo Native
 
 ## Need help with _your_ Hotwire Native app?
 
-I've been working with Hotwire Native for 6+ years and have launched dozens of apps to the App Store. And I'd love to help you confidently launch yours.
+I've been working with Hotwire Native for 10+ years and have launched dozens of apps to the App Store. And I'd love to help you confidently launch yours.
 
 I can build and launch your app or level up your team so they can do it on their own. Check out my [services]({% link _pages/services.liquid %}) to see how we can work together.

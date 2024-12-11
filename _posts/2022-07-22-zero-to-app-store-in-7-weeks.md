@@ -44,7 +44,7 @@ All the client needs to do is update their exiting Rails app and *poof* 💨 the
 
 ## Jumpstart Pro iOS
 
-My secret weapon – we kicked off the project with my [Jumpstart Pro iOS code template](https://jumpstartrails.com/ios). This is all the knowledge I've accumulated launching Turbo Native apps for multiple clients over the last 5+ years.
+My secret weapon – we kicked off the project with my [Jumpstart Pro iOS code template](https://jumpstartrails.com/ios). This is all the knowledge I've accumulated launching Turbo Native apps for multiple clients over the last 10+ years.
 
 Stuff the template took care of so I didn’t have to worry about doing it again:
 
