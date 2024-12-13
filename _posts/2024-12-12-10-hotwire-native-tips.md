@@ -127,7 +127,7 @@ Dismiss a modal or navigate *backwards* in the stack using historical location U
 
 Then navigate in a Rails controller - web apps will redirect to `posts_path` and mobile apps will pop the top screen and refresh the previous one.
 
-```erb
+```ruby
 class PostsController < ApplicationController
   def create
     # ...
