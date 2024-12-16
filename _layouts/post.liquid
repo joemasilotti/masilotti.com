@@ -37,7 +37,7 @@ layout: container
         </aside>
       </header>
       <div class="prose lg:prose-lg mt-8">
-        {{ content }}
+        {% include anchor_headings.html html=content anchorBody="#" anchorClass="text-gray-300 no-underline hover:text-gray-600 ml-0.5" %}
       </div>
     </article>
   </div>
