@@ -83,13 +83,7 @@ This is applied to all web views and should be done in `AppDelegate`.
 
 We also snuck in a new feature. If you’re releasing your app on iPads you can now use [two new modal presentation styles](https://github.com/hotwired/hotwire-native-ios/pull/61): `pageSheet` and `formSheet`.
 
-![`pageSheet`](https://prod-files-secure.s3.us-west-2.amazonaws.com/4f64fe56-8ba9-4935-b5be-f6d7711a92df/f73c02a1-074b-48de-9089-5232f0950219/396463859-9a170ca4-01e0-49c4-80c5-02af4ae21bc3.png)
-
-`pageSheet`
-
-![`formSheet`](https://prod-files-secure.s3.us-west-2.amazonaws.com/4f64fe56-8ba9-4935-b5be-f6d7711a92df/ff1a93da-a960-4178-bb81-8b4789043610/396463883-74c8b9e8-215d-4f79-9eba-5cd2b34f6090.png)
-
-`formSheet`
+![pageSheet on the left, formSheet on the right](/assets/images/hotwire-native-1.1/pageSheet-formSheet.png){:standalone .unstyled}
 
 To help with iPad UX, you can also disable the gesture that dismisses the modal. Without this, tapping anywhere outside the modal could accidentally dismiss it, losing unsaved information in a presented form.
 
