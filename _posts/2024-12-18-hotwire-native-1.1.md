@@ -1,14 +1,14 @@
 ---
 title: Hotwire Native 1.1 released
 date: 2024-12-18
-description: "This release streamlines configuration, fixes bugs, and adds new features, making it even easier to build web-first native apps with Rails."
+description: "This release simplifies configuration, resolves bugs, and introduces new features, making it easier to build web-first native apps with Rails."
 ---
 
 [Hotwire Native](https://native.hotwired.dev), a web-first framework for building native mobile apps with Ruby on Rails, just released version 1.1. This release makes configuring the framework more predictable, adds new modal presentation options, changes how to customize the user agent, and addresses a bunch of bugs and issues.
 
 ## [Hotwire Native iOS version 1.1](https://github.com/hotwired/hotwire-native-ios/releases/tag/1.1.0)
 
-The major focus of this release is addressing the issues and questions around configuration. Developers were confused why certain configuration wasn’t applying and not sure where exactly to put the code. Here’s what changed.
+The major focus of this release is addressing issues and questions around configuration. Developers were unsure why certain settings weren’t applying or where exactly to place the code. Here’s what changed.
 
 ### Path configuration
 
@@ -25,7 +25,7 @@ Hotwire.loadPathConfiguration(from: [
 
 ### Global configuration
 
-Speaking of global APIs, *all* Hotwire Native configuration should be done before a `Navigator` instance is created. To encourage that, it is now recommended to do all configuration in `AppDelegate`, instead of `SceneDelegate`, like so:
+Speaking of global APIs, *all* Hotwire Native configuration should be completed before a `Navigator` instance is created. To encourage this, it is now recommended to handle configuration in `AppDelegate` instead of `SceneDelegate`, like so:
 
 ```swift
 import HotwireNative
@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-This fixes a slew of inconsistencies that came from a `Navigator` making its first request without being properly configured. If you’ve ever wondered why your bridge components aren’t being registered correctly, this might help!
+This addresses several inconsistencies caused by a `Navigator` making its first request without being properly configured. If you’ve ever wondered why your bridge components weren’t being registered correctly, this update should help!
 
 ### Custom user agent
 
