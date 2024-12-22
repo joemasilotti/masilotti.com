@@ -16,7 +16,7 @@ Setting up your path configuration is now done once, [globally](https://github.c
 
 ```swift
 Hotwire.loadPathConfiguration(from: [
-    .file(Bundle.main.url(forResource: "path-configuration", withExtension: "json")!).
+    .file(Bundle.main.url(forResource: "path-configuration", withExtension: "json")!),
     .server(baseURL.appending(path: "configurations/ios_v1.json"))
 ])
 ```
