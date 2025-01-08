@@ -37,6 +37,6 @@ While the book is in beta, you can help improve it! Found a mistake? You'll find
 
 Seeing this book go live feels like a dream come true. It’s been a long journey, and I couldn’t have done it without the support of so many people along the way. Thank you to everyone who helped me get to this point.
 
-This is just the beginning—I’m excited to keep improving the book and sharing updates as we move toward the final release. If you’re ready to get started, grab your copy now: [Hotwire Native for Rails Developers](https://pragprog.com/titles/jmnative/hotwire-native-for-rails-developers/).
+This is just the beginning—I’m excited to keep improving the book and sharing updates as we move toward the final release. If you’re ready to get started, grab your copy now: [Hotwire Native for Rails Developers]({{ site.data.urls.book }}).
 
 Thank you for being part of this journey! As always, don't hesitate to [reach out](mailto:joe@masilotti.com) if you have any questions about Hotwire Native.
