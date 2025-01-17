@@ -32,13 +32,13 @@ Path configuration is one of the most powerful—and sometimes confusing—featu
 
 ## Ch 4 - Add a native tab bar
 
-Tab bars are a staple of native apps. In this chapter, you’ll learn how to add them to your Hotwire Native app, connecting each tab to its own web view instance. Plus, you’ll ensure your server isn’t overloaded when the app starts.
+Tab bars are a staple of native apps. In this chapter, you’ll learn how to add them to your Hotwire Native apps, connecting each tab to its own web view instance. Plus, you’ll ensure your server isn’t overloaded when the app starts.
 
 ![](/assets/images/hotwire-native-book-chapters/chapter4.png)
 
 ## Chs 5 + 6 - Render native screens with SwiftUI and Jetpack Compose
 
-These chapters show you how to route, display, and populate fully native screens powered by SwiftUI and Jetpack Compose. Once you’ve completed these steps, you’ll be able to integrate virtually any native experience into your Hotwire Native app.
+These chapters show you how to route, display, and populate fully native screens powered by SwiftUI and Jetpack Compose. Once you’ve completed these steps, you’ll be able to integrate virtually any native experience into your Hotwire Native apps.
 
 ![](/assets/images/hotwire-native-book-chapters/chapters56.png)
 
@@ -55,4 +55,4 @@ Two more chapters are still in the works:
 * Deploy to physical devices with TestFlight and internal testing
 * Send push notifications with APNS and FCM
 
-You can grab your copy of the book today on [The Pragmatic Bookshelf website]({{ site.data.urls.book }}). The last two chapters and updates will be delivered every two weeks until the final later this year. Don’t miss out!
+You can grab your copy of the book today on [The Pragmatic Bookshelf website]({{ site.data.urls.book }}). The last two chapters and updates will be delivered every two weeks until the final release later this year.
