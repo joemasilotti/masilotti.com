@@ -8,6 +8,15 @@
     developers to teach and apply the best practices I've accumulated working
     with the framework for 10+ years.
 
+- title: Monthly advisory retainer
+  best_if: you want to write the code yourself but need an expert to guide you.
+  you_get: unlimited access to me via phone, email, and/or Zoom.
+  cta: Email Joe to get started
+  description: |
+    Use our time to get advice on best practices, receive technical overviews of
+    topics, or even to dive into your Hotwire Native code. I return all messages
+    no later than the next business day. Meetings must be scheduled in advance.
+
 - title: Private custom workshop
   best_if: you want to level up your team to write Hotwire Native apps on their own.
   you_get: a custom workshop tailored to your team's unique needs and skill level.
@@ -17,15 +26,6 @@
     events.  They can cover Swift/Kotlin syntax, dive right into the Hotwire
     Native integration, or skip ahead to best practices in building scalable
     hybrid apps with small teams.
-
-- title: Monthly advisory retainer
-  best_if: you want to write the code yourself but need an expert to guide you.
-  you_get: unlimited access to me via phone, email, and/or Zoom.
-  cta: Email Joe to get started
-  description: |
-    Use our time to get advice on best practices, receive technical overviews of
-    topics, or even to dive into your Hotwire Native code. I return all messages
-    no later than the next business day. Meetings must be scheduled in advance.
 
 - title: Pair with Joe
   price: $499 for a 90 minute pairing session
