@@ -13,6 +13,16 @@ layout_title: Need a hand with Hotwire Native?<br>I'd love to help.
   </a>
 </div>
 
+{% if site.testimonials %}
+  <div class="flow-root mt-8 md:mt-12">
+    <div class="-mt-8 sm:-mx-4 sm:columns-2">
+      {% for testimonial in site.data.testimonials limit: 3 %}
+        {% include testimonial.liquid object=testimonial %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
 <ul class="flex max-w-xl flex-col space-y-16 mt-16">
   {% for service in site.data.services %}
     {% include service.liquid service=service %}
