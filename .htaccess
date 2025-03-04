@@ -11,5 +11,6 @@ Redirect /turbo-native-for-rails-developers/ /hotwire-native-for-rails-developer
 Redirect /hotwire /newsletter/
 Redirect /topics /articles/
 Redirect /workshop /turbo-native-workshop/
+Redirect /turbo-native-workshop/ /hotwire-native-for-rails-developers/
 
 Redirect /discord https://discord.gg/t6kQrYcHfZ
