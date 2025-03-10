@@ -5,7 +5,14 @@
   href: https://37signals.com
   link: 37signals
 
-- quote: Working with Joe was an absolute pleasure – his expertise and collaborative spirit made him a standout partner. He seamlessly helped us build native apps the Rails way with Hotwire Native.
-  author: Doyle Baxter
-  image: testimonials/doyle-baxter.png
-  title: CTO
+# - quote: Working with Joe was an absolute pleasure – his expertise and collaborative spirit made him a standout partner. He seamlessly helped us build native apps the Rails way with Hotwire Native.
+  # author: Doyle Baxter
+  # image: testimonials/doyle-baxter.png
+  # title: CTO
+
+- quote: Joe has a gift of being able to take complex topics like Hotwire Native development and explain them in a way that's logical and easy to understand.
+  author: Scott Robin
+  image: testimonials/scott-robin.jpg
+  title: Principal at
+  href: https://robbin.co
+  link: Robbin & Co.
