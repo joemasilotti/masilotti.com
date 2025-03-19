@@ -8,7 +8,7 @@ favorite: true
 
 You can now buy my book, [Hotwire Native for Rails Developers]({{ site.data.urls.book }})!
 
-!["Hotwire Native for Rails Developers" by Joe Masilotti cover](/assets/images/hotwire-native-book-in-beta/hotwire-native-for-rails-developers-cover.jpg){:standalone .max-w-md}
+!["Hotwire Native for Rails Developers" by Joe Masilotti cover](/assets/images/hotwire-native-book-in-beta/hotwire-native-for-rails-developers-cover.jpg?v=2){:standalone .max-w-md}
 
 <div class="note mb-8">
   Create intuitive and maintainable mobile apps powered by the technology you already know, Ruby on Rails. Add Hotwire Native to your new or existing Rails app and start creating native iOS and Android applications. You’ll learn how to enhance your apps, progressively adding native components and screens. Bring your existing or new web apps to a much wider mobile audience, and make the app look and feel native to their platform.
