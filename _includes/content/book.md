@@ -14,15 +14,15 @@ By the end of this book, you'll be able to work with confidence across multiple 
 
 ## Table of contents
 
-*Note that this chapter list is not yet final and will evolve as the book is written.*
-
 1. Build Your First Hotwire Native Apps
 1. Control Your Apps with Rails
 1. Navigate Gracefully with Path Configuration
 1. Add a Native Tab Bar
 1. Render Native Screens with SwiftUI
 1. Render Native Screens with Jetpack Compose
-1. Build Native iOS Components with the Bridge
-1. Build Native Android Components with the Bridge
-1. Deploy to Physical Devices with TestFlight and Internal Testing
+1. Build iOS Bridge Components with Swift
+1. Build Android Bridge Components with Kotlin
+1. Deploy to Physical Devices with TestFlight and Play Testing
 1. Send Push Notifications with APNS and FCM
+
+Here's a [chapter-by-chapter breakdown]({% post_url 2025-01-17-hotwire-native-book-chapters %}) with screenshots for each milestone you'll accomplish while working through the book.
