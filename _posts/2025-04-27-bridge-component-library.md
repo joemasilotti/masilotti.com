@@ -6,7 +6,7 @@ description: "Announcing a collection of iOS and Android bridge components to dr
 
 [Hotwire Native](https://native.hotwired.dev) makes it easier than ever to build hybrid mobile apps powered by your Ruby on Rails server. But when you need truly native UI elements like menus, barcode scanners, and push notifications, you’re usually stuck writing custom Swift and Kotlin code.
 
-I’ve been solving this problem for years in [client projects]({% link _pages/services.liquid %}). Now, I’m sharing my own collection of bridge components, extracted from real-world apps.
+I’ve been solving this problem for years in [client projects]({% link _pages/services.liquid %}) and [my book]({{ site.data.urls.book }}). Now, I’m sharing my own collection of bridge components, extracted from real-world apps.
 
 Check out my new [Bridge Components library on GitHub]({{ site.data.urls.bridge_components }}).
 
