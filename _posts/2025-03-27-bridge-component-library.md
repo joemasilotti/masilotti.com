@@ -1,6 +1,6 @@
 ---
 title: "A library of bridge components for Hotwire Native apps"
-date: 2025-04-27
+date: 2025-03-27
 description: "Announcing a collection of iOS and Android bridge components to drop into your Hotwire Native apps, all extracted from real-world applications."
 ---
 
