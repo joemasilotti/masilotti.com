@@ -31,7 +31,9 @@ layout: container
             </p>
             <div class="text-gray-500">
               <p>The Hotwire Native guy</p>
-              <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+              {% unless page.hide_date %}
+                <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %e, %Y" }}</time>
+              {% endunless %}
             </div>
           </div>
         </aside>

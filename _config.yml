@@ -24,6 +24,9 @@ collections:
   hotwire:
     output: true
     permalink: /hotwire/edition-:title/
+  hotwire_native:
+    output: true
+    permalink: /hotwire-native/:title/
 defaults:
   - scope:
       path: _posts/
@@ -38,6 +41,13 @@ defaults:
     values:
       permalink: /turbo-ios/:title/
       back: _posts/2021-05-14-turbo-ios.md
+  - scope:
+      path: _hotwire_native/
+    values:
+      layout: post
+      preview_links_template_id: 999
+      back: _pages/hotwire-native.liquid
+      hide_date: true
   - scope:
       path: _hotwire/
       type: hotwire
