@@ -44,7 +44,7 @@ defaults:
   - scope:
       path: _hotwire_native/
     values:
-      layout: post
+      layout: hotwire_native
       preview_links_template_id: 999
       back: _pages/hotwire-native.liquid
       hide_date: true
