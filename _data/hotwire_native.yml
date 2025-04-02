@@ -1,0 +1,36 @@
+- title: Control navigation in Hotwire Native
+  description: |
+    Push, pop, present, dismiss screens in your app with built-in handling,
+    the Historical Location API, and data-* attributes.
+
+- title: Render forms as modals in Hotwire Native
+  description: |
+    Set up a remote path configuration to dynamically render pages as modals,
+    creating a better native experience and better error handling.
+
+- title: Render native alerts in Hotwire Native
+  description: |
+    Upgrade JavaScript's alert() and confirm() dialogs with native controls
+    and handling.
+
+- title: Debug errors in Hotwire Native
+  description: |
+    Enable Xcode and Android Studio debug logging and attach a remote
+    browser session to inspect JavaScript running in the web view.
+
+- title: Handle external URLs in Hotwire Native
+  description: |
+    Use route decision handlers to open links in the in-app browser, the
+    system browser, and more.
+
+- title: Add native tabs to Hotwire Native
+
+- title: Render SwiftUI screens in Hotwire Native
+
+- title: Render Jetpack Compose screens in Hotwire Native
+
+- title: Customize the web view in Hotwire Native
+
+- title: Use custom view controllers in Hotwire Native
+
+- title: Send authenticated HTTP requests in Hotwire Native

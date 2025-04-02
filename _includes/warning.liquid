@@ -1,3 +1,8 @@
+{% comment %}
+Warns the reader that this post hasn't been updated for Hotwire Native.
+- href: Optional. Links to this article, if provided, or the newsletter if not.
+{% endcomment %}
+
 <div class="not-prose">
   <div class="rounded-md bg-yellow-50 p-4">
     <div class="flex">
@@ -5,9 +10,14 @@
         {% svg /assets/icons/solid/exclamation_triangle.svg class="h-6 w-6 text-yellow-400" %}
       </div>
       <div class="ml-3">
-        <h3 class="text-base font-medium text-yellow-800">Turbo Native has evolved…</h3>
-        <div class="mt-2 text-base text-yellow-700">
-          <p>…and is now Hotwire Native. Many concepts still apply but this post is not yet fully compatible. <a href="{% link _pages/newsletter.liquid %}" class="font-medium underline">Subscribe to my newsletter</a> to know when this is updated.</p>
+        <h3 class="text-base font-medium text-yellow-800">This post was written for Turbo Native</h3>
+        <div class="mt-3 text-base text-yellow-700">
+          <p class="mb-1">It may still be useful, but parts of it are outdated.</p>
+          {% if include.href %}
+            <p><a href="{{ include.href }}" class="font-medium underline">Read the updated version for Hotwire Native</a>.</p>
+          {% else %}
+            <p><a href="{% link _pages/newsletter.liquid %}" class="font-medium underline">Subscribe to my newsletter</a> to get the latest updates.</p>
+          {% endif %}
         </div>
       </div>
     </div>

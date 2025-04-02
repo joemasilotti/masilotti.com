@@ -17,7 +17,7 @@ task :generate_opengraph_images, [:post_id] do |t, args|
     site.collections[collection].docs.find { |p| p.id == post_id || p.url == post_id }
   end
 
-  post = find_post.call("posts") || find_post.call("hotwire")
+  post = find_post.call("posts") || find_post.call("hotwire") || find_post.call("hotwire_native")
   raise "Could not find post" unless post
 
   Dotenv.load

@@ -1,0 +1,52 @@
+---
+title: Practical Hotwire Native
+description: "A collection of focused and actionable tutorials on building Hotwire Native iOS and Android apps."
+layout: simple
+permalink: /hotwire-native/
+---
+
+{% assign posts = site.hotwire_native | sort: "order" %}
+
+<div class="md:mt-16">
+  <div class="flex max-w-3xl flex-col space-y-10">
+    {% for post in posts %}
+      <article class="md:grid md:grid-cols-4 md:items-baseline">
+        <div class="md:col-span-3 group relative flex flex-col items-start">
+          <h2 class="text-lg font-semibold tracking-tight text-gray-800">
+            <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
+            <a href="{{ post.url }}">
+              <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+              <span class="relative z-10">
+                <div class="flex items-center">
+                  {{ post.title | replace: " in Hotwire Native", "" }}
+
+                  {% if post.new %}
+                    <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ml-3 bg-primary-100 text-primary-700">NEW</span>
+                  {% endif %}
+                </div>
+              </span>
+            </a>
+          </h2>
+          <p class="relative z-10 mt-2 text-gray-600">{{ post.description }}</p>
+        </div>
+      </article>
+    {% endfor %}
+
+    {% for post in site.data.hotwire_native %}
+      <article class="md:grid md:grid-cols-4 md:items-baseline">
+        <div class="md:col-span-3 group relative flex flex-col items-start">
+          <h2 class="text-lg font-semibold tracking-tight text-gray-400">
+            <div class="flex items-center">
+              {{ post.title | replace: " in Hotwire Native", "" }}
+              <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ml-3 bg-gray-100/75 text-gray-400">COMING SOON</span>
+            </div>
+          </h2>
+
+          {% if post.description %}
+            <p class="relative z-10 mt-2 text-gray-400">{{ post.description }}</p>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>
