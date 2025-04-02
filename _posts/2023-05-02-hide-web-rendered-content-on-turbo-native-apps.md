@@ -4,7 +4,8 @@ date: 2023-05-02
 description: Learn two ways to conditionally show web content in your Turbo Native app. One quick and dirty and one cache-friendly.
 ---
 
-{% include warning.liquid %}
+{% capture href %}{% link _hotwire_native/hide-content-tailwind-css.md %}{% endcapture %}
+{% include warning.liquid href=href %}
 
 Hybrid apps built with [Turbo Native](<%= url_for "_posts/2021-05-14-turbo-ios.md" %>) come with a ton of benefits. Namely, they enable small teams to ship multiplatform apps by sharing web content. They let Rails developers focus on what they do best: working in Rails.
 
