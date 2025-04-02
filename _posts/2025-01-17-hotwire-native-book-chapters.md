@@ -2,7 +2,7 @@
 title: "What you’ll learn in “Hotwire Native for Rails Developers”"
 date: 2025-01-17
 description: "Curious about my new book? Here’s a chapter-by-chapter breakdown of what you'll learn, with screenshots."
-favorite: true
+favorite: 2
 ---
 
 A lot of folks have been asking me what exactly they’ll learn in my new book, [Hotwire Native for Rails Developers]({{ site.data.urls.book }}). So here’s a quick chapter-by-chapter rundown of what’s inside.

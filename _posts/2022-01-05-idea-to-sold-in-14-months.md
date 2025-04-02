@@ -2,7 +2,6 @@
 title: How I took my SaaS from idea to sold in 14 months
 date: 2022-01-05
 description: I built an MVP in one month and grew the product for a year. But now it’s time to pass the torch. It’s official, I sold Mugshot Bot! Here’s how it all went down.
-index: 2
 ---
 
 I built an MVP in one month and grew the product for a year. But now it’s time to pass the torch. It’s official, I sold [Mugshot Bot](https://mugshotbot.com)! Here’s how it all went down.

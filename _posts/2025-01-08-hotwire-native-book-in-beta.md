@@ -3,7 +3,7 @@ title: Hotwire Native book, in beta!
 date: 2025-01-08
 description: "Learn how to build mobile apps powered by Ruby on Rails. The beta release of Hotwire Native for Rails Developers is here."
 og_title: Hotwire Native book, now in beta!
-favorite: true
+favorite: 1
 ---
 
 You can now buy my book, [Hotwire Native for Rails Developers]({{ site.data.urls.book }})!
