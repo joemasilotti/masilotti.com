@@ -1,0 +1,1 @@
+node -v && bundle exec jekyll server --livereload --future
