@@ -5,7 +5,7 @@ description: "Make your Hotwire Native apps feel more native with dynamic screen
 order: 1
 ---
 
-One of the biggest selling points for using [Hotwire Native]({% link _pages/hotwire-native.liquid %}) is having all of your content exist in one spot: the web. This enables a large portion of your application logic to live where you're most comfortable: Ruby on Rails code.
+One of the biggest selling points for using [Hotwire Native]({% link _hotwire_native/index.liquid %}) is having all of your content exist in one spot: the web. This enables a large portion of your application logic to live where you're most comfortable: Ruby on Rails code.
 
 But even when rendering mostly web content, there are still ways to make your apps feel more native. And some of them don’t require *any* Swift or Kotlin code to implement. A quick win is understanding how native screen titles are set in Hotwire Native apps.
 

@@ -3,9 +3,10 @@ title: Hotwire Native by example
 description: "A collection of focused and actionable tutorials on building Hotwire Native iOS and Android apps."
 layout: simple
 permalink: /hotwire-native/
+favorite: 3
 ---
 
-{% assign posts = site.hotwire_native | sort: "order" %}
+{% assign posts = site.hotwire_native | where_exp: "post", "post.url != page.url" | sort: "order" %}
 
 <div class="md:mt-16">
   <div class="flex max-w-3xl flex-col space-y-10">

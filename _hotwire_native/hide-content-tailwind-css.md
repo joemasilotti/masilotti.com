@@ -5,7 +5,7 @@ description: "Get rid of duplicate page titles and make your app feel more nativ
 order: 2
 ---
 
-Mobile apps built with [Hotwire Native]({% link _pages/hotwire-native.liquid %}) let Rails developers reuse logic across multiple platforms. By rendering existing web content on iOS *and* Android, small teams can ship big apps in a fraction of the time. But sometimes shoving a web view inside of native app chrome can look a little... off.
+Mobile apps built with [Hotwire Native]({% link _hotwire_native/index.liquid %}) let Rails developers reuse logic across multiple platforms. By rendering existing web content on iOS *and* Android, small teams can ship big apps in a fraction of the time. But sometimes shoving a web view inside of native app chrome can look a little... off.
 
 Here's an example from the hiking app you build in while working through [my book on Hotwire Native]({{ site.data.urls.book }}). This screen lists hikes that you recently completed. Notice the "Hikes" up at the top *and* in the web content?
 

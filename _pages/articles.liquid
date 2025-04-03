@@ -10,7 +10,7 @@ layout_description: Get started with my latest article and some of my favorites.
   {% assign post = site.posts.first %}
   {% include post.liquid post=post badge="new" %}
   <div class="space-y-16">
-    {% assign all = site.posts | concat: site.pages %}
+    {% assign all = site.posts | concat: site.hotwire_native %}
     {% assign favorites = all | where_exp: "item", "item.favorite" %}
     {% assign posts = favorites | sort: "favorite" %}
     {% for post in posts %}
