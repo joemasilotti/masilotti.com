@@ -15,7 +15,7 @@ Check out my new [Bridge Components library on GitHub]({{ site.data.urls.bridge_
 ![](/assets/images/bridge-components-library/promo.png){:standalone .unstyled}
 
 * **7 free components** to get started right away.
-* **4 Pro components** for advanced workflows.
+* **5 Pro components** for advanced workflows.
 * **iOS and Android support** for each component.
 * **Example iOS, Android, and Rails apps** included to see them in action.
 * **Full source code** - copy-paste into your app and wire up the HTML!
@@ -61,6 +61,7 @@ These components are included in the library:
 For advanced integration with native SDKs, a Pro license includes:
 
 * **Barcode Scanner**: Scan barcodes and QR codes using the device camera.
+* **Document Scanner**: Present a camera to digitize physical documents.
 * **Location Access**: Prompt the user for precise location data.
 * **Push Notification Tokens**: Retrieve the device’s push notification token.
 * **System Permissions**: Check status of location, notifications, and more.
