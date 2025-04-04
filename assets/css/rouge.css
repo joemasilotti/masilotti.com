@@ -1,4 +1,5 @@
-pre code .hll { background-color: #52525b; padding: 6px 6px 6px 0; }
+pre code .hll { background: none; position: relative; }
+pre code .hll::before { content: "▶"; color: #a1a1aa; position: absolute; left: -1em; width: 1em; }
 pre code  { background: "#18181b"; color: #cccccc }
 pre code .c { color: #999999 } /* Comment */
 pre code .err { color: #f2777a } /* Error */
