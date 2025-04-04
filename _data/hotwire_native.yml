@@ -3,11 +3,6 @@
     Push, pop, present, dismiss screens in your app with built-in handling,
     the Historical Location API, and data-* attributes.
 
-- title: Render forms as modals in Hotwire Native
-  description: |
-    Set up a remote path configuration to dynamically render pages as modals,
-    creating a better native experience and better error handling.
-
 - title: Render native alerts in Hotwire Native
   description: |
     Upgrade JavaScript's alert() and confirm() dialogs with native controls
