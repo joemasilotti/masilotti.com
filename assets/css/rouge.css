@@ -1,5 +1,19 @@
 pre code .hll { background: none; position: relative; }
-pre code .hll::before { content: "▶"; color: #a1a1aa; position: absolute; left: -1em; width: 1em; }
+
+/* mark_lines in highlight blocks. */
+pre code .hll::before {
+  content: "►";
+  color: #a1a1aa;
+  position: absolute;
+  left: -0.8em;
+}
+@media (min-width: 1024px) {
+  pre code .hll::before {
+    left: -1.1em;
+    padding-top: 0.2em;
+  }
+}
+
 pre code  { background: "#18181b"; color: #cccccc }
 pre code .c { color: #999999 } /* Comment */
 pre code .err { color: #f2777a } /* Error */
