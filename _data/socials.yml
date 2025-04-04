@@ -16,14 +16,14 @@
   href: https://github.com/joemasilotti
   icon: github.svg
 
-- name: mastodon
-  handle: joemasilotti
-  title: Follow Joe on Mastodon
-  href: https://ruby.social/@joemasilotti
-  icon: mastodon.svg
-
 - name: linkedin
   handle: joemasilotti
   title: Follow Joe on LinkedIn
   href: https://www.linkedin.com/in/joemasilotti
   icon: linkedin.svg
+
+- name: bluesky
+  handle: joemasilotti
+  title: Follow Joe on Bluesky
+  href: https://bsky.app/profile/joemasilotti.com
+  icon: bluesky.svg
