@@ -9,8 +9,11 @@ author:
   github: joemasilotti
   linkedin: joemasilotti
 exclude:
+  - LICENSE.md
   - README.md
+  - Rakefile
   - package-lock.json
+  - package.json
   - postcss.config.js
   - tailwind.config.js
   - yarn.lock
