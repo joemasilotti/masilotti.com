@@ -1,3 +1,8 @@
+- title: Configure dynamic, environment-based URLs
+  description: |
+    Automatically switch to a production server when the app is downloaded
+    from the app stores.
+
 - title: Control navigation in Hotwire Native
   description: |
     Push, pop, present, dismiss screens in your app with built-in handling,
