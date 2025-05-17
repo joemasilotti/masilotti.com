@@ -1,0 +1,108 @@
+- type: conferences
+  cta: Watch video
+  appearances:
+    - title: Just enough Turbo Native to be dangerous
+      date: 2023-10-05
+      description: |
+        I walk you through how to build a Turbo Native iOS app from scratch,
+        along with the benefits and pain points that come with it.
+      event: Rails World 2023
+      href: https://www.youtube.com/watch?v=hAq05KSra2g
+
+    - title: Why are we afraid to hire junior Rails developers?
+      date: 2023-06-01
+      description: |
+        What I’ve learned from helping companies hire Rails developers for the
+        past year and from being a developer myself for over a decade.
+      event: Rails SaaS, May 2022
+      href: https://www.youtube.com/watch?v=NZionAE-Tj0
+
+
+- type: podcasts
+  cta: Listen to podcast
+  appearances:
+    - title: Hotwire Native with Joe Masilotti
+      date: 2025-01-31
+      description: |
+        I join Remote Ruby to discuss the evolution of Hotwire Native, insights
+        from my upcoming book, authentication, and push notifications.
+      event: Remote Ruby, January 2025
+      href: https://www.remoteruby.com/2260490/episodes/16502775-hotwire-native-with-joe-masilotti
+
+    - title: Joe Masilotti on Hotwire Native for Rails Developers
+      date: 2025-03-13
+      description: |
+        I talk with Dave Thomas about how Hotwire Native lets Rails developers
+        quickly deploy mobile apps using familiar tools—without a full native rewrite.
+      event: Pragmatic Behind The Book, March 2025
+      href: https://www.youtube.com/watch?v=9X3tgyr7umI
+
+    - title: Episode 17
+      date: 2023-02-21
+      description: |
+        Joe joins the show to talk about his various projects, why it's so
+        important to build in public, and how doing less is helping him to do it
+        all.
+      event: Code and the Coding Coders who Code it, February 2023
+      href: https://podcast.drbragg.dev/episodes/episode-17-joe-masilotti/
+
+    - title: Return of the Hotwire Native Guy
+      date: 2025-02-18
+      description: |
+        Joe shares about niching down on Hotwire Native, changes in the related
+        open source libraries, the direction of his consulting work, his parental
+        leave last year, and the process of writing his forthcoming book.
+      event: IndieRails, February 2025
+      href: https://www.indierails.com/52
+
+    - title: Hotwire Native with Joe Masilotti
+      date: 2025-02-12
+      description: |
+        Today's guest is Joe Masilotti, who wrote Hotwire Native for Hotwire
+        Developers.  He joins the show to talk about how Hotwire Native can
+        help you build mobile apps out of your Rails apps.
+      event: The Ruby on Rails Podcast, February 2025
+      href: https://www.therubyonrailspodcast.com/532
+
+    - title: Joe Masilotti
+      date: 2023-02-20
+      description: |
+        Joe shares his journey getting into coding, going independent, consulting
+        in iOS and Rails, building in public, and starting RailsDevs.
+      event: IndieRails, February 2023
+      href: https://www.indierails.com/2
+
+    - title: Turbo Native Workshop
+      date: 2022-12-14
+      description: |
+        Brittany and Joe discuss why he is conducting the workshop(s), whether he
+        is happy with the current state of Turbo Native (with a cool OSS reveal)
+        and of course, an update on how RailsDevs is progressing.
+      event: The Ruby on Rails podcast, December 202
+      href: https://www.therubyonrailspodcast.com/448
+
+    - title: Positivity and RailsDevs
+      date: 2022-04-12
+      description: |
+        Building RailsDevs in public, challenges I have faced, and the technical
+        decisions I am proud of. Also, a bit about my upcoming workshop.
+      event: The Ruby on Rails podcast, April 2022
+      href: https://www.therubyonrailspodcast.com/413
+
+    - title: Solo founder grows reverse job board to $100k a year
+      date: 2022-09-13
+      description: |
+        Joe Masilotti is an all round top bloke. He's now just a top bloke who's
+        making that juicy bootstrapped cash helping Rails developers get jobs.
+        All while sneakily avoiding being labelled a recruiter. Smart man.
+      event: Indie Bites, September 2022
+      href: https://indiebites.com/66
+
+    - title: Building iOS apps using Hotwire / Turbo.js
+      date: 2021-04-30
+      description: |
+        We find out what Joe does and things he has built as an iOS and Rails
+        developer. Also, insight on building an App and submitting to the App
+        Store process and using a Ruby gem called fastlane.
+      event: Remote Ruby, April 2021
+      href: https://www.remoteruby.com/2260490/episodes/13761015-building-ios-apps-using-hotwire-turbo-js-with-joe-masilotti

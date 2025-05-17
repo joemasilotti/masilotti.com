@@ -1,0 +1,29 @@
+---
+title: Speaking
+description: |
+  I love sharing my experience building Hotwire Native apps and working for
+  myself. Here's where you can find recordings to them all.
+layout: simple
+layout_title: |
+  My conference talks, podcast appearances, and more.
+---
+
+<div class="mt-16 sm:mt-20">
+  <div class="space-y-20">
+    {% for medium in site.data.appearances %}
+      <section class="md:border-l md:border-gray-100 md:pl-6 md:dark:border-gray-700/40">
+        <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+          <h2 class="font-semibold text-gray-800 dark:text-gray-100">{{ medium.type | capitalize }}</h2>
+          <div class="md:col-span-3">
+            <div class="space-y-16">
+              {% assign appearances = medium.appearances | sort: "date" | reverse %}
+              {% for appearance in appearances %}
+                {% include appearance.liquid appearance=appearance cta=medium.cta %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+    {% endfor %}
+  </div>
+</div>
