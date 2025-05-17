@@ -23,8 +23,6 @@
     Use route decision handlers to open links in the in-app browser, the
     system browser, and more.
 
-- title: Add native tabs to Hotwire Native
-
 - title: Render SwiftUI screens in Hotwire Native
 
 - title: Render Jetpack Compose screens in Hotwire Native

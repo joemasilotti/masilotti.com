@@ -29,7 +29,7 @@ collections:
     permalink: /hotwire/edition-:title/
   hotwire_native:
     output: true
-    permalink: /hotwire-native/:title/
+    permalink: /hotwire-native/:path/
 defaults:
   - scope:
       path: _posts/
