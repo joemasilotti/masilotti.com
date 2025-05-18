@@ -31,6 +31,8 @@ You’ll automatically see “Dashboard” rendered at the top of the screen in 
 
 But this quickly falls apart if you’re not using the same `<title>` across your entire app. Instead, I like to provide a bit more context and set it dynamically based on the page content currently being rendered.
 
+{% include book/promo.liquid %}
+
 ## Dynamic `<title>`s
 
 I use the [`content_for`](https://apidock.com/rails/ActionView/Helpers/CaptureHelper/content_for) helper to dynamically set the `<title>` from the view.

@@ -40,6 +40,8 @@ favorite: 3
       </article>
     {% endfor %}
 
+    {% include book/promo.liquid %}
+
     {% for post in site.data.hotwire_native %}
       <article class="md:grid md:grid-cols-4 md:items-baseline">
         <div class="md:col-span-3 group relative flex flex-col items-start">

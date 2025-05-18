@@ -10,6 +10,8 @@ Tab bars are one of the most common navigation patterns in native apps. Because 
 
 Hotwire Native now comes with first-party support for native tabs. With `HotwireTabBarController` you can add a native tab bar to your app faster than ever.
 
+{% include book/promo.liquid %}
+
 To add native tabs to a Hotwire Native iOS app, we'll start with the code provided in the [official getting started guide](https://native.hotwired.dev/ios/getting-started). Then update the following two marked lines in `SceneDelegate.swift` (or copy paste this entire file into a new project).
 
 {% highlight swift mark_lines="9 16" %}

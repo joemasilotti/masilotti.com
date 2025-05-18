@@ -15,6 +15,8 @@ Hotwire Native automatically [sets *native* screen titles from the `<title>` HTM
 
 We can remedy this by **hiding specific content when rendered in Hotwire Native apps**. First we'll explore how to do this with Ruby and then with Tailwind CSS.
 
+{% include book/promo.liquid %}
+
 ## Hide Hotwire Native content with Ruby
 
 By default, Hotwire Native apps report a user agent that contains the string "Hotwire Native". Combined with the `hotwire_native_app?` helper included in [turbo-rails](https://github.com/hotwired/turbo-rails/blob/main/app/controllers/turbo/native/navigation.rb#L8-L10), we can hide content with an `unless` statement.

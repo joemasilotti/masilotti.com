@@ -16,6 +16,8 @@ We can take advantage of this UX pattern in Hotwire Native apps by presenting **
 
 To present forms as modals we need to set up a [path configuration](https://native.hotwired.dev/overview/path-configuration) rule. This will match a URL when a user taps a link in the app and apply presentation behavior.
 
+{% include book/promo.liquid %}
+
 ## Set up remote path configuration
 
 Start by adding add a new route to `config/routes.rb`.
