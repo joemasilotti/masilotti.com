@@ -21,6 +21,15 @@
 - type: podcasts
   cta: Listen to podcast
   appearances:
+    - title: Simplify Your Stack, Ship Mobile Sooner
+      date: 2025-05-20
+      description: |
+        Joe evaluates maintainability in how fast he can go from "git clone"
+        to coding. He shares how Hotwire Native speeds up mobile development
+        by reusing Rails views and layering in native features.
+      event: Maintainable Software Podcast, May 2025
+      href: https://maintainable.fm/episodes/joe-masilotti-simplify-your-stack-ship-mobile-sooner
+
     - title: Hotwire Native with Joe Masilotti
       date: 2025-01-31
       description: |
