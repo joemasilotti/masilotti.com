@@ -18,12 +18,20 @@ Renders a conference or podcast appearance summary and link.
       </span>
     </span>
     {{ appearance.event }}
+
+    {% if appearance.upcoming %}
+      <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-700 ml-4">Upcoming</span>
+    {% endif %}
   </p>
 
   <p class="relative z-10 mt-2 text-gray-600">{{ appearance.description }}</p>
 
   <div aria-hidden="true" class="relative z-10 mt-4 flex items-center font-medium text-teal-500">
-    {{ include.cta }}
+    {% if appearance.upcoming %}
+      More info
+    {% else %}
+      {{ include.cta }}
+    {% endif %}
     {% svg /assets/icons/micro/chevron_right.svg class="ml-1.5 h-3 w-3 stroke-current" %}
   </div>
 </article>

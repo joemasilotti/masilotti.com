@@ -1,6 +1,25 @@
 - type: conferences
   cta: Watch video
   appearances:
+    - title: "Hotwire Native: A Rails Developer’s Secret Tool to Building Mobile Apps"
+      date: 2025-09-04
+      description: |
+        I'm building a Hotwire Native iOS and Android apps LIVE on stage. I'll
+        cover practical tips, pitfalls, and technqiues I've picked up from working
+        with the framework since 2016.
+      event: Rails World 2025
+      href: https://rubyonrails.org/world/2025/day-1/joe-masilotti
+      upcoming: true
+
+    - title: Hotwire Native workshop
+      date: 2025-07-09
+      description: |
+        Join this live workshop to learn how to build native iOS and Android apps
+        from scratch, powered by your existing Ruby on Rails website and Hotwire native.
+      event: Rails Conf 2025
+      href: https://railsconf.org/schedule/#sz-tab-45847
+      upcoming: true
+
     - title: Just enough Turbo Native to be dangerous
       date: 2023-10-05
       description: |
