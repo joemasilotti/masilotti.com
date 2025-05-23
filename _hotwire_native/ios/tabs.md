@@ -77,7 +77,7 @@ extension HotwireTab {
 
 Here we add two tabs to a demo blog application: one for posts and one for comments. The strings passed to `UIImage(systemName:)` reference icons provided by [SF Symbols,](https://developer.apple.com/sf-symbols/) a library from Apple that includes more than 5,000 symbols that you can freely use in iOS apps. I recommend downloading SF Symbols and digging through the plethora of options.
 
-![The SF Symbols app, a listing of different icons like map pins, cars, and buses, with categories on the left and search/details on the right.](/assets/images/hotwire-native/tabs/ios/sf-symbols.png)
+![The SF Symbols app, a listing of different icons like map pins, cars, and buses, with categories on the left and search/details on the right.](/assets/images/hotwire-native/ios/tabs/sf-symbols.png)
 
 Bonus tip: Add the following line of code before you load the tabs. This darkens the background color of the tab bar, making it even more obvious.
 
@@ -87,6 +87,6 @@ UITabBar.appearance().scrollEdgeAppearance = .init()
 
 Run the app and check out your native tab bar!
 
-![Native tabs on Hotwire Native iOS](/assets/images/hotwire-native/tabs/ios/tabs.png){:standalone .unstyled}
+![Native tabs on Hotwire Native iOS](/assets/images/hotwire-native/ios/tabs/tabs.png){:standalone .unstyled}
 
 Up next we'll add a native tab bar to our Hotwire Native Android app.
