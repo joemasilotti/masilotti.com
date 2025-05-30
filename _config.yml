@@ -24,12 +24,15 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  hotwire:
+  newsletter:
     output: true
-    permalink: /hotwire/edition-:title/
+    permalink: /newsletter/:title/
   hotwire_native:
     output: true
     permalink: /hotwire-native/:path/
+  hotwire:
+    output: true
+    permalink: /hotwire/edition-:title/
 defaults:
   - scope:
       path: _posts/
@@ -52,13 +55,10 @@ defaults:
       back: _hotwire_native/index.liquid
       hide_date: true
   - scope:
-      path: _hotwire/
-      type: hotwire
+      path: _newsletter/
     values:
-      layout: hotwire
+      layout: newsletter
       back: _pages/newsletter.liquid
-      preview_links_template_id: 1000
-      og_title: ⚡️ Hotwire Monthly newsletter
 
 # Plugin configuration
 plugins:
