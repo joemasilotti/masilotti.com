@@ -70,7 +70,6 @@ postcss:
   cache: false
 
 # Custom configuration
-fathom: QNURQQHD
 preview_links:
   site_id: 755
 testimonials: true

@@ -96,8 +96,6 @@ I was on this podcast too! I shared [my journey growing RailsDevs on episdode 41
 
 The hosts run a privacy focused analytics platform – a business that I have a lot of respect for. They made me rethink how I collect data from my users, how I use it, and most importantly, why.
 
-I now run all of my websites on Fathom – and can share this awesome [public dashboard for RailsDevs](https://app.usefathom.com/share/cacnfaan/railsdevs.com#/?filters=%5B%5D&range=all_time&site=1125899910004402)!
-
 ## What do you listen to?
 
 Those are the podcasts I'm most excited about right now.
