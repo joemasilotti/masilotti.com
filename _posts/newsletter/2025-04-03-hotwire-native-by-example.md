@@ -14,7 +14,7 @@ I’m putting together a new series of articles - a collection of **focused** an
 
 I haven’t announced them to the public yet. But I wanted to share what I have so far with you. And see if it is worth continuing.
 
-Check them out on [my website]({% link _hotwire_native/index.liquid %}). I’ve written two articles so far and will be adding more soon.
+Check them out on [my website]({% link _pages/hotwire-native.liquid %}). I’ve written two articles so far and will be adding more soon.
 
 I’ve also sketched out ideas for future content. I’d love to know what you think of the list. I’m all ears for new ideas!
 

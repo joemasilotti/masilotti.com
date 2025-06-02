@@ -1,5 +1,6 @@
 ---
 title: "Present forms as modals in Hotwire Native"
+date: 2025-05-18
 description: "Set up a remote path configuration to dynamically render pages as modals, helping isolate tasks and align with native UX patterns."
 order: 3
 ---

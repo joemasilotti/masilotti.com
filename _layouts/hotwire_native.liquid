@@ -4,19 +4,18 @@ layout: post
 
 {{ content }}
 
-{% assign posts = site.hotwire_native | sort: "order" %}
-{% for p in posts %}
+{% for p in site.categories["hotwire-native"] %}
   {% if p.order > page.order %}
     {% assign post = p %}
     {% break %}
   {% endif %}
 {% endfor %}
 
-{% if post %}
-  <div class="not-prose">
-    <div class="mt-16 sm:mt-20">
-      <div class="flex max-w-3xl flex-col space-y-10">
-        <p class="text-sm font-semibold text-gray-500 tracking-wide uppercase">Read next</p>
+<div class="not-prose">
+  <div class="mt-16 sm:mt-20">
+    <div class="flex max-w-3xl flex-col space-y-10">
+      <p class="text-sm font-semibold text-gray-500 tracking-wide uppercase">Read next</p>
+      {% if post %}
         <article class="md:grid md:grid-cols-4 md:items-baseline">
           <div class="md:col-span-3 group relative flex flex-col items-start">
             <div class="text-lg font-semibold tracking-tight text-gray-800">
@@ -29,7 +28,20 @@ layout: post
             <p class="text-base relative z-10 mt-2 text-gray-600">{{ post.description }}</p>
           </div>
         </article>
-      </div>
+      {% else %}
+        <article class="md:grid md:grid-cols-4 md:items-baseline">
+          <div class="md:col-span-3 group relative flex flex-col items-start">
+            <div class="text-lg font-semibold tracking-tight text-gray-800">
+              <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
+              <a target="_blank" href="{{ site.data.urls.book }}">
+                <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                <p class="relative z-10"><span class="italic">Hotwire Native for Rails Developers</span> book</p>
+              </a>
+            </div>
+            <p class="text-base relative z-10 mt-2 text-gray-600">Learn how to create intuitive and maintainable mobile apps powered by the technology you already know, Ruby on Rails. No Swift or Kotlin experience necessary.</p>
+          </div>
+        </article>
+      {% endif %}
     </div>
   </div>
-{% endif %}
+</div>

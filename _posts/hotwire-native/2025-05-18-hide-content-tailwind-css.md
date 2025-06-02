@@ -1,17 +1,18 @@
 ---
 title: "Hide content with Tailwind CSS in Hotwire Native"
+date: 2025-05-18
 og_title: "Hide content with Tailwind CSS<br>in Hotwire Native"
 description: "Get rid of duplicate page titles and make your app feel more native with a Tailwind CSS custom variant."
 order: 2
 ---
 
-Mobile apps built with [Hotwire Native]({% link _hotwire_native/index.liquid %}) let Rails developers reuse logic across multiple platforms. By rendering existing web content on iOS *and* Android, small teams can ship big apps in a fraction of the time. But sometimes shoving a web view inside of native app chrome can look a little... off.
+Mobile apps built with [Hotwire Native]({% link _pages/hotwire-native.liquid %}) let Rails developers reuse logic across multiple platforms. By rendering existing web content on iOS *and* Android, small teams can ship big apps in a fraction of the time. But sometimes shoving a web view inside of native app chrome can look a little... off.
 
 Here's an example from the hiking app you build in while working through [my book on Hotwire Native]({{ site.data.urls.book }}). This screen lists hikes that you recently completed. Notice the "Hikes" up at the top *and* in the web content?
 
 ![Double titles on Hotwire Native iOS and Android apps](/assets/images/hotwire-native/hide-content-tailwind-css/double-titles.png){:standalone .unstyled}
 
-Hotwire Native automatically [sets *native* screen titles from the `<title>` HTML attribute]({% link _hotwire_native/native-screen-titles.md %}) on the page. Combine that with an innocent `<h1>` tag and you've got yourself a wonky-looking screen.
+Hotwire Native automatically [sets *native* screen titles from the `<title>` HTML attribute]({% post_url hotwire-native/2025-05-18-native-screen-titles %}) on the page. Combine that with an innocent `<h1>` tag and you've got yourself a wonky-looking screen.
 
 We can remedy this by **hiding specific content when rendered in Hotwire Native apps**. First we'll explore how to do this with Ruby and then with Tailwind CSS.
 

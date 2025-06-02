@@ -24,12 +24,6 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  hotwire_native:
-    output: true
-    permalink: /hotwire-native/:path/
-  hotwire:
-    output: true
-    permalink: /hotwire/edition-:title/
 defaults:
   - scope:
       path: _posts/
@@ -38,19 +32,7 @@ defaults:
       layout: post
       back: _pages/articles.liquid
       preview_links_template_id: 999
-  - scope:
-      path: _posts/turbo-ios
-      type: posts
-    values:
-      permalink: /turbo-ios/:title/
-      back: _posts/2021-05-14-turbo-ios.md
-  - scope:
-      path: _hotwire_native/
-    values:
-      layout: hotwire_native
-      back: _hotwire_native/index.liquid
-      preview_links_template_id: 999
-      hide_date: true
+
   - scope:
       path: _posts/newsletter
       type: posts
@@ -60,6 +42,24 @@ defaults:
       layout: newsletter
       back: _pages/newsletter.liquid
       preview_links_template_id: 1000
+
+  - scope:
+      path: _posts/hotwire-native/
+      type: posts
+    values:
+      permalink: /:categories/:title/
+      categories: hotwire-native
+      layout: hotwire_native
+      back: _pages/hotwire-native.liquid
+      preview_links_template_id: 999
+      hide_date: true
+
+  - scope:
+      path: _posts/turbo-ios
+      type: posts
+    values:
+      permalink: /turbo-ios/:title/
+      back: _posts/2021-05-14-turbo-ios.md
 
 # Plugin configuration
 plugins:

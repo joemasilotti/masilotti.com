@@ -1,12 +1,13 @@
 ---
 title: Opaque navigation and tab bars in Hotwire Native – iOS
+date: 2025-05-23
 description: |
   A two-line fix for web content rendering "through" your transparent top and
   bottom bars (navigation bar and tab bar).
 order: 6
 ---
 
-iOS uses *transparent* native elements by default. Which means that a Hotwire Native app will render web content "through" the top bar (navigation bar) and bottom bar ([tab bar]({% link _hotwire_native/ios/tabs.md %})).
+iOS uses *transparent* native elements by default. Which means that a Hotwire Native app will render web content "through" the top bar (navigation bar) and bottom bar ([tab bar]({% post_url hotwire-native/ios/2025-05-23-tabs %})).
 
 This might not be apparent until your web content fill the screen, as shown in the screenshot on the right. But when it occurs it can look quite jarring!
 

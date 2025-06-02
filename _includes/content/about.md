@@ -10,4 +10,4 @@ Now I'm focused on spreading Hotwire Native and teaching developers what it take
 
 1. [Hotwire Native for Rails Developers]({{ site.data.urls.book }}) - My book on Hotwire Native, published by The Pragmatic Bookshelf.
 1. [Bridge Components](https://github.com/joemasilotti/bridge-components) - A collection of free bridge components for Hotwire Native apps.
-1. [Hotwire Native by example]({% link _hotwire_native/index.liquid %}) - A series of focused and actionable tutorials on building Hotwire Native apps.
+1. [Hotwire Native by example]({% link _pages/hotwire-native.liquid %}) - A series of focused and actionable tutorials on building Hotwire Native apps.

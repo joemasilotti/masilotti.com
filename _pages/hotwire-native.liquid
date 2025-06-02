@@ -6,10 +6,7 @@ permalink: /hotwire-native/
 favorite: 3
 ---
 
-{% assign posts = site.hotwire_native
-  | where_exp: "post", "post.url != page.url"
-  | where_exp: "post", "post.order"
-  | sort: "order" %}
+{% assign posts = site.categories["hotwire-native"] | sort: "order" %}
 
 <div class="prose">
   <blockquote class="-mt-12">This series is still a work in progress. <a href="mailto:joe@masilotti.com">Send me an email</a> with ideas for future content!</blockquote>
