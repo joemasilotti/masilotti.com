@@ -1,6 +1,5 @@
 ---
 title: "This Thursday: Hotwire Native Live #1"
-slug: hotwire-native-live
 date: 2025-05-27
 description: "Join me Thursday for Hotwire Native Live to build features and get coding tips in real time!"
 ---

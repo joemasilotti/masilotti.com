@@ -1,6 +1,5 @@
 ---
 title: "New bridge components, a book milestone, and a question for you"
-slug: new-bridge-components-and-book-milestone
 date: 2025-03-20
 description: "New bridge components are here, my book is finished, and I chatted with Dave Thomas about mobile MVPs!"
 ---

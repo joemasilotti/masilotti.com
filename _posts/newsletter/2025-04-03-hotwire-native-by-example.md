@@ -1,6 +1,5 @@
 ---
 title: Hotwire Native by example
-slug: hotwire native by example
 date: 2025-04-03
 description: "I've launched a new Hotwire Native tutorial series, updated my bridge library, and will speak at RailsConf 2025!"
 ---

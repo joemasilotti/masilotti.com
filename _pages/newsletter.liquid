@@ -16,13 +16,15 @@ newsletter: true
 <div class="prose lg:prose-md mt-20">
   <h2>Archives</h2>
   <p>Some of what subscribers have received since the beginning of 2025.</p>
-  <ul class="not-prose flex flex-col space-y-16 pt-8">
-    {% assign newsletters = site.newsletter %}
-    {% assign newsletters = newsletters | sort: "date" | reverse %}
+</div>
+
+<div class="mt-8 md:border-l md:border-gray-100 md:pl-6 md:mt-16">
+  <div class="flex max-w-3xl flex-col space-y-16">
+    {% assign newsletters = site.categories.newsletter %}
     {% for newsletter in newsletters %}
-      {% include post.liquid post=newsletter date=true cta="Read newsletter"%}
+      {% include post.liquid post=newsletter date=true cta="Read newsletter" %}
     {% endfor %}
-  </ul>
+  </div>
 </div>
 
 <div class="flow-root mt-20">

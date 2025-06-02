@@ -1,6 +1,5 @@
 ---
 title: Maintainable Software Podcast with Robby Russel
-slug: maintainable software podcast
 date: 2025-05-22
 description: "Hotwire Native means maintainable software - yes or no? Also, a new speaking announcement."
 ---

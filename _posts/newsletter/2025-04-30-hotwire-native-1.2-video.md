@@ -1,6 +1,5 @@
 ---
 title: Hotwire Native v1.2 video
-slug: hotwire native 1.2 video
 date: 2025-04-30
 description: "Hotwire Native v1.2 launches with two exciting updates: new tab bar components and a fresh demo app!"
 ---

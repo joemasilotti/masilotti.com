@@ -24,9 +24,6 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  newsletter:
-    output: true
-    permalink: /newsletter/:title/
   hotwire_native:
     output: true
     permalink: /hotwire-native/:path/
@@ -55,8 +52,11 @@ defaults:
       preview_links_template_id: 999
       hide_date: true
   - scope:
-      path: _newsletter/
+      path: _posts/newsletter
+      type: posts
     values:
+      permalink: /:categories/:title/
+      categories: newsletter
       layout: newsletter
       back: _pages/newsletter.liquid
       preview_links_template_id: 1000

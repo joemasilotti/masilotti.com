@@ -1,6 +1,5 @@
 ---
 title: "Book sale, Hotwire Native LIVE #2, and Hotwire Native around the web"
-slug: book-sale-and-hotwire-native-live-episode-2
 date: 2025-06-03
 description: "Summer kicks off in Portland with a new Hotwire Native LIVE episode and a book sale!"
 ---
