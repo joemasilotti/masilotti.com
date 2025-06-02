@@ -51,14 +51,15 @@ defaults:
       path: _hotwire_native/
     values:
       layout: hotwire_native
-      preview_links_template_id: 999
       back: _hotwire_native/index.liquid
+      preview_links_template_id: 999
       hide_date: true
   - scope:
       path: _newsletter/
     values:
       layout: newsletter
       back: _pages/newsletter.liquid
+      preview_links_template_id: 1000
 
 # Plugin configuration
 plugins:

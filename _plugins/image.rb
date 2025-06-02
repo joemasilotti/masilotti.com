@@ -70,7 +70,7 @@ class Image
   end
 
   def date
-    post.data["edition"] || post.date.strftime("%Y-%m-%d")
+    post.data["edition"] || post.date.strftime("%B %e, %Y")
   end
 
   def title

@@ -1,5 +1,5 @@
 ---
-title: "What you’ll learn in “Hotwire Native for Rails Developers”"
+title: "What you’ll learn in \"Hotwire Native for Rails Developers\""
 date: 2025-01-17
 description: "Curious about my new book? Here’s a chapter-by-chapter breakdown of what you'll learn, with screenshots."
 favorite: 2
