@@ -14,7 +14,7 @@ Last week I ran the first [Hotwire Native LIVE](https://youtube.com/live/oi_dU4G
 
 And this week I'm covering **bridge components**: what they are, how to add them to your iOS and Android apps, and examples of components I've built for clients. I'd love to see you there!
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/live/sG0eEjO6l2o?si=Cz_5DAsG2IJJN7Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/sG0eEjO6l2o?si=dPfEshbGImbz5nqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Book sale
 

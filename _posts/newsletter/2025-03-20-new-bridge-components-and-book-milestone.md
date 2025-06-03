@@ -26,6 +26,6 @@ The last two chapters are in! That means the core content of Hotwire Native for 
 
 I had the pleasure of [chatting with Dave Thomas](https://www.youtube.com/watch?v=9X3tgyr7umI), co-author of The Pragmatic Programmer and co-founder of The Pragmatic Bookshelf. We discussed how to quickly build and launch a mobile MVP with minimal ongoing maintenance.
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/watch?v=9X3tgyr7umI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/9X3tgyr7umI?si=UWR_3c9NFAvbT_Bi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Until next time - thanks!
