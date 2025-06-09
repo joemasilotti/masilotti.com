@@ -15,17 +15,19 @@
                   </div>
                 {% endunless %}
               </div>
-              <div class="flex flex-1 justify-end md:justify-center">
-                {% include navigation/mobile.liquid %}
-                {% include navigation/desktop.liquid %}
-              </div>
-              <div class="flex justify-end md:flex-1">
-                <div class="pointer-events-auto">
-                  <a href="{% link feed.xml %}" title="RSS" aria-label="RSS" class="block group rounded-full bg-white/90 px-3.5 py-2.5 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
-                    {% svg assets/icons/mini/rss.svg class="h-5 w-5 text-gray-500 group-hover:text-gray-800" %}
-                  </a>
+              {% unless layout.hide_nav %}
+                <div class="flex flex-1 justify-end md:justify-center">
+                  {% include navigation/mobile.liquid %}
+                  {% include navigation/desktop.liquid %}
                 </div>
-              </div>
+                <div class="flex justify-end md:flex-1">
+                  <div class="pointer-events-auto">
+                    <a href="{% link feed.xml %}" title="RSS" aria-label="RSS" class="block group rounded-full bg-white/90 px-3.5 py-2.5 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
+                      {% svg assets/icons/mini/rss.svg class="h-5 w-5 text-gray-500 group-hover:text-gray-800" %}
+                    </a>
+                  </div>
+                </div>
+              {% endunless %}
             </div>
           </div>
         </div>

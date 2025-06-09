@@ -75,3 +75,6 @@ preview_links:
   site_id: 755
 testimonials: true
 banner: false
+bridge_components:
+  testimonials: false
+  customers: false

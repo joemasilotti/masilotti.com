@@ -1,0 +1,43 @@
+- name: Alert
+  description: Displays a customizable native alert to confirm an action.
+
+- name: Barcode Scanner
+  description: Scans barcodes and QR codes using a native camera capture.
+  pro: true
+
+- name: Button
+  description: Renders a native button (text or image) in the native bar at the top of the screen.
+
+- name: Document Scanner
+  description: Digitizes physical documents with automatic detection and correction.
+  pro: true
+
+- name: Form
+  description: Replaces a form's HTML submit button with a native one that disables.
+
+- name: Haptic
+  description: Vibrates the device via the haptic engine.
+
+- name: Location
+  description: Prompts the user for their precise location with a single system dialog.
+  pro: true
+
+- name: Menu
+  description: Renders a customizable native UIMenu on iOS or DropdownMenu on Android.
+
+- name: Notification Token
+  description: Prompts for permission then retrieves the user's push notification token.
+  pro: true
+
+- name: Permissions
+  description: Gets the status of native permissions, like location and push notifications.
+  pro: true
+
+- name: Review Prompt
+  description: Prompts for a review on the App Store on iOS and Google Play on Android.
+
+- name: Share
+  description: Adds a button that triggers a native share sheet.
+
+- name: Toast
+  description: Renders a floating message that disappears after a few seconds.
