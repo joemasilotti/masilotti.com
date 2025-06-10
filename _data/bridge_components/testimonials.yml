@@ -1,0 +1,9 @@
+- quote: Just dropped in the Swift component and Stimulus controller, tweaked the data attributes in my navbar and it worked. Took about 5 minutes!
+  author: Miles Woodroffe
+  image: testimonials/miles-woodroffe.jpg
+  link: CTO, Software Engineer and Advisor
+
+- quote: These components have saved me countless hours of development time. They leverage everything we already know and love about Ruby on Rails.
+  author: Jesse Waites
+  image: testimonials/jesse-waites.png
+  link: Rails & Hotwire Native Developer
