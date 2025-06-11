@@ -39,5 +39,8 @@
 - name: Share
   description: Adds a button that triggers a native share sheet.
 
+- name: Theme
+  description: Toggle the device's dark/light mode appearance, styling native elements.
+
 - name: Toast
   description: Renders a floating message that disappears after a few seconds.
