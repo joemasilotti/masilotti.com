@@ -5,6 +5,10 @@
   description: Scans barcodes and QR codes using a native camera capture.
   pro: true
 
+- name: Biometrics Lock
+  description: Locks the app when backgrounded until the user authenticates via biometrics.
+  pro: true
+
 - name: Button
   description: Renders a native button (text or image) in the native bar at the top of the screen.
 
