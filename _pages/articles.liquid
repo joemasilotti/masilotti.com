@@ -6,13 +6,11 @@ layout_title: My writing on Hotwire Native, Ruby on Rails, and being a soloprene
 layout_description: Get started with my latest article and some of my favorites.
 ---
 
-{% assign posts = site.posts | where_exp: "post", "post.categories == empty" %}
-
 <div class="flex max-w-3xl flex-col space-y-12">
-  {% assign latest = posts.first %}
+  {% assign latest = site.posts.first %}
   {% include post.liquid post=latest badge="new" %}
 
-  {% assign all = posts | concat: site.pages %}
+  {% assign all = site.posts | concat: site.pages %}
   {% assign favorites = all | where_exp: "item", "item.favorite" %}
   {% assign favorites = favorites | sort: "favorite" %}
   {% for post in favorites %}
@@ -22,10 +20,10 @@ layout_description: Get started with my latest article and some of my favorites.
 <div class="max-w-prose">
   {% include newsletter/cta.liquid %}
 </div>
-<p class="mt-16 text-lg text-gray-600 md:mt-24">And all {{ posts.size }} articles I've ever published, most recent first.</p>
+<p class="mt-16 text-lg text-gray-600 md:mt-24">And all {{ site.posts.size }} articles I've ever published, most recent first.</p>
 <div class="mt-8 md:border-l md:border-gray-100 md:pl-6 md:mt-16">
   <div class="flex max-w-3xl flex-col space-y-16">
-    {% for post in posts %}
+    {% for post in site.posts %}
       {% include post.liquid post=post date=true %}
     {% endfor %}
   </div>
