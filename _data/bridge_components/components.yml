@@ -40,6 +40,9 @@
 - name: Review Prompt
   description: Prompts for a review on the App Store on iOS and Google Play on Android.
 
+- name: Search
+  description: Displays a native search field that passes along queries to JavaScript.
+
 - name: Share
   description: Adds a button that triggers a native share sheet.
 

@@ -6,6 +6,9 @@ permalink: /bridge-components/
 favorite: 1
 ---
 
+{% assign pro = site.data.bridge_components.components | where_exp: "item", "item.pro" | size %}
+{% assign free = site.data.bridge_components.components | where_exp: "item", "item.pro != true" | size %}
+
 <header class="max-w-xl text-center mx-auto">
   <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl"><span class="inline-block bg-primary-300/50 italic -rotate-3 px-3 py-1 -my-1 -mx-1">Native</span> integrations for Hotwire Native apps</h1>
   <p class="mt-4 text-xl text-gray-700 sm:mt-6 sm:text-2xl">Add production-ready <span class="font-semibold">bridge components</span> to your app without writing any custom Swift or Kotlin.</p>
@@ -79,7 +82,7 @@ favorite: 1
           <ul role="list" class="-my-2 divide-y divide-gray-200 text-base tracking-tight text-gray-900">
             <li class="flex items-center py-2">
               {% svg "/assets/icons/check.svg" class="h-8 w-8 text-gray-600" %}
-              <span class="ml-4">9 free bridge components</span>
+              <span class="ml-4">{{ free }} free bridge components</span>
             </li>
             <li class="flex items-center py-2">
               {% svg "/assets/icons/check.svg" class="h-8 w-8 text-gray-600" %}
@@ -102,11 +105,11 @@ favorite: 1
           <ul role="list" class="-my-2 divide-y divide-white/10 text-base tracking-tight text-white">
             <li class="flex items-center py-2">
               {% svg "/assets/icons/check.svg" class="h-8 w-8 text-white" %}
-              <span class="ml-4">9 free bridge components</span>
+              <span class="ml-4">{{ free }} free bridge components</span>
             </li>
             <li class="flex items-center py-2">
               {% svg "/assets/icons/check.svg" class="h-8 w-8 text-white" %}
-              <span class="ml-4">5 advanced bridge components</span>
+              <span class="ml-4">{{ pro }} advanced bridge components</span>
             </li>
             <li class="flex items-center py-2">
               {% svg "/assets/icons/check.svg" class="h-8 w-8 text-white" %}
