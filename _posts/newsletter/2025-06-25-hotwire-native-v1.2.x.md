@@ -1,5 +1,5 @@
 ---
-title: "Hotwire Native v1.2.x released"
+title: "Hotwire Native v1.2.x and Hotwire Native LIVE #4"
 date: 2025-06-25
 description: "A quick update on the latest Hotwire Native releases and a countdown to RailsConf."
 ---
