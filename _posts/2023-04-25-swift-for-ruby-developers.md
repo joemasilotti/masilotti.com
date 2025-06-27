@@ -10,7 +10,7 @@ I covered the fundamentals of Swift and iOS, and compared and contrasted each co
 
 If you missed the live stream you can [watch the recording on YouTube](https://www.youtube.com/live/H58Tj-i2aSE?start=129). Read on for a breakdown of the Swift topics with copy-pasteable code snippets.
 
-{% include newsletter/cta.liquid title="Don't miss the next session" description="Get notified when I stream and join the live Q&A." %}
+{% include newsletter/cta.liquid %}
 
 ## Getting started with Swift
 

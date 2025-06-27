@@ -38,7 +38,7 @@ It starts with a `<form>` element in your web app and wires up the Strada compon
 
 Let’s walk through what each line does and how it relates to the rest of the demo.
 
-{% include newsletter/cta.liquid title="Want to learn more about Turbo Native?" description="Subscribe to my newsletter with a new Turbo Native tip every week. And get first access to my upcoming workshops and book." %}
+{% include newsletter/cta.liquid %}
 
 ### HTML
 

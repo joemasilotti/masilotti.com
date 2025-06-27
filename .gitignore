@@ -2,3 +2,6 @@
 .jekyll-cache/
 _site/
 node_modules
+
+# Loaded via `bundle exec rake subscribers` from Buttondown.
+_data/subscribers.json

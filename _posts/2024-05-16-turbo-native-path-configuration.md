@@ -110,7 +110,7 @@ private let pathConfiguration = PathConfiguration(sources: [
 
 Using *local* path configuration like this bundles the JSON file with the downloaded apps. And it has a downside: changes require new releases to the app stores. Remedy this by moving to *remote* path configuration.
 
-{% include newsletter/cta.liquid title="Want more Turbo Native? <span class='block sm:inline'>Subscribe to my newsletter!</span>" %}
+{% include newsletter/cta.liquid %}
 
 ## Remotely configure your apps
 

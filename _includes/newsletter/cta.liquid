@@ -1,13 +1,14 @@
 {% comment %}
 Renders a newsletter subscription CTA and email capture.
 - wide: Optional. Set false for an inline CTA or true for a full-width one.
-- title: Optional (default value). The main heading of the block.
-- description: Optional (default value). A sentence explaining the newsletter.
 - tag: Optional. A Buttondown tag to add to the subscriber.
 {% endcomment %}
 
-{% assign title = include.title | default: "Get my weekly newsletter" %}
-{% assign description = include.description | default: "A weekly-ish newsletter on building Hotwire Native apps powered by Ruby on Rails. Subscribe for exclusive content and first access to upcoming products." %}
+{% assign title = "Get my weekly Hotwire Native newsletter" %}
+{% assign subscribers = site.data.subscribers.count | round_and_format %}
+{% capture description %}
+  Join {{ subscribers }}+ Rails developers building iOS and Android apps with Hotwire Native. Includes exclusive content and first access to upcoming products.
+{% endcapture %}
 
 {% if include.wide %}
   <div class="relative px-4 sm:px-8 lg:px-12 py-12">

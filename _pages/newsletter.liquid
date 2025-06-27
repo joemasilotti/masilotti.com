@@ -1,36 +1,46 @@
 ---
-title: "Joe Masilotti's newsletter"
+title: "A weekly Hotwire Native newsletter"
 description: A weekly-ish newsletter on building Hotwire Native apps powered by Ruby on Rails. Includes exclusive content and first access to upcoming products.
-layout: simple
-newsletter: true
+layout: container
 ---
 
-<div class="flow-root -mt-4">
-  <div class="-mt-8 sm:-mx-4 columns-1 sm:columns-2 lg:columns-3">
-    {% for testimonial in site.data.newsletter.testimonials limit: 3 %}
-      {% include testimonial.liquid object=testimonial %}
-    {% endfor %}
+{% assign subscribers = site.data.subscribers.count | round_and_format %}
+
+<header class="max-w-screen-md">
+  <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">{{ page.title }}</h1>
+  <p class="mt-4 text-xl text-gray-600 sm:mt-6 sm:text-2xl ">Join <span class="inline-block font-medium bg-primary-300/50 px-2 py-0.5 -my-1 -mx-1">{{ subscribers }}+ Rails developers</span> building iOS and Android apps with Hotwire Native. Includes exclusive content and first access to upcoming products.</p>
+</header>
+
+{% include newsletter/subscribe.liquid %}
+
+<div class="mt-16 sm:mt-20">
+  <div class="flow-root -mt-4">
+    <div class="-mt-8 sm:-mx-4 columns-1 sm:columns-2 lg:columns-3">
+      {% for testimonial in site.data.newsletter.testimonials limit: 3 %}
+        {% include testimonial.liquid object=testimonial %}
+      {% endfor %}
+    </div>
   </div>
-</div>
 
-<div class="prose prose-zinc lg:prose-md mt-20">
-  <h2>Archives</h2>
-  <p>Some of what subscribers have received since the beginning of 2025.</p>
-</div>
-
-<div class="mt-8 md:border-l md:border-gray-100 md:pl-6 md:mt-16">
-  <div class="flex max-w-3xl flex-col space-y-16">
-    {% assign newsletters = site.categories.newsletter %}
-    {% for newsletter in newsletters %}
-      {% include post.liquid post=newsletter date=true cta="Read newsletter" %}
-    {% endfor %}
+  <div class="prose prose-zinc lg:prose-md mt-20">
+    <h2>Archives</h2>
+    <p>Some of what subscribers have received since the beginning of 2025.</p>
   </div>
-</div>
 
-<div class="flow-root mt-20">
-  <div class="-mt-8 sm:-mx-4 sm:columns-2 lg:columns-3">
-    {% for testimonial in site.data.newsletter.testimonials limit: 3 offset: 3 %}
-      {% include testimonial.liquid object=testimonial %}
-    {% endfor %}
+  <div class="mt-8 md:border-l md:border-gray-100 md:pl-6 md:mt-16">
+    <div class="flex max-w-3xl flex-col space-y-16">
+      {% assign newsletters = site.categories.newsletter %}
+      {% for newsletter in newsletters %}
+        {% include post.liquid post=newsletter date=true cta="Read newsletter" %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="flow-root mt-20">
+    <div class="-mt-8 sm:-mx-4 sm:columns-2 lg:columns-3">
+      {% for testimonial in site.data.newsletter.testimonials limit: 3 offset: 3 %}
+        {% include testimonial.liquid object=testimonial %}
+      {% endfor %}
+    </div>
   </div>
 </div>

@@ -30,6 +30,11 @@ jobs:
       - name: Install JavaScript dependencies
         run: yarn install
 
+      - name: Fetch subscriber count
+        run: bundle exec rake subscribers
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+
       - name: Build
         run: bundle exec jekyll build
         env:
