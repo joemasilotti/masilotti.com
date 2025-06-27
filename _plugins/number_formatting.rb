@@ -1,8 +1,8 @@
 module Jekyll
   module NumberFormattingFilter
-    def round_to_nearest_100(input)
+    def round_down_to_nearest_100(input)
       input = input.to_i
-      (((input + 50) / 100) * 100)
+      (input / 100) * 100
     end
 
     def with_commas(input)
@@ -10,7 +10,7 @@ module Jekyll
     end
 
     def round_and_format(input)
-      rounded = round_to_nearest_100(input)
+      rounded = round_down_to_nearest_100(input)
       with_commas(rounded)
     end
   end
