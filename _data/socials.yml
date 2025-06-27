@@ -4,11 +4,17 @@
   href: mailto:joe@masilotti.com
   icon: solid/envelope.svg
 
-- name: twitter
+- name: x
   handle: joemasilotti
-  title: Follow Joe on Twitter
+  title: Follow Joe on X
   href: https://x.com/joemasilotti
-  icon: twitter.svg
+  icon: x.svg
+
+- name: YouTube
+  handle: joemasilotti
+  title: Follow Joe on YouTube
+  href: https://www.youtube.com/@joemasilotti
+  icon: youtube.svg
 
 - name: github
   handle: joemasilotti
@@ -22,8 +28,8 @@
   href: https://www.linkedin.com/in/joemasilotti
   icon: linkedin.svg
 
-- name: bluesky
-  handle: joemasilotti
-  title: Follow Joe on Bluesky
-  href: https://bsky.app/profile/joemasilotti.com
-  icon: bluesky.svg
+# - name: bluesky
+  # handle: joemasilotti
+  # title: Follow Joe on Bluesky
+  # href: https://bsky.app/profile/joemasilotti.com
+  # icon: bluesky.svg
