@@ -76,5 +76,5 @@ preview_links:
 testimonials: true
 banner: false
 bridge_components:
-  testimonials: false
+  testimonials: true
   customers: false

@@ -45,22 +45,22 @@ favorite: 1
   </div>
 </section>
 
-<section class="mt-24">
-  <div class="max-w-screen-md mx-auto">
-    <h2 class="text-2xl text-gray-800 font-medium leading-tight sm:text-3xl">Battle-tested bridge components that give your app native features, without writing any Swift or Kotlin.</h2>
-    <p class="text-lg text-gray-700 leading-relaxed mt-6 sm:text-xl sm:leading-relaxed">Copy-paste the files then add a few data attributes to your HTML. Get native alerts, menus, scanners, and more on iOS and Android.</p>
-  </div>
-</section>
-
 {% if site.bridge_components.testimonials %}
-  <section id="testimonials" class="flow-root mt-10">
-    <div class="sm:-mx-4 sm:columns-2">
+  <section id="testimonials" class="flow-root mt-24 scroll-mt-12">
+    <div class="sm:-mx-4 sm:columns-3">
       {% for testimonial in site.data.bridge_components.testimonials %}
         {% include testimonial.liquid object=testimonial %}
       {% endfor %}
     </div>
   </section>
 {% endif %}
+
+<section class="mt-24">
+  <div class="max-w-screen-md mx-auto">
+    <h2 class="text-2xl text-gray-800 font-medium leading-tight sm:text-3xl">Battle-tested bridge components that give your app native features, without writing any Swift or Kotlin.</h2>
+    <p class="text-lg text-gray-700 leading-relaxed mt-6 sm:text-xl sm:leading-relaxed">Copy-paste the files then add a few data attributes to your HTML. Get native alerts, menus, scanners, and more on iOS and Android.</p>
+  </div>
+</section>
 
 <section id="components" class="mt-24 scroll-mt-12">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 xl:-mx-10 mt-12">
