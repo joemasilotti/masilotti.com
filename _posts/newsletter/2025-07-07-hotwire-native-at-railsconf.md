@@ -32,7 +32,7 @@ Hit reply or [send me an email](mailto:joe@masilotti.com) if you run into any is
 
 Later that day I’ll also be at the Meet the Authors table at 3pm.
 
-This is a great opportunity to get more information on my book, [*Hotwire Native for Rails Developers*](https://pragprog.com/titles/jmnative/hotwire-native-for-rails-developers/), and pick my brain.
+This is a great opportunity to get more information on my book, [*Hotwire Native for Rails Developers*]({{ site.data.urls.book }}), and pick my brain.
 
 I’ll also be giving out event-exclusive discount codes and running a book giveaway.
 
