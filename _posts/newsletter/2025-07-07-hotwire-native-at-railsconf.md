@@ -6,7 +6,7 @@ description: "Join me at RailsConf for a Hotwire Native workshop and a book meet
 
 Hey y’all, who’s going to be at RailsConf this week?
 
-I’m hosting a **Hotwire Native workshop on Wednesday at 10:15am**. And I’d love to see you there!
+I’m hosting a [Hotwire Native workshop on Wednesday at 10:15am]({% link _pages/slides/railsconf-2025.liquid %}). And I’d love to see you there!
 
 During this two-hour session, you’ll build an iOS and Android app from scratch. You’ll learn the essentials, practical tips, and common pitfalls of building maintainable Hotwire Native apps.
 
