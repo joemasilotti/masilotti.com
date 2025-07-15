@@ -30,7 +30,7 @@ On Wednesday I hosted a two-hour workshop teaching Hotwire Native from scratch. 
 
 I also forgot how to delete a record in Rails. 😪 Luckily, the audience helped me out.
 
-As promised, here's links to the [slides]({% link _pages/slides/railsconf-2025.liquid %}) and all of the [code](https://github.com/joemasilotti/railsconf-2025-code %}) we wrote together.
+As promised, here's links to the [slides]({% link _pages/slides/railsconf-2025.liquid %}) and all of the [code](https://github.com/joemasilotti/railsconf-2025-code) we wrote together.
 
 ## Talks that sparked new ideas
 
