@@ -10,7 +10,7 @@ But the 800+ attendees brought an energy I've never seen before at a code-relate
 
 ## The hallway track
 
-![Small notebook, big notes](/assets/images/inspired-by-railsconf/tiny-notebook.jpeg){:standalone}
+![Small notebook, big ideas](/assets/images/inspired-by-railsconf/tiny-notebook.jpeg){:standalone}
 
 Over the three days in Philadelphia I kept track of everyone I spoke with on my tiny little notebook. Here are some of the conversations that stood out.
 
@@ -20,7 +20,7 @@ Over the three days in Philadelphia I kept track of everyone I spoke with on my 
 
 ## Teaching Hotwire Native at RailsConf
 
-![Joe Masilotti presents at RailsConf 2025](/assets/images/inspired-by-railsconf/workshop.jpeg){:standlone}
+![Joe Masilotti presents at RailsConf 2025](/assets/images/inspired-by-railsconf/workshop.jpeg){:standalone}
 
 On Wednesday I hosted a two-hour workshop teaching Hotwire Native from scratch. Every seat was full and folks were sitting on the floor! Together we:
 
