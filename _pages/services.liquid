@@ -16,7 +16,7 @@ layout_title: Need a hand with Hotwire Native?<br>I'd love to help.
 {% if site.testimonials %}
   <div class="flow-root mt-8 md:mt-12">
     <div class="-mt-8 sm:-mx-4 sm:columns-2">
-      {% for testimonial in site.data.testimonials limit: 3 %}
+      {% for testimonial in site.data.testimonials limit: 2 %}
         {% include testimonial.liquid object=testimonial %}
       {% endfor %}
     </div>
@@ -28,3 +28,13 @@ layout_title: Need a hand with Hotwire Native?<br>I'd love to help.
     {% include service.liquid service=service %}
   {% endfor %}
 </ul>
+
+{% if site.testimonials %}
+  <div class="flow-root mt-8 md:mt-12">
+    <div class="-mt-8 sm:-mx-4 sm:columns-2">
+      {% for testimonial in site.data.testimonials limit: 2 offset: 2 %}
+        {% include testimonial.liquid object=testimonial %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
