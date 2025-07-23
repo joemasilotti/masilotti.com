@@ -1,0 +1,5 @@
+- name: Strety
+  image: strety.png
+
+- name: Ruby Friends
+  image: ruby-friends.png
