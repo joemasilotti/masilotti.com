@@ -14,6 +14,6 @@ I walked through how BeerMenus supports desktop, mobile web, iOS, and Android wi
 * [24:31](https://youtu.be/xWJHy1ElG6E?t=24m31s) - Slide 18 - An animated overview of the Turbolinks request lifecycle.
 * [39:42](https://youtu.be/xWJHy1ElG6E?t=39m42s) - Slide 27 - Communication between the app and the server via JavaScript.
 
-<iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/xWJHy1ElG6E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{% include embeds/youtube.liquid id="xWJHy1ElG6E" %}
 
 [Mobile Monday Split](https://www.meetup.com/mobilemondaysplit/) meets every month or so and dives into all things development focused. Past topics include game development with Unity, native iOS and Android apps, and Continuous Integration. If you're ever near Split I highly recommend dropping by a session!

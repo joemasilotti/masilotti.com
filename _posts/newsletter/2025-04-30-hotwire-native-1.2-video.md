@@ -12,7 +12,7 @@ This release includes a bunch of new features around routing URLs in your apps. 
 
 But I’m most excited for the new **first-party tab bar components**. So much so, that I created a 15 minute video on how to add them to brand new Hotwire Native iOS and Android apps.
 
-<iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/qGBlFzmyHnk?si=eb-XVCsM4uhSEdMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include embeds/youtube.liquid id="qGBlFzmyHnk" %}
 
 ## New demo apps
 

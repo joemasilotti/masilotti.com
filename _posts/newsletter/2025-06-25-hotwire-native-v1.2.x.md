@@ -45,6 +45,6 @@ We can use these to customize behavior when navigating between URLs. Think “ex
 
 I’m exploring how to use these tomorrow (Thursday)! Join me for [episode #4 of Hotwire Native LIVE](https://youtube.com/live/t6niKGnKJQs). And please, bring your questions - I'll dedicate time at the end for Q&A.
 
-<iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/t6niKGnKJQs?si=YBTv4BBYASYrmdS_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include embeds/youtube.liquid id="t6niKGnKJQs" %}
 
 I hope to see you there.

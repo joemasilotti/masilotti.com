@@ -64,7 +64,7 @@ Think of it like a conference companion that helps turn introductions into frien
 
 This Thursday at 11am PT I'll be live coding the Hotwire Native integration on YouTube. Come hang out, ask questions, and see how it all comes together.
 
-<iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/UuONfuzjTfA?si=ZKQaD5JrnJrNFRNq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include embeds/youtube.liquid id="UuONfuzjTfA" %}
 
 ## What are you building?
 

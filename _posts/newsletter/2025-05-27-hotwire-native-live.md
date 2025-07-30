@@ -17,7 +17,7 @@ Episode #1 kicks off **Thursday at 11am PT on** [**YouTube**](https://www.youtub
 
 Whether you’re already familiar with Hotwire Native or just curious, you’ll walk away with working code you can drop into your own projects and tips to speed up your workflow.
 
-<iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/oi_dU4GlGwc?si=poTQ-dkP9dOtN7mK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include embeds/youtube.liquid id="oi_dU4GlGwc" %}
 
 Pro tip: Click the **Notify me** button on YouTube to get an email when I go live.
 
