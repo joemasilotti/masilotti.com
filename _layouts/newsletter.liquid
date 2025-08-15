@@ -38,18 +38,7 @@ layout: container
       <div class="prose lg:prose-lg mt-8">{{ content }}</div>
     </article>
 
-    <aside class="flex items-center mt-4 sm:mt-8">
-      <div>
-        <div class="h-12 w-12 sm:h-20 sm:w-20 rounded-full bg-white/90 p-0.5 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
-          <img src="/assets/images/joe-small.jpg" alt="Joe Masilotti" class="rounded-full bg-gray-100 object-cover h-[11] w-[11] sm:h-[19] sm:w-[19]">
-        </div>
-      </div>
-      <div class="text-sm sm:text-base ml-4 leading-snug">
-        <p class="text-sm sm:text-lg font-medium text-gray-900">Joe Masilotti</p>
-        <p><a href="https://x.com/joemasilotti" target="_blank" class="hover:underline">@joemasilotti</a></p>
-        <p><a href="mailto:joe@masilotti.com" class="hover:underline">joe@masilotti.com</a></p>
-      </div>
-    </aside>
+    {% include newsletter/signature.liquid %}
 
     <div class="mt-16 bg-gray-50 p-6 rounded shadow-sm">
       <p class="text-gray-700">This was an archive of <a href="{% link _pages/newsletter.liquid %}" class="font-semibold hover:underline">Joe Masilotti's newsletter</a>. Subscribe for weekly-ish updates on building Hotwire Native apps powered by Ruby on Rails.</p>
