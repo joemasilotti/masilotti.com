@@ -6,12 +6,13 @@ layout: container
 
 {% assign subscribers = site.data.subscribers.count | round_and_format %}
 
-<header class="max-w-screen-md">
+<header class="max-w-screen-md mx-auto">
   <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">{{ page.title }}</h1>
   <p class="mt-4 text-xl text-gray-600 sm:mt-6 sm:text-2xl ">Join <span class="inline-block font-medium text-gray-900 bg-primary-300/50 px-2 py-0.5 -my-1 -mx-1">{{ subscribers }}+ Rails developers</span> building iOS and Android apps with Hotwire Native. Includes exclusive content and first access to upcoming products.</p>
+  <div class="flex items-center justify-center mt-6">
+    {% include newsletter/subscribe.liquid %}
+  </div>
 </header>
-
-{% include newsletter/subscribe.liquid %}
 
 <div class="mt-16 sm:mt-20">
   <div class="flow-root -mt-4">
