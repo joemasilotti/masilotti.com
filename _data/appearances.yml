@@ -1,15 +1,14 @@
 - type: conferences
   cta: Watch video
   appearances:
-    - title: "Hotwire Native: A Rails Developer’s Secret Tool to Building Mobile Apps"
+    - title: Hotwire Native keynote
       date: 2025-09-04
       description: |
-        I'm building a Hotwire Native iOS and Android apps LIVE on stage. I'll
-        cover practical tips, pitfalls, and technqiues I've picked up from working
-        with the framework since 2016.
+        Hotwire Native lets Rails developers reuse their HTML and CSS to launch
+        iOS and Android apps quickly, keeping logic on the server and empowering
+        small teams and solo developers to ship faster without deep mobile expertise.
       event: Rails World 2025
-      href: https://rubyonrails.org/world/2025/day-1/joe-masilotti
-      upcoming: true
+      href: https://www.youtube.com/watch?v=VbMt_4STWIo
 
     - title: Hotwire Native workshop
       date: 2025-07-09
@@ -17,8 +16,7 @@
         Join this live workshop to learn how to build native iOS and Android apps
         from scratch, powered by your existing Ruby on Rails website and Hotwire native.
       event: Rails Conf 2025
-      href: https://railsconf.org/schedule/#sz-tab-45847
-      upcoming: true
+      href: https://www.youtube.com/watch?v=gIOkC44_dA8
 
     - title: Just enough Turbo Native to be dangerous
       date: 2023-10-05
@@ -40,6 +38,15 @@
 - type: podcasts
   cta: Listen to podcast
   appearances:
+    - title: Hotwire Native with Joe Masilotti
+      date: 2025-09-16
+      description: |
+        I discuss my new book on Hotwire Native, share insights on writing,
+        consulting, client engagement, and how Jason and I find clients
+        through speaking and writing.
+      event: The Code with Jason Podcast, September 2025
+      href: https://www.codewithjason.com/podcast/17756501-266-hotwire-native-with-joe-masilotti/
+
     - title: Simplify Your Stack, Ship Mobile Sooner
       date: 2025-05-20
       description: |
@@ -125,6 +132,14 @@
         All while sneakily avoiding being labelled a recruiter. Smart man.
       event: Indie Bites, September 2022
       href: https://indiebites.com/66
+
+    - title: Turbo on iOS, Freelancing, and Mugshot Bot with Joe Masilotti
+      date: 2021-06-01
+      description: |
+        I talk about using Turbo on iOS, pricing freelance work, and my tool
+        for creating social media preview cards, Mugshot Bot.
+      event: The Code with Jason Podcast, June 2021
+      href: https://www.codewithjason.com/podcast/9478217-098-turbo-on-ios-freelancing-and-mugshot-bot-with-joe-masilotti/
 
     - title: Building iOS apps using Hotwire / Turbo.js
       date: 2021-04-30
