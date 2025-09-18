@@ -1,24 +1,24 @@
 - title: Articles
   icon: outline/newspaper.svg
-  href: _pages/articles.liquid
+  path: _pages/articles.liquid
   cta: Read more
   description: My writing on Hotwire Native, Ruby on Rails, and being a solopreneur.
 
 - title: Newsletter
   icon: outline/envelope.svg
-  href: _pages/newsletter.liquid
+  href: https://newsletter.masilotti.com
   cta: Subscribe
   description: Weekly-ish Hotwire Native newsletter with exclusive content.
 
 # - title: Hotwire Native crash course
   # icon: outline/academic_cap.svg
-  # href: _pages/workshop.liquid
+  # path: _pages/workshop.liquid
   # cta: Buy my ticket
   # badge: New
   # description: Everything you need to know to get started with Hotwire Native on iOS.
 
 - title: Consulting
   icon: outline/computer_desktop.svg
-  href: _pages/services.liquid
+  path: _pages/services.liquid
   cta: Work with Joe
   description: Hotwire Native development, advisory, training, and coaching.

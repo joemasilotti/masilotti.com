@@ -2,13 +2,22 @@
 Renders a card with a title and description with an optional link, CTA, and icon.
 - object.title: The heading of the card.
 - object.description: The sentence or two body.
+- object.path: Optional. Where to go, on this domain, if the card is clicked.
 - object.href: Optional. Where to go if the card is clicked.
 - object.cta: Required if href set. The copy at the bottom of the link.
 - object.icon: Required if href set. The relative path to the icon near the CTA.
 {% endcomment %}
 
-{% if include.object.href %}
-  <a href="{% link {{ include.object.href }} %}" class="group block relative p-4 rounded-2xl transition ease-in-out duration-300 hover:bg-gray-50">
+{% capture href %}
+  {% if include.object.href %}
+    {{ include.object.href }}
+  {% elsif include.object.path %}
+    {% link {{ include.object.path }} %}
+  {% endif %}
+{% endcapture %}
+
+{% if href %}
+  <a href="{{ href }}" class="group block relative p-4 rounded-2xl transition ease-in-out duration-300 hover:bg-gray-50">
     <div class="flex items-center">
       {% svg "/assets/icons/{{ include.object.icon }}" class="w-5 h-5 mr-2.5" %}
       <span class="text-xl font-semibold text-gray-800">{{ include.object.title }}</span>
