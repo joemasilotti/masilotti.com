@@ -16,7 +16,7 @@ Warns the reader that this post hasn't been updated for Hotwire Native.
           {% if include.href %}
             <p><a href="{{ include.href }}" class="font-medium underline">Read the updated version for Hotwire Native</a>.</p>
           {% else %}
-            <p><a href="{% link _pages/newsletter.liquid %}" class="font-medium underline">Subscribe to my newsletter</a> to get the latest updates.</p>
+            <p><a href="{{ site.data.urls.newsletter }}" class="font-medium underline">Subscribe to my newsletter</a> to get the latest updates.</p>
           {% endif %}
         </div>
       </div>

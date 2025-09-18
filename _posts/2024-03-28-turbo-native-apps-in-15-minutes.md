@@ -693,4 +693,4 @@ If you're excited to learn more about Turbo Native I recommend a read through th
 
 From there, you can have a go at adding a [native Strada component](https://strada.hotwired.dev), implementing a [fully native screen]({% post_url 2023-08-29-when-to-upgrade-turbo-native-screens %}), or [conditionally rendering web content]({% post_url 2023-05-02-hide-web-rendered-content-on-turbo-native-apps %}). The list goes on...
 
-Finally, [subscribe to my weekly newsletter]({% link _pages/newsletter.liquid %}) to stay up to date on the latest Turbo Native news and get first access to tutorials like this guide. And if you need more hands-on help or training with your Turbo Native app then check out my [services]({% link _pages/services.liquid %}) – I'd love to help!
+Finally, [subscribe to my weekly newsletter]({{ site.data.urls.newsletter }}) to stay up to date on the latest Turbo Native news and get first access to tutorials like this guide. And if you need more hands-on help or training with your Turbo Native app then check out my [services]({% link _pages/services.liquid %}) – I'd love to help!

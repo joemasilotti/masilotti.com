@@ -22,6 +22,6 @@ What I want to do when burned out is work harder or more. "Surely I can work *th
 
 Since this isn’t my first burnout, I kinda sorta know how to fix it. The only *real* solution, for me, is to take time off. A week of vacation can sometimes do it. But I usually need something more substantial.
 
-Lucky for me I have four workless months coming up! It’s no vacation, let’s be clear. I’ll be exhausted in other ways with a newborn and toddler in the house. But when I come back in October at least the work-side of my brain will be ready to resume [my newsletter]({% link _pages/newsletter.liquid %}), finish [my book]({% link _pages/book.liquid %}), and dive back in.
+Lucky for me I have four workless months coming up! It’s no vacation, let’s be clear. I’ll be exhausted in other ways with a newborn and toddler in the house. But when I come back in October at least the work-side of my brain will be ready to resume [my newsletter]({{ site.data.urls.newsletter }}), finish [my book]({% link _pages/book.liquid %}), and dive back in.
 
 That’s the hope, at least. See you in October! 🙂

@@ -74,7 +74,7 @@ Written down, this seems so obvious! But I think I needed to have the year of re
 
 Today is the first work day of 2023. The first day I’m applying these techniques.
 
-I hope they work! But only time will tell. I’ll be reflecting on these every quarter in my [newsletter]({% link _pages/newsletter.liquid %}).
+I hope they work! But only time will tell. I’ll be reflecting on these every quarter in my [newsletter]({{ site.data.urls.newsletter }}).
 
 [Send me an email](mailto:joe@masilotti.com) if you’d like to see my quarterly goals or a copy of the template I used.
 

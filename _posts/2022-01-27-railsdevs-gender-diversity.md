@@ -28,7 +28,7 @@ This will be free of charge, and the developers are free to have this conversati
 
 ## Feature more women in my newsletter
 
-Every month I feature work from the Rails community in the [⚡️ Hotwire dev newsletter]({% link _pages/newsletter.liquid %}). I also spotlight a few developers who are looking for work. Moving forward, every newsletter will have representation from someone who identifies as female or non-binary.
+Every month I feature work from the Rails community in the [⚡️ Hotwire dev newsletter]({{ site.data.urls.newsletter }}). I also spotlight a few developers who are looking for work. Moving forward, every newsletter will have representation from someone who identifies as female or non-binary.
 
 If you are looking for a Ruby or Rails job or freelance gig then [send me an email](mailto:joe@masilotti.com). I’ll work with you to hone your bio and get it in front of 1,400+ Hotwire developers and companies. If you don’t feel comfortable sharing publicly then I’ll privately introduce you to folks looking for your expertise.
 

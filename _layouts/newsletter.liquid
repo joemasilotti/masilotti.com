@@ -31,7 +31,7 @@ layout: container
       </header>
 
       <div class="mt-8 mb-16 bg-gray-50 p-6 rounded shadow-sm">
-        <p class="text-gray-700">This is an archive of <a href="{% link _pages/newsletter.liquid %}" class="font-semibold hover:underline">Joe Masilotti's newsletter</a>. Subscribe for weekly-ish updates on building Hotwire Native apps powered by Ruby on Rails.</p>
+        <p class="text-gray-700">This is an archive of <a href="{{ site.data.urls.newsletter }}" class="font-semibold hover:underline">Joe Masilotti's newsletter</a>. Subscribe for weekly-ish updates on building Hotwire Native apps powered by Ruby on Rails.</p>
       </div>
 
       <div class="prose lg:prose-lg mt-8">{{ content }}</div>
@@ -40,7 +40,7 @@ layout: container
     {% include newsletter/signature.liquid %}
 
     <div class="mt-16 bg-gray-50 p-6 rounded shadow-sm">
-      <p class="text-gray-700">This was an archive of <a href="{% link _pages/newsletter.liquid %}" class="font-semibold hover:underline">Joe Masilotti's newsletter</a>. Subscribe for weekly-ish updates on building Hotwire Native apps powered by Ruby on Rails.</p>
+      <p class="text-gray-700">This was an archive of <a href="{{ site.data.urls.newsletter }}" class="font-semibold hover:underline">Joe Masilotti's newsletter</a>. Subscribe for weekly-ish updates on building Hotwire Native apps powered by Ruby on Rails.</p>
       {% include newsletter/subscribe.liquid %}
     </div>
   </div>

@@ -178,6 +178,6 @@ If you go with remote path configuration, here are some tips to ensure healthy a
 
 Without path configuration, you're forced to hard code a bunch of URL routes into your app. This approach is brittle and requires releases to the app stores to make changes. Path configuration simplifies the mapping of behavior in Turbo Native apps, allowing you to define how different screens in your app should behave, all from a single JSON file.
 
-And remember, modals are the tip of the iceberg. Next week I’m sharing a bunch of practical examples of how the path configuration can further advance your Turbo Native apps. Subscribe to [my newsletter]({% link _pages/newsletter.liquid %}) to get it in your inbox.
+And remember, modals are the tip of the iceberg. Next week I’m sharing a bunch of practical examples of how the path configuration can further advance your Turbo Native apps. Subscribe to [my newsletter]({{ site.data.urls.newsletter }}) to get it in your inbox.
 
 Until then, how are you using path configuration in your Turbo Native apps?

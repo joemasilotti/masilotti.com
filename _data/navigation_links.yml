@@ -1,14 +1,14 @@
 - title: About
-  href: _pages/about.liquid
+  path: _pages/about.liquid
 
 - title: Articles
-  href: _pages/articles.liquid
+  path: _pages/articles.liquid
 
 - title: Newsletter
-  href: _pages/newsletter.liquid
+  href: https://newsletter.masilotti.com
 
 - title: Book
-  href: _pages/book.liquid
+  path: _pages/book.liquid
 
 - title: Services
-  href: _pages/services.liquid
+  path: _pages/services.liquid

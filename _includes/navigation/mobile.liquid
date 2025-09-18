@@ -16,7 +16,11 @@
         <ul class="-my-2 divide-y divide-gray-100 text-base text-gray-800">
           {% for link in site.data.navigation_links %}
             <li>
-              <a href="{% link {{ link.href }} %}" class="block py-2">{{ link.title }}</a>
+              {% if link.href %}
+                <a href="{{ link.href }}" class="block py-2">{{ link.title }}</a>
+              {% else %}
+                <a href="{% link {{ link.path }} %}" class="block py-2">{{ link.title }}</a>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>

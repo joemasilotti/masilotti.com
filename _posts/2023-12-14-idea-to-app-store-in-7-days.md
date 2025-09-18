@@ -84,6 +84,6 @@ There are so few (zero?) open source Turbo Native apps in the wild. So I’m rea
 
 I’m going to continue to update Daily Log with new features and native integrations. Follow me [on Twitter](https://twitter.com/joemasilotti) to stay up to date with the day-to-day changes.
 
-Next week I’m doing a video breakdown of the entire codebase for [my newsletter]({% link _pages/newsletter.liquid %}). I’ll walk through how the Rails code integrates with the iOS app and how the native components work. The hand-rolled authentication strategy is another topic I’d love to explore.
+Next week I’m doing a video breakdown of the entire codebase for [my newsletter]({{ site.data.urls.newsletter }}). I’ll walk through how the Rails code integrates with the iOS app and how the native components work. The hand-rolled authentication strategy is another topic I’d love to explore.
 
 If you try Daily Log then let me know what you think [via email](mailto:joe@masilotti.com). I'd love to hear from you!
