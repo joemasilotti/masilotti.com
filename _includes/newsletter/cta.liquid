@@ -5,7 +5,7 @@ Renders a newsletter subscription CTA and email capture.
 {% endcomment %}
 
 {% assign title = "Get my weekly Hotwire Native newsletter" %}
-{% assign subscribers = site.data.subscribers.count | round_and_format %}
+{% assign subscribers = site.data.subscribers | round_and_format %}
 {% capture description %}
   Join {{ subscribers }}+ Rails developers building iOS and Android apps with Hotwire Native. Includes exclusive content and first access to upcoming products.
 {% endcapture %}

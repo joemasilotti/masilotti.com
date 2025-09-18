@@ -4,7 +4,7 @@ description: A weekly-ish newsletter on building Hotwire Native apps powered by 
 layout: container
 ---
 
-{% assign subscribers = site.data.subscribers.count | round_and_format %}
+{% assign subscribers = site.data.subscribers | round_and_format %}
 
 <header class="max-w-screen-md mx-auto">
   <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">{{ page.title }}</h1>
