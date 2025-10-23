@@ -29,6 +29,10 @@
 - name: Menu
   description: Renders a customizable native UIMenu on iOS or DropdownMenu on Android.
 
+- name: NFC
+  description: Read text and URLs from NFC tags.
+  pro: true
+
 - name: Notification Token
   description: Prompts for permission then retrieves the user's push notification token.
   pro: true
