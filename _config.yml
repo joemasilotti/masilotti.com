@@ -74,7 +74,7 @@ postcss:
 preview_links:
   site_id: 755
 testimonials: true
-banner: false
+banner: true
 bridge_components:
   testimonials: true
   customers: false
