@@ -5,7 +5,7 @@ module.exports = {
     "./_drafts/**/*.md",
     "./_includes/**/*.{html,liquid}",
     "./_layouts/**/*.{html,liquid}",
-    "./_pages/*.{html,liquid}",
+    "./_pages/**/*.{html,liquid}",
     "./_posts/*.md",
     "./*.md",
     "./*.html"
@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.emerald,
+        primary: colors.purple,
         gray: colors.zinc,
       },
       typography: (theme) => ({

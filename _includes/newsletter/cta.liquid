@@ -1,7 +1,6 @@
 {% comment %}
 Renders a newsletter subscription CTA and email capture.
 - wide: Optional. Set false for an inline CTA or true for a full-width one.
-- tag: Optional. A Buttondown tag to add to the subscriber.
 {% endcomment %}
 
 {% assign title = "Get my weekly Hotwire Native newsletter" %}
@@ -21,7 +20,7 @@ Renders a newsletter subscription CTA and email capture.
           </h3>
           <p class="mt-2 text-base text-gray-600 max-w-xl pr-4">{{ description }}</p>
         </div>
-        {% include newsletter/subscribe.liquid tag=include.tag %}
+        {% include newsletter/subscribe.liquid %}
       </div>
     </div>
   </div>
@@ -31,7 +30,7 @@ Renders a newsletter subscription CTA and email capture.
       {% svg /assets/icons/outline/envelope.svg class="h-6 w-6 flex-none hidden sm:block text-gray-500 mr-3" %}
       <span>{{ title }}</span>
     </h2>
-    <p class="mt-3 text-base text-gray-600 max-w-xl pr-4">{{ description }}</p>
-    {% include newsletter/subscribe.liquid tag=include.tag %}
+    <p class="mt-3 text-base text-gray-600 pr-4">{{ description }}</p>
+    {% include newsletter/subscribe.liquid %}
   </div>
 {% endif %}

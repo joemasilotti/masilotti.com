@@ -17,7 +17,7 @@ hide_avatar: true
   </div>
   <div class="lg:row-span-2">
     <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl">
-      <span class="block">I'm Joe Masilotti,</span> the <span class="text-primary-600">Hotwire Native</span> guy!
+      <span class="block leading-tight">I'm Joe Masilotti,</span> the <span class="inline-block bg-primary-300/50 italic px-2 py-1 -my-1 -mx-1">Hotwire Native</span> guy!
     </h1>
     <p class="mt-6 text-2xl text-gray-600 font-medium">{{ page.description }}</p>
     <div class="mt-6 flex gap-6">
@@ -39,8 +39,8 @@ hide_avatar: true
 </div>
 
 {% if site.testimonials %}
-  <div class="flow-root mt-16 md:mt-20">
-    <div class="-mt-8 sm:-mx-4 sm:columns-2">
+  <div class="mt-16 md:mt-20">
+    <div class="mt-8 grid gap-6 md:grid-cols-2 md:-mx-6">
       {% for testimonial in site.data.testimonials %}
         {% include testimonial.liquid object=testimonial %}
       {% endfor %}

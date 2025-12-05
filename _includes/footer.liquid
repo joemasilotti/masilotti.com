@@ -4,11 +4,11 @@
       <div class="mx-auto max-w-2xl lg:max-w-5xl">
         <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <div class="flex gap-6 text-sm font-medium text-gray-800">
-            {% for link in site.data.navigation_links %}
+            {% for link in site.data.navigation_links.default %}
               {% if link.href %}
-                <a href="{{ link.href }}" class="transition hover:text-primary-600">{{ link.title }}</a>
+                <a href="{{ link.href }}" class="transition hover:text-primary-700">{{ link.title }}</a>
               {% else %}
-                <a href="{% link {{ link.path }} %}" class="transition hover:text-primary-600">{{ link.title }}</a>
+                <a href="{% link {{ link.path }} %}" class="transition hover:text-primary-700">{{ link.title }}</a>
               {% endif %}
             {% endfor %}
           </div>

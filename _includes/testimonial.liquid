@@ -8,7 +8,7 @@ Renders a testimonial with author name and optional image and handle.
 - object.href: Optional. The URL when link is clicked.
 {% endcomment %}
 
-<figure class="not-prose max-w-lg rounded-2xl bg-gray-50 p-6 leading-6 hidden first:inline-block [&:nth-child(2)]:sm:inline-block lg:inline-block w-full mt-8">
+<figure class="not-prose w-full md:max-w-lg rounded-2xl bg-gray-50 p-6 leading-6">
   <blockquote class="text-gray-900">
     {{ include.object.quote | prepend: "&ldquo;" | append: "&rdquo;" | markdownify | strip }}
   </blockquote>
