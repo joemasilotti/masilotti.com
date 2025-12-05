@@ -76,5 +76,6 @@ preview_links:
 testimonials: true
 banner: false
 bridge_components:
-  testimonials: true
   customers: false
+ogkit:
+  api_key: 4hmXkJeH

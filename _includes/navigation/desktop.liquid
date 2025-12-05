@@ -1,6 +1,10 @@
 <nav class="pointer-events-auto hidden md:block">
   <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
-    {% for link in site.data.navigation_links %}
+    {% for link in include.links %}
+      {% if link.cta %}
+        {% continue %}
+      {% endif %}
+
       {% capture href %}
         {% if link.path %}
           {% link {{ link.path }} %}

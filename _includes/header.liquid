@@ -17,10 +17,24 @@
                   </div>
                 {% endunless %}
               </div>
-              {% unless layout.hide_nav %}
+              {% if layout.nav == "bridge_components" %}
                 <div class="flex flex-1 justify-end md:justify-center">
-                  {% include navigation/mobile.liquid %}
-                  {% include navigation/desktop.liquid %}
+                  <div class="flex items-center gap-3">
+                    {% include navigation/mobile.liquid links=site.data.navigation_links.bridge_components %}
+                    {% include navigation/desktop.liquid links=site.data.navigation_links.bridge_components %}
+
+                    <div class="hidden md:block pointer-events-auto">
+                      {% assign cta_link = site.data.navigation_links.bridge_components | where: "cta", true | first %}
+                      {% include navigation/cta.liquid link=cta_link %}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end md:flex-1"></div>
+              {% else %}
+                <div class="flex flex-1 justify-end md:justify-center">
+                  {% include navigation/mobile.liquid links=site.data.navigation_links.default %}
+                  {% include navigation/desktop.liquid links=site.data.navigation_links.default %}
                 </div>
                 <div class="flex justify-end md:flex-1">
                   <div class="pointer-events-auto">
@@ -29,7 +43,7 @@
                     </a>
                   </div>
                 </div>
-              {% endunless %}
+              {% endif %}
             </div>
           </div>
         </div>

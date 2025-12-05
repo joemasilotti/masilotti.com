@@ -14,7 +14,7 @@
       </div>
       <nav class="mt-6">
         <ul class="-my-2 divide-y divide-gray-100 text-base text-gray-800">
-          {% for link in site.data.navigation_links %}
+          {% for link in include.links %}
             <li>
               {% if link.href %}
                 <a href="{{ link.href }}" class="block py-2">{{ link.title }}</a>

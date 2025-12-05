@@ -1,0 +1,99 @@
+---
+title: Bridge Components PRO - Native integrations for Hotwire Native apps
+description: Advanced native components for Hotwire Native apps.
+layout: bridge_components
+permalink: /bridge-components/pro/
+ogkit: true
+---
+
+{% include bridge_components/og.liquid %}
+
+<header class="max-w-2xl text-center mx-auto mt-16 md:mt-20">
+  <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 flex flex-col items-center">
+    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50/75 text-primary-700 text-sm font-medium mb-4">Bridge Components PRO</span>
+    <span class="tracking-tight ">Advanced native components for Hotwire Native apps</span>
+  </h1>
+  <p class="max-w-xl mt-6 text-lg sm:text-xl text-gray-600 mx-auto leading-relaxed">Get lifetime access to all components available today, plus any new content added in the future for a simple one-time price.</p>
+</header>
+
+<section id="pricing" class="mt-20 scroll-mt-12">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      {% for plan in site.data.bridge_components.pricing %}
+        {% include bridge_components/pricing/card.liquid plan=plan %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="free" class="mt-12">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="flex flex-col items-start gap-6 rounded-3xl p-8 ring-1 ring-gray-200 md:flex-row md:items-center md:justify-between">
+      <div>
+        <h3 class="text-base font-semibold text-gray-900">Free components</h3>
+        <p class="mt-2 text-base text-gray-600">A collection of open-source bridge components to explore, test, and prototype with.</p>
+      </div>
+      <a href="{{ site.data.urls.bridge_components }}" class="inline-flex items-center gap-2 rounded-xl border border-gray-400 px-4 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white">
+        {% svg "/assets/icons/github.svg" class="h-5 w-5" %}
+        <span>View on GitHub</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% if site.bridge_components.customers %}
+  <section id="customers" class="mt-24 scroll-mt-12">
+    <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      {% for customer in site.data.bridge_components.customers %}
+        <img class="grayscale col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="/assets/images/bridge-components/customers/{{ customer.image }}" alt="{{ customer.name }}">
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+<section id="faq" class="mt-24 scroll-mt-12">
+  <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+    <div class="lg:col-span-5">
+      <h2 class="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">Frequently asked questions</h2>
+      <p class="mt-4 text-base/7 text-gray-600">Can’t find the answer you’re looking for? <span class="lg:block"></span><a href="mailto:joe@masilotti.com" class="font-medium underline">Send me an email</a>.</p>
+    </div>
+    <div class="mt-10 lg:col-span-7 lg:mt-0">
+      <dl class="space-y-10">
+        <div>
+          <dt class="text-base/7 font-semibold text-gray-900">What does the PRO license include?</dt>
+          <dd class="mt-2 text-base/7 text-gray-600">The PRO license unlocks all free components, advanced bridge components, and priority support all from a one-time (non-recurring) purchase.</dd>
+        </div>
+        <div>
+          <dt class="text-base/7 font-semibold text-gray-900">Where can I find the full PRO licenses?</dt>
+          <dd class="mt-2 text-base/7 text-gray-600">View the complete <a href="https://github.com/joemasilotti/bridge-components/blob/main/PRO-LICENSE.md" class="font-medium underline" target="_blank">Individual license</a> and <a href="https://github.com/joemasilotti/bridge-components/blob/main/PRO-TEAM-LICENSE.md" class="font-medium underline" target="_blank">Team license</a> terms on GitHub. In summary, it allows commercial use on unlimited projects.</dd>
+        </div>
+        <div>
+          <dt class="text-base/7 font-semibold text-gray-900">What are the platform requirements?</dt>
+          <dd class="mt-2 text-base/7 text-gray-600">
+            <ul class="list-disc list-inside">
+              <li>Hotwire Native 1.2 or later</li>
+              <li>Stimulus 3 or later</li>
+              <li>iOS 16 or later</li>
+              <li>Android 9 or later</li>
+            </ul>
+          </dd>
+        </div>
+        <div>
+          <dt class="text-base/7 font-semibold text-gray-900">How do I get support?</dt>
+          <dd class="mt-2 text-base/7 text-gray-600">PRO license holders get direct support via <a href="mailto:joe@masilotti.com" class="font-medium underline">email</a>.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="author" class="mt-24 scroll-mt-12">
+  <div class="max-w-2xl mx-auto bg-gray-50 rounded-2xl px-7 py-6 flex flex-col md:flex-row items-center md:shadow-lg">
+    <img src="/assets/images/joe.jpg" alt="Joe Masilotti" class="h-36 w-36 rounded-full mb-4 md:mb-0 md:mr-8 object-cover">
+    <div>
+      <h3 class="text-2xl font-medium text-gray-800"><a class="hover:underline" href="{% link _pages/about.liquid %}">Joe Masilotti</a></h3>
+      <p class="text-base font-semibold uppercase text-gray-500 tracking-wide mt-1">Author</p>
+      <p class="text-lg text-gray-600 mt-4 leading-relaxed">I built Bridge Components to help Rails developers add native features without writing any Swift or Kotlin. It’s my go-to tool on every project, and I hope it makes your development faster and easier. <a class="font-semibold hover:underline" href="{% link _pages/about.liquid %}">More about me</a>.</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,8 @@
+<li class="flex items-center gap-3">
+  {% svg "/assets/icons/check.svg" class="h-5 w-5 text-gray-600" %}
+  {% if include.highlight %}
+    <span class="font-semibold">{{ include.text }}</span>
+  {% else %}
+    <span>{{ include.text }}</span>
+  {% endif %}
+</li>

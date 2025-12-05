@@ -1,0 +1,20 @@
+{% assign plan = include.plan %}
+
+<div class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
+  <div class="flex items-center gap-2 text-gray-900">
+    {% svg "/assets/icons/{{ plan.icon }}" class="h-6 w-6 text-primary-600" %}
+    <h3 class="text-2xl font-semibold">{{ plan.title }}</h3>
+  </div>
+  <p class="mt-2 text-gray-600">{{ plan.subtitle }}</p>
+  <p class="mt-6">
+    <span class="text-4xl sm:text-5xl font-bold text-gray-900">{{ plan.price }}</span>
+    <span class="mt-1 block text-base text-gray-500">one-time payment</span>
+  </p>
+  <ul role="list" class="mt-6 flex-1 space-y-3 text-base text-gray-800">
+    {% for feature in plan.features %}
+      {% include bridge_components/pricing/feature.liquid text=feature.text highlight=feature.highlight %}
+    {% endfor %}
+  </ul>
+  {% assign href = site.data.urls[plan.cta_url_key] %}
+  <a href="{{ href }}" class="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-gray-900 px-4 py-3 text-base font-semibold text-white hover:bg-gray-800">{{ plan.cta_label }}</a>
+</div>

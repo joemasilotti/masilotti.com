@@ -1,0 +1,24 @@
+- title: Individual
+  icon: outline/user.svg
+  subtitle: For a single developer shipping their own or client apps.
+  price: $299
+  cta_label: Buy individual license
+  cta_url_key: bridge_components_individual
+  features:
+    - text: One-time payment for lifetime access
+    - text: Priority email support
+    - text: Use on unlimited projects
+    - text: Licensed for a single developer
+
+- title: Team
+  icon: outline/user_group.svg
+  subtitle: For teams with multiple developers.
+  price: $979
+  cta_label: Buy team license
+  cta_url_key: bridge_components_team
+  features:
+    - text: "Everything in Individual, plus:"
+      highlight: true
+    - text: "Up to 25 team members"
+    - text: Hands-on integration help
+    - text: Re-assignable seats as your team changes

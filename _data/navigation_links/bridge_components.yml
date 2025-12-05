@@ -1,0 +1,13 @@
+- title: Components
+  path: _pages/bridge-components.liquid
+
+- title: Newsletter
+  href: "#newsletter"
+
+- title: Installation
+  href: https://github.com/joemasilotti/bridge-components#installation
+
+- title: PRO
+  path: _pages/bridge_components/pro.liquid
+  cta: true
+  icon: outline/cube.svg

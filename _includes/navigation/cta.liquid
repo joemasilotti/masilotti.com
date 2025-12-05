@@ -1,0 +1,17 @@
+{% if include.link %}
+  {% capture pro_href %}
+    {% if include.link.path %}
+      {% link {{ include.link.path }} %}
+    {% else %}
+      {{ include.link.href }}
+    {% endif %}
+  {% endcapture %}
+  {% assign pro_href = pro_href | strip %}
+
+  <a href="{{ pro_href }}" class="inline-flex items-center gap-1.5 rounded-full border border-primary-200 bg-primary-50/60 px-4 py-2.5 text-sm font-medium text-primary-700 shadow-sm hover:bg-primary-100/80 hover:text-primary-900">
+    {% if include.link.icon %}
+      {% svg "/assets/icons/{{ include.link.icon }}" class="h-5 w-5 text-primary-700" %}
+    {% endif %}
+    <span>{{ include.link.title }}</span>
+  </a>
+{% endif %}
