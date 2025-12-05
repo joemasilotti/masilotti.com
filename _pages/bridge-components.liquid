@@ -4,10 +4,7 @@ description: Build iOS and Android features with HTML, no Swift or Kotlin requir
 layout: bridge_components
 permalink: /bridge-components/
 favorite: 1
-ogkit: true
 ---
-
-{% include bridge_components/og.liquid %}
 
 {% assign pro = site.data.bridge_components.components | where_exp: "item", "item.pro" | size %}
 {% assign free = site.data.bridge_components.components | where_exp: "item", "item.pro != true" | size %}

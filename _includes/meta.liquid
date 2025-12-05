@@ -2,7 +2,7 @@
 {% assign description = page.description | default: site.description %}
 {% assign url = page.url | absolute_url %}
 
-{% if page.ogkit == true %}
+{% if page.ogkit or layout.ogkit %}
   {% assign encoded_url = page.url | absolute_url | urlencode %}
   {% assign api_key = site.ogkit.api_key %}
   {% assign image = "https://ogkit.dev/img/4hmXkJeH.jpeg?key=" | append: api_key | append: "&url=" | append: encoded_url %}
